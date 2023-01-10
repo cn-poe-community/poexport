@@ -24,7 +24,7 @@ const createWindow = (): void => {
   });
 
   if (isDev) {
-    mainWindow.loadURL('http://localhost:5174');
+    mainWindow.loadURL('http://localhost:5173');
     mainWindow.webContents.openDevTools();
   } else {
     mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
