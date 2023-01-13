@@ -2,6 +2,7 @@
 import Exporter from './components/Exporter.vue';
 import Translator from './components/Translator.vue';
 import Database from './components/Database.vue';
+import Setting from './components/Setting.vue';
 </script>
 
 <template>
@@ -18,11 +19,15 @@ import Database from './components/Database.vue';
           <a>数据库查询</a>
         </li>
       </ul>
+      <ul class="actions-container bottom">
+        <li class="action-item" :class="{ checked: action === 'setting' }" @click="switchAction('setting')">设置</li>
+      </ul>
     </div>
     <div class="content">
       <Exporter v-if="action === 'export'" />
       <Translator v-else-if="action === 'translation'" />
       <Database v-else-if="action === 'query'" />
+      <Setting v-else-if="action === 'setting'" />
     </div>
   </main>
 </template>
@@ -55,6 +60,9 @@ main {
 .activitybar {
   width: 70px;
   background: rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .checked {
