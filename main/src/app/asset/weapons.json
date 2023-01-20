@@ -1,0 +1,4441 @@
+{
+    "Goat's Horn": {
+        "text": {
+            "0": "Goat's Horn",
+            "1": "羊角法杖"
+        },
+        "uniques": {
+            "Abberath's Horn": {
+                "text": {
+                    "0": "Abberath's Horn",
+                    "1": "艾贝拉斯之角"
+                }
+            }
+        }
+    },
+    "Butcher Axe": {
+        "text": {
+            "0": "Butcher Axe",
+            "1": "屠戮之斧"
+        },
+        "uniques": {
+            "Actum": {
+                "text": {
+                    "0": "Actum",
+                    "1": "阿克顿"
+                }
+            }
+        }
+    },
+    "Gut Ripper": {
+        "text": {
+            "0": "Gut Ripper",
+            "1": "裂脏钩"
+        },
+        "uniques": {
+            "Advancing Fortress": {
+                "text": {
+                    "0": "Advancing Fortress",
+                    "1": "超越壁垒"
+                }
+            },
+            "Ornament of the East": {
+                "text": {
+                    "0": "Ornament of the East",
+                    "1": "东之饰"
+                }
+            },
+            "Replica Advancing Fortress": {
+                "text": {
+                    "0": "Replica Advancing Fortress",
+                    "1": "超越壁垒【仿品】"
+                }
+            }
+        }
+    },
+    "Imperial Staff": {
+        "text": {
+            "0": "Imperial Staff",
+            "1": "帝国长杖"
+        },
+        "uniques": {
+            "Agnerod East": {
+                "text": {
+                    "0": "Agnerod East",
+                    "1": "东方雷霆圣杖"
+                }
+            },
+            "Agnerod North": {
+                "text": {
+                    "0": "Agnerod North",
+                    "1": "北方雷霆圣杖"
+                }
+            },
+            "Agnerod South": {
+                "text": {
+                    "0": "Agnerod South",
+                    "1": "南方雷霆圣杖"
+                }
+            },
+            "Agnerod West": {
+                "text": {
+                    "0": "Agnerod West",
+                    "1": "西方雷霆圣杖"
+                }
+            },
+            "The Enmity Divine": {
+                "text": {
+                    "0": "The Enmity Divine",
+                    "1": "圣恶之喻"
+                }
+            },
+            "The Yielding Mortality": {
+                "text": {
+                    "0": "The Yielding Mortality",
+                    "1": "死亡屈服"
+                }
+            }
+        }
+    },
+    "Midnight Blade": {
+        "text": {
+            "0": "Midnight Blade",
+            "1": "夜语长剑"
+        },
+        "uniques": {
+            "Ahn's Might": {
+                "text": {
+                    "0": "Ahn's Might",
+                    "1": "汉恩的力量"
+                }
+            },
+            "Razor of the Seventh Sun": {
+                "text": {
+                    "0": "Razor of the Seventh Sun",
+                    "1": "七日锋"
+                }
+            },
+            "Rigwald's Command": {
+                "text": {
+                    "0": "Rigwald's Command",
+                    "1": "瑞佛统帅"
+                }
+            }
+        }
+    },
+    "Timeworn Claw": {
+        "text": {
+            "0": "Timeworn Claw",
+            "1": "远古战爪"
+        },
+        "uniques": {
+            "Al Dhih": {
+                "text": {
+                    "0": "Al Dhih",
+                    "1": "鬣犬之牙"
+                }
+            }
+        }
+    },
+    "Vaal Claw": {
+        "text": {
+            "0": "Vaal Claw",
+            "1": "瓦尔战爪"
+        },
+        "uniques": {
+            "Allure": {
+                "text": {
+                    "0": "Allure",
+                    "1": "魅惑"
+                }
+            },
+            "Essentia Sanguis": {
+                "text": {
+                    "0": "Essentia Sanguis",
+                    "1": "精华收割器"
+                }
+            },
+            "Replica Allure": {
+                "text": {
+                    "0": "Replica Allure",
+                    "1": "魅惑【仿品】"
+                }
+            }
+        }
+    },
+    "Spiraled Wand": {
+        "text": {
+            "0": "Spiraled Wand",
+            "1": "螺纹法杖"
+        },
+        "uniques": {
+            "Amplification Rod": {
+                "text": {
+                    "0": "Amplification Rod",
+                    "1": "增幅杖"
+                }
+            },
+            "Relic of the Pact": {
+                "text": {
+                    "0": "Relic of the Pact",
+                    "1": "协约的遗物"
+                }
+            },
+            "Reverberation Rod": {
+                "text": {
+                    "0": "Reverberation Rod",
+                    "1": "混响"
+                }
+            },
+            "Tulborn": {
+                "text": {
+                    "0": "Tulborn",
+                    "1": "托沃崩"
+                }
+            }
+        }
+    },
+    "Opal Wand": {
+        "text": {
+            "0": "Opal Wand",
+            "1": "灵石法杖"
+        },
+        "uniques": {
+            "Apep's Rage": {
+                "text": {
+                    "0": "Apep's Rage",
+                    "1": "艾普之怒"
+                }
+            }
+        }
+    },
+    "Fiend Dagger": {
+        "text": {
+            "0": "Fiend Dagger",
+            "1": "兽血短匕"
+        },
+        "uniques": {
+            "Arakaali's Fang": {
+                "text": {
+                    "0": "Arakaali's Fang",
+                    "1": "阿拉卡力之牙"
+                }
+            },
+            "The Consuming Dark": {
+                "text": {
+                    "0": "The Consuming Dark",
+                    "1": "蚕食之暗"
+                }
+            }
+        }
+    },
+    "Assassin Bow": {
+        "text": {
+            "0": "Assassin Bow",
+            "1": "暗影弓"
+        },
+        "uniques": {
+            "Arborix": {
+                "text": {
+                    "0": "Arborix",
+                    "1": "阿伯瑞斯"
+                }
+            },
+            "Chin Sol": {
+                "text": {
+                    "0": "Chin Sol",
+                    "1": "乱矢之弦"
+                }
+            },
+            "Darkscorn": {
+                "text": {
+                    "0": "Darkscorn",
+                    "1": "夜吟"
+                }
+            }
+        }
+    },
+    "Quartz Wand": {
+        "text": {
+            "0": "Quartz Wand",
+            "1": "石英法杖"
+        },
+        "uniques": {
+            "Ashcaller": {
+                "text": {
+                    "0": "Ashcaller",
+                    "1": "灰烬行者"
+                }
+            }
+        }
+    },
+    "Driftwood Club": {
+        "text": {
+            "0": "Driftwood Club",
+            "1": "朽木之棒"
+        },
+        "uniques": {
+            "Ashes of the Sun": {
+                "text": {
+                    "0": "Ashes of the Sun",
+                    "1": "烬杵"
+                }
+            }
+        }
+    },
+    "Vaal Axe": {
+        "text": {
+            "0": "Vaal Axe",
+            "1": "瓦尔巨斧"
+        },
+        "uniques": {
+            "Atziri's Disfavour": {
+                "text": {
+                    "0": "Atziri's Disfavour",
+                    "1": "阿兹里的刑刃"
+                }
+            },
+            "Hezmana's Bloodlust": {
+                "text": {
+                    "0": "Hezmana's Bloodlust",
+                    "1": "嗜血黑兹玛娜"
+                }
+            },
+            "Uul-Netol's Embrace": {
+                "text": {
+                    "0": "Uul-Netol's Embrace",
+                    "1": "乌尔尼多的拥抱"
+                }
+            }
+        }
+    },
+    "Judgement Staff": {
+        "text": {
+            "0": "Judgement Staff",
+            "1": "审判长杖"
+        },
+        "uniques": {
+            "Atziri's Rule": {
+                "text": {
+                    "0": "Atziri's Rule",
+                    "1": "阿兹里的统治"
+                }
+            },
+            "Hegemony's Era": {
+                "text": {
+                    "0": "Hegemony's Era",
+                    "1": "霸权时代"
+                }
+            },
+            "Pledge of Hands": {
+                "text": {
+                    "0": "Pledge of Hands",
+                    "1": "誓约"
+                }
+            },
+            "The Grey Spire": {
+                "text": {
+                    "0": "The Grey Spire",
+                    "1": "灰色尖椎"
+                }
+            }
+        }
+    },
+    "Void Sceptre": {
+        "text": {
+            "0": "Void Sceptre",
+            "1": "虚影短杖"
+        },
+        "uniques": {
+            "Augyre": {
+                "text": {
+                    "0": "Augyre",
+                    "1": "占星"
+                }
+            },
+            "Mon'tregul's Grasp": {
+                "text": {
+                    "0": "Mon'tregul's Grasp",
+                    "1": "凋灵魔爪"
+                }
+            },
+            "Nebulis": {
+                "text": {
+                    "0": "Nebulis",
+                    "1": "内布利斯"
+                }
+            },
+            "Replica Nebulis": {
+                "text": {
+                    "0": "Replica Nebulis",
+                    "1": "内布利斯【仿品】"
+                }
+            }
+        }
+    },
+    "Basket Rapier": {
+        "text": {
+            "0": "Basket Rapier",
+            "1": "练武者细剑"
+        },
+        "uniques": {
+            "Aurumvorax": {
+                "text": {
+                    "0": "Aurumvorax",
+                    "1": "灵护"
+                }
+            }
+        }
+    },
+    "Bronze Sceptre": {
+        "text": {
+            "0": "Bronze Sceptre",
+            "1": "铜锻短杖"
+        },
+        "uniques": {
+            "Axiom Perpetuum": {
+                "text": {
+                    "0": "Axiom Perpetuum",
+                    "1": "历史公理"
+                }
+            }
+        }
+    },
+    "Opal Sceptre": {
+        "text": {
+            "0": "Opal Sceptre",
+            "1": "灵石短杖"
+        },
+        "uniques": {
+            "Balefire": {
+                "text": {
+                    "0": "Balefire",
+                    "1": "苍白烈火"
+                }
+            }
+        }
+    },
+    "Eternal Sword": {
+        "text": {
+            "0": "Eternal Sword",
+            "1": "永恒之剑"
+        },
+        "uniques": {
+            "Beltimber Blade": {
+                "text": {
+                    "0": "Beltimber Blade",
+                    "1": "芯木腰刀"
+                }
+            },
+            "Dreamfeather": {
+                "text": {
+                    "0": "Dreamfeather",
+                    "1": "幻梦飞羽"
+                }
+            },
+            "Grelwood Shank": {
+                "text": {
+                    "0": "Grelwood Shank",
+                    "1": "韧木曲刃"
+                }
+            },
+            "Replica Dreamfeather": {
+                "text": {
+                    "0": "Replica Dreamfeather",
+                    "1": "幻梦飞羽【仿品】"
+                }
+            },
+            "The Goddess Unleashed": {
+                "text": {
+                    "0": "The Goddess Unleashed",
+                    "1": "女神的束缚"
+                }
+            }
+        }
+    },
+    "Slaughter Knife": {
+        "text": {
+            "0": "Slaughter Knife",
+            "1": "猎者之刃"
+        },
+        "uniques": {
+            "Bino's Kitchen Knife": {
+                "text": {
+                    "0": "Bino's Kitchen Knife",
+                    "1": "比诺的厨刀"
+                }
+            }
+        }
+    },
+    "Shadow Sceptre": {
+        "text": {
+            "0": "Shadow Sceptre",
+            "1": "影语短杖"
+        },
+        "uniques": {
+            "Bitterdream": {
+                "text": {
+                    "0": "Bitterdream",
+                    "1": "苦梦"
+                }
+            },
+            "Replica Bitterdream": {
+                "text": {
+                    "0": "Replica Bitterdream",
+                    "1": "苦梦【仿品】"
+                }
+            },
+            "The Dark Seer": {
+                "text": {
+                    "0": "The Dark Seer",
+                    "1": "黯黑贤者"
+                }
+            }
+        }
+    },
+    "Rusted Sword": {
+        "text": {
+            "0": "Rusted Sword",
+            "1": "锈剑"
+        },
+        "uniques": {
+            "Blood of Summer": {
+                "text": {
+                    "0": "Blood of Summer",
+                    "1": "炎夏之血"
+                }
+            },
+            "Dreadbeak": {
+                "text": {
+                    "0": "Dreadbeak",
+                    "1": "恐惧利刃"
+                }
+            },
+            "Redbeak": {
+                "text": {
+                    "0": "Redbeak",
+                    "1": "赤红短刃"
+                }
+            }
+        }
+    },
+    "Stiletto": {
+        "text": {
+            "0": "Stiletto",
+            "1": "锐利刺匕"
+        },
+        "uniques": {
+            "Bloodplay": {
+                "text": {
+                    "0": "Bloodplay",
+                    "1": "血谑"
+                }
+            },
+            "Replica Bloodplay": {
+                "text": {
+                    "0": "Replica Bloodplay",
+                    "1": "血谑【仿品】"
+                }
+            }
+        }
+    },
+    "Hellion's Paw": {
+        "text": {
+            "0": "Hellion's Paw",
+            "1": "魔爪刃"
+        },
+        "uniques": {
+            "Bloodseeker": {
+                "text": {
+                    "0": "Bloodseeker",
+                    "1": "嗜血之爪"
+                }
+            },
+            "Law of the Wilds": {
+                "text": {
+                    "0": "Law of the Wilds",
+                    "1": "荒野之律"
+                }
+            }
+        }
+    },
+    "Sharktooth Claw": {
+        "text": {
+            "0": "Sharktooth Claw",
+            "1": "鲨颚爪"
+        },
+        "uniques": {
+            "Bloodseeker": {
+                "text": {
+                    "0": "Bloodseeker",
+                    "1": "嗜血之爪"
+                }
+            }
+        }
+    },
+    "Meatgrinder": {
+        "text": {
+            "0": "Meatgrinder",
+            "1": "戮魂重锤"
+        },
+        "uniques": {
+            "Brain Rattler": {
+                "text": {
+                    "0": "Brain Rattler",
+                    "1": "脑乱者"
+                }
+            }
+        }
+    },
+    "Carnal Sceptre": {
+        "text": {
+            "0": "Carnal Sceptre",
+            "1": "禁礼短杖"
+        },
+        "uniques": {
+            "Breath of the Council": {
+                "text": {
+                    "0": "Breath of the Council",
+                    "1": "议会之息"
+                }
+            }
+        }
+    },
+    "War Hammer": {
+        "text": {
+            "0": "War Hammer",
+            "1": "战锤"
+        },
+        "uniques": {
+            "Brightbeak": {
+                "text": {
+                    "0": "Brightbeak",
+                    "1": "光耀之锤"
+                }
+            },
+            "Lavianga's Wisdom": {
+                "text": {
+                    "0": "Lavianga's Wisdom",
+                    "1": "拉维安加的智慧"
+                }
+            }
+        }
+    },
+    "Ritual Sceptre": {
+        "text": {
+            "0": "Ritual Sceptre",
+            "1": "祭仪短杖"
+        },
+        "uniques": {
+            "Brutus' Lead Sprinkler": {
+                "text": {
+                    "0": "Brutus' Lead Sprinkler",
+                    "1": "布鲁特斯的刑具"
+                }
+            }
+        }
+    },
+    "Auric Mace": {
+        "text": {
+            "0": "Auric Mace",
+            "1": "圣约之锤"
+        },
+        "uniques": {
+            "Callinellus Malleus": {
+                "text": {
+                    "0": "Callinellus Malleus",
+                    "1": "坚定之刃"
+                }
+            }
+        }
+    },
+    "Gavel": {
+        "text": {
+            "0": "Gavel",
+            "1": "坚锤"
+        },
+        "uniques": {
+            "Cameria's Avarice": {
+                "text": {
+                    "0": "Cameria's Avarice",
+                    "1": "卡美利亚之贪婪"
+                }
+            },
+            "Cameria's Maul": {
+                "text": {
+                    "0": "Cameria's Maul",
+                    "1": "卡美利亚之锤"
+                }
+            },
+            "Mjölner": {
+                "text": {
+                    "0": "Mjölner",
+                    "1": "沉默之雷"
+                }
+            }
+        }
+    },
+    "Serpentine Staff": {
+        "text": {
+            "0": "Serpentine Staff",
+            "1": "蛇纹长杖"
+        },
+        "uniques": {
+            "Cane of Kulemak": {
+                "text": {
+                    "0": "Cane of Kulemak",
+                    "1": "库勒马克藤杖"
+                }
+            },
+            "Sire of Shards": {
+                "text": {
+                    "0": "Sire of Shards",
+                    "1": "破碎传承者"
+                }
+            }
+        }
+    },
+    "Ezomyte Staff": {
+        "text": {
+            "0": "Ezomyte Staff",
+            "1": "艾兹麦长杖"
+        },
+        "uniques": {
+            "Cane of Unravelling": {
+                "text": {
+                    "0": "Cane of Unravelling",
+                    "1": "阐释之杖"
+                }
+            },
+            "Soulwrest": {
+                "text": {
+                    "0": "Soulwrest",
+                    "1": "扭魂者"
+                }
+            },
+            "The Fulcrum": {
+                "text": {
+                    "0": "The Fulcrum",
+                    "1": "支点"
+                }
+            }
+        }
+    },
+    "Blood Sceptre": {
+        "text": {
+            "0": "Blood Sceptre",
+            "1": "血色短杖"
+        },
+        "uniques": {
+            "Cerberus Limb": {
+                "text": {
+                    "0": "Cerberus Limb",
+                    "1": "冥犬残肢"
+                }
+            }
+        }
+    },
+    "Great Mallet": {
+        "text": {
+            "0": "Great Mallet",
+            "1": "刚猛巨锤"
+        },
+        "uniques": {
+            "Chaber Cairn": {
+                "text": {
+                    "0": "Chaber Cairn",
+                    "1": "石冢"
+                }
+            },
+            "Chober Chaber": {
+                "text": {
+                    "0": "Chober Chaber",
+                    "1": "忠诚之锤"
+                }
+            },
+            "Replica Trypanon": {
+                "text": {
+                    "0": "Replica Trypanon",
+                    "1": "裂颅【仿品】"
+                }
+            },
+            "Trypanon": {
+                "text": {
+                    "0": "Trypanon",
+                    "1": "裂颅"
+                }
+            }
+        }
+    },
+    "Elegant Foil": {
+        "text": {
+            "0": "Elegant Foil",
+            "1": "贵族细剑"
+        },
+        "uniques": {
+            "Chitus' Needle": {
+                "text": {
+                    "0": "Chitus' Needle",
+                    "1": "切特斯之针"
+                }
+            }
+        }
+    },
+    "Rock Breaker": {
+        "text": {
+            "0": "Rock Breaker",
+            "1": "破岩锤"
+        },
+        "uniques": {
+            "Clayshaper": {
+                "text": {
+                    "0": "Clayshaper",
+                    "1": "塑泥者"
+                }
+            }
+        }
+    },
+    "Ezomyte Dagger": {
+        "text": {
+            "0": "Ezomyte Dagger",
+            "1": "艾兹麦之匕"
+        },
+        "uniques": {
+            "Cold Iron Point": {
+                "text": {
+                    "0": "Cold Iron Point",
+                    "1": "寒铁刃"
+                }
+            },
+            "Replica Cold Iron Point": {
+                "text": {
+                    "0": "Replica Cold Iron Point",
+                    "1": "寒铁刃【仿品】"
+                }
+            }
+        }
+    },
+    "Crystal Wand": {
+        "text": {
+            "0": "Crystal Wand",
+            "1": "水晶法杖"
+        },
+        "uniques": {
+            "Corona Solaris": {
+                "text": {
+                    "0": "Corona Solaris",
+                    "1": "日耀之冠"
+                }
+            },
+            "Eclipse Solaris": {
+                "text": {
+                    "0": "Eclipse Solaris",
+                    "1": "宇蚀"
+                }
+            }
+        }
+    },
+    "Jewelled Foil": {
+        "text": {
+            "0": "Jewelled Foil",
+            "1": "宝饰细剑"
+        },
+        "uniques": {
+            "Cospri's Malice": {
+                "text": {
+                    "0": "Cospri's Malice",
+                    "1": "卡斯普里怨恨"
+                }
+            }
+        }
+    },
+    "Thresher Claw": {
+        "text": {
+            "0": "Thresher Claw",
+            "1": "撕裂尖爪"
+        },
+        "uniques": {
+            "Cybil's Paw": {
+                "text": {
+                    "0": "Cybil's Paw",
+                    "1": "希比尔的冰爪"
+                }
+            }
+        }
+    },
+    "Estoc": {
+        "text": {
+            "0": "Estoc",
+            "1": "穿甲刺剑"
+        },
+        "uniques": {
+            "Daresso's Passion": {
+                "text": {
+                    "0": "Daresso's Passion",
+                    "1": "德瑞索的热情"
+                }
+            }
+        }
+    },
+    "Karui Sceptre": {
+        "text": {
+            "0": "Karui Sceptre",
+            "1": "卡鲁短杖"
+        },
+        "uniques": {
+            "Death's Hand": {
+                "text": {
+                    "0": "Death's Hand",
+                    "1": "死神之手"
+                }
+            }
+        }
+    },
+    "Death Bow": {
+        "text": {
+            "0": "Death Bow",
+            "1": "死亡之弓"
+        },
+        "uniques": {
+            "Death's Harp": {
+                "text": {
+                    "0": "Death's Harp",
+                    "1": "冥使之琴"
+                }
+            },
+            "Death's Opus": {
+                "text": {
+                    "0": "Death's Opus",
+                    "1": "死亡之作"
+                }
+            },
+            "Iron Commander": {
+                "text": {
+                    "0": "Iron Commander",
+                    "1": "钢铁指挥"
+                }
+            },
+            "Replica Iron Commander": {
+                "text": {
+                    "0": "Replica Iron Commander",
+                    "1": "钢铁指挥【仿品】"
+                }
+            }
+        }
+    },
+    "Despot Axe": {
+        "text": {
+            "0": "Despot Axe",
+            "1": "霸主巨斧"
+        },
+        "uniques": {
+            "Debeon's Dirge": {
+                "text": {
+                    "0": "Debeon's Dirge",
+                    "1": "战歌"
+                }
+            },
+            "Kingmaker": {
+                "text": {
+                    "0": "Kingmaker",
+                    "1": "王者之刃"
+                }
+            }
+        }
+    },
+    "Golden Blade": {
+        "text": {
+            "0": "Golden Blade",
+            "1": "金色之刃"
+        },
+        "uniques": {
+            "Demigod's Authority": {
+                "text": {
+                    "0": "Demigod's Authority",
+                    "1": "半神的权威"
+                }
+            }
+        }
+    },
+    "Maelström Staff": {
+        "text": {
+            "0": "Maelström Staff",
+            "1": "风暴长杖"
+        },
+        "uniques": {
+            "Disintegrator": {
+                "text": {
+                    "0": "Disintegrator",
+                    "1": "裂世轮回"
+                }
+            },
+            "Duskdawn": {
+                "text": {
+                    "0": "Duskdawn",
+                    "1": "宵晓"
+                }
+            },
+            "Replica Duskdawn": {
+                "text": {
+                    "0": "Replica Duskdawn",
+                    "1": "宵晓【仿品】"
+                }
+            },
+            "Taryn's Shiver": {
+                "text": {
+                    "0": "Taryn's Shiver",
+                    "1": "塔林的颤栗之语"
+                }
+            }
+        }
+    },
+    "Imperial Skean": {
+        "text": {
+            "0": "Imperial Skean",
+            "1": "帝国短匕"
+        },
+        "uniques": {
+            "Divinarius": {
+                "text": {
+                    "0": "Divinarius",
+                    "1": "戒律之影"
+                }
+            },
+            "White Wind": {
+                "text": {
+                    "0": "White Wind",
+                    "1": "白净之风"
+                }
+            }
+        }
+    },
+    "Royal Bow": {
+        "text": {
+            "0": "Royal Bow",
+            "1": "皇家猎弓"
+        },
+        "uniques": {
+            "Doomfletch": {
+                "text": {
+                    "0": "Doomfletch",
+                    "1": "灭世"
+                }
+            },
+            "Doomfletch's Prism": {
+                "text": {
+                    "0": "Doomfletch's Prism",
+                    "1": "灭世之狱"
+                }
+            }
+        }
+    },
+    "Lion Sword": {
+        "text": {
+            "0": "Lion Sword",
+            "1": "狮爪巨剑"
+        },
+        "uniques": {
+            "Doomsower": {
+                "text": {
+                    "0": "Doomsower",
+                    "1": "终末之始"
+                }
+            }
+        }
+    },
+    "Vaal Sceptre": {
+        "text": {
+            "0": "Vaal Sceptre",
+            "1": "瓦尔短杖"
+        },
+        "uniques": {
+            "Doon Cuebiyari": {
+                "text": {
+                    "0": "Doon Cuebiyari",
+                    "1": "黑钢"
+                }
+            },
+            "Doryani's Catalyst": {
+                "text": {
+                    "0": "Doryani's Catalyst",
+                    "1": "多里亚尼的幻化之杖"
+                }
+            },
+            "Yaomac's Accord": {
+                "text": {
+                    "0": "Yaomac's Accord",
+                    "1": "夭马克的协定"
+                }
+            }
+        }
+    },
+    "Cleaver": {
+        "text": {
+            "0": "Cleaver",
+            "1": "切割者"
+        },
+        "uniques": {
+            "Dreadarc": {
+                "text": {
+                    "0": "Dreadarc",
+                    "1": "恐惧之镰"
+                }
+            },
+            "Dreadsurge": {
+                "text": {
+                    "0": "Dreadsurge",
+                    "1": "恐怖巨镰"
+                }
+            }
+        }
+    },
+    "Infernal Axe": {
+        "text": {
+            "0": "Infernal Axe",
+            "1": "狱火之刃"
+        },
+        "uniques": {
+            "Dyadus": {
+                "text": {
+                    "0": "Dyadus",
+                    "1": "龙凤吟"
+                }
+            }
+        }
+    },
+    "Iron Staff": {
+        "text": {
+            "0": "Iron Staff",
+            "1": "铁锻长杖"
+        },
+        "uniques": {
+            "Dying Breath": {
+                "text": {
+                    "0": "Dying Breath",
+                    "1": "幽魂之息"
+                }
+            },
+            "Pillar of the Caged God": {
+                "text": {
+                    "0": "Pillar of the Caged God",
+                    "1": "囚神杵"
+                }
+            },
+            "Realm Ender": {
+                "text": {
+                    "0": "Realm Ender",
+                    "1": "魂界终结"
+                }
+            },
+            "Realmshaper": {
+                "text": {
+                    "0": "Realmshaper",
+                    "1": "创域"
+                }
+            }
+        }
+    },
+    "Coiled Staff": {
+        "text": {
+            "0": "Coiled Staff",
+            "1": "强化长杖"
+        },
+        "uniques": {
+            "Dying Breath": {
+                "text": {
+                    "0": "Dying Breath",
+                    "1": "幽魂之息"
+                }
+            },
+            "Xirgil's Crank": {
+                "text": {
+                    "0": "Xirgil's Crank",
+                    "1": "舍吉的手柄"
+                }
+            }
+        }
+    },
+    "Grinning Fetish": {
+        "text": {
+            "0": "Grinning Fetish",
+            "1": "远古之祭"
+        },
+        "uniques": {
+            "Earendel's Embrace": {
+                "text": {
+                    "0": "Earendel's Embrace",
+                    "1": "叶兰德尔的拥抱"
+                }
+            },
+            "Replica Earendel's Embrace": {
+                "text": {
+                    "0": "Replica Earendel's Embrace",
+                    "1": "叶兰德尔的拥抱【仿品】"
+                }
+            }
+        }
+    },
+    "Etched Greatsword": {
+        "text": {
+            "0": "Etched Greatsword",
+            "1": "术雕巨剑"
+        },
+        "uniques": {
+            "Edge of Madness": {
+                "text": {
+                    "0": "Edge of Madness",
+                    "1": "疯狂边界"
+                }
+            }
+        }
+    },
+    "Dusk Blade": {
+        "text": {
+            "0": "Dusk Blade",
+            "1": "暮色之刃"
+        },
+        "uniques": {
+            "Ephemeral Edge": {
+                "text": {
+                    "0": "Ephemeral Edge",
+                    "1": "影殒"
+                }
+            }
+        }
+    },
+    "Eye Gouger": {
+        "text": {
+            "0": "Eye Gouger",
+            "1": "刺眼钩"
+        },
+        "uniques": {
+            "Essentia Sanguis": {
+                "text": {
+                    "0": "Essentia Sanguis",
+                    "1": "精华收割器"
+                }
+            }
+        }
+    },
+    "Antique Rapier": {
+        "text": {
+            "0": "Antique Rapier",
+            "1": "古代细剑"
+        },
+        "uniques": {
+            "Ewar's Mirage": {
+                "text": {
+                    "0": "Ewar's Mirage",
+                    "1": "伊沃幻像"
+                }
+            }
+        }
+    },
+    "Gemstone Sword": {
+        "text": {
+            "0": "Gemstone Sword",
+            "1": "宝石之剑"
+        },
+        "uniques": {
+            "Fate of the Vaal": {
+                "text": {
+                    "0": "Fate of the Vaal",
+                    "1": "瓦尔命运"
+                }
+            },
+            "Story of the Vaal": {
+                "text": {
+                    "0": "Story of the Vaal",
+                    "1": "瓦尔传说"
+                }
+            }
+        }
+    },
+    "Primordial Staff": {
+        "text": {
+            "0": "Primordial Staff",
+            "1": "史典长杖"
+        },
+        "uniques": {
+            "Femurs of the Saints": {
+                "text": {
+                    "0": "Femurs of the Saints",
+                    "1": "圣徒胫骨"
+                }
+            }
+        }
+    },
+    "Gnarled Branch": {
+        "text": {
+            "0": "Gnarled Branch",
+            "1": "朽木之干"
+        },
+        "uniques": {
+            "Fencoil": {
+                "text": {
+                    "0": "Fencoil",
+                    "1": "绿藤"
+                }
+            },
+            "Mirebough": {
+                "text": {
+                    "0": "Mirebough",
+                    "1": "魔藤"
+                }
+            },
+            "Replica Blood Thorn": {
+                "text": {
+                    "0": "Replica Blood Thorn",
+                    "1": "血棘【仿品】"
+                }
+            },
+            "Replica Fencoil": {
+                "text": {
+                    "0": "Replica Fencoil",
+                    "1": "绿藤【仿品】"
+                }
+            },
+            "The Blood Thorn": {
+                "text": {
+                    "0": "The Blood Thorn",
+                    "1": "血棘"
+                }
+            },
+            "Vestige of Divinity": {
+                "text": {
+                    "0": "Vestige of Divinity",
+                    "1": "庄重之杖"
+                }
+            }
+        }
+    },
+    "Jagged Foil": {
+        "text": {
+            "0": "Jagged Foil",
+            "1": "锯状薄刃"
+        },
+        "uniques": {
+            "Fidelitas' Spike": {
+                "text": {
+                    "0": "Fidelitas' Spike",
+                    "1": "费德利塔斯之锋"
+                }
+            }
+        }
+    },
+    "Dream Mace": {
+        "text": {
+            "0": "Dream Mace",
+            "1": "梦境之锤"
+        },
+        "uniques": {
+            "Flesh-Eater": {
+                "text": {
+                    "0": "Flesh-Eater",
+                    "1": "血肉之嗜"
+                }
+            }
+        }
+    },
+    "Glass Shank": {
+        "text": {
+            "0": "Glass Shank",
+            "1": "玻璃利片"
+        },
+        "uniques": {
+            "Fragment of Eternity": {
+                "text": {
+                    "0": "Fragment of Eternity",
+                    "1": "亘古之灵"
+                }
+            }
+        }
+    },
+    "Ornate Mace": {
+        "text": {
+            "0": "Ornate Mace",
+            "1": "华丽之锤"
+        },
+        "uniques": {
+            "Frostbreath": {
+                "text": {
+                    "0": "Frostbreath",
+                    "1": "霜息"
+                }
+            },
+            "Replica Frostbreath": {
+                "text": {
+                    "0": "Replica Frostbreath",
+                    "1": "霜息【仿品】"
+                }
+            }
+        }
+    },
+    "Brass Maul": {
+        "text": {
+            "0": "Brass Maul",
+            "1": "铜影巨锤"
+        },
+        "uniques": {
+            "Geofri's Baptism": {
+                "text": {
+                    "0": "Geofri's Baptism",
+                    "1": "吉尔菲的净罪之锤"
+                }
+            },
+            "Geofri's Devotion": {
+                "text": {
+                    "0": "Geofri's Devotion",
+                    "1": "吉尔菲的奉献之锤"
+                }
+            }
+        }
+    },
+    "Ambusher": {
+        "text": {
+            "0": "Ambusher",
+            "1": "伏击刺刃"
+        },
+        "uniques": {
+            "Goblinedge": {
+                "text": {
+                    "0": "Goblinedge",
+                    "1": "地精边缘"
+                }
+            },
+            "Taproot": {
+                "text": {
+                    "0": "Taproot",
+                    "1": "砥砺深根"
+                }
+            },
+            "The Hidden Blade": {
+                "text": {
+                    "0": "The Hidden Blade",
+                    "1": "隐匿之刃"
+                }
+            }
+        }
+    },
+    "Spiked Club": {
+        "text": {
+            "0": "Spiked Club",
+            "1": "钝钉木棒"
+        },
+        "uniques": {
+            "Gorebreaker": {
+                "text": {
+                    "0": "Gorebreaker",
+                    "1": "血裂"
+                }
+            }
+        }
+    },
+    "Skinning Knife": {
+        "text": {
+            "0": "Skinning Knife",
+            "1": "剥皮刀"
+        },
+        "uniques": {
+            "Goredrill": {
+                "text": {
+                    "0": "Goredrill",
+                    "1": "血凿"
+                }
+            },
+            "Sanguine Gambol": {
+                "text": {
+                    "0": "Sanguine Gambol",
+                    "1": "雀跃"
+                }
+            }
+        }
+    },
+    "Blinder": {
+        "text": {
+            "0": "Blinder",
+            "1": "袭眼钩"
+        },
+        "uniques": {
+            "Hand of Thought and Motion": {
+                "text": {
+                    "0": "Hand of Thought and Motion",
+                    "1": "思动之手"
+                }
+            }
+        }
+    },
+    "Imperial Claw": {
+        "text": {
+            "0": "Imperial Claw",
+            "1": "帝国战爪"
+        },
+        "uniques": {
+            "Hand of Wisdom and Action": {
+                "text": {
+                    "0": "Hand of Wisdom and Action",
+                    "1": "智行之手"
+                }
+            },
+            "Izaro's Dilemma": {
+                "text": {
+                    "0": "Izaro's Dilemma",
+                    "1": "伊泽洛之谜"
+                }
+            },
+            "Touch of Anguish": {
+                "text": {
+                    "0": "Touch of Anguish",
+                    "1": "痛苦之触"
+                }
+            }
+        }
+    },
+    "Royal Skean": {
+        "text": {
+            "0": "Royal Skean",
+            "1": "皇家短匕"
+        },
+        "uniques": {
+            "Heartbreaker": {
+                "text": {
+                    "0": "Heartbreaker",
+                    "1": "裂心刃"
+                }
+            },
+            "Replica Heartbreaker": {
+                "text": {
+                    "0": "Replica Heartbreaker",
+                    "1": "裂心刃【仿品】"
+                }
+            }
+        }
+    },
+    "Reaver Sword": {
+        "text": {
+            "0": "Reaver Sword",
+            "1": "残暴巨剑"
+        },
+        "uniques": {
+            "Hiltless": {
+                "text": {
+                    "0": "Hiltless",
+                    "1": "无击"
+                }
+            },
+            "The Dancing Dervish": {
+                "text": {
+                    "0": "The Dancing Dervish",
+                    "1": "禅意苦行僧"
+                }
+            },
+            "The Dancing Duo": {
+                "text": {
+                    "0": "The Dancing Duo",
+                    "1": "杀孽戒刀"
+                }
+            }
+        }
+    },
+    "Ranger Bow": {
+        "text": {
+            "0": "Ranger Bow",
+            "1": "游侠弓"
+        },
+        "uniques": {
+            "Hopeshredder": {
+                "text": {
+                    "0": "Hopeshredder",
+                    "1": "破灭之希"
+                }
+            },
+            "Null's Inclination": {
+                "text": {
+                    "0": "Null's Inclination",
+                    "1": "虚无之倾"
+                }
+            }
+        }
+    },
+    "Sledgehammer": {
+        "text": {
+            "0": "Sledgehammer",
+            "1": "冷铁重锤"
+        },
+        "uniques": {
+            "Hrimnor's Dirge": {
+                "text": {
+                    "0": "Hrimnor's Dirge",
+                    "1": "雷姆诺的挽歌"
+                }
+            },
+            "Hrimnor's Hymn": {
+                "text": {
+                    "0": "Hrimnor's Hymn",
+                    "1": "雷姆诺的夺命凶器"
+                }
+            }
+        }
+    },
+    "Legion Sword": {
+        "text": {
+            "0": "Legion Sword",
+            "1": "军团长剑"
+        },
+        "uniques": {
+            "Hyaon's Fury": {
+                "text": {
+                    "0": "Hyaon's Fury",
+                    "1": "海昂的狂怒"
+                }
+            },
+            "The Rippling Thoughts": {
+                "text": {
+                    "0": "The Rippling Thoughts",
+                    "1": "秘法君临"
+                }
+            },
+            "The Saviour": {
+                "text": {
+                    "0": "The Saviour",
+                    "1": "救世者"
+                }
+            },
+            "The Surging Thoughts": {
+                "text": {
+                    "0": "The Surging Thoughts",
+                    "1": "思想奔流"
+                }
+            }
+        }
+    },
+    "Corsair Sword": {
+        "text": {
+            "0": "Corsair Sword",
+            "1": "海贼长刀"
+        },
+        "uniques": {
+            "Ichimonji": {
+                "text": {
+                    "0": "Ichimonji",
+                    "1": "一文字"
+                }
+            }
+        }
+    },
+    "Decimation Bow": {
+        "text": {
+            "0": "Decimation Bow",
+            "1": "猎魂之弓"
+        },
+        "uniques": {
+            "Infractem": {
+                "text": {
+                    "0": "Infractem",
+                    "1": "穿云"
+                }
+            },
+            "Replica Infractem": {
+                "text": {
+                    "0": "Replica Infractem",
+                    "1": "穿云【仿品】"
+                }
+            }
+        }
+    },
+    "Elder Sword": {
+        "text": {
+            "0": "Elder Sword",
+            "1": "智者长剑"
+        },
+        "uniques": {
+            "Innsbury Edge": {
+                "text": {
+                    "0": "Innsbury Edge",
+                    "1": "英斯贝理之极"
+                }
+            },
+            "Replica Innsbury Edge": {
+                "text": {
+                    "0": "Replica Innsbury Edge",
+                    "1": "英斯贝理之极【仿品】"
+                }
+            }
+        }
+    },
+    "Vaal Hatchet": {
+        "text": {
+            "0": "Vaal Hatchet",
+            "1": "瓦尔战斧"
+        },
+        "uniques": {
+            "Jack, the Axe": {
+                "text": {
+                    "0": "Jack, the Axe",
+                    "1": "刽子手.杰克"
+                }
+            }
+        }
+    },
+    "Steelhead": {
+        "text": {
+            "0": "Steelhead",
+            "1": "沉钢重锤"
+        },
+        "uniques": {
+            "Jorrhast's Blacksteel": {
+                "text": {
+                    "0": "Jorrhast's Blacksteel",
+                    "1": "乔赫黑钢"
+                }
+            }
+        }
+    },
+    "Karui Chopper": {
+        "text": {
+            "0": "Karui Chopper",
+            "1": "卡鲁巨斧"
+        },
+        "uniques": {
+            "Kaom's Primacy": {
+                "text": {
+                    "0": "Kaom's Primacy",
+                    "1": "冈姆的霸业"
+                }
+            }
+        }
+    },
+    "Void Axe": {
+        "text": {
+            "0": "Void Axe",
+            "1": "虚影巨斧"
+        },
+        "uniques": {
+            "Kitava's Feast": {
+                "text": {
+                    "0": "Kitava's Feast",
+                    "1": "奇塔弗之盛宴"
+                }
+            }
+        }
+    },
+    "Ezomyte Blade": {
+        "text": {
+            "0": "Ezomyte Blade",
+            "1": "艾兹麦巨剑"
+        },
+        "uniques": {
+            "Kondo's Pride": {
+                "text": {
+                    "0": "Kondo's Pride",
+                    "1": "刚多的虚荣"
+                }
+            }
+        }
+    },
+    "Terror Maul": {
+        "text": {
+            "0": "Terror Maul",
+            "1": "惧灵重锤"
+        },
+        "uniques": {
+            "Kongor's Undying Rage": {
+                "text": {
+                    "0": "Kongor's Undying Rage",
+                    "1": "康戈的战炎"
+                }
+            },
+            "Replica Kongor's Undying Rage": {
+                "text": {
+                    "0": "Replica Kongor's Undying Rage",
+                    "1": "康戈的战炎【仿品】"
+                }
+            }
+        }
+    },
+    "Elegant Sword": {
+        "text": {
+            "0": "Elegant Sword",
+            "1": "贵族之剑"
+        },
+        "uniques": {
+            "Lakishu's Blade": {
+                "text": {
+                    "0": "Lakishu's Blade",
+                    "1": "拉奇许之刃"
+                }
+            },
+            "The Goddess Scorned": {
+                "text": {
+                    "0": "The Goddess Scorned",
+                    "1": "女神的怒炎"
+                }
+            }
+        }
+    },
+    "Nailed Fist": {
+        "text": {
+            "0": "Nailed Fist",
+            "1": "拳钉"
+        },
+        "uniques": {
+            "Last Resort": {
+                "text": {
+                    "0": "Last Resort",
+                    "1": "终息"
+                }
+            },
+            "Replica Last Resort": {
+                "text": {
+                    "0": "Replica Last Resort",
+                    "1": "终息【仿品】"
+                }
+            },
+            "Scar of Fate": {
+                "text": {
+                    "0": "Scar of Fate",
+                    "1": "命运伤痕"
+                }
+            }
+        }
+    },
+    "Driftwood Wand": {
+        "text": {
+            "0": "Driftwood Wand",
+            "1": "朽木法杖"
+        },
+        "uniques": {
+            "Lifesprig": {
+                "text": {
+                    "0": "Lifesprig",
+                    "1": "生机之记"
+                }
+            },
+            "Splinter of the Moon": {
+                "text": {
+                    "0": "Splinter of the Moon",
+                    "1": "碎月"
+                }
+            }
+        }
+    },
+    "Woodsplitter": {
+        "text": {
+            "0": "Woodsplitter",
+            "1": "柴斧"
+        },
+        "uniques": {
+            "Limbsplit": {
+                "text": {
+                    "0": "Limbsplit",
+                    "1": "断罪"
+                }
+            },
+            "The Cauteriser": {
+                "text": {
+                    "0": "The Cauteriser",
+                    "1": "烧灼器"
+                }
+            }
+        }
+    },
+    "Imperial Bow": {
+        "text": {
+            "0": "Imperial Bow",
+            "1": "帝国之弓"
+        },
+        "uniques": {
+            "Lioneye's Glare": {
+                "text": {
+                    "0": "Lioneye's Glare",
+                    "1": "狮眼的战弓"
+                }
+            },
+            "Replica Windripper": {
+                "text": {
+                    "0": "Replica Windripper",
+                    "1": "裂风【仿品】"
+                }
+            },
+            "Windripper": {
+                "text": {
+                    "0": "Windripper",
+                    "1": "裂风"
+                }
+            }
+        }
+    },
+    "Platinum Kris": {
+        "text": {
+            "0": "Platinum Kris",
+            "1": "白金波刃"
+        },
+        "uniques": {
+            "Mark of the Doubting Knight": {
+                "text": {
+                    "0": "Mark of the Doubting Knight",
+                    "1": "迷茫幻符"
+                }
+            }
+        }
+    },
+    "Karui Maul": {
+        "text": {
+            "0": "Karui Maul",
+            "1": "卡鲁重锤"
+        },
+        "uniques": {
+            "Marohi Erqi": {
+                "text": {
+                    "0": "Marohi Erqi",
+                    "1": "尔奇的巨灵之锤"
+                }
+            }
+        }
+    },
+    "Highborn Staff": {
+        "text": {
+            "0": "Highborn Staff",
+            "1": "贵族长杖"
+        },
+        "uniques": {
+            "Martyr of Innocence": {
+                "text": {
+                    "0": "Martyr of Innocence",
+                    "1": "纯净之神的祭品"
+                }
+            },
+            "Witchhunter's Judgment": {
+                "text": {
+                    "0": "Witchhunter's Judgment",
+                    "1": "猎巫人的审判"
+                }
+            }
+        }
+    },
+    "Engraved Wand": {
+        "text": {
+            "0": "Engraved Wand",
+            "1": "符文法杖"
+        },
+        "uniques": {
+            "Midnight Bargain": {
+                "text": {
+                    "0": "Midnight Bargain",
+                    "1": "冥约"
+                }
+            },
+            "Replica Midnight Bargain": {
+                "text": {
+                    "0": "Replica Midnight Bargain",
+                    "1": "冥约【仿品】"
+                }
+            }
+        }
+    },
+    "Flaying Knife": {
+        "text": {
+            "0": "Flaying Knife",
+            "1": "残体利刃"
+        },
+        "uniques": {
+            "Mightflay": {
+                "text": {
+                    "0": "Mightflay",
+                    "1": "力量猎刃"
+                }
+            }
+        }
+    },
+    "Tomahawk": {
+        "text": {
+            "0": "Tomahawk",
+            "1": "征战之斧"
+        },
+        "uniques": {
+            "Moonbender's Wing": {
+                "text": {
+                    "0": "Moonbender's Wing",
+                    "1": "月岚"
+                }
+            }
+        }
+    },
+    "Jade Hatchet": {
+        "text": {
+            "0": "Jade Hatchet",
+            "1": "碎玉斧"
+        },
+        "uniques": {
+            "Moonbender's Wing": {
+                "text": {
+                    "0": "Moonbender's Wing",
+                    "1": "月岚"
+                }
+            },
+            "The Gryphon": {
+                "text": {
+                    "0": "The Gryphon",
+                    "1": "狮鹫"
+                }
+            },
+            "The Screaming Eagle": {
+                "text": {
+                    "0": "The Screaming Eagle",
+                    "1": "鹰啸"
+                }
+            }
+        }
+    },
+    "Imbued Wand": {
+        "text": {
+            "0": "Imbued Wand",
+            "1": "魔性法杖"
+        },
+        "uniques": {
+            "Moonsorrow": {
+                "text": {
+                    "0": "Moonsorrow",
+                    "1": "泣月"
+                }
+            }
+        }
+    },
+    "Fright Claw": {
+        "text": {
+            "0": "Fright Claw",
+            "1": "恐惧之爪"
+        },
+        "uniques": {
+            "Mortem Morsu": {
+                "text": {
+                    "0": "Mortem Morsu",
+                    "1": "噬魂之牙"
+                }
+            }
+        }
+    },
+    "Nightmare Mace": {
+        "text": {
+            "0": "Nightmare Mace",
+            "1": "梦魇之锤"
+        },
+        "uniques": {
+            "Nebuloch": {
+                "text": {
+                    "0": "Nebuloch",
+                    "1": "尼布洛克"
+                }
+            }
+        }
+    },
+    "Abyssal Axe": {
+        "text": {
+            "0": "Abyssal Axe",
+            "1": "深渊巨斧"
+        },
+        "uniques": {
+            "Ngamahu's Flame": {
+                "text": {
+                    "0": "Ngamahu's Flame",
+                    "1": "努葛玛呼之耀"
+                }
+            }
+        }
+    },
+    "Harbinger Bow": {
+        "text": {
+            "0": "Harbinger Bow",
+            "1": "先驱者之弓"
+        },
+        "uniques": {
+            "Nuro's Harp": {
+                "text": {
+                    "0": "Nuro's Harp",
+                    "1": "努罗的竖琴"
+                }
+            },
+            "Slivertongue": {
+                "text": {
+                    "0": "Slivertongue",
+                    "1": "白银之舌"
+                }
+            }
+        }
+    },
+    "Crystal Sceptre": {
+        "text": {
+            "0": "Crystal Sceptre",
+            "1": "水晶短杖"
+        },
+        "uniques": {
+            "Nycta's Lantern": {
+                "text": {
+                    "0": "Nycta's Lantern",
+                    "1": "奈可妲之灯"
+                }
+            },
+            "The Supreme Truth": {
+                "text": {
+                    "0": "The Supreme Truth",
+                    "1": "无上箴言"
+                }
+            }
+        }
+    },
+    "Demon's Horn": {
+        "text": {
+            "0": "Demon's Horn",
+            "1": "魔角法杖"
+        },
+        "uniques": {
+            "Obliteration": {
+                "text": {
+                    "0": "Obliteration",
+                    "1": "抹灭"
+                }
+            }
+        }
+    },
+    "Charan's Sword": {
+        "text": {
+            "0": "Charan's Sword",
+            "1": "查兰之剑"
+        },
+        "uniques": {
+            "Oni-Goroshi": {
+                "text": {
+                    "0": "Oni-Goroshi",
+                    "1": "鬼弑"
+                }
+            }
+        }
+    },
+    "Infernal Sword": {
+        "text": {
+            "0": "Infernal Sword",
+            "1": "狱炎重剑"
+        },
+        "uniques": {
+            "Oro's Sacrifice": {
+                "text": {
+                    "0": "Oro's Sacrifice",
+                    "1": "欧罗的贡品"
+                }
+            },
+            "Replica Oro's Sacrifice": {
+                "text": {
+                    "0": "Replica Oro's Sacrifice",
+                    "1": "欧罗的贡品【仿品】"
+                }
+            },
+            "Starforge": {
+                "text": {
+                    "0": "Starforge",
+                    "1": "塑星者"
+                }
+            },
+            "Voidforge": {
+                "text": {
+                    "0": "Voidforge",
+                    "1": "裂空者"
+                }
+            },
+            "Echoforge": {
+                "text": {
+                    "0": "Echoforge",
+                    "1": "回声锻炉"
+                }
+            }
+        }
+    },
+    "Jagged Maul": {
+        "text": {
+            "0": "Jagged Maul",
+            "1": "狼牙重锤"
+        },
+        "uniques": {
+            "Panquetzaliztli": {
+                "text": {
+                    "0": "Panquetzaliztli",
+                    "1": "巨击之锤"
+                }
+            },
+            "Quecholli": {
+                "text": {
+                    "0": "Quecholli",
+                    "1": "重击之锤"
+                }
+            }
+        }
+    },
+    "Vaal Rapier": {
+        "text": {
+            "0": "Vaal Rapier",
+            "1": "瓦尔细剑"
+        },
+        "uniques": {
+            "Paradoxica": {
+                "text": {
+                    "0": "Paradoxica",
+                    "1": "悖论"
+                }
+            },
+            "Replica Paradoxica": {
+                "text": {
+                    "0": "Replica Paradoxica",
+                    "1": "悖论【仿品】"
+                }
+            }
+        }
+    },
+    "Long Staff": {
+        "text": {
+            "0": "Long Staff",
+            "1": "长杖"
+        },
+        "uniques": {
+            "Pillar of the Caged God": {
+                "text": {
+                    "0": "Pillar of the Caged God",
+                    "1": "囚神杵"
+                }
+            },
+            "The Searing Touch": {
+                "text": {
+                    "0": "The Searing Touch",
+                    "1": "炽炎之使"
+                }
+            }
+        }
+    },
+    "Tornado Wand": {
+        "text": {
+            "0": "Tornado Wand",
+            "1": "狂风法杖"
+        },
+        "uniques": {
+            "Piscator's Vigil": {
+                "text": {
+                    "0": "Piscator's Vigil",
+                    "1": "皮斯卡托的慧眼"
+                }
+            },
+            "Replica Tulfall": {
+                "text": {
+                    "0": "Replica Tulfall",
+                    "1": "托沃卧【仿品】"
+                }
+            },
+            "Shimmeron": {
+                "text": {
+                    "0": "Shimmeron",
+                    "1": "低伏暗光"
+                }
+            },
+            "Tulfall": {
+                "text": {
+                    "0": "Tulfall",
+                    "1": "托沃卧"
+                }
+            }
+        }
+    },
+    "Twilight Blade": {
+        "text": {
+            "0": "Twilight Blade",
+            "1": "暮光长剑"
+        },
+        "uniques": {
+            "Prismatic Eclipse": {
+                "text": {
+                    "0": "Prismatic Eclipse",
+                    "1": "虹耀之月"
+                }
+            }
+        }
+    },
+    "Ornate Sword": {
+        "text": {
+            "0": "Ornate Sword",
+            "1": "名贵巨剑"
+        },
+        "uniques": {
+            "Queen's Decree": {
+                "text": {
+                    "0": "Queen's Decree",
+                    "1": "威严之刃"
+                }
+            },
+            "Queen's Escape": {
+                "text": {
+                    "0": "Queen's Escape",
+                    "1": "逃亡女王"
+                }
+            }
+        }
+    },
+    "Short Bow": {
+        "text": {
+            "0": "Short Bow",
+            "1": "短弓"
+        },
+        "uniques": {
+            "Quill Rain": {
+                "text": {
+                    "0": "Quill Rain",
+                    "1": "骤雨之弦"
+                }
+            },
+            "Replica Quill Rain": {
+                "text": {
+                    "0": "Replica Quill Rain",
+                    "1": "骤雨之弦【仿品】"
+                }
+            }
+        }
+    },
+    "Spine Bow": {
+        "text": {
+            "0": "Spine Bow",
+            "1": "脊弓"
+        },
+        "uniques": {
+            "Reach of the Council": {
+                "text": {
+                    "0": "Reach of the Council",
+                    "1": "议会之触"
+                }
+            },
+            "Voltaxic Rift": {
+                "text": {
+                    "0": "Voltaxic Rift",
+                    "1": "魔暴之痕"
+                }
+            }
+        }
+    },
+    "Shadow Axe": {
+        "text": {
+            "0": "Shadow Axe",
+            "1": "幽影巨斧"
+        },
+        "uniques": {
+            "Reaper's Pursuit": {
+                "text": {
+                    "0": "Reaper's Pursuit",
+                    "1": "死神的取魂器"
+                }
+            }
+        }
+    },
+    "Vaal Blade": {
+        "text": {
+            "0": "Vaal Blade",
+            "1": "瓦尔军刃"
+        },
+        "uniques": {
+            "Rebuke of the Vaal": {
+                "text": {
+                    "0": "Rebuke of the Vaal",
+                    "1": "瓦尔战刃"
+                }
+            },
+            "Varunastra": {
+                "text": {
+                    "0": "Varunastra",
+                    "1": "黑鲨"
+                }
+            }
+        }
+    },
+    "Fishing Rod": {
+        "text": {
+            "0": "Fishing Rod",
+            "1": "鱼竿"
+        },
+        "uniques": {
+            "Reefbane": {
+                "text": {
+                    "0": "Reefbane",
+                    "1": "灾祸之礁"
+                }
+            },
+            "Song of the Sirens": {
+                "text": {
+                    "0": "Song of the Sirens",
+                    "1": "海妖魅曲"
+                }
+            }
+        }
+    },
+    "Decorative Axe": {
+        "text": {
+            "0": "Decorative Axe",
+            "1": "富贵之斧"
+        },
+        "uniques": {
+            "Relentless Fury": {
+                "text": {
+                    "0": "Relentless Fury",
+                    "1": "无尽愤怒"
+                }
+            }
+        }
+    },
+    "Crude Bow": {
+        "text": {
+            "0": "Crude Bow",
+            "1": "粗制弓"
+        },
+        "uniques": {
+            "Relic of the Cycle": {
+                "text": {
+                    "0": "Relic of the Cycle",
+                    "1": "轮回之记"
+                }
+            },
+            "Silverbough": {
+                "text": {
+                    "0": "Silverbough",
+                    "1": "银枝"
+                }
+            },
+            "Silverbranch": {
+                "text": {
+                    "0": "Silverbranch",
+                    "1": "幻银之弦"
+                }
+            }
+        }
+    },
+    "Jasper Chopper": {
+        "text": {
+            "0": "Jasper Chopper",
+            "1": "灵玉巨斧"
+        },
+        "uniques": {
+            "Replica Harvest": {
+                "text": {
+                    "0": "Replica Harvest",
+                    "1": "收割者【仿品】"
+                }
+            },
+            "The Harvest": {
+                "text": {
+                    "0": "The Harvest",
+                    "1": "收割者"
+                }
+            }
+        }
+    },
+    "Siege Axe": {
+        "text": {
+            "0": "Siege Axe",
+            "1": "破城斧"
+        },
+        "uniques": {
+            "Replica Soul Taker": {
+                "text": {
+                    "0": "Replica Soul Taker",
+                    "1": "开膛斧【仿品】"
+                }
+            },
+            "Soul Taker": {
+                "text": {
+                    "0": "Soul Taker",
+                    "1": "开膛斧"
+                }
+            }
+        }
+    },
+    "War Sword": {
+        "text": {
+            "0": "War Sword",
+            "1": "征战之剑"
+        },
+        "uniques": {
+            "Replica Tempestuous Steel": {
+                "text": {
+                    "0": "Replica Tempestuous Steel",
+                    "1": "暴风之钢【仿品】"
+                }
+            },
+            "The Tempestuous Steel": {
+                "text": {
+                    "0": "The Tempestuous Steel",
+                    "1": "暴风之钢"
+                }
+            }
+        }
+    },
+    "Sage Wand": {
+        "text": {
+            "0": "Sage Wand",
+            "1": "贤者法杖"
+        },
+        "uniques": {
+            "Replica Twyzel": {
+                "text": {
+                    "0": "Replica Twyzel",
+                    "1": "峡湾之星【仿品】"
+                }
+            },
+            "Shade of Solaris": {
+                "text": {
+                    "0": "Shade of Solaris",
+                    "1": "日耀之影"
+                }
+            },
+            "Twyzel": {
+                "text": {
+                    "0": "Twyzel",
+                    "1": "峡湾之星"
+                }
+            }
+        }
+    },
+    "Boot Knife": {
+        "text": {
+            "0": "Boot Knife",
+            "1": "窃者短刃"
+        },
+        "uniques": {
+            "Replica Ungil's Gauche": {
+                "text": {
+                    "0": "Replica Ungil's Gauche",
+                    "1": "恩吉尔的叉刃【仿品】"
+                }
+            },
+            "Ungil's Gauche": {
+                "text": {
+                    "0": "Ungil's Gauche",
+                    "1": "恩吉尔的叉刃"
+                }
+            }
+        }
+    },
+    "Ezomyte Axe": {
+        "text": {
+            "0": "Ezomyte Axe",
+            "1": "艾兹麦巨斧"
+        },
+        "uniques": {
+            "Replica Wings of Entropy": {
+                "text": {
+                    "0": "Replica Wings of Entropy",
+                    "1": "乱世之翼【仿品】"
+                }
+            },
+            "Sinvicta's Mettle": {
+                "text": {
+                    "0": "Sinvicta's Mettle",
+                    "1": "勇气之魄"
+                }
+            },
+            "Wings of Entropy": {
+                "text": {
+                    "0": "Wings of Entropy",
+                    "1": "乱世之翼"
+                }
+            }
+        }
+    },
+    "Highland Blade": {
+        "text": {
+            "0": "Highland Blade",
+            "1": "高山重刃"
+        },
+        "uniques": {
+            "Rigwald's Charge": {
+                "text": {
+                    "0": "Rigwald's Charge",
+                    "1": "瑞佛的奋战长剑"
+                }
+            }
+        }
+    },
+    "Royal Axe": {
+        "text": {
+            "0": "Royal Axe",
+            "1": "皇家之斧"
+        },
+        "uniques": {
+            "Rigwald's Savagery": {
+                "text": {
+                    "0": "Rigwald's Savagery",
+                    "1": "野性瑞佛"
+                }
+            }
+        }
+    },
+    "Terror Claw": {
+        "text": {
+            "0": "Terror Claw",
+            "1": "恐惧之牙"
+        },
+        "uniques": {
+            "Rive": {
+                "text": {
+                    "0": "Rive",
+                    "1": "裂隙"
+                }
+            },
+            "The Scourge": {
+                "text": {
+                    "0": "The Scourge",
+                    "1": "灾害"
+                }
+            }
+        }
+    },
+    "Recurve Bow": {
+        "text": {
+            "0": "Recurve Bow",
+            "1": "反曲弓"
+        },
+        "uniques": {
+            "Roth's Reach": {
+                "text": {
+                    "0": "Roth's Reach",
+                    "1": "萝丝之触"
+                }
+            }
+        }
+    },
+    "Rusted Hatchet": {
+        "text": {
+            "0": "Rusted Hatchet",
+            "1": "锈斧"
+        },
+        "uniques": {
+            "Rust of Winter": {
+                "text": {
+                    "0": "Rust of Winter",
+                    "1": "霜刃"
+                }
+            }
+        }
+    },
+    "Gladius": {
+        "text": {
+            "0": "Gladius",
+            "1": "斗士长剑"
+        },
+        "uniques": {
+            "Scaeva": {
+                "text": {
+                    "0": "Scaeva",
+                    "1": "食蚜"
+                }
+            },
+            "The Iron Mass": {
+                "text": {
+                    "0": "The Iron Mass",
+                    "1": "钢铁质量"
+                }
+            }
+        }
+    },
+    "Cutlass": {
+        "text": {
+            "0": "Cutlass",
+            "1": "军用长刃"
+        },
+        "uniques": {
+            "Severed in Sleep": {
+                "text": {
+                    "0": "Severed in Sleep",
+                    "1": "离异梦寐"
+                }
+            },
+            "United in Dream": {
+                "text": {
+                    "0": "United in Dream",
+                    "1": "合流梦寐"
+                }
+            }
+        }
+    },
+    "Bastard Sword": {
+        "text": {
+            "0": "Bastard Sword",
+            "1": "重剑"
+        },
+        "uniques": {
+            "Shiversting": {
+                "text": {
+                    "0": "Shiversting",
+                    "1": "寒光剑"
+                }
+            }
+        }
+    },
+    "Tyrant's Sekhem": {
+        "text": {
+            "0": "Tyrant's Sekhem",
+            "1": "暴君之统"
+        },
+        "uniques": {
+            "Sign of the Sin Eater": {
+                "text": {
+                    "0": "Sign of the Sin Eater",
+                    "1": "罪恶吞噬者的叹息"
+                }
+            }
+        }
+    },
+    "Platinum Sceptre": {
+        "text": {
+            "0": "Platinum Sceptre",
+            "1": "白金短杖"
+        },
+        "uniques": {
+            "Singularity": {
+                "text": {
+                    "0": "Singularity",
+                    "1": "奇异"
+                }
+            }
+        }
+    },
+    "Iron Sceptre": {
+        "text": {
+            "0": "Iron Sceptre",
+            "1": "冷铁短杖"
+        },
+        "uniques": {
+            "Spine of the First Claimant": {
+                "text": {
+                    "0": "Spine of the First Claimant",
+                    "1": "先驱之脊"
+                }
+            }
+        }
+    },
+    "Long Bow": {
+        "text": {
+            "0": "Long Bow",
+            "1": "长弓"
+        },
+        "uniques": {
+            "Storm Cloud": {
+                "text": {
+                    "0": "Storm Cloud",
+                    "1": "暴雨之弦"
+                }
+            },
+            "The Tempest": {
+                "text": {
+                    "0": "The Tempest",
+                    "1": "暴风雨"
+                }
+            }
+        }
+    },
+    "Carved Wand": {
+        "text": {
+            "0": "Carved Wand",
+            "1": "粗纹法杖"
+        },
+        "uniques": {
+            "Storm Prison": {
+                "text": {
+                    "0": "Storm Prison",
+                    "1": "禁锢暴风"
+                }
+            },
+            "The Poet's Pen": {
+                "text": {
+                    "0": "The Poet's Pen",
+                    "1": "诗人之笔"
+                }
+            }
+        }
+    },
+    "Variscite Blade": {
+        "text": {
+            "0": "Variscite Blade",
+            "1": "碧铜短剑"
+        },
+        "uniques": {
+            "Story of the Vaal": {
+                "text": {
+                    "0": "Story of the Vaal",
+                    "1": "瓦尔传说"
+                }
+            }
+        }
+    },
+    "Tiger Sword": {
+        "text": {
+            "0": "Tiger Sword",
+            "1": "虎牙巨剑"
+        },
+        "uniques": {
+            "Terminus Est": {
+                "text": {
+                    "0": "Terminus Est",
+                    "1": "行刑之刃"
+                }
+            }
+        }
+    },
+    "Royal Sceptre": {
+        "text": {
+            "0": "Royal Sceptre",
+            "1": "皇家短杖"
+        },
+        "uniques": {
+            "The Black Cane": {
+                "text": {
+                    "0": "The Black Cane",
+                    "1": "漆黑藤杖"
+                }
+            }
+        }
+    },
+    "Headsman Axe": {
+        "text": {
+            "0": "Headsman Axe",
+            "1": "行刑巨斧"
+        },
+        "uniques": {
+            "The Blood Reaper": {
+                "text": {
+                    "0": "The Blood Reaper",
+                    "1": "竭血之镰"
+                }
+            }
+        }
+    },
+    "Steelwood Bow": {
+        "text": {
+            "0": "Steelwood Bow",
+            "1": "钢木之弓"
+        },
+        "uniques": {
+            "The Crimson Storm": {
+                "text": {
+                    "0": "The Crimson Storm",
+                    "1": "赤红风暴"
+                }
+            }
+        }
+    },
+    "Whalebone Rapier": {
+        "text": {
+            "0": "Whalebone Rapier",
+            "1": "鲸骨细刃"
+        },
+        "uniques": {
+            "The Goddess Bound": {
+                "text": {
+                    "0": "The Goddess Bound",
+                    "1": "女神的灵缚"
+                }
+            }
+        }
+    },
+    "Sabre": {
+        "text": {
+            "0": "Sabre",
+            "1": "旧军刀"
+        },
+        "uniques": {
+            "The Princess": {
+                "text": {
+                    "0": "The Princess",
+                    "1": "女爵"
+                }
+            }
+        }
+    },
+    "Lathi": {
+        "text": {
+            "0": "Lathi",
+            "1": "武术长杖"
+        },
+        "uniques": {
+            "The Searing Touch": {
+                "text": {
+                    "0": "The Searing Touch",
+                    "1": "炽炎之使"
+                }
+            }
+        }
+    },
+    "Royal Staff": {
+        "text": {
+            "0": "Royal Staff",
+            "1": "皇家长杖"
+        },
+        "uniques": {
+            "The Stormheart": {
+                "text": {
+                    "0": "The Stormheart",
+                    "1": "风暴之眼"
+                }
+            },
+            "The Stormwall": {
+                "text": {
+                    "0": "The Stormwall",
+                    "1": "风暴坚壁"
+                }
+            }
+        }
+    },
+    "Throat Stabber": {
+        "text": {
+            "0": "Throat Stabber",
+            "1": "刺喉刃"
+        },
+        "uniques": {
+            "The Wasp Nest": {
+                "text": {
+                    "0": "The Wasp Nest",
+                    "1": "蜂巢涌动"
+                }
+            }
+        }
+    },
+    "Vile Staff": {
+        "text": {
+            "0": "Vile Staff",
+            "1": "毒牙长杖"
+        },
+        "uniques": {
+            "The Whispering Ice": {
+                "text": {
+                    "0": "The Whispering Ice",
+                    "1": "冰点低语"
+                }
+            }
+        }
+    },
+    "Corroded Blade": {
+        "text": {
+            "0": "Corroded Blade",
+            "1": "锈斑巨剑"
+        },
+        "uniques": {
+            "Thunder of the Dawn": {
+                "text": {
+                    "0": "Thunder of the Dawn",
+                    "1": "曙雷"
+                }
+            }
+        }
+    },
+    "Imperial Maul": {
+        "text": {
+            "0": "Imperial Maul",
+            "1": "帝国重锤"
+        },
+        "uniques": {
+            "Tidebreaker": {
+                "text": {
+                    "0": "Tidebreaker",
+                    "1": "局势逆转者"
+                }
+            }
+        }
+    },
+    "Military Staff": {
+        "text": {
+            "0": "Military Staff",
+            "1": "军用长杖"
+        },
+        "uniques": {
+            "Tremor Rod": {
+                "text": {
+                    "0": "Tremor Rod",
+                    "1": "颤抖之杖"
+                }
+            }
+        }
+    },
+    "Labrys": {
+        "text": {
+            "0": "Labrys",
+            "1": "双影巨斧"
+        },
+        "uniques": {
+            "Uul-Netol's Kiss": {
+                "text": {
+                    "0": "Uul-Netol's Kiss",
+                    "1": "乌尔尼多之吻"
+                }
+            }
+        }
+    },
+    "Prophecy Wand": {
+        "text": {
+            "0": "Prophecy Wand",
+            "1": "箴言法杖"
+        },
+        "uniques": {
+            "Void Battery": {
+                "text": {
+                    "0": "Void Battery",
+                    "1": "潜能魔棒"
+                }
+            }
+        }
+    },
+    "Dread Maul": {
+        "text": {
+            "0": "Dread Maul",
+            "1": "威权巨锤"
+        },
+        "uniques": {
+            "Voidhome": {
+                "text": {
+                    "0": "Voidhome",
+                    "1": "逝空之锤"
+                }
+            }
+        }
+    },
+    "Demon Dagger": {
+        "text": {
+            "0": "Demon Dagger",
+            "1": "魔灵短匕"
+        },
+        "uniques": {
+            "Vulconus": {
+                "text": {
+                    "0": "Vulconus",
+                    "1": "火神锻台"
+                }
+            }
+        }
+    },
+    "Poleaxe": {
+        "text": {
+            "0": "Poleaxe",
+            "1": "巨战斧"
+        },
+        "uniques": {
+            "Wideswing": {
+                "text": {
+                    "0": "Wideswing",
+                    "1": "阔斩"
+                }
+            }
+        }
+    },
+    "Boot Blade": {
+        "text": {
+            "0": "Boot Blade",
+            "1": "窃者短匕"
+        },
+        "uniques": {
+            "Widowmaker": {
+                "text": {
+                    "0": "Widowmaker",
+                    "1": "寡妇"
+                }
+            }
+        }
+    },
+    "Awl": {
+        "text": {
+            "0": "Awl",
+            "1": "凿钉"
+        },
+        "uniques": {
+            "Wildslash": {
+                "text": {
+                    "0": "Wildslash",
+                    "1": "野性狂爪"
+                }
+            }
+        }
+    },
+    "Sundering Axe": {
+        "text": {
+            "0": "Sundering Axe",
+            "1": "裂甲巨斧"
+        },
+        "uniques": {
+            "Wings of Entropy": {
+                "text": {
+                    "0": "Wings of Entropy",
+                    "1": "乱世之翼"
+                }
+            }
+        }
+    },
+    "Bone Bow": {
+        "text": {
+            "0": "Bone Bow",
+            "1": "骨制弓"
+        },
+        "uniques": {
+            "Xoph's Inception": {
+                "text": {
+                    "0": "Xoph's Inception",
+                    "1": "索伏的始源"
+                }
+            }
+        }
+    },
+    "Citadel Bow": {
+        "text": {
+            "0": "Citadel Bow",
+            "1": "城塞战弓"
+        },
+        "uniques": {
+            "Xoph's Nurture": {
+                "text": {
+                    "0": "Xoph's Nurture",
+                    "1": "索伏的爱抚"
+                }
+            },
+            "The Gluttonous Tide": {
+                "text": {
+                    "0": "The Gluttonous Tide",
+                    "1": "贪婪之潮"
+                }
+            }
+        }
+    },
+    "Gouger": {
+        "text": {
+            "0": "Gouger",
+            "1": "穿体凿"
+        },
+        "uniques": {}
+    },
+    "Tiger's Paw": {
+        "text": {
+            "0": "Tiger's Paw",
+            "1": "虎爪刃"
+        },
+        "uniques": {}
+    },
+    "Prehistoric Claw": {
+        "text": {
+            "0": "Prehistoric Claw",
+            "1": "史前战爪"
+        },
+        "uniques": {}
+    },
+    "Noble Claw": {
+        "text": {
+            "0": "Noble Claw",
+            "1": "贵族战爪"
+        },
+        "uniques": {}
+    },
+    "Eagle Claw": {
+        "text": {
+            "0": "Eagle Claw",
+            "1": "鹰爪刃"
+        },
+        "uniques": {}
+    },
+    "Great White Claw": {
+        "text": {
+            "0": "Great White Claw",
+            "1": "白灵之爪"
+        },
+        "uniques": {}
+    },
+    "Cat's Paw": {
+        "text": {
+            "0": "Cat's Paw",
+            "1": "猫爪刃"
+        },
+        "uniques": {}
+    },
+    "Sparkling Claw": {
+        "text": {
+            "0": "Sparkling Claw",
+            "1": "眩目爪刃"
+        },
+        "uniques": {}
+    },
+    "Shadow Fangs": {
+        "text": {
+            "0": "Shadow Fangs",
+            "1": "暗影之牙"
+        },
+        "uniques": {}
+    },
+    "Malign Fangs": {
+        "text": {
+            "0": "Malign Fangs",
+            "1": "恶毒之牙"
+        },
+        "uniques": {}
+    },
+    "Void Fangs": {
+        "text": {
+            "0": "Void Fangs",
+            "1": "虚空之牙"
+        },
+        "uniques": {}
+    },
+    "Double Claw": {
+        "text": {
+            "0": "Double Claw",
+            "1": "双刃爪"
+        },
+        "uniques": {}
+    },
+    "Twin Claw": {
+        "text": {
+            "0": "Twin Claw",
+            "1": "重刃爪"
+        },
+        "uniques": {}
+    },
+    "Gemini Claw": {
+        "text": {
+            "0": "Gemini Claw",
+            "1": "双子战爪"
+        },
+        "uniques": {}
+    },
+    "Butcher Knife": {
+        "text": {
+            "0": "Butcher Knife",
+            "1": "屠兽利刃"
+        },
+        "uniques": {}
+    },
+    "Poignard": {
+        "text": {
+            "0": "Poignard",
+            "1": "夺命刺"
+        },
+        "uniques": {}
+    },
+    "Golden Kris": {
+        "text": {
+            "0": "Golden Kris",
+            "1": "金光波刃"
+        },
+        "uniques": {}
+    },
+    "Gutting Knife": {
+        "text": {
+            "0": "Gutting Knife",
+            "1": "重伤短刀"
+        },
+        "uniques": {}
+    },
+    "Carving Knife": {
+        "text": {
+            "0": "Carving Knife",
+            "1": "刻骨刀"
+        },
+        "uniques": {}
+    },
+    "Copper Kris": {
+        "text": {
+            "0": "Copper Kris",
+            "1": "铜锻波刃"
+        },
+        "uniques": {}
+    },
+    "Skean": {
+        "text": {
+            "0": "Skean",
+            "1": "双刃匕"
+        },
+        "uniques": {}
+    },
+    "Imp Dagger": {
+        "text": {
+            "0": "Imp Dagger",
+            "1": "魔性之刃"
+        },
+        "uniques": {}
+    },
+    "Hollowpoint Dagger": {
+        "text": {
+            "0": "Hollowpoint Dagger",
+            "1": "折叠匕首"
+        },
+        "uniques": {}
+    },
+    "Pressurised Dagger": {
+        "text": {
+            "0": "Pressurised Dagger",
+            "1": "冲压匕首"
+        },
+        "uniques": {}
+    },
+    "Pneumatic Dagger": {
+        "text": {
+            "0": "Pneumatic Dagger",
+            "1": "气动匕首"
+        },
+        "uniques": {}
+    },
+    "Prong Dagger": {
+        "text": {
+            "0": "Prong Dagger",
+            "1": "尖耙短匕"
+        },
+        "uniques": {}
+    },
+    "Trisula": {
+        "text": {
+            "0": "Trisula",
+            "1": "三叉短匕"
+        },
+        "uniques": {}
+    },
+    "Sai": {
+        "text": {
+            "0": "Sai",
+            "1": "战叉"
+        },
+        "uniques": {}
+    },
+    "Flickerflame Blade": {
+        "text": {
+            "0": "Flickerflame Blade",
+            "1": "火焰刀"
+        },
+        "uniques": {}
+    },
+    "Flashfire Blade": {
+        "text": {
+            "0": "Flashfire Blade",
+            "1": "闪火刀"
+        },
+        "uniques": {}
+    },
+    "Infernal Blade": {
+        "text": {
+            "0": "Infernal Blade",
+            "1": "炼狱刀"
+        },
+        "uniques": {}
+    },
+    "Wrist Chopper": {
+        "text": {
+            "0": "Wrist Chopper",
+            "1": "断腕之刃"
+        },
+        "uniques": {}
+    },
+    "War Axe": {
+        "text": {
+            "0": "War Axe",
+            "1": "行军斧"
+        },
+        "uniques": {}
+    },
+    "Chest Splitter": {
+        "text": {
+            "0": "Chest Splitter",
+            "1": "开膛利刃"
+        },
+        "uniques": {}
+    },
+    "Ceremonial Axe": {
+        "text": {
+            "0": "Ceremonial Axe",
+            "1": "血仪之斧"
+        },
+        "uniques": {}
+    },
+    "Wraith Axe": {
+        "text": {
+            "0": "Wraith Axe",
+            "1": "凶灵之斧"
+        },
+        "uniques": {}
+    },
+    "Karui Axe": {
+        "text": {
+            "0": "Karui Axe",
+            "1": "卡鲁古斧"
+        },
+        "uniques": {}
+    },
+    "Reaver Axe": {
+        "text": {
+            "0": "Reaver Axe",
+            "1": "残暴之斧"
+        },
+        "uniques": {}
+    },
+    "Boarding Axe": {
+        "text": {
+            "0": "Boarding Axe",
+            "1": "万用手斧"
+        },
+        "uniques": {}
+    },
+    "Broad Axe": {
+        "text": {
+            "0": "Broad Axe",
+            "1": "阔斧"
+        },
+        "uniques": {}
+    },
+    "Arming Axe": {
+        "text": {
+            "0": "Arming Axe",
+            "1": "长柄斧"
+        },
+        "uniques": {}
+    },
+    "Spectral Axe": {
+        "text": {
+            "0": "Spectral Axe",
+            "1": "幽魂之斧"
+        },
+        "uniques": {}
+    },
+    "Jasper Axe": {
+        "text": {
+            "0": "Jasper Axe",
+            "1": "灵玉斧"
+        },
+        "uniques": {}
+    },
+    "Maltreatment Axe": {
+        "text": {
+            "0": "Maltreatment Axe",
+            "1": "凌虐斧"
+        },
+        "uniques": {}
+    },
+    "Disapprobation Axe": {
+        "text": {
+            "0": "Disapprobation Axe",
+            "1": "否认斧"
+        },
+        "uniques": {}
+    },
+    "Psychotic Axe": {
+        "text": {
+            "0": "Psychotic Axe",
+            "1": "癫狂斧"
+        },
+        "uniques": {}
+    },
+    "Etched Hatchet": {
+        "text": {
+            "0": "Etched Hatchet",
+            "1": "蚀刻战斧"
+        },
+        "uniques": {}
+    },
+    "Engraved Hatchet": {
+        "text": {
+            "0": "Engraved Hatchet",
+            "1": "雕文战斧"
+        },
+        "uniques": {}
+    },
+    "Runic Hatchet": {
+        "text": {
+            "0": "Runic Hatchet",
+            "1": "密文之斧"
+        },
+        "uniques": {}
+    },
+    "Barbed Club": {
+        "text": {
+            "0": "Barbed Club",
+            "1": "锐刺木棒"
+        },
+        "uniques": {}
+    },
+    "Battle Hammer": {
+        "text": {
+            "0": "Battle Hammer",
+            "1": "强化战锤"
+        },
+        "uniques": {}
+    },
+    "Flanged Mace": {
+        "text": {
+            "0": "Flanged Mace",
+            "1": "护体之锤"
+        },
+        "uniques": {}
+    },
+    "Phantom Mace": {
+        "text": {
+            "0": "Phantom Mace",
+            "1": "幻象之锤"
+        },
+        "uniques": {}
+    },
+    "Ancestral Club": {
+        "text": {
+            "0": "Ancestral Club",
+            "1": "祖灵之杵"
+        },
+        "uniques": {}
+    },
+    "Tenderizer": {
+        "text": {
+            "0": "Tenderizer",
+            "1": "裂肉之锤"
+        },
+        "uniques": {}
+    },
+    "Legion Hammer": {
+        "text": {
+            "0": "Legion Hammer",
+            "1": "军团之锤"
+        },
+        "uniques": {}
+    },
+    "Tribal Club": {
+        "text": {
+            "0": "Tribal Club",
+            "1": "祭仪之杵"
+        },
+        "uniques": {}
+    },
+    "Pernach": {
+        "text": {
+            "0": "Pernach",
+            "1": "锋刃重锤"
+        },
+        "uniques": {}
+    },
+    "Stone Hammer": {
+        "text": {
+            "0": "Stone Hammer",
+            "1": "石锤"
+        },
+        "uniques": {}
+    },
+    "Bladed Mace": {
+        "text": {
+            "0": "Bladed Mace",
+            "1": "多刃锤"
+        },
+        "uniques": {}
+    },
+    "Ceremonial Mace": {
+        "text": {
+            "0": "Ceremonial Mace",
+            "1": "祭礼之锤"
+        },
+        "uniques": {}
+    },
+    "Petrified Club": {
+        "text": {
+            "0": "Petrified Club",
+            "1": "坚石木棒"
+        },
+        "uniques": {}
+    },
+    "Flare Mace": {
+        "text": {
+            "0": "Flare Mace",
+            "1": "明亮锤"
+        },
+        "uniques": {}
+    },
+    "Crack Mace": {
+        "text": {
+            "0": "Crack Mace",
+            "1": "开裂锤"
+        },
+        "uniques": {}
+    },
+    "Boom Mace": {
+        "text": {
+            "0": "Boom Mace",
+            "1": "风雷锤"
+        },
+        "uniques": {}
+    },
+    "Wyrm Mace": {
+        "text": {
+            "0": "Wyrm Mace",
+            "1": "古龙之锤"
+        },
+        "uniques": {}
+    },
+    "Dragon Mace": {
+        "text": {
+            "0": "Dragon Mace",
+            "1": "龙之锤"
+        },
+        "uniques": {}
+    },
+    "Behemoth Mace": {
+        "text": {
+            "0": "Behemoth Mace",
+            "1": "巴哈姆特"
+        },
+        "uniques": {}
+    },
+    "Driftwood Sceptre": {
+        "text": {
+            "0": "Driftwood Sceptre",
+            "1": "朽木短杖"
+        },
+        "uniques": {}
+    },
+    "Sekhem": {
+        "text": {
+            "0": "Sekhem",
+            "1": "威能短杖"
+        },
+        "uniques": {}
+    },
+    "Lead Sceptre": {
+        "text": {
+            "0": "Lead Sceptre",
+            "1": "铅铸短杖"
+        },
+        "uniques": {}
+    },
+    "Abyssal Sceptre": {
+        "text": {
+            "0": "Abyssal Sceptre",
+            "1": "深渊短杖"
+        },
+        "uniques": {}
+    },
+    "Darkwood Sceptre": {
+        "text": {
+            "0": "Darkwood Sceptre",
+            "1": "乌木短杖"
+        },
+        "uniques": {}
+    },
+    "Quartz Sceptre": {
+        "text": {
+            "0": "Quartz Sceptre",
+            "1": "石英短杖"
+        },
+        "uniques": {}
+    },
+    "Ochre Sceptre": {
+        "text": {
+            "0": "Ochre Sceptre",
+            "1": "赤色短杖"
+        },
+        "uniques": {}
+    },
+    "Oscillating Sceptre": {
+        "text": {
+            "0": "Oscillating Sceptre",
+            "1": "摇摆短杖"
+        },
+        "uniques": {}
+    },
+    "Stabilising Sceptre": {
+        "text": {
+            "0": "Stabilising Sceptre",
+            "1": "平稳短杖"
+        },
+        "uniques": {}
+    },
+    "Alternating Sceptre": {
+        "text": {
+            "0": "Alternating Sceptre",
+            "1": "变化短杖"
+        },
+        "uniques": {}
+    },
+    "Horned Sceptre": {
+        "text": {
+            "0": "Horned Sceptre",
+            "1": "犄角短杖"
+        },
+        "uniques": {}
+    },
+    "Stag Sceptre": {
+        "text": {
+            "0": "Stag Sceptre",
+            "1": "灵鹿短杖"
+        },
+        "uniques": {}
+    },
+    "Sambar Sceptre": {
+        "text": {
+            "0": "Sambar Sceptre",
+            "1": "恶魔短杖"
+        },
+        "uniques": {}
+    },
+    "Baselard": {
+        "text": {
+            "0": "Baselard",
+            "1": "冷光长剑"
+        },
+        "uniques": {}
+    },
+    "Battle Sword": {
+        "text": {
+            "0": "Battle Sword",
+            "1": "士兵长剑"
+        },
+        "uniques": {}
+    },
+    "Graceful Sword": {
+        "text": {
+            "0": "Graceful Sword",
+            "1": "权贵之剑"
+        },
+        "uniques": {}
+    },
+    "Copper Sword": {
+        "text": {
+            "0": "Copper Sword",
+            "1": "青铜短剑"
+        },
+        "uniques": {}
+    },
+    "Broad Sword": {
+        "text": {
+            "0": "Broad Sword",
+            "1": "阔剑"
+        },
+        "uniques": {}
+    },
+    "Ancient Sword": {
+        "text": {
+            "0": "Ancient Sword",
+            "1": "远古之剑"
+        },
+        "uniques": {}
+    },
+    "Fickle Spiritblade": {
+        "text": {
+            "0": "Fickle Spiritblade",
+            "1": "无常魂刃"
+        },
+        "uniques": {}
+    },
+    "Capricious Spiritblade": {
+        "text": {
+            "0": "Capricious Spiritblade",
+            "1": "莫测魂刃"
+        },
+        "uniques": {}
+    },
+    "Anarchic Spiritblade": {
+        "text": {
+            "0": "Anarchic Spiritblade",
+            "1": "无序魂刃"
+        },
+        "uniques": {}
+    },
+    "Hook Sword": {
+        "text": {
+            "0": "Hook Sword",
+            "1": "钩爪剑"
+        },
+        "uniques": {}
+    },
+    "Grappler": {
+        "text": {
+            "0": "Grappler",
+            "1": "捕捉者"
+        },
+        "uniques": {}
+    },
+    "Tiger Hook": {
+        "text": {
+            "0": "Tiger Hook",
+            "1": "虎钩"
+        },
+        "uniques": {}
+    },
+    "Rusted Spike": {
+        "text": {
+            "0": "Rusted Spike",
+            "1": "锈刺剑"
+        },
+        "uniques": {}
+    },
+    "Burnished Foil": {
+        "text": {
+            "0": "Burnished Foil",
+            "1": "冷芒刺剑"
+        },
+        "uniques": {}
+    },
+    "Serrated Foil": {
+        "text": {
+            "0": "Serrated Foil",
+            "1": "锯齿细剑"
+        },
+        "uniques": {}
+    },
+    "Primeval Rapier": {
+        "text": {
+            "0": "Primeval Rapier",
+            "1": "古典刺剑"
+        },
+        "uniques": {}
+    },
+    "Fancy Foil": {
+        "text": {
+            "0": "Fancy Foil",
+            "1": "华丽细剑"
+        },
+        "uniques": {}
+    },
+    "Apex Rapier": {
+        "text": {
+            "0": "Apex Rapier",
+            "1": "锐锋细剑"
+        },
+        "uniques": {}
+    },
+    "Dragonbone Rapier": {
+        "text": {
+            "0": "Dragonbone Rapier",
+            "1": "龙骨细剑"
+        },
+        "uniques": {}
+    },
+    "Tempered Foil": {
+        "text": {
+            "0": "Tempered Foil",
+            "1": "强化细剑"
+        },
+        "uniques": {}
+    },
+    "Pecoraro": {
+        "text": {
+            "0": "Pecoraro",
+            "1": "寒光刺剑"
+        },
+        "uniques": {}
+    },
+    "Spiraled Foil": {
+        "text": {
+            "0": "Spiraled Foil",
+            "1": "螺纹细剑"
+        },
+        "uniques": {}
+    },
+    "Harpy Rapier": {
+        "text": {
+            "0": "Harpy Rapier",
+            "1": "魔喙细剑"
+        },
+        "uniques": {}
+    },
+    "Battered Foil": {
+        "text": {
+            "0": "Battered Foil",
+            "1": "钝刃细剑"
+        },
+        "uniques": {}
+    },
+    "Thorn Rapier": {
+        "text": {
+            "0": "Thorn Rapier",
+            "1": "棘刺细剑"
+        },
+        "uniques": {}
+    },
+    "Wyrmbone Rapier": {
+        "text": {
+            "0": "Wyrmbone Rapier",
+            "1": "龙骨细剑"
+        },
+        "uniques": {}
+    },
+    "Smallsword": {
+        "text": {
+            "0": "Smallsword",
+            "1": "小剑"
+        },
+        "uniques": {}
+    },
+    "Courtesan Sword": {
+        "text": {
+            "0": "Courtesan Sword",
+            "1": "花魁之剑"
+        },
+        "uniques": {}
+    },
+    "Dragoon Sword": {
+        "text": {
+            "0": "Dragoon Sword",
+            "1": "骑兵军刀"
+        },
+        "uniques": {}
+    },
+    "Serpent Wand": {
+        "text": {
+            "0": "Serpent Wand",
+            "1": "蛇眼法杖"
+        },
+        "uniques": {}
+    },
+    "Omen Wand": {
+        "text": {
+            "0": "Omen Wand",
+            "1": "灵兆法杖"
+        },
+        "uniques": {}
+    },
+    "Faun's Horn": {
+        "text": {
+            "0": "Faun's Horn",
+            "1": "兽角法杖"
+        },
+        "uniques": {}
+    },
+    "Convoking Wand": {
+        "text": {
+            "0": "Convoking Wand",
+            "1": "召集法杖"
+        },
+        "uniques": {}
+    },
+    "Assembler Wand": {
+        "text": {
+            "0": "Assembler Wand",
+            "1": "装配法杖"
+        },
+        "uniques": {}
+    },
+    "Congregator Wand": {
+        "text": {
+            "0": "Congregator Wand",
+            "1": "集合法杖"
+        },
+        "uniques": {}
+    },
+    "Accumulator Wand": {
+        "text": {
+            "0": "Accumulator Wand",
+            "1": "蓄能法杖"
+        },
+        "uniques": {}
+    },
+    "Pagan Wand": {
+        "text": {
+            "0": "Pagan Wand",
+            "1": "异教法杖"
+        },
+        "uniques": {}
+    },
+    "Heathen Wand": {
+        "text": {
+            "0": "Heathen Wand",
+            "1": "异徒法杖"
+        },
+        "uniques": {}
+    },
+    "Profane Wand": {
+        "text": {
+            "0": "Profane Wand",
+            "1": "亵渎法杖"
+        },
+        "uniques": {}
+    },
+    "Decurve Bow": {
+        "text": {
+            "0": "Decurve Bow",
+            "1": "直弓"
+        },
+        "uniques": {}
+    },
+    "Compound Bow": {
+        "text": {
+            "0": "Compound Bow",
+            "1": "复合弓"
+        },
+        "uniques": {}
+    },
+    "Sniper Bow": {
+        "text": {
+            "0": "Sniper Bow",
+            "1": "狙击弓"
+        },
+        "uniques": {}
+    },
+    "Ivory Bow": {
+        "text": {
+            "0": "Ivory Bow",
+            "1": "象牙弓"
+        },
+        "uniques": {}
+    },
+    "Highborn Bow": {
+        "text": {
+            "0": "Highborn Bow",
+            "1": "贵族之弓"
+        },
+        "uniques": {}
+    },
+    "Thicket Bow": {
+        "text": {
+            "0": "Thicket Bow",
+            "1": "林野猎弓"
+        },
+        "uniques": {}
+    },
+    "Composite Bow": {
+        "text": {
+            "0": "Composite Bow",
+            "1": "合成弓"
+        },
+        "uniques": {}
+    },
+    "Grove Bow": {
+        "text": {
+            "0": "Grove Bow",
+            "1": "丛林猎弓"
+        },
+        "uniques": {}
+    },
+    "Hedron Bow": {
+        "text": {
+            "0": "Hedron Bow",
+            "1": "多面弓"
+        },
+        "uniques": {}
+    },
+    "Foundry Bow": {
+        "text": {
+            "0": "Foundry Bow",
+            "1": "铸造弓"
+        },
+        "uniques": {}
+    },
+    "Solarine Bow": {
+        "text": {
+            "0": "Solarine Bow",
+            "1": "日裔弓"
+        },
+        "uniques": {}
+    },
+    "Reflex Bow": {
+        "text": {
+            "0": "Reflex Bow",
+            "1": "反射弓"
+        },
+        "uniques": {}
+    },
+    "Maraketh Bow": {
+        "text": {
+            "0": "Maraketh Bow",
+            "1": "马拉克斯弓"
+        },
+        "uniques": {}
+    },
+    "Foul Staff": {
+        "text": {
+            "0": "Foul Staff",
+            "1": "恶灵长杖"
+        },
+        "uniques": {
+            "The Winds of Fate": {
+                "text": {
+                    "0": "The Winds of Fate",
+                    "1": "命运之风"
+                }
+            }
+        }
+    },
+    "Primitive Staff": {
+        "text": {
+            "0": "Primitive Staff",
+            "1": "粗制长杖"
+        },
+        "uniques": {}
+    },
+    "Woodful Staff": {
+        "text": {
+            "0": "Woodful Staff",
+            "1": "坚木长杖"
+        },
+        "uniques": {}
+    },
+    "Quarterstaff": {
+        "text": {
+            "0": "Quarterstaff",
+            "1": "细柄长杖"
+        },
+        "uniques": {
+            "The Annihilating Light": {
+                "text": {
+                    "0": "The Annihilating Light",
+                    "1": "摧残之光"
+                }
+            }
+        }
+    },
+    "Transformer Staff": {
+        "text": {
+            "0": "Transformer Staff",
+            "1": "变形长杖"
+        },
+        "uniques": {}
+    },
+    "Reciprocation Staff": {
+        "text": {
+            "0": "Reciprocation Staff",
+            "1": "交换长杖"
+        },
+        "uniques": {}
+    },
+    "Battery Staff": {
+        "text": {
+            "0": "Battery Staff",
+            "1": "蓄能长杖"
+        },
+        "uniques": {}
+    },
+    "Crescent Staff": {
+        "text": {
+            "0": "Crescent Staff",
+            "1": "新月长杖"
+        },
+        "uniques": {}
+    },
+    "Moon Staff": {
+        "text": {
+            "0": "Moon Staff",
+            "1": "月神长杖"
+        },
+        "uniques": {}
+    },
+    "Eclipse Staff": {
+        "text": {
+            "0": "Eclipse Staff",
+            "1": "月蚀长杖"
+        },
+        "uniques": {}
+    },
+    "Capacity Rod": {
+        "text": {
+            "0": "Capacity Rod",
+            "1": "载荷之杖"
+        },
+        "uniques": {}
+    },
+    "Potentiality Rod": {
+        "text": {
+            "0": "Potentiality Rod",
+            "1": "潜力之杖"
+        },
+        "uniques": {}
+    },
+    "Eventuality Rod": {
+        "text": {
+            "0": "Eventuality Rod",
+            "1": "潜能之杖"
+        },
+        "uniques": {}
+    },
+    "Stone Axe": {
+        "text": {
+            "0": "Stone Axe",
+            "1": "石斧"
+        },
+        "uniques": {}
+    },
+    "Noble Axe": {
+        "text": {
+            "0": "Noble Axe",
+            "1": "权贵巨斧"
+        },
+        "uniques": {}
+    },
+    "Jade Chopper": {
+        "text": {
+            "0": "Jade Chopper",
+            "1": "碎玉大斧"
+        },
+        "uniques": {}
+    },
+    "Double Axe": {
+        "text": {
+            "0": "Double Axe",
+            "1": "双刃巨斧"
+        },
+        "uniques": {}
+    },
+    "Gilded Axe": {
+        "text": {
+            "0": "Gilded Axe",
+            "1": "金柄之斧"
+        },
+        "uniques": {}
+    },
+    "Timber Axe": {
+        "text": {
+            "0": "Timber Axe",
+            "1": "裂木巨斧"
+        },
+        "uniques": {}
+    },
+    "Prime Cleaver": {
+        "text": {
+            "0": "Prime Cleaver",
+            "1": "首要砍刀"
+        },
+        "uniques": {}
+    },
+    "Honed Cleaver": {
+        "text": {
+            "0": "Honed Cleaver",
+            "1": "磨利砍刀"
+        },
+        "uniques": {}
+    },
+    "Apex Cleaver": {
+        "text": {
+            "0": "Apex Cleaver",
+            "1": "锋锐砍刀"
+        },
+        "uniques": {}
+    },
+    "Dagger Axe": {
+        "text": {
+            "0": "Dagger Axe",
+            "1": "匕斧"
+        },
+        "uniques": {}
+    },
+    "Talon Axe": {
+        "text": {
+            "0": "Talon Axe",
+            "1": "猛禽爪斧"
+        },
+        "uniques": {}
+    },
+    "Fleshripper": {
+        "text": {
+            "0": "Fleshripper",
+            "1": "裂肉者"
+        },
+        "uniques": {}
+    },
+    "Driftwood Maul": {
+        "text": {
+            "0": "Driftwood Maul",
+            "1": "朽木巨锤"
+        },
+        "uniques": {}
+    },
+    "Spiny Maul": {
+        "text": {
+            "0": "Spiny Maul",
+            "1": "凶刺巨锤"
+        },
+        "uniques": {}
+    },
+    "Plated Maul": {
+        "text": {
+            "0": "Plated Maul",
+            "1": "华丽重锤"
+        },
+        "uniques": {}
+    },
+    "Colossus Mallet": {
+        "text": {
+            "0": "Colossus Mallet",
+            "1": "巨型重锤"
+        },
+        "uniques": {}
+    },
+    "Piledriver": {
+        "text": {
+            "0": "Piledriver",
+            "1": "扫荡者"
+        },
+        "uniques": {}
+    },
+    "Tribal Maul": {
+        "text": {
+            "0": "Tribal Maul",
+            "1": "祭仪巨锤"
+        },
+        "uniques": {}
+    },
+    "Mallet": {
+        "text": {
+            "0": "Mallet",
+            "1": "千斤锤"
+        },
+        "uniques": {}
+    },
+    "Fright Maul": {
+        "text": {
+            "0": "Fright Maul",
+            "1": "恐惧重锤"
+        },
+        "uniques": {}
+    },
+    "Totemic Maul": {
+        "text": {
+            "0": "Totemic Maul",
+            "1": "图腾巨锤"
+        },
+        "uniques": {}
+    },
+    "Blunt Force Condenser": {
+        "text": {
+            "0": "Blunt Force Condenser",
+            "1": "钝击之力凝聚器"
+        },
+        "uniques": {}
+    },
+    "Crushing Force Magnifier": {
+        "text": {
+            "0": "Crushing Force Magnifier",
+            "1": "破坏之力放大器"
+        },
+        "uniques": {}
+    },
+    "Impact Force Propagator": {
+        "text": {
+            "0": "Impact Force Propagator",
+            "1": "冲击之力扩散器"
+        },
+        "uniques": {}
+    },
+    "Morning Star": {
+        "text": {
+            "0": "Morning Star",
+            "1": "晨星"
+        },
+        "uniques": {}
+    },
+    "Solar Maul": {
+        "text": {
+            "0": "Solar Maul",
+            "1": "日光锤"
+        },
+        "uniques": {}
+    },
+    "Coronal Maul": {
+        "text": {
+            "0": "Coronal Maul",
+            "1": "花冠重锤"
+        },
+        "uniques": {}
+    },
+    "Engraved Greatsword": {
+        "text": {
+            "0": "Engraved Greatsword",
+            "1": "符文巨剑"
+        },
+        "uniques": {}
+    },
+    "Wraith Sword": {
+        "text": {
+            "0": "Wraith Sword",
+            "1": "凶灵巨剑"
+        },
+        "uniques": {}
+    },
+    "Headman's Sword": {
+        "text": {
+            "0": "Headman's Sword",
+            "1": "行刑巨剑"
+        },
+        "uniques": {}
+    },
+    "Vaal Greatsword": {
+        "text": {
+            "0": "Vaal Greatsword",
+            "1": "瓦尔巨剑"
+        },
+        "uniques": {}
+    },
+    "Longsword": {
+        "text": {
+            "0": "Longsword",
+            "1": "大剑"
+        },
+        "uniques": {}
+    },
+    "Two-Handed Sword": {
+        "text": {
+            "0": "Two-Handed Sword",
+            "1": "双手剑"
+        },
+        "uniques": {}
+    },
+    "Spectral Sword": {
+        "text": {
+            "0": "Spectral Sword",
+            "1": "幽魂巨剑"
+        },
+        "uniques": {}
+    },
+    "Butcher Sword": {
+        "text": {
+            "0": "Butcher Sword",
+            "1": "冷血巨剑"
+        },
+        "uniques": {}
+    },
+    "Footman Sword": {
+        "text": {
+            "0": "Footman Sword",
+            "1": "士兵巨剑"
+        },
+        "uniques": {}
+    },
+    "Rebuking Blade": {
+        "text": {
+            "0": "Rebuking Blade",
+            "1": "责难刀"
+        },
+        "uniques": {}
+    },
+    "Blasting Blade": {
+        "text": {
+            "0": "Blasting Blade",
+            "1": "爆破刀"
+        },
+        "uniques": {}
+    },
+    "Banishing Blade": {
+        "text": {
+            "0": "Banishing Blade",
+            "1": "放逐刀"
+        },
+        "uniques": {}
+    },
+    "Curved Blade": {
+        "text": {
+            "0": "Curved Blade",
+            "1": "弯刃"
+        },
+        "uniques": {}
+    },
+    "Lithe Blade": {
+        "text": {
+            "0": "Lithe Blade",
+            "1": "细刃"
+        },
+        "uniques": {}
+    },
+    "Exquisite Blade": {
+        "text": {
+            "0": "Exquisite Blade",
+            "1": "精致之刃"
+        },
+        "uniques": {}
+    },
+    "Calling Wand": {
+        "text": {
+            "0": "Calling Wand",
+            "1": "召唤法杖"
+        },
+        "uniques": {}
+    }
+}

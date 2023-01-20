@@ -1,0 +1,294 @@
+{
+    "names": {
+        "Quality": {
+            "text": {
+                "0": "Quality",
+                "1": "品质"
+            }
+        },
+        "Quality (Attribute Modifiers)": {
+            "text": {
+                "0": "Quality (Attribute Modifiers)",
+                "1": "品质（属性词缀）"
+            }
+        },
+        "Quality (Physical and Chaos Damage Modifiers)": {
+            "text": {
+                "0": "Quality (Physical and Chaos Damage Modifiers)",
+                "1": "品质（物理伤害和混沌伤害词缀）"
+            }
+        },
+        "Quality (Life and Mana Modifiers)": {
+            "text": {
+                "0": "Quality (Life and Mana Modifiers)",
+                "1": "品质（生命和魔力词缀）"
+            }
+        },
+        "Quality (Elemental Damage Modifiers)": {
+            "text": {
+                "0": "Quality (Elemental Damage Modifiers)",
+                "1": "品质（元素伤害词缀）"
+            }
+        },
+        "Quality (Resistance Modifiers)": {
+            "text": {
+                "0": "Quality (Resistance Modifiers)",
+                "1": "品质（抗性词缀）"
+            }
+        },
+        "Quality (Critical Modifiers)": {
+            "text": {
+                "0": "Quality (Critical Modifiers)",
+                "1": "品质（暴击词缀）"
+            }
+        },
+        "Quality (Caster Modifiers)": {
+            "text": {
+                "0": "Quality (Caster Modifiers)",
+                "1": "品质（施法词缀）"
+            }
+        },
+        "Quality (Defence Modifiers)": {
+            "text": {
+                "0": "Quality (Defence Modifiers)",
+                "1": "品质（防御词缀）"
+            }
+        },
+        "Quality (Attack Modifiers)": {
+            "text": {
+                "0": "Quality (Attack Modifiers)",
+                "1": "品质（攻击词缀）"
+            }
+        },
+        "Recovers {0} Life over {1} Seconds": {
+            "text": {
+                "0": "Recovers {0} Life over {1} Seconds",
+                "1": "{1} 秒内回复 {0} 生命"
+            }
+        },
+        "Recovers {0} Mana over {1} Seconds": {
+            "text": {
+                "0": "Recovers {0} Mana over {1} Seconds",
+                "1": "{1} 秒内回复 {0} 魔力"
+            }
+        },
+        "Consumes {0} of {1} Charges on use": {
+            "text": {
+                "0": "Consumes {0} of {1} Charges on use",
+                "1": "每次使用会从 {1} 充能次数中消耗 {0} 次"
+            }
+        },
+        "Currently has {0} Charges": {
+            "text": {
+                "0": "Currently has {0} Charges",
+                "1": "目前有 {0} 充能次数"
+            }
+        },
+        "Lasts {0} Seconds": {
+            "text": {
+                "0": "Lasts {0} Seconds",
+                "1": "持续 {0} 秒"
+            }
+        },
+        "Physical Damage": {
+            "text": {
+                "0": "Physical Damage",
+                "1": "物理伤害"
+            }
+        },
+        "Chaos Damage": {
+            "text": {
+                "0": "Chaos Damage",
+                "1": "混沌伤害"
+            }
+        },
+        "Energy Shield": {
+            "text": {
+                "0": "Energy Shield",
+                "1": "能量护盾"
+            }
+        },
+        "Weapon Range": {
+            "text": {
+                "0": "Weapon Range",
+                "1": "武器范围"
+            }
+        },
+        "Evasion rating": {
+            "text": {
+                "0": "Evasion rating",
+                "1": "闪避值"
+            }
+        },
+        "Ward": {
+            "text": {
+                "0": "Ward",
+                "1": "结界"
+            }
+        },
+        "Elemental Damage": {
+            "text": {
+                "0": "Elemental Damage",
+                "1": "火焰，冰霜，闪电伤害"
+            }
+        },
+        "Critical Strike Chance": {
+            "text": {
+                "0": "Critical Strike Chance",
+                "1": "攻击暴击率"
+            }
+        },
+        "Attacks per Second": {
+            "text": {
+                "0": "Attacks per Second",
+                "1": "每秒攻击次数"
+            }
+        },
+        "Armour": {
+            "text": {
+                "0": "Armour",
+                "1": "护甲"
+            }
+        },
+        "Abyss": {
+            "text": {
+                "0": "Abyss",
+                "1": "深渊"
+            }
+        },
+        "Chance to Block": {
+            "text": {
+                "0": "Chance to Block",
+                "1": "格挡几率"
+            }
+        },
+        "Radius": {
+            "text": {
+                "0": "Radius",
+                "1": "范围"
+            }
+        },
+        "Bow": {
+            "text": {
+                "0": "Bow",
+                "1": "弓"
+            }
+        },
+        "Warstaff": {
+            "text": {
+                "0": "Warstaff",
+                "1": "战杖"
+            }
+        },
+        "One Handed Sword": {
+            "text": {
+                "0": "One Handed Sword",
+                "1": "单手剑"
+            }
+        },
+        "Rune Dagger": {
+            "text": {
+                "0": "Rune Dagger",
+                "1": "符文匕首"
+            }
+        },
+        "Wand": {
+            "text": {
+                "0": "Wand",
+                "1": "法杖"
+            }
+        },
+        "Dagger": {
+            "text": {
+                "0": "Dagger",
+                "1": "匕首"
+            }
+        },
+        "Sceptre": {
+            "text": {
+                "0": "Sceptre",
+                "1": "短杖"
+            }
+        },
+        "Claw": {
+            "text": {
+                "0": "Claw",
+                "1": "爪"
+            }
+        },
+        "One Handed Mace": {
+            "text": {
+                "0": "One Handed Mace",
+                "1": "单手锤"
+            }
+        },
+        "One Handed Axe": {
+            "text": {
+                "0": "One Handed Axe",
+                "1": "单手斧"
+            }
+        },
+        "Fishing Rod": {
+            "text": {
+                "0": "Fishing Rod",
+                "1": "鱼竿"
+            }
+        },
+        "Staff": {
+            "text": {
+                "0": "Staff",
+                "1": "长杖"
+            }
+        },
+        "Two Handed Axe": {
+            "text": {
+                "0": "Two Handed Axe",
+                "1": "双手斧"
+            }
+        },
+        "Two Handed Sword": {
+            "text": {
+                "0": "Two Handed Sword",
+                "1": "双手剑"
+            }
+        },
+        "Two Handed Mace": {
+            "text": {
+                "0": "Two Handed Mace",
+                "1": "双手锤"
+            }
+        },
+        "Limited to": {
+            "text": {
+                "0": "Limited to",
+                "1": "仅限"
+            }
+        }
+    },
+    "values": {
+        "Variable": {
+            "text": {
+                "0": "Variable",
+                "1": "变量"
+            }
+        },
+        "Small": {
+            "text": {
+                "0": "Small",
+                "1": "小"
+            }
+        },
+        "Medium": {
+            "text": {
+                "0": "Medium",
+                "1": "中"
+            }
+        },
+        "Large": {
+            "text": {
+                "0": "Large",
+                "1": "大"
+            }
+        }
+    }
+}

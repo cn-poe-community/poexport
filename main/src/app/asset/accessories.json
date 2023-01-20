@@ -1,0 +1,2021 @@
+{
+    "Ruby Ring": {
+        "text": {
+            "0": "Ruby Ring",
+            "1": "红玉戒指"
+        },
+        "uniques": {
+            "Ahkeli's Meadow": {
+                "text": {
+                    "0": "Ahkeli's Meadow",
+                    "1": "阿克莱的草原"
+                }
+            },
+            "Ahkeli's Mountain": {
+                "text": {
+                    "0": "Ahkeli's Mountain",
+                    "1": "阿克莱的高山"
+                }
+            },
+            "Ahkeli's Valley": {
+                "text": {
+                    "0": "Ahkeli's Valley",
+                    "1": "阿克莱的山谷"
+                }
+            },
+            "Circle of Anguish": {
+                "text": {
+                    "0": "Circle of Anguish",
+                    "1": "苦痛之环"
+                }
+            },
+            "Emberwake": {
+                "text": {
+                    "0": "Emberwake",
+                    "1": "余烬之痕"
+                }
+            },
+            "Mokou's Embrace": {
+                "text": {
+                    "0": "Mokou's Embrace",
+                    "1": "莫考之拥"
+                }
+            },
+            "Ngamahu's Sign": {
+                "text": {
+                    "0": "Ngamahu's Sign",
+                    "1": "努葛玛呼之印"
+                }
+            },
+            "Precursor's Emblem": {
+                "text": {
+                    "0": "Precursor's Emblem",
+                    "1": "先驱的纹章"
+                }
+            },
+            "Replica Emberwake": {
+                "text": {
+                    "0": "Replica Emberwake",
+                    "1": "余烬之痕【仿品】"
+                }
+            },
+            "Warrior's Legacy": {
+                "text": {
+                    "0": "Warrior's Legacy",
+                    "1": "战士的遗产"
+                }
+            }
+        }
+    },
+    "Gold Ring": {
+        "text": {
+            "0": "Gold Ring",
+            "1": "金光戒指"
+        },
+        "uniques": {
+            "Andvarius": {
+                "text": {
+                    "0": "Andvarius",
+                    "1": "贪欲之记"
+                }
+            },
+            "The Highwayman": {
+                "text": {
+                    "0": "The Highwayman",
+                    "1": "绿林豪侠"
+                }
+            },
+            "Ventor's Gamble": {
+                "text": {
+                    "0": "Ventor's Gamble",
+                    "1": "赌神芬多"
+                }
+            }
+        }
+    },
+    "Unset Ring": {
+        "text": {
+            "0": "Unset Ring",
+            "1": "潜能之戒"
+        },
+        "uniques": {
+            "Angler's Plait": {
+                "text": {
+                    "0": "Angler's Plait",
+                    "1": "渔夫之辫"
+                }
+            },
+            "Brinerot Mark": {
+                "text": {
+                    "0": "Brinerot Mark",
+                    "1": "布琳洛特印记"
+                }
+            },
+            "Essence Worm": {
+                "text": {
+                    "0": "Essence Worm",
+                    "1": "菁华蠕虫"
+                }
+            },
+            "Hallowed Ground": {
+                "text": {
+                    "0": "Hallowed Ground",
+                    "1": "魔诅之域"
+                }
+            },
+            "Malachai's Artifice": {
+                "text": {
+                    "0": "Malachai's Artifice",
+                    "1": "玛拉凯的巧技"
+                }
+            },
+            "Mark of Submission": {
+                "text": {
+                    "0": "Mark of Submission",
+                    "1": "屈服印记"
+                }
+            },
+            "Mutewind Seal": {
+                "text": {
+                    "0": "Mutewind Seal",
+                    "1": "哑风封印"
+                }
+            },
+            "Profane Proxy": {
+                "text": {
+                    "0": "Profane Proxy",
+                    "1": "渎神代理"
+                }
+            },
+            "Redblade Band": {
+                "text": {
+                    "0": "Redblade Band",
+                    "1": "红刃之环"
+                }
+            },
+            "Replica Malachai's Artifice": {
+                "text": {
+                    "0": "Replica Malachai's Artifice",
+                    "1": "玛拉凯的巧技【仿品】"
+                }
+            },
+            "Replica Voideye": {
+                "text": {
+                    "0": "Replica Voideye",
+                    "1": "虚空慧眼【仿品】"
+                }
+            },
+            "Rotblood Promise": {
+                "text": {
+                    "0": "Rotblood Promise",
+                    "1": "腐血的承诺"
+                }
+            },
+            "The Hungry Loop": {
+                "text": {
+                    "0": "The Hungry Loop",
+                    "1": "饥饿之环 "
+                }
+            },
+            "The Pariah": {
+                "text": {
+                    "0": "The Pariah",
+                    "1": "草民"
+                }
+            },
+            "Triumvirate Authority": {
+                "text": {
+                    "0": "Triumvirate Authority",
+                    "1": "三头威仪"
+                }
+            },
+            "Vivinsect": {
+                "text": {
+                    "0": "Vivinsect",
+                    "1": "活解"
+                }
+            },
+            "Voideye": {
+                "text": {
+                    "0": "Voideye",
+                    "1": "虚空慧眼"
+                }
+            }
+        }
+    },
+    "Coral Amulet": {
+        "text": {
+            "0": "Coral Amulet",
+            "1": "珊瑚护身符"
+        },
+        "uniques": {
+            "Araku Tiki": {
+                "text": {
+                    "0": "Araku Tiki",
+                    "1": "隐灵之符"
+                }
+            },
+            "Bloodgrip": {
+                "text": {
+                    "0": "Bloodgrip",
+                    "1": "鲜血支配"
+                }
+            },
+            "Ngamahu Tiki": {
+                "text": {
+                    "0": "Ngamahu Tiki",
+                    "1": "努葛玛呼之像"
+                }
+            },
+            "Tavukai": {
+                "text": {
+                    "0": "Tavukai",
+                    "1": "圣令"
+                }
+            },
+            "The Primordial Chain": {
+                "text": {
+                    "0": "The Primordial Chain",
+                    "1": "原始锁链"
+                }
+            }
+        }
+    },
+    "Cloth Belt": {
+        "text": {
+            "0": "Cloth Belt",
+            "1": "饰布腰带"
+        },
+        "uniques": {
+            "Arn's Anguish": {
+                "text": {
+                    "0": "Arn's Anguish",
+                    "1": "阿恩的痛苦"
+                }
+            },
+            "Graven's Secret": {
+                "text": {
+                    "0": "Graven's Secret",
+                    "1": "葛拉文的秘宝"
+                }
+            },
+            "Olesya's Delight": {
+                "text": {
+                    "0": "Olesya's Delight",
+                    "1": "奥莱西亚的喜悦"
+                }
+            },
+            "Perandus Blazon": {
+                "text": {
+                    "0": "Perandus Blazon",
+                    "1": "普兰德斯之印"
+                }
+            },
+            "Replica Soul Tether": {
+                "text": {
+                    "0": "Replica Soul Tether",
+                    "1": "灵魂羁绊【仿品】"
+                }
+            },
+            "Soul Tether": {
+                "text": {
+                    "0": "Soul Tether",
+                    "1": "灵魂羁绊"
+                }
+            },
+            "Soulthirst": {
+                "text": {
+                    "0": "Soulthirst",
+                    "1": "嗜魂"
+                }
+            },
+            "Sunblast": {
+                "text": {
+                    "0": "Sunblast",
+                    "1": "日炎"
+                }
+            },
+            "The Druggery": {
+                "text": {
+                    "0": "The Druggery",
+                    "1": "复苏之药"
+                }
+            },
+            "The Flow Untethered": {
+                "text": {
+                    "0": "The Flow Untethered",
+                    "1": "流逝之时"
+                }
+            },
+            "The Torrent's Reclamation": {
+                "text": {
+                    "0": "The Torrent's Reclamation",
+                    "1": "沧海桑田"
+                }
+            }
+        }
+    },
+    "Chain Belt": {
+        "text": {
+            "0": "Chain Belt",
+            "1": "扣链腰带"
+        },
+        "uniques": {
+            "Ascent From Flesh": {
+                "text": {
+                    "0": "Ascent From Flesh",
+                    "1": "变节者"
+                }
+            },
+            "Auxium": {
+                "text": {
+                    "0": "Auxium",
+                    "1": "奥术之符"
+                }
+            },
+            "Bated Breath": {
+                "text": {
+                    "0": "Bated Breath",
+                    "1": "凝息"
+                }
+            },
+            "Chains of Emancipation": {
+                "text": {
+                    "0": "Chains of Emancipation",
+                    "1": "脱缚之锁"
+                }
+            },
+            "Coward's Chains": {
+                "text": {
+                    "0": "Coward's Chains",
+                    "1": "懦夫之链"
+                }
+            },
+            "Coward's Legacy": {
+                "text": {
+                    "0": "Coward's Legacy",
+                    "1": "懦夫之遗"
+                }
+            },
+            "Maligaro's Restraint": {
+                "text": {
+                    "0": "Maligaro's Restraint",
+                    "1": "马雷格罗的染血之环"
+                }
+            },
+            "Replica Bated Breath": {
+                "text": {
+                    "0": "Replica Bated Breath",
+                    "1": "凝息【仿品】"
+                }
+            }
+        }
+    },
+    "Topaz Ring": {
+        "text": {
+            "0": "Topaz Ring",
+            "1": "黄玉戒指"
+        },
+        "uniques": {
+            "Astral Projector": {
+                "text": {
+                    "0": "Astral Projector",
+                    "1": "星界投影"
+                }
+            },
+            "Circle of Regret": {
+                "text": {
+                    "0": "Circle of Regret",
+                    "1": "悔恨之环"
+                }
+            },
+            "Kikazaru": {
+                "text": {
+                    "0": "Kikazaru",
+                    "1": "基加萨鲁"
+                }
+            },
+            "Precursor's Emblem": {
+                "text": {
+                    "0": "Precursor's Emblem",
+                    "1": "先驱的纹章"
+                }
+            },
+            "Putembo's Meadow": {
+                "text": {
+                    "0": "Putembo's Meadow",
+                    "1": "普藤博的草原"
+                }
+            },
+            "Putembo's Mountain": {
+                "text": {
+                    "0": "Putembo's Mountain",
+                    "1": "普藤博的高山"
+                }
+            },
+            "Putembo's Valley": {
+                "text": {
+                    "0": "Putembo's Valley",
+                    "1": "普藤博的山谷"
+                }
+            },
+            "Storm Secret": {
+                "text": {
+                    "0": "Storm Secret",
+                    "1": "风暴之秘"
+                }
+            },
+            "Valako's Sign": {
+                "text": {
+                    "0": "Valako's Sign",
+                    "1": "瓦拉库之印"
+                }
+            },
+            "Nimis": {
+                "text": {
+                    "0": "Nimis",
+                    "1": "尼米斯"
+                }
+            }
+        }
+    },
+    "Onyx Amulet": {
+        "text": {
+            "0": "Onyx Amulet",
+            "1": "黑曜护身符"
+        },
+        "uniques": {
+            "Astramentis": {
+                "text": {
+                    "0": "Astramentis",
+                    "1": "均衡之符"
+                }
+            },
+            "Aul's Uprising": {
+                "text": {
+                    "0": "Aul's Uprising",
+                    "1": "奥尔之兴"
+                }
+            },
+            "Carnage Heart": {
+                "text": {
+                    "0": "Carnage Heart",
+                    "1": "屠戮之心"
+                }
+            },
+            "Eye of Chayula": {
+                "text": {
+                    "0": "Eye of Chayula",
+                    "1": "寻宝者的心眼"
+                }
+            },
+            "Hinekora's Sight": {
+                "text": {
+                    "0": "Hinekora's Sight",
+                    "1": "辛格拉的凝视"
+                }
+            },
+            "Impresence": {
+                "text": {
+                    "0": "Impresence",
+                    "1": "隐逝"
+                }
+            },
+            "Leadership's Price": {
+                "text": {
+                    "0": "Leadership's Price",
+                    "1": "领袖的代价"
+                }
+            },
+            "Presence of Chayula": {
+                "text": {
+                    "0": "Presence of Chayula",
+                    "1": "夏乌拉之印"
+                }
+            },
+            "Solstice Vigil": {
+                "text": {
+                    "0": "Solstice Vigil",
+                    "1": "至日不眠"
+                }
+            },
+            "Stranglegasp": {
+                "text": {
+                    "0": "Stranglegasp",
+                    "1": "绞杀之息"
+                }
+            },
+            "Yoke of Suffering": {
+                "text": {
+                    "0": "Yoke of Suffering",
+                    "1": "苦难羁绊"
+                }
+            },
+            "Ashes of the Stars": {
+                "text": {
+                    "0": "Ashes of the Stars",
+                    "1": "群星之灰"
+                }
+            },
+            "Crystallised Omniscience": {
+                "text": {
+                    "0": "Crystallised Omniscience",
+                    "1": "结晶全知"
+                }
+            }
+        }
+    },
+    "Paua Amulet": {
+        "text": {
+            "0": "Paua Amulet",
+            "1": "海灵护身符"
+        },
+        "uniques": {
+            "Atziri's Foible": {
+                "text": {
+                    "0": "Atziri's Foible",
+                    "1": "阿兹里圣徽"
+                }
+            },
+            "Replica Atziri's Foible": {
+                "text": {
+                    "0": "Replica Atziri's Foible",
+                    "1": "阿兹里圣徽【仿品】"
+                }
+            },
+            "Sacrificial Heart": {
+                "text": {
+                    "0": "Sacrificial Heart",
+                    "1": "祭祀之心"
+                }
+            },
+            "Sidhebreath": {
+                "text": {
+                    "0": "Sidhebreath",
+                    "1": "魔灵之符"
+                }
+            },
+            "Zerphi's Heart": {
+                "text": {
+                    "0": "Zerphi's Heart",
+                    "1": "泽佛伊之心"
+                }
+            }
+        }
+    },
+    "Crystal Belt": {
+        "text": {
+            "0": "Crystal Belt",
+            "1": "水晶腰带"
+        },
+        "uniques": {
+            "Auxium": {
+                "text": {
+                    "0": "Auxium",
+                    "1": "奥术之符"
+                }
+            }
+        }
+    },
+    "Turquoise Amulet": {
+        "text": {
+            "0": "Turquoise Amulet",
+            "1": "青玉护身符"
+        },
+        "uniques": {
+            "Badge of the Brotherhood": {
+                "text": {
+                    "0": "Badge of the Brotherhood",
+                    "1": "兄弟会徽章"
+                }
+            },
+            "Fury Valve": {
+                "text": {
+                    "0": "Fury Valve",
+                    "1": "愤怒之阀"
+                }
+            },
+            "Maligaro's Cruelty": {
+                "text": {
+                    "0": "Maligaro's Cruelty",
+                    "1": "马雷格罗的残酷"
+                }
+            },
+            "Ungil's Harmony": {
+                "text": {
+                    "0": "Ungil's Harmony",
+                    "1": "恩吉尔的和谐"
+                }
+            },
+            "Victario's Acuity": {
+                "text": {
+                    "0": "Victario's Acuity",
+                    "1": "维多里奥的捷思"
+                }
+            },
+            "Warped Timepiece": {
+                "text": {
+                    "0": "Warped Timepiece",
+                    "1": "时空扭曲"
+                }
+            }
+        }
+    },
+    "Leather Belt": {
+        "text": {
+            "0": "Leather Belt",
+            "1": "皮革腰带"
+        },
+        "uniques": {
+            "Bear's Girdle": {
+                "text": {
+                    "0": "Bear's Girdle",
+                    "1": "熊之束腰"
+                }
+            },
+            "Cyclopean Coil": {
+                "text": {
+                    "0": "Cyclopean Coil",
+                    "1": "巨岩指套"
+                }
+            },
+            "Gluttony": {
+                "text": {
+                    "0": "Gluttony",
+                    "1": "暴食"
+                }
+            },
+            "Headhunter": {
+                "text": {
+                    "0": "Headhunter",
+                    "1": "猎首"
+                }
+            },
+            "Hyperboreus": {
+                "text": {
+                    "0": "Hyperboreus",
+                    "1": "极北"
+                }
+            },
+            "Immortal Flesh": {
+                "text": {
+                    "0": "Immortal Flesh",
+                    "1": "永生"
+                }
+            },
+            "Leash of Oblation": {
+                "text": {
+                    "0": "Leash of Oblation",
+                    "1": "圣体之绳"
+                }
+            },
+            "Pyroshock Clasp": {
+                "text": {
+                    "0": "Pyroshock Clasp",
+                    "1": "火爆之拥"
+                }
+            },
+            "Replica Headhunter": {
+                "text": {
+                    "0": "Replica Headhunter",
+                    "1": "猎首【仿品】"
+                }
+            },
+            "Umbilicus Immortalis": {
+                "text": {
+                    "0": "Umbilicus Immortalis",
+                    "1": "不朽系命"
+                }
+            },
+            "Wurm's Molt": {
+                "text": {
+                    "0": "Wurm's Molt",
+                    "1": "龙蜕之带"
+                }
+            }
+        }
+    },
+    "Heavy Belt": {
+        "text": {
+            "0": "Heavy Belt",
+            "1": "重革腰带"
+        },
+        "uniques": {
+            "Belt of the Deceiver": {
+                "text": {
+                    "0": "Belt of the Deceiver",
+                    "1": "狡徒束腰"
+                }
+            },
+            "Bisco's Leash": {
+                "text": {
+                    "0": "Bisco's Leash",
+                    "1": "比斯克的缰绳"
+                }
+            },
+            "Doryani's Invitation": {
+                "text": {
+                    "0": "Doryani's Invitation",
+                    "1": "多里亚尼之约"
+                }
+            },
+            "Dyadian Dawn": {
+                "text": {
+                    "0": "Dyadian Dawn",
+                    "1": "戴亚迪安的晨曦"
+                }
+            },
+            "Mageblood": {
+                "text": {
+                    "0": "Mageblood",
+                    "1": "法师之血"
+                }
+            },
+            "Meginord's Girdle": {
+                "text": {
+                    "0": "Meginord's Girdle",
+                    "1": "梅吉诺德的力量泉源"
+                }
+            },
+            "Mother's Embrace": {
+                "text": {
+                    "0": "Mother's Embrace",
+                    "1": "母亲的拥抱"
+                }
+            },
+            "Replica Siegebreaker": {
+                "text": {
+                    "0": "Replica Siegebreaker",
+                    "1": "突围者【仿品】"
+                }
+            },
+            "Siegebreaker": {
+                "text": {
+                    "0": "Siegebreaker",
+                    "1": "突围者"
+                }
+            },
+            "String of Servitude": {
+                "text": {
+                    "0": "String of Servitude",
+                    "1": "奴役之索"
+                }
+            },
+            "Survivor's Guilt": {
+                "text": {
+                    "0": "Survivor's Guilt",
+                    "1": "幸存者的愧疚"
+                }
+            }
+        }
+    },
+    "Two-Stone Ring": {
+        "text": {
+            "0": "Two-Stone Ring",
+            "1": "双玉戒指"
+        },
+        "uniques": {
+            "Berek's Grip": {
+                "text": {
+                    "0": "Berek's Grip",
+                    "1": "贝雷克的冰与雷之曲"
+                }
+            },
+            "Berek's Pass": {
+                "text": {
+                    "0": "Berek's Pass",
+                    "1": "贝雷克的冰与火之歌"
+                }
+            },
+            "Berek's Respite": {
+                "text": {
+                    "0": "Berek's Respite",
+                    "1": "贝雷克的火与雷之乐"
+                }
+            },
+            "Call of the Brotherhood": {
+                "text": {
+                    "0": "Call of the Brotherhood",
+                    "1": "意志呼唤"
+                }
+            },
+            "Precursor's Emblem": {
+                "text": {
+                    "0": "Precursor's Emblem",
+                    "1": "先驱的纹章"
+                }
+            },
+            "Rigwald's Crest": {
+                "text": {
+                    "0": "Rigwald's Crest",
+                    "1": "瑞佛之冠"
+                }
+            }
+        }
+    },
+    "Gold Amulet": {
+        "text": {
+            "0": "Gold Amulet",
+            "1": "帝金护身符"
+        },
+        "uniques": {
+            "Bisco's Collar": {
+                "text": {
+                    "0": "Bisco's Collar",
+                    "1": "比斯克的项圈"
+                }
+            },
+            "Demigod's Presence": {
+                "text": {
+                    "0": "Demigod's Presence",
+                    "1": "升华之印"
+                }
+            },
+            "Perquil's Toe": {
+                "text": {
+                    "0": "Perquil's Toe",
+                    "1": "珀奎尔之趾"
+                }
+            },
+            "Replica Winterheart": {
+                "text": {
+                    "0": "Replica Winterheart",
+                    "1": "冬之心【仿品】"
+                }
+            },
+            "The Ascetic": {
+                "text": {
+                    "0": "The Ascetic",
+                    "1": "苦行"
+                }
+            },
+            "The Effigon": {
+                "text": {
+                    "0": "The Effigon",
+                    "1": "耀阳徽记"
+                }
+            },
+            "The Ignomon": {
+                "text": {
+                    "0": "The Ignomon",
+                    "1": "烈阳徽记"
+                }
+            },
+            "Winterheart": {
+                "text": {
+                    "0": "Winterheart",
+                    "1": "冬之心"
+                }
+            }
+        }
+    },
+    "Amethyst Ring": {
+        "text": {
+            "0": "Amethyst Ring",
+            "1": "紫晶戒指"
+        },
+        "uniques": {
+            "Blackflame": {
+                "text": {
+                    "0": "Blackflame",
+                    "1": "黑焰"
+                }
+            },
+            "Circle of Nostalgia": {
+                "text": {
+                    "0": "Circle of Nostalgia",
+                    "1": "乡愁之环"
+                }
+            },
+            "Death Rush": {
+                "text": {
+                    "0": "Death Rush",
+                    "1": "亡者呼唤"
+                }
+            },
+            "Ming's Heart": {
+                "text": {
+                    "0": "Ming's Heart",
+                    "1": "明恩的慧心"
+                }
+            }
+        }
+    },
+    "Iron Ring": {
+        "text": {
+            "0": "Iron Ring",
+            "1": "锻铁戒指"
+        },
+        "uniques": {
+            "Blackheart": {
+                "text": {
+                    "0": "Blackheart",
+                    "1": "幽暗之语"
+                }
+            },
+            "Circle of Guilt": {
+                "text": {
+                    "0": "Circle of Guilt",
+                    "1": "罪恶之环"
+                }
+            },
+            "Icefang Orbit": {
+                "text": {
+                    "0": "Icefang Orbit",
+                    "1": "冰牙指环"
+                }
+            },
+            "Le Heup of All": {
+                "text": {
+                    "0": "Le Heup of All",
+                    "1": "英灵宝环"
+                }
+            },
+            "The Warden's Brand": {
+                "text": {
+                    "0": "The Warden's Brand",
+                    "1": "守卫之铭"
+                }
+            },
+            "Venopuncture": {
+                "text": {
+                    "0": "Venopuncture",
+                    "1": "静脉穿刺"
+                }
+            },
+            "Voidheart": {
+                "text": {
+                    "0": "Voidheart",
+                    "1": "虚空心灵"
+                }
+            }
+        }
+    },
+    "Clutching Talisman": {
+        "text": {
+            "0": "Clutching Talisman",
+            "1": "咒箍魔符"
+        },
+        "uniques": {
+            "Blightwell": {
+                "text": {
+                    "0": "Blightwell",
+                    "1": "枯井"
+                }
+            }
+        }
+    },
+    "Coral Ring": {
+        "text": {
+            "0": "Coral Ring",
+            "1": "珊瑚戒指"
+        },
+        "uniques": {
+            "Bloodboil": {
+                "text": {
+                    "0": "Bloodboil",
+                    "1": "沸血"
+                }
+            },
+            "Kaom's Sign": {
+                "text": {
+                    "0": "Kaom's Sign",
+                    "1": "冈姆的远见"
+                }
+            },
+            "Kaom's Way": {
+                "text": {
+                    "0": "Kaom's Way",
+                    "1": "冈姆之路"
+                }
+            },
+            "Sibyl's Lament": {
+                "text": {
+                    "0": "Sibyl's Lament",
+                    "1": "希比尔之叹"
+                }
+            },
+            "Winterweave": {
+                "text": {
+                    "0": "Winterweave",
+                    "1": "冬日之织"
+                }
+            }
+        }
+    },
+    "Marble Amulet": {
+        "text": {
+            "0": "Marble Amulet",
+            "1": "大理石护身符"
+        },
+        "uniques": {
+            "Bloodgrip": {
+                "text": {
+                    "0": "Bloodgrip",
+                    "1": "鲜血支配"
+                }
+            }
+        }
+    },
+    "Amber Amulet": {
+        "text": {
+            "0": "Amber Amulet",
+            "1": "琥珀护身符"
+        },
+        "uniques": {
+            "Blood of Corruption": {
+                "text": {
+                    "0": "Blood of Corruption",
+                    "1": "堕落之血"
+                }
+            },
+            "The Anvil": {
+                "text": {
+                    "0": "The Anvil",
+                    "1": "信念之砧"
+                }
+            },
+            "Xoph's Blood": {
+                "text": {
+                    "0": "Xoph's Blood",
+                    "1": "索伏之血"
+                }
+            },
+            "Xoph's Heart": {
+                "text": {
+                    "0": "Xoph's Heart",
+                    "1": "索伏之心"
+                }
+            }
+        }
+    },
+    "Lapis Amulet": {
+        "text": {
+            "0": "Lapis Amulet",
+            "1": "海玉护身符"
+        },
+        "uniques": {
+            "Choir of the Storm": {
+                "text": {
+                    "0": "Choir of the Storm",
+                    "1": "暴风之语"
+                }
+            },
+            "Marylene's Fallacy": {
+                "text": {
+                    "0": "Marylene's Fallacy",
+                    "1": "玛莉琳的护体之符"
+                }
+            },
+            "Stone of Lazhwar": {
+                "text": {
+                    "0": "Stone of Lazhwar",
+                    "1": "拉兹瓦的灵石"
+                }
+            },
+            "Tear of Purity": {
+                "text": {
+                    "0": "Tear of Purity",
+                    "1": "纯净之泪"
+                }
+            },
+            "The Ephemeral Bond": {
+                "text": {
+                    "0": "The Ephemeral Bond",
+                    "1": "短暂羁绊"
+                }
+            },
+            "Voice of the Storm": {
+                "text": {
+                    "0": "Voice of the Storm",
+                    "1": "暴风之言"
+                }
+            },
+            "Doedre's Tongue": {
+                "text": {
+                    "0": "Doedre's Tongue",
+                    "1": "德瑞之舌"
+                }
+            }
+        }
+    },
+    "Sapphire Ring": {
+        "text": {
+            "0": "Sapphire Ring",
+            "1": "蓝玉戒指"
+        },
+        "uniques": {
+            "Circle of Fear": {
+                "text": {
+                    "0": "Circle of Fear",
+                    "1": "恐惧之环"
+                }
+            },
+            "Dream Fragments": {
+                "text": {
+                    "0": "Dream Fragments",
+                    "1": "梦语之痕"
+                }
+            },
+            "Precursor's Emblem": {
+                "text": {
+                    "0": "Precursor's Emblem",
+                    "1": "先驱的纹章"
+                }
+            },
+            "Pyre": {
+                "text": {
+                    "0": "Pyre",
+                    "1": "燃焰"
+                }
+            },
+            "Replica Tasalio's Sign": {
+                "text": {
+                    "0": "Replica Tasalio's Sign",
+                    "1": "塔萨里奥之印【仿品】"
+                }
+            },
+            "Snakepit": {
+                "text": {
+                    "0": "Snakepit",
+                    "1": "蛇穴"
+                }
+            },
+            "Tasalio's Sign": {
+                "text": {
+                    "0": "Tasalio's Sign",
+                    "1": "塔萨里奥之印"
+                }
+            },
+            "Uzaza's Meadow": {
+                "text": {
+                    "0": "Uzaza's Meadow",
+                    "1": "乌扎萨的草原"
+                }
+            },
+            "Uzaza's Mountain": {
+                "text": {
+                    "0": "Uzaza's Mountain",
+                    "1": "乌扎萨的高山"
+                }
+            },
+            "Uzaza's Valley": {
+                "text": {
+                    "0": "Uzaza's Valley",
+                    "1": "乌扎萨的山谷"
+                }
+            }
+        }
+    },
+    "Citrine Amulet": {
+        "text": {
+            "0": "Citrine Amulet",
+            "1": "黄晶护身符"
+        },
+        "uniques": {
+            "Daresso's Salute": {
+                "text": {
+                    "0": "Daresso's Salute",
+                    "1": "德瑞索的战礼"
+                }
+            },
+            "Eye of Innocence": {
+                "text": {
+                    "0": "Eye of Innocence",
+                    "1": "无罪之眼"
+                }
+            },
+            "Retaliation Charm": {
+                "text": {
+                    "0": "Retaliation Charm",
+                    "1": "复仇的魅力"
+                }
+            },
+            "The Felbog Fang": {
+                "text": {
+                    "0": "The Felbog Fang",
+                    "1": "费伯之牙"
+                }
+            },
+            "The Jinxed Juju": {
+                "text": {
+                    "0": "The Jinxed Juju",
+                    "1": "厄运护符"
+                }
+            }
+        }
+    },
+    "Stygian Vise": {
+        "text": {
+            "0": "Stygian Vise",
+            "1": "深渊腰带"
+        },
+        "uniques": {
+            "Darkness Enthroned": {
+                "text": {
+                    "0": "Darkness Enthroned",
+                    "1": "夜临"
+                }
+            }
+        }
+    },
+    "Golden Obi": {
+        "text": {
+            "0": "Golden Obi",
+            "1": "金羽腰带"
+        },
+        "uniques": {
+            "Demigod's Bounty": {
+                "text": {
+                    "0": "Demigod's Bounty",
+                    "1": "升华珍宝"
+                }
+            }
+        }
+    },
+    "Golden Hoop": {
+        "text": {
+            "0": "Golden Hoop",
+            "1": "金环"
+        },
+        "uniques": {
+            "Demigod's Eye": {
+                "text": {
+                    "0": "Demigod's Eye",
+                    "1": "升华之眼"
+                }
+            }
+        }
+    },
+    "Paua Ring": {
+        "text": {
+            "0": "Paua Ring",
+            "1": "海灵戒指"
+        },
+        "uniques": {
+            "Doedre's Damning": {
+                "text": {
+                    "0": "Doedre's Damning",
+                    "1": "德瑞的魔具"
+                }
+            },
+            "Fated End": {
+                "text": {
+                    "0": "Fated End",
+                    "1": "命中注定"
+                }
+            },
+            "Perandus Signet": {
+                "text": {
+                    "0": "Perandus Signet",
+                    "1": "普兰德斯之记"
+                }
+            },
+            "Praxis": {
+                "text": {
+                    "0": "Praxis",
+                    "1": "普拉克斯"
+                }
+            },
+            "Replica Doedre's Damning": {
+                "text": {
+                    "0": "Replica Doedre's Damning",
+                    "1": "德瑞的魔具【仿品】"
+                }
+            }
+        }
+    },
+    "Agate Amulet": {
+        "text": {
+            "0": "Agate Amulet",
+            "1": "玛瑙护身符"
+        },
+        "uniques": {
+            "Extractor Mentis": {
+                "text": {
+                    "0": "Extractor Mentis",
+                    "1": "心灵抽取"
+                }
+            },
+            "Shaper's Seed": {
+                "text": {
+                    "0": "Shaper's Seed",
+                    "1": "塑界者之籽"
+                }
+            },
+            "The Aylardex": {
+                "text": {
+                    "0": "The Aylardex",
+                    "1": "埃拉黛丝"
+                }
+            },
+            "Voll's Devotion": {
+                "text": {
+                    "0": "Voll's Devotion",
+                    "1": "福尔的忠诚之符"
+                }
+            },
+            "Eternal Damnation": {
+                "text": {
+                    "0": "Eternal Damnation",
+                    "1": "永恒诅咒"
+                }
+            }
+        }
+    },
+    "Greatwolf Talisman": {
+        "text": {
+            "0": "Greatwolf Talisman",
+            "1": "狼王魔符"
+        },
+        "uniques": {
+            "Eyes of the Greatwolf": {
+                "text": {
+                    "0": "Eyes of the Greatwolf",
+                    "1": "巨狼之眼"
+                }
+            }
+        }
+    },
+    "Rustic Sash": {
+        "text": {
+            "0": "Rustic Sash",
+            "1": "素布腰带"
+        },
+        "uniques": {
+            "Faminebind": {
+                "text": {
+                    "0": "Faminebind",
+                    "1": "饥荒之结"
+                }
+            },
+            "Feastbind": {
+                "text": {
+                    "0": "Feastbind",
+                    "1": "盛宴之结"
+                }
+            },
+            "Prismweave": {
+                "text": {
+                    "0": "Prismweave",
+                    "1": "幻彩菱织"
+                }
+            },
+            "Replica Prismweave": {
+                "text": {
+                    "0": "Replica Prismweave",
+                    "1": "幻彩菱织【仿品】"
+                }
+            },
+            "The Retch": {
+                "text": {
+                    "0": "The Retch",
+                    "1": "呕吐"
+                }
+            }
+        }
+    },
+    "Diamond Ring": {
+        "text": {
+            "0": "Diamond Ring",
+            "1": "宝钻戒指"
+        },
+        "uniques": {
+            "Gifts from Above": {
+                "text": {
+                    "0": "Gifts from Above",
+                    "1": "神赐"
+                }
+            },
+            "Romira's Banquet": {
+                "text": {
+                    "0": "Romira's Banquet",
+                    "1": "罗米拉的潜力之环"
+                }
+            }
+        }
+    },
+    "Blue Pearl Amulet": {
+        "text": {
+            "0": "Blue Pearl Amulet",
+            "1": "碧珠护身符"
+        },
+        "uniques": {
+            "Gloomfang": {
+                "text": {
+                    "0": "Gloomfang",
+                    "1": "昏暗之牙"
+                }
+            }
+        }
+    },
+    "Moonstone Ring": {
+        "text": {
+            "0": "Moonstone Ring",
+            "1": "月光石戒指"
+        },
+        "uniques": {
+            "Heartbound Loop": {
+                "text": {
+                    "0": "Heartbound Loop",
+                    "1": "结魂之环"
+                }
+            },
+            "Shavronne's Revelation": {
+                "text": {
+                    "0": "Shavronne's Revelation",
+                    "1": "薛朗的启示之环"
+                }
+            },
+            "Timeclasp": {
+                "text": {
+                    "0": "Timeclasp",
+                    "1": "时光之握"
+                }
+            },
+            "Timetwist": {
+                "text": {
+                    "0": "Timetwist",
+                    "1": "时空扭曲"
+                }
+            },
+            "Valyrium": {
+                "text": {
+                    "0": "Valyrium",
+                    "1": "女武神"
+                }
+            },
+            "Anathema": {
+                "text": {
+                    "0": "Anathema",
+                    "1": "咒逐"
+                }
+            }
+        }
+    },
+    "Jade Amulet": {
+        "text": {
+            "0": "Jade Amulet",
+            "1": "翠玉护身符"
+        },
+        "uniques": {
+            "Hyrri's Truth": {
+                "text": {
+                    "0": "Hyrri's Truth",
+                    "1": "西里的真相"
+                }
+            },
+            "Karui Charge": {
+                "text": {
+                    "0": "Karui Charge",
+                    "1": "卡鲁充能"
+                }
+            },
+            "Karui Ward": {
+                "text": {
+                    "0": "Karui Ward",
+                    "1": "卡鲁的战徽"
+                }
+            },
+            "Rashkaldor's Patience": {
+                "text": {
+                    "0": "Rashkaldor's Patience",
+                    "1": "拉什卡德的耐心"
+                }
+            },
+            "Replica Hyrri's Truth": {
+                "text": {
+                    "0": "Replica Hyrri's Truth",
+                    "1": "西里的真相【仿品】"
+                }
+            },
+            "Replica Karui Ward": {
+                "text": {
+                    "0": "Replica Karui Ward",
+                    "1": "卡鲁的战徽【仿品】"
+                }
+            },
+            "The Halcyon": {
+                "text": {
+                    "0": "The Halcyon",
+                    "1": "太平"
+                }
+            },
+            "The Pandemonius": {
+                "text": {
+                    "0": "The Pandemonius",
+                    "1": "群魔殿"
+                }
+            },
+            "Willowgift": {
+                "text": {
+                    "0": "Willowgift",
+                    "1": "柳树之赐"
+                }
+            }
+        }
+    },
+    "Prismatic Ring": {
+        "text": {
+            "0": "Prismatic Ring",
+            "1": "三相戒指"
+        },
+        "uniques": {
+            "Lori's Lantern": {
+                "text": {
+                    "0": "Lori's Lantern",
+                    "1": "罗里的幸运之灯"
+                }
+            },
+            "Precursor's Emblem": {
+                "text": {
+                    "0": "Precursor's Emblem",
+                    "1": "先驱的纹章"
+                }
+            },
+            "The Taming": {
+                "text": {
+                    "0": "The Taming",
+                    "1": "元素之章"
+                }
+            },
+            "Thief's Torment": {
+                "text": {
+                    "0": "Thief's Torment",
+                    "1": "窃罪"
+                }
+            }
+        }
+    },
+    "Steel Ring": {
+        "text": {
+            "0": "Steel Ring",
+            "1": "合金戒指"
+        },
+        "uniques": {
+            "Mark of the Elder": {
+                "text": {
+                    "0": "Mark of the Elder",
+                    "1": "裂界之印"
+                }
+            }
+        }
+    },
+    "Opal Ring": {
+        "text": {
+            "0": "Opal Ring",
+            "1": "蛋白石戒指"
+        },
+        "uniques": {
+            "Mark of the Shaper": {
+                "text": {
+                    "0": "Mark of the Shaper",
+                    "1": "塑界之印"
+                }
+            },
+            "Stormfire": {
+                "text": {
+                    "0": "Stormfire",
+                    "1": "风暴之炎"
+                }
+            },
+            "Polaric Devastation": {
+                "text": {
+                    "0": "Polaric Devastation",
+                    "1": "毁灭激波"
+                }
+            }
+        }
+    },
+    "Rotfeather Talisman": {
+        "text": {
+            "0": "Rotfeather Talisman",
+            "1": "死羽魔符"
+        },
+        "uniques": {
+            "Natural Hierarchy": {
+                "text": {
+                    "0": "Natural Hierarchy",
+                    "1": "自然组织"
+                }
+            }
+        }
+    },
+    "Black Maw Talisman": {
+        "text": {
+            "0": "Black Maw Talisman",
+            "1": "黑牙魔符"
+        },
+        "uniques": {
+            "Night's Hold": {
+                "text": {
+                    "0": "Night's Hold",
+                    "1": "夜守"
+                }
+            }
+        }
+    },
+    "Vanguard Belt": {
+        "text": {
+            "0": "Vanguard Belt",
+            "1": "先锋腰带"
+        },
+        "uniques": {
+            "Perseverance": {
+                "text": {
+                    "0": "Perseverance",
+                    "1": "恒毅意志"
+                }
+            }
+        }
+    },
+    "Wereclaw Talisman": {
+        "text": {
+            "0": "Wereclaw Talisman",
+            "1": "亡爪魔符"
+        },
+        "uniques": {
+            "Rigwald's Curse": {
+                "text": {
+                    "0": "Rigwald's Curse",
+                    "1": "瑞佛诅咒"
+                }
+            }
+        }
+    },
+    "Studded Belt": {
+        "text": {
+            "0": "Studded Belt",
+            "1": "扣钉腰带"
+        },
+        "uniques": {
+            "Ryslatha's Coil": {
+                "text": {
+                    "0": "Ryslatha's Coil",
+                    "1": "瑞斯拉萨的线圈"
+                }
+            },
+            "The Magnate": {
+                "text": {
+                    "0": "The Magnate",
+                    "1": "坚毅之环"
+                }
+            },
+            "The Nomad": {
+                "text": {
+                    "0": "The Nomad",
+                    "1": "游牧之环"
+                }
+            },
+            "The Tactician": {
+                "text": {
+                    "0": "The Tactician",
+                    "1": "谋士之环"
+                }
+            }
+        }
+    },
+    "Ruby Amulet": {
+        "text": {
+            "0": "Ruby Amulet",
+            "1": "血色护身符"
+        },
+        "uniques": {
+            "Star of Wraeclast": {
+                "text": {
+                    "0": "Star of Wraeclast",
+                    "1": "瓦尔克拉斯之星"
+                }
+            }
+        }
+    },
+    "Jet Amulet": {
+        "text": {
+            "0": "Jet Amulet",
+            "1": "杰特护身符"
+        },
+        "uniques": {
+            "Talisman of the Victor": {
+                "text": {
+                    "0": "Talisman of the Victor",
+                    "1": "胜者护符"
+                }
+            }
+        }
+    },
+    "Unset Amulet": {
+        "text": {
+            "0": "Unset Amulet",
+            "1": "潜能项链"
+        },
+        "uniques": {
+            "Uul-Netol's Vow": {
+                "text": {
+                    "0": "Uul-Netol's Vow",
+                    "1": "乌尔尼多之誓"
+                }
+            }
+        }
+    },
+    "Seaglass Amulet": {
+        "text": {
+            "0": "Seaglass Amulet",
+            "1": "海晶护符"
+        },
+        "uniques": {}
+    },
+    "Astrolabe Amulet": {
+        "text": {
+            "0": "Astrolabe Amulet",
+            "1": "星盘项链"
+        },
+        "uniques": {}
+    },
+    "Simplex Amulet": {
+        "text": {
+            "0": "Simplex Amulet",
+            "1": "朴实项链"
+        },
+        "uniques": {}
+    },
+    "Mandible Talisman": {
+        "text": {
+            "0": "Mandible Talisman",
+            "1": "巨颚魔符"
+        },
+        "uniques": {}
+    },
+    "Chrysalis Talisman": {
+        "text": {
+            "0": "Chrysalis Talisman",
+            "1": "虫蛹魔符"
+        },
+        "uniques": {}
+    },
+    "Writhing Talisman": {
+        "text": {
+            "0": "Writhing Talisman",
+            "1": "狂癫魔符"
+        },
+        "uniques": {}
+    },
+    "Bonespire Talisman": {
+        "text": {
+            "0": "Bonespire Talisman",
+            "1": "脊骨魔符"
+        },
+        "uniques": {}
+    },
+    "Ashscale Talisman": {
+        "text": {
+            "0": "Ashscale Talisman",
+            "1": "灰烬魔符"
+        },
+        "uniques": {}
+    },
+    "Lone Antler Talisman": {
+        "text": {
+            "0": "Lone Antler Talisman",
+            "1": "孤角魔符"
+        },
+        "uniques": {}
+    },
+    "Deep One Talisman": {
+        "text": {
+            "0": "Deep One Talisman",
+            "1": "深渊魔符"
+        },
+        "uniques": {}
+    },
+    "Breakrib Talisman": {
+        "text": {
+            "0": "Breakrib Talisman",
+            "1": "碎骨魔符"
+        },
+        "uniques": {}
+    },
+    "Deadhand Talisman": {
+        "text": {
+            "0": "Deadhand Talisman",
+            "1": "亡手魔符"
+        },
+        "uniques": {}
+    },
+    "Undying Flesh Talisman": {
+        "text": {
+            "0": "Undying Flesh Talisman",
+            "1": "不朽魔符"
+        },
+        "uniques": {}
+    },
+    "Rot Head Talisman": {
+        "text": {
+            "0": "Rot Head Talisman",
+            "1": "腐首魔符"
+        },
+        "uniques": {}
+    },
+    "Hexclaw Talisman": {
+        "text": {
+            "0": "Hexclaw Talisman",
+            "1": "幻爪魔符"
+        },
+        "uniques": {}
+    },
+    "Primal Skull Talisman": {
+        "text": {
+            "0": "Primal Skull Talisman",
+            "1": "皇骨魔符"
+        },
+        "uniques": {}
+    },
+    "Splitnewt Talisman": {
+        "text": {
+            "0": "Splitnewt Talisman",
+            "1": "断螈魔符"
+        },
+        "uniques": {}
+    },
+    "Avian Twins Talisman": {
+        "text": {
+            "0": "Avian Twins Talisman",
+            "1": "双子魔符"
+        },
+        "uniques": {}
+    },
+    "Fangjaw Talisman": {
+        "text": {
+            "0": "Fangjaw Talisman",
+            "1": "齿鲨魔符"
+        },
+        "uniques": {}
+    },
+    "Horned Talisman": {
+        "text": {
+            "0": "Horned Talisman",
+            "1": "尖角魔符"
+        },
+        "uniques": {}
+    },
+    "Spinefuse Talisman": {
+        "text": {
+            "0": "Spinefuse Talisman",
+            "1": "潜能魔符"
+        },
+        "uniques": {}
+    },
+    "Three Rat Talisman": {
+        "text": {
+            "0": "Three Rat Talisman",
+            "1": "三鼠魔符"
+        },
+        "uniques": {}
+    },
+    "Monkey Twins Talisman": {
+        "text": {
+            "0": "Monkey Twins Talisman",
+            "1": "双猴魔符"
+        },
+        "uniques": {}
+    },
+    "Longtooth Talisman": {
+        "text": {
+            "0": "Longtooth Talisman",
+            "1": "长牙魔符"
+        },
+        "uniques": {}
+    },
+    "Monkey Paw Talisman": {
+        "text": {
+            "0": "Monkey Paw Talisman",
+            "1": "猴掌魔符"
+        },
+        "uniques": {}
+    },
+    "Three Hands Talisman": {
+        "text": {
+            "0": "Three Hands Talisman",
+            "1": "三手魔符"
+        },
+        "uniques": {}
+    },
+    "Micro-Distillery Belt": {
+        "text": {
+            "0": "Micro-Distillery Belt",
+            "1": "低酿腰带"
+        },
+        "uniques": {}
+    },
+    "Mechalarm Belt": {
+        "text": {
+            "0": "Mechalarm Belt",
+            "1": "警戒腰带"
+        },
+        "uniques": {}
+    },
+    "Breach Ring": {
+        "text": {
+            "0": "Breach Ring",
+            "1": "裂隙戒指"
+        },
+        "uniques": {}
+    },
+    "Vermillion Ring": {
+        "text": {
+            "0": "Vermillion Ring",
+            "1": "朱砂之戒"
+        },
+        "uniques": {}
+    },
+    "Cerulean Ring": {
+        "text": {
+            "0": "Cerulean Ring",
+            "1": "天蓝之戒"
+        },
+        "uniques": {}
+    },
+    "Iolite Ring": {
+        "text": {
+            "0": "Iolite Ring",
+            "1": "青石戒指"
+        },
+        "uniques": {}
+    },
+    "Cogwork Ring": {
+        "text": {
+            "0": "Cogwork Ring",
+            "1": "齿轮戒指"
+        },
+        "uniques": {}
+    },
+    "Geodesic Ring": {
+        "text": {
+            "0": "Geodesic Ring",
+            "1": "地线戒指"
+        },
+        "uniques": {}
+    },
+    "Thief's Trinket": {
+        "text": {
+            "0": "Thief's Trinket",
+            "1": "赏金猎人饰品"
+        },
+        "uniques": {}
+    },
+    "Ring": {
+        "text": {
+            "0": "Ring",
+            "1": "戒指"
+        },
+        "uniques": {
+            "Kalandra's Touch": {
+                "text": {
+                    "0": "Kalandra's Touch",
+                    "1": "卡兰德之触"
+                }
+            }
+        }
+    },
+    "Bone Ring": {
+        "text": {
+            "0": "Bone Ring",
+            "1": "骨环"
+        },
+        "uniques": {}
+    },
+    "Dusk Ring": {
+        "text": {
+            "0": "Dusk Ring",
+            "1": "戒指：暮色"
+        },
+        "uniques": {}
+    },
+    "Gloam Ring": {
+        "text": {
+            "0": "Gloam Ring",
+            "1": "戒指：薄暮"
+        },
+        "uniques": {}
+    },
+    "Penumbra Ring": {
+        "text": {
+            "0": "Penumbra Ring",
+            "1": "戒指：半影"
+        },
+        "uniques": {}
+    },
+    "Shadowed Ring": {
+        "text": {
+            "0": "Shadowed Ring",
+            "1": "戒指：暗影"
+        },
+        "uniques": {}
+    },
+    "Tenebrous Ring": {
+        "text": {
+            "0": "Tenebrous Ring",
+            "1": "戒指：暗黑"
+        },
+        "uniques": {}
+    }
+}
