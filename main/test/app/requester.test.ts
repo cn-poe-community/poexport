@@ -39,6 +39,18 @@ function testGetPassiveSkills() {
     });
 }
 
+function testGetItems() {
+    const accountName = "小左啊";
+    const character = "斗鱼搜小左呀";
+    const realm = "pc";
+
+    test(`get items success`, async () => {
+        const result = await effectiveRequester.getItems(accountName, character, realm);
+        expect(result !== null && result !== undefined).toBe(true);
+    });
+}
+
 testIsEffectiveSession();
 testGetCharacters();
 testGetPassiveSkills();
+testGetItems();

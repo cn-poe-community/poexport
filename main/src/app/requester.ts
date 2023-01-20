@@ -6,7 +6,7 @@ const TEST_URL = "https://poe.game.qq.com/trade";
 const GET_CHARACTERS_URL = "https://poe.game.qq.com/character-window/get-characters";
 const VIEW_PROFILE_URL_PREFIX = "https://poe.game.qq.com/account/view-profile/";
 const GET_PASSIVE_SKILLS_URL = "https://poe.game.qq.com/character-window/get-passive-skills";
-const GET_ITEMS_URL = "https://poe.game.qq.com//character-window/get-items";
+const GET_ITEMS_URL = "https://poe.game.qq.com/character-window/get-items";
 
 /**
  * POE API requester
@@ -103,7 +103,7 @@ export class Requester {
         form.append("realm", realm);
 
         try {
-            const res = await axios.post(GET_ITEMS_URL, {
+            const res = await axios.post(GET_ITEMS_URL, form, {
                 headers: {
                     Cookie: `POESESSID=${this.session}`,
                 }
