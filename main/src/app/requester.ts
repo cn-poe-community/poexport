@@ -18,23 +18,27 @@ export class Requester {
         this.session = session;
     }
 
-    /**
-     * 测试POESESSID是否有效。
-     * 
-     * @returns 包装结果的Promise。如果有效，结果为true；否则为false。
-     */
-    public async isEffectiveSession(): Promise<boolean> {
+    public static async isEffectiveSession(session: string): Promise<boolean> {
         try {
             await axios.get(TEST_URL, {
                 maxRedirects: 0,
                 headers: {
-                    Cookie: `POESESSID=${this.session}`,
+                    Cookie: `POESESSID=${session}`,
                 }
             });
             return true;
         } catch (error) {
             return false;
         }
+    }
+
+    /**
+     * 测试POESESSID是否有效。
+     * 
+     * @returns 包装结果的Promise。如果有效，结果为true；否则为false。
+     */
+    public async isEffectiveSession(): Promise<boolean> {
+        return Requester.isEffectiveSession(this.session);
     }
 
     /**

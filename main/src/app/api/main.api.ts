@@ -1,14 +1,19 @@
 import { IpcMainEvent } from "electron";
-import { Config } from "../../../../ipc/types";
+import { Config, IPCError } from "../../../../ipc/types";
 
-export function handleGetConfig(): Config {
-    return {
-        poeSessId: "123",
-        pobPath: "c:/",
-    }
+let handleGetConfigImpl: () => Config;
+let handleSetConfigImpl: (config: Config) => Promise<IPCError | undefined>;
+
+export function initMainAPI(getConfig: () => Config,
+    setConfig: (config: Config) => Promise<IPCError | undefined>) {
+    handleGetConfigImpl = getConfig;
+    handleSetConfigImpl = setConfig;
 }
 
-export function handleSetConfig(event: IpcMainEvent, config: Config): string | undefined {
-    console.log(`debug: handleSetConfig received ${config.poeSessId}, ${config.pobPath}`);
-    return;
+export function handleGetConfig(): Config {
+    return handleGetConfigImpl();
+}
+
+export function handleSetConfig(event: IpcMainEvent, config: Config): Promise<IPCError | undefined> {
+    return handleSetConfigImpl(config);
 }

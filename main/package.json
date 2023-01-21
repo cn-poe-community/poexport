@@ -1,6 +1,6 @@
 {
-  "name": "main",
-  "productName": "main",
+  "name": "poe-cn-export",
+  "productName": "poe-cn-export",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": ".webpack/main",

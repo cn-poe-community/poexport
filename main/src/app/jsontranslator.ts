@@ -305,7 +305,4 @@ export class JsonTranslator {
             }
         }
     }
-
-    public translateGoods(data: any) {
-    }
 }
