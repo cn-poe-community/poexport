@@ -86,10 +86,10 @@ export class Exporter {
     }
 
     handleGetPassiveSkills(req: http.IncomingMessage, res: http.ServerResponse<http.IncomingMessage> & { req: http.IncomingMessage; }) {
-        const urlObj = new URL(req.url, `http://${req.headers.host}`);
+        const urlObj = new URL(this.decodeURL(req.url), `http://${req.headers.host}`);
         const params = urlObj.searchParams;
         const accountName = params.get("accountName");
-        const character = this.decodeCharacter(params.get("character"));
+        const character = params.get("character");
         const realm = params.get("realm");
 
         this.requester.getPassiveSkills(accountName, character, realm)
@@ -104,10 +104,10 @@ export class Exporter {
     }
 
     handleGetItems(req: http.IncomingMessage, res: http.ServerResponse<http.IncomingMessage> & { req: http.IncomingMessage; }) {
-        const urlObj = new URL(req.url, `http://${req.headers.host}`);
+        const urlObj = new URL(this.decodeURL(req.url), `http://${req.headers.host}`);
         const params = urlObj.searchParams;
         const accountName = params.get("accountName");
-        const character = this.decodeCharacter(params.get("character"));
+        const character = params.get("character");
         const realm = params.get("realm");
 
         this.requester.getItems(accountName, character, realm)
@@ -133,20 +133,31 @@ export class Exporter {
     }
 
     /**
-     * 社区版POB将UTF-8编码的中文角色名称视作一个ASCII字符串（每个byte视作一个字符），URI编码后，发送请求
+     * 社区版POB将UTF-8编码的中文角色名称视作一个ASCII字符串（每个byte视作一个字符），拼接到URL中（未进行URI编码），发送请求
      * 
-     * server接受到请求后，进行URI解码，并使用语言相关的编码方案（JavaScript采用Unicode16）来编码字符（将每一个byte扩展为u16）
+     * （没有研究国际服是怎么处理非ASCII字符的，但这是一个BUG）
      * 
-     * 因此需要对Unicode16字符串进行解码，将每一个16位截断为8位，再使用UTF-8解码为真实的字符串
+     * node server接受到请求后，将ASCII字符串转换为本地编码的字符串，使用Unicode16来编码ASCII字符（将每一个byte扩展为uint16）
      * 
-     * @param u16codes 
+     * 因为我们面临两种情况：
+     * 
+     * - 使用浏览器访问时，中文使用UTF-8编码后再使用URI编码，node server能正常处理
+     * - 使用POB访问时，中文使用UTF-8编码后，未使用URI编码而是拼接到URL中，node server不能正常处理
+     * 
+     * 解决办法是将Unicode16字符截断为ASCII，再使用UTF-8解码得到正确的字符串：
+     * 
+     * - 对于URI编码的URL，无影响，返回URL
+     * - 对于拼接了中文的URL，非中文部分无影响，中文部分正确解码为中文，可以被URL类正确解析
+     * 
+     * 
+     * @param url 
      * @returns 
      */
-    decodeCharacter(u16codes: string): string {
-        let bytes = Buffer.alloc(u16codes.length);
-        for (let i = 0; i < u16codes.length; i++) {
-            // 使用charCode就行了，不需要使用codePoint
-            const charCode = u16codes.charCodeAt(i);
+    decodeURL(url: string): string {
+        let bytes = Buffer.alloc(url.length);
+        for (let i = 0; i < url.length; i++) {
+            // 非扩展Unicode16字符，使用charCodeAt，不需要使用codePointAt
+            const charCode = url.charCodeAt(i);
             bytes[i] = charCode;
         }
 
