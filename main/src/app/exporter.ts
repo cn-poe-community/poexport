@@ -1,4 +1,7 @@
 import * as http from "http";
+import * as net from "net";
+import { ConfigManager } from "./config";
+import { JsonTranslator } from "./jsontranslator";
 import { Requester } from "./requester";
 import { HttpError } from "./type/poe.type";
 
@@ -8,15 +11,21 @@ const GET_PASSIVE_SKILLS = "/character-window/get-passive-skills";
 const GET_ITEMS = "/character-window/get-items";
 
 export class Exporter {
-    private readonly pobPath: string;
-    private readonly port: number;
-    private readonly requester: Requester;
+    private port: number;
     private server: http.Server;
 
-    constructor(pobPath: string, port: number, requester: Requester) {
-        this.pobPath = pobPath;
-        this.port = port;
+    private readonly requester: Requester;
+    private readonly configManager: ConfigManager;
+    private readonly jsonTranslator: JsonTranslator;
+
+    constructor(requester: Requester, configManager: ConfigManager, jsonTranslator: JsonTranslator) {
         this.requester = requester;
+        this.configManager = configManager;
+        this.jsonTranslator = jsonTranslator;
+
+        this.port = configManager.getConfig().port;
+
+        this.start();
     }
 
     public start() {
@@ -40,10 +49,20 @@ export class Exporter {
             // @ts-ignore
             if (e.code === 'EADDRINUSE') {
                 console.log(`exporter: Address 127.0.0.1:${this.port} in use, retrying...`);
+
                 setTimeout(() => {
                     server.close();
                     server.listen(() => {
-                        console.log(`exporter: Server listening on ${server.address}`);
+                        console.log(`exporter: Server listening on ${server.address()}`);
+                        const addr = server.address();
+                        if (typeof addr === "string") {
+                            const parts = addr.split(":");
+                            this.port = Number(parts[parts.length - 1]);
+                        } else {
+                            this.port = addr.port;
+                        }
+
+                        this.configManager.setPort(this.port);
                     });
                 }, 1000);
             }
@@ -94,6 +113,8 @@ export class Exporter {
 
         this.requester.getPassiveSkills(accountName, character, realm)
             .then(data => {
+                this.jsonTranslator.translatePassiveSkills(data);
+
                 res.setHeader("Content-Type", "application/json");
                 res.writeHead(200);
                 res.end(JSON.stringify(data));
@@ -112,6 +133,8 @@ export class Exporter {
 
         this.requester.getItems(accountName, character, realm)
             .then(data => {
+                this.jsonTranslator.translateItems(data);
+
                 res.setHeader("Content-Type", "application/json");
                 res.writeHead(200);
                 res.end(JSON.stringify(data));

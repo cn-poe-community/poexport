@@ -30,6 +30,21 @@ export class Pob {
 
             return "";
         } catch (err) {
+            return "";
+        }
+    }
+
+    public static async isNeededPatch(root: string, port: number): Promise<boolean> {
+        const proxy = `http://localhost:${port}/`;
+        const importTabPath = path.join(root, IMPORT_TAB_IN_POB);
+
+        try {
+            let data = await fs.readFile(importTabPath, { encoding: "utf8" });
+            if (data.includes(proxy)) {
+                return false;
+            }
+            return true;
+        } catch (err) {
             throw new Error(err);
         }
     }
@@ -38,12 +53,14 @@ export class Pob {
      * Patch the pob using proxy api.
      * 
      * @param root the full root of pob
-     * @param proxy target api site
+     * @param port local server listening port
      * @returns 
      */
-    public static async patch(root: string, proxy: string) {
+    public static async patch(root: string, port: number) {
+        const proxy = `http://localhost:${port}/`;
+        const importTabPath = path.join(root, IMPORT_TAB_IN_POB);
+
         try {
-            const importTabPath = path.join(root, IMPORT_TAB_IN_POB);
             let data = await fs.readFile(importTabPath, { encoding: "utf8" });
             if (data.includes(proxy)) {
                 return;

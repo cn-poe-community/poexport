@@ -10,5 +10,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
 
 contextBridge.exposeInMainWorld('mainAPI', {
     getConfig: () => ipcRenderer.invoke('app:getConfig'),
-    setConfig: (config: Config) => ipcRenderer.invoke('app:setConfig', config)
+    setConfig: (config: Config) => ipcRenderer.invoke('app:setConfig', config),
+    getExporterStatus: () => ipcRenderer.invoke('app:getExporterStatus'),
+    patchPob: () => ipcRenderer.invoke('app:patchPob'),
 });

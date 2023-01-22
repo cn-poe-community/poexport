@@ -12,7 +12,7 @@ const GET_ITEMS_URL = "https://poe.game.qq.com/character-window/get-items";
  * POE API requester
  */
 export class Requester {
-    private readonly session: string;
+    private session: string;
 
     constructor(session: string) {
         this.session = session;
@@ -116,5 +116,9 @@ export class Requester {
         } catch (error) {
             throw new HttpError(error.response.status);
         }
+    }
+
+    public setSession(session: string) {
+        this.session = session;
     }
 }
