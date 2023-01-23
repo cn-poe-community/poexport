@@ -17,8 +17,8 @@ export class StatService {
         this.statProvider = statProvider;
     }
 
-    public translateMod(zhMod: string, zhBaseType: string): string | null {
-        let res = this.dealWithPassiveSkillMod(zhMod, zhBaseType);
+    public translateMod(zhMod: string): string | null {
+        const res = this.dealWithPassiveSkillMod(zhMod);
         if (res || res === null) {
             return res;
         }
@@ -50,11 +50,11 @@ export class StatService {
         return null;
     }
 
-    dealWithPassiveSkillMod(zhMod: string, zhBaseType: string): string | null | undefined {
+    dealWithPassiveSkillMod(zhMod: string): string | null | undefined {
         let matches = ZhImpossibleEscapeModRegExp.exec(zhMod);
         if (matches) {
-            let zhKeystone = matches[1];
-            let keystone = this.passiveSkillService.translateKeystone(zhKeystone);
+            const zhKeystone = matches[1];
+            const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
             if (keystone) {
                 return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`
             } else {
@@ -64,8 +64,8 @@ export class StatService {
 
         matches = ZhAnointedModRegExp.exec(zhMod);
         if (matches) {
-            let zhNoteable = matches[1];
-            let notable = this.passiveSkillService.translateNotable(zhNoteable);
+            const zhNoteable = matches[1];
+            const notable = this.passiveSkillService.translateNotable(zhNoteable);
             if (notable) {
                 return `Allocates ${notable}`;
             } else {
@@ -75,8 +75,8 @@ export class StatService {
 
         matches = ZhForbiddenFlameModRegExp.exec(zhMod);
         if (matches) {
-            let zhAscendant = matches[1];
-            let ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            const zhAscendant = matches[1];
+            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
             if (ascendant) {
                 return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flesh`;
             }
@@ -84,8 +84,8 @@ export class StatService {
 
         matches = ZhForbiddenFleshModRegExp.exec(zhMod);
         if (matches) {
-            let zhAscendant = matches[1];
-            let ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            const zhAscendant = matches[1];
+            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
             if (ascendant) {
                 return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flame`;
             }
@@ -111,7 +111,7 @@ export class StatService {
 
     dotranslateMod(stat: Stat, zhMod: string): string | null {
         const r = new RegExp(stat.zh);
-        let matches = r.exec(zhMod);
+        const matches = r.exec(zhMod);
 
         if (matches) {
             return StatUtil.render(stat.en, stat.zh, zhMod);

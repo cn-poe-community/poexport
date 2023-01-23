@@ -1,6 +1,6 @@
 import stats from "../asset/stats.json";
 import stats_mapping from "../asset/stats_mapping.json";
-import { MappingEntry, Stat, StatMap } from "../type/stat.type";
+import { MappingEntry, Stat } from "../type/stat.type";
 import { StatUtil } from "../util/stat.util";
 
 export class StatProvider {
@@ -17,7 +17,7 @@ export class StatProvider {
                 if (Array.isArray(value)) {
                     value.push(stat);
                 } else {
-                    let arr = [value, stat];
+                    const arr = [value, stat];
                     this.statIndexByZhBody.set(body, arr);
                 }
             } else {
@@ -33,7 +33,7 @@ export class StatProvider {
     }
 
     public provideStatByZhBody(zhBody: string): Stat | Array<Stat> | null {
-        let stat = this.statIndexByZhBody.get(zhBody);
+        const stat = this.statIndexByZhBody.get(zhBody);
         if (stat) {
             return stat;
         }
@@ -42,7 +42,7 @@ export class StatProvider {
     }
 
     public provideMappingEntryByZhParts(parts: string): MappingEntry | null {
-        let entry = this.mappingIndexByZhParts.get(parts);
+        const entry = this.mappingIndexByZhParts.get(parts);
         if (entry) {
             return entry;
         }

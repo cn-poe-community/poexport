@@ -1,5 +1,4 @@
 import * as http from "http";
-import * as net from "net";
 import { ConfigManager } from "./config";
 import { JsonTranslator } from "./jsontranslator";
 import { Requester } from "./requester";
@@ -77,7 +76,7 @@ export class Exporter {
 
         this.requester.getCharacters(accountName, realm)
             .then(data => {
-                for (let character of data) {
+                for (const character of data) {
                     character.league = this.betterLeagueName(character.league);
                 }
 
@@ -177,7 +176,7 @@ export class Exporter {
      * @returns 
      */
     decodeURL(url: string): string {
-        let bytes = Buffer.alloc(url.length);
+        const bytes = Buffer.alloc(url.length);
         for (let i = 0; i < url.length; i++) {
             // 非扩展Unicode16字符，使用charCodeAt，不需要使用codePointAt
             const charCode = url.charCodeAt(i);

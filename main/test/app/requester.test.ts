@@ -1,10 +1,10 @@
-import { describe, expect, test } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { Requester } from "../../src/app/requester";
 
-let effectiveSession = "";
-let effectiveRequester = new Requester(effectiveSession);
-let invalidSession = "123";
-let invalidRequester = new Requester(invalidSession);
+const effectiveSession = "";
+const effectiveRequester = new Requester(effectiveSession);
+const invalidSession = "123";
+const invalidRequester = new Requester(invalidSession);
 
 function testIsEffectiveSession() {
     test(`session ${effectiveSession} is effective`, async () => {

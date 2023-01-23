@@ -39,7 +39,7 @@ export class Pob {
         const importTabPath = path.join(root, IMPORT_TAB_IN_POB);
 
         try {
-            let data = await fs.readFile(importTabPath, { encoding: "utf8" });
+            const data = await fs.readFile(importTabPath, { encoding: "utf8" });
             if (data.includes(proxy)) {
                 return false;
             }
@@ -61,7 +61,7 @@ export class Pob {
         const importTabPath = path.join(root, IMPORT_TAB_IN_POB);
 
         try {
-            let data = await fs.readFile(importTabPath, { encoding: "utf8" });
+            const data = await fs.readFile(importTabPath, { encoding: "utf8" });
             if (data.includes(proxy)) {
                 return;
             }

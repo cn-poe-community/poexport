@@ -1,7 +1,3 @@
-export interface StatMap {
-    [id: string]: Array<Stat>
-}
-
 export interface Stat {
     id: string,
     zh: string,

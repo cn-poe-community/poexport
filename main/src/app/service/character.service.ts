@@ -7,7 +7,7 @@ export class CharacterService {
     }
 
     public translateClass(zh: string): string | null {
-        let res = this.characterProvider.provideClasses().get(zh);
+        const res = this.characterProvider.provideClasses().get(zh);
         return res ? res : null;
     }
 }

@@ -15,7 +15,7 @@ export class BaseTypeService {
     }
 
     public getBaseTypeByZhText(zhBaseType: string, zhName?: string): BaseType | null {
-        let list = this.baseTypeProvider.provideBaseTypeByZhText(zhBaseType);
+        const list = this.baseTypeProvider.provideBaseTypeByZhText(zhBaseType);
         if (list.length === 0) {
             return null;
         }
@@ -24,10 +24,10 @@ export class BaseTypeService {
             return list[0];
         }
 
-        for (let b of list) {
-            for (let uid in b.uniques) {
-                let udata = b.uniques[uid];
-                let uzhText = udata.text[Language.Chinese];
+        for (const b of list) {
+            for (const uid in b.uniques) {
+                const udata = b.uniques[uid];
+                const uzhText = udata.text[Language.Chinese];
                 if (uzhText === zhName) {
                     return b;
                 }
@@ -45,7 +45,7 @@ export class BaseTypeService {
             zhTypeLine = zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length)
         }
 
-        let res = this.getBaseTypeByZhText(zhTypeLine);
+        const res = this.getBaseTypeByZhText(zhTypeLine);
         if (res) {
             return res;
         }
@@ -60,17 +60,17 @@ export class BaseTypeService {
         // - slices[last]就是zhBaseType
         // - slices[last]是zhBaseType的末尾部分，需要补充其它slice来组成完整的zhBaseType
 
-        let pattern = /.+?[之的]/ug;
+        const pattern = /.+?[之的]/ug;
         if (pattern.test(zhTypeLine)) {
             pattern.lastIndex = 0;
 
-            let len = zhTypeLine.length;
-            let slices = [];
+            const len = zhTypeLine.length;
+            const slices = [];
             let lastIndex = 0;
-            while (true) {
-                let matches = pattern.exec(zhTypeLine);
+            while (lastIndex < len) {
+                const matches = pattern.exec(zhTypeLine);
                 if (matches) {
-                    let result = matches[0];
+                    const result = matches[0];
                     slices.push(result);
                     lastIndex = pattern.lastIndex;
                 } else {
@@ -82,8 +82,8 @@ export class BaseTypeService {
             }
 
             //zhTypeLine不包含“之”或“的”
-            let last = slices[slices.length - 1];
-            let res = this.getBaseTypeByZhText(last, zhName);
+            const last = slices[slices.length - 1];
+            const res = this.getBaseTypeByZhText(last, zhName);
             if (res) {
                 return res;
             }
@@ -97,7 +97,7 @@ export class BaseTypeService {
             let possible = last;
             for (let i = slices.length - 2; i > 0; i--) {
                 possible = slices[i] + possible;
-                let res = this.getBaseTypeByZhText(possible, zhName);
+                const res = this.getBaseTypeByZhText(possible, zhName);
                 if (res) {
                     return res;
                 }
@@ -108,7 +108,7 @@ export class BaseTypeService {
     }
 
     public translateBaseType(zhBaseType: string, zhName?: string): string | null {
-        let b = this.getBaseTypeByZhText(zhBaseType, zhName);
+        const b = this.getBaseTypeByZhText(zhBaseType, zhName);
         if (b) {
             return b.text[Language.English];
         }
@@ -127,7 +127,7 @@ export class BaseTypeService {
      */
     public translateTypeLine(zhTypeLine: string, zhName?: string): string | null {
         if (zhTypeLine.startsWith(ZH_SUPERIOR_PREFIX)) {
-            let res = this.translateTypeLine(zhTypeLine.substring(ZH_SUPERIOR_PREFIX.length), zhName);
+            const res = this.translateTypeLine(zhTypeLine.substring(ZH_SUPERIOR_PREFIX.length), zhName);
             if (res) {
                 return SUPERIOR_PREFIX + res;
             }
@@ -135,14 +135,14 @@ export class BaseTypeService {
         }
 
         if (zhTypeLine.startsWith(ZH_SYNTHESISED_PREFIX)) {
-            let res = this.translateTypeLine(zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length), zhName);
+            const res = this.translateTypeLine(zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length), zhName);
             if (res) {
                 return SYNTHESISED_PREIFX + res;
             }
             return null;
         }
 
-        let b = this.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
+        const b = this.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
         if (b) {
             return b.text[Language.English];
         }

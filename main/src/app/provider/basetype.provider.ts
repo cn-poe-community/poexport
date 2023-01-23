@@ -9,8 +9,8 @@ import { Language } from "../type/language.type";
 import { EquipmentCategory } from "../type/category.type";
 
 export class BaseTypeProvider {
-    private readonly baseTypeIndexByZhText = new Map<String, BaseTypeIndexEntry[]>();
-    private readonly baseTypeIndexByUniqueZhText = new Map<String, BaseTypeIndexEntry[]>();
+    private readonly baseTypeIndexByZhText = new Map<string, BaseTypeIndexEntry[]>();
+    private readonly baseTypeIndexByUniqueZhText = new Map<string, BaseTypeIndexEntry[]>();
 
     constructor() {
         const language = Language.Chinese;
@@ -24,7 +24,7 @@ export class BaseTypeProvider {
                 const data = baseTypeMap[id];
                 const zhText = data.text[language];
                 if (this.baseTypeIndexByZhText.has(zhText)) {
-                        this.baseTypeIndexByZhText.get(zhText)?.push({ "category": category, "id": id });
+                    this.baseTypeIndexByZhText.get(zhText)?.push({ "category": category, "id": id });
                 } else {
                     this.baseTypeIndexByZhText.set(zhText, [{ "category": category, "id": id }]);
                 }
@@ -70,9 +70,9 @@ export class BaseTypeProvider {
     public provideBaseTypeByZhText(zhText: string): BaseType[] {
         const entries = this.baseTypeIndexByZhText.get(zhText);
         if (entries) {
-            let val: BaseType[] = [];
+            const val: BaseType[] = [];
             for (const entry of entries) {
-                let baseType = this.provideBaseType(entry.category, entry.id);
+                const baseType = this.provideBaseType(entry.category, entry.id);
                 if (baseType) {
                     val.push(baseType);
                 }

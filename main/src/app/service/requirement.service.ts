@@ -20,7 +20,7 @@ export class RequirementSerivce {
 
     public translateValue(zhName: string, zhValue: string): string | null {
         if (zhName === ZH_REQUIREMENT_NAME_CLASS) {
-            let res = this.characterService.translateClass(zhValue);
+            const res = this.characterService.translateClass(zhValue);
             return res;
         }
         return null;

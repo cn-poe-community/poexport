@@ -50,7 +50,7 @@ export class JsonTranslator {
                     if (value === ZH_CLASS_SCION) {
                         if (item.explicitMods) {
                             for (let i = 0; i < item.explicitMods.length; i++) {
-                                let zhStat = item.explicitMods[i] as string;
+                                const zhStat = item.explicitMods[i] as string;
                                 if (zhStat.endsWith(ZH_PASSIVESKILL_ASCENDANT_ASSASSIN)) {
                                     item.explicitMods[i] = zhStat.replace(ZH_PASSIVESKILL_ASCENDANT_ASSASSIN, ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED);
                                 }
@@ -66,7 +66,7 @@ export class JsonTranslator {
 
     public translateItems(data: any) {
         const items = data.items;
-        let translatedItems = [];
+        const translatedItems = [];
         for (const item of items) {
             //Skip non-build items
             if (item.inventoryId === "MainInventory" || item.baseType === ZH_THIEFS_TRINKET) {
@@ -89,7 +89,7 @@ export class JsonTranslator {
         const zhTypeLine = item.typeLine;
 
         if (zhName) {
-            let res = this.itemService.translateName(zhName, zhBaseType);
+            const res = this.itemService.translateName(zhName, zhBaseType);
             if (res) {
                 item.name = res;
             } else {
@@ -98,7 +98,7 @@ export class JsonTranslator {
         }
 
         if (zhBaseType) {
-            let res = this.baseTypeService.translateBaseType(zhBaseType, zhName);
+            const res = this.baseTypeService.translateBaseType(zhBaseType, zhName);
             if (res) {
                 item.baseType = res;
             } else {
@@ -113,7 +113,7 @@ export class JsonTranslator {
         if (item.requirements) {
             for (const r of item.requirements) {
                 const zhName = r.name;
-                let res = this.requirementService.translateName(zhName);
+                const res = this.requirementService.translateName(zhName);
                 if (res) {
                     r.name = res;
                 } else {
@@ -123,8 +123,8 @@ export class JsonTranslator {
                 if (zhName === ZH_REQUIREMENT_NAME_CLASS) {
                     if (r.values) {
                         for (const v of r.values) {
-                            let zhValue = v[0];
-                            let res = this.requirementService.translateValue(zhName, zhValue);
+                            const zhValue = v[0];
+                            const res = this.requirementService.translateValue(zhName, zhValue);
                             if (res) {
                                 v[0] = res;
                             } else {
@@ -135,8 +135,8 @@ export class JsonTranslator {
                 }
 
                 if (r.suffix) {
-                    let zhSuffix = r.suffix;
-                    let res = this.requirementService.translateSuffix(zhSuffix);
+                    const zhSuffix = r.suffix;
+                    const res = this.requirementService.translateSuffix(zhSuffix);
                     if (res) {
                         r.suffix = res;
                     } else {
@@ -149,7 +149,7 @@ export class JsonTranslator {
         if (item.properties) {
             for (const p of item.properties) {
                 const zhName = p.name;
-                let res = this.propertySerivce.translateName(zhName);
+                const res = this.propertySerivce.translateName(zhName);
                 if (res) {
                     p.name = res;
                 } else {
@@ -159,8 +159,8 @@ export class JsonTranslator {
                 if (zhName === ZH_PROPERTY_NAME_LIMITED_TO || zhName === ZH_PROPERTY_NAME_RADIUS) {
                     if (p.values) {
                         for (const v of p.values) {
-                            let zhValue = v[0];
-                            let res = this.propertySerivce.translateValue(zhName, zhValue);
+                            const zhValue = v[0];
+                            const res = this.propertySerivce.translateValue(zhName, zhValue);
                             if (res) {
                                 v[0] = res;
                             } else {
@@ -184,8 +184,8 @@ export class JsonTranslator {
 
         if (item.enchantMods) {
             for (let i = 0; i < item.enchantMods.length; i++) {
-                let zhStat = item.enchantMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.enchantMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.enchantMods[i] = res;
                 } else {
@@ -196,8 +196,8 @@ export class JsonTranslator {
 
         if (item.explicitMods) {
             for (let i = 0; i < item.explicitMods.length; i++) {
-                let zhStat = item.explicitMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.explicitMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.explicitMods[i] = res;
                 } else {
@@ -208,8 +208,8 @@ export class JsonTranslator {
 
         if (item.implicitMods) {
             for (let i = 0; i < item.implicitMods.length; i++) {
-                let zhStat = item.implicitMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.implicitMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.implicitMods[i] = res;
                 } else {
@@ -220,8 +220,8 @@ export class JsonTranslator {
 
         if (item.craftedMods) {
             for (let i = 0; i < item.craftedMods.length; i++) {
-                let zhStat = item.craftedMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.craftedMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.craftedMods[i] = res;
                 } else {
@@ -232,8 +232,8 @@ export class JsonTranslator {
 
         if (item.utilityMods) {
             for (let i = 0; i < item.utilityMods.length; i++) {
-                let zhStat = item.utilityMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.utilityMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.utilityMods[i] = res;
                 } else {
@@ -244,8 +244,8 @@ export class JsonTranslator {
 
         if (item.fracturedMods) {
             for (let i = 0; i < item.fracturedMods.length; i++) {
-                let zhStat = item.fracturedMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.fracturedMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.fracturedMods[i] = res;
                 } else {
@@ -256,8 +256,8 @@ export class JsonTranslator {
 
         if (item.scourgeMods) {
             for (let i = 0; i < item.scourgeMods.length; i++) {
-                let zhStat = item.scourgeMods[i];
-                let res = this.statService.translateMod(zhStat, zhBaseType);
+                const zhStat = item.scourgeMods[i];
+                const res = this.statService.translateMod(zhStat);
                 if (res) {
                     item.scourgeMods[i] = res;
                 } else {
@@ -271,7 +271,7 @@ export class JsonTranslator {
         const zhBaseType = item.baseType;
         const zhTypeLine = item.typeLine;
         if (zhBaseType) {
-            let res = this.gemService.translateBaseType(zhBaseType);
+            const res = this.gemService.translateBaseType(zhBaseType);
             if (res) {
                 item.baseType = res;
             } else {
@@ -280,7 +280,7 @@ export class JsonTranslator {
         }
 
         if (zhTypeLine) {
-            let res = this.gemService.translateTypeLine(zhTypeLine);
+            const res = this.gemService.translateTypeLine(zhTypeLine);
             if (res) {
                 item.typeLine = res;
             } else {
@@ -290,7 +290,7 @@ export class JsonTranslator {
 
         if (item.properties) {
             for (const p of item.properties) {
-                let res = this.gemService.translatePropertyName(p.name);
+                const res = this.gemService.translatePropertyName(p.name);
                 if (res) {
                     p.name = res;
                 }

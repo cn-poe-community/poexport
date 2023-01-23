@@ -1,4 +1,4 @@
-import { describe, expect, test } from '@jest/globals';
+import { expect, test } from '@jest/globals';
 import { Pob } from "../../src/app/pob";
 
 function testGetRoot() {

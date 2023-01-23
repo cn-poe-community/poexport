@@ -96,14 +96,14 @@ export class App {
         }
 
         if (config.poeSessId !== old.poeSessId) {
-            let isEffective = await Requester.isEffectiveSession(config.poeSessId);
+            const isEffective = await Requester.isEffectiveSession(config.poeSessId);
             if (!isEffective) {
                 return "invalid POESESSID";
             }
         }
 
         if (config.pobPath !== old.pobPath) {
-            let fullPath = await Pob.getRoot(config.pobPath);
+            const fullPath = await Pob.getRoot(config.pobPath);
             if (fullPath === "") {
                 return "invalid POB path";
             } else {
@@ -124,7 +124,7 @@ export class App {
     private async getExporterStatus(): Promise<ExporterStatus> {
         const config = this.configManager.getConfig();
 
-        let status: ExporterStatus = {
+        const status: ExporterStatus = {
             sessionStatus: "ok",
             pobStatus: "ok",
         };

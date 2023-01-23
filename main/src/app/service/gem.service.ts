@@ -18,7 +18,7 @@ export class GemService {
     }
 
     public translateBaseType(zhBaseType: string): string | null {
-        zhBaseType = zhBaseType.replace("(","（").replace(")","）");
+        zhBaseType = zhBaseType.replace("(", "（").replace(")", "）");
         const res = this.gemProvider.provideSkills().get(zhBaseType);
         return res ? res : null;
     }
@@ -26,8 +26,8 @@ export class GemService {
     public translateTypeLine(zhTypeLine: string): string | null {
         let qualityTypePrefix = "";
         let zhSkill = zhTypeLine;
-        for (let [zh, en] of qualityTypes) {
-            let zhQualityTypePrefix = `${zh} `;
+        for (const [zh, en] of qualityTypes) {
+            const zhQualityTypePrefix = `${zh} `;
             if (zhSkill.startsWith(zhQualityTypePrefix)) {
                 qualityTypePrefix = `${en} `;
                 zhSkill = zhTypeLine.substring(zhQualityTypePrefix.length);
@@ -35,13 +35,13 @@ export class GemService {
             }
         }
 
-        let skill = this.translateBaseType(zhSkill);
+        const skill = this.translateBaseType(zhSkill);
         return skill ? `${qualityTypePrefix}${skill}` : null;
     }
 
     public translatePropertyName(zhName: string): string | null {
         if (propertyNames.has(zhName)) {
-            let res = propertyNames.get(zhName);
+            const res = propertyNames.get(zhName);
             if (res) {
                 return res;
             }

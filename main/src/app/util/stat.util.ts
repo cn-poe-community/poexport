@@ -1,19 +1,19 @@
 export class StatUtil {
     public static getBodyOfTemplate(zhTemplate: string): string {
-        let body = zhTemplate.substring(1, zhTemplate.length - 1).replace(/\\\+/g, "").replace(/\(\\S\+\)/g, "#");
+        const body = zhTemplate.substring(1, zhTemplate.length - 1).replace(/\\\+/g, "").replace(/\(\\S\+\)/g, "#");
         return this.getBodyOfModifier(body);
     }
 
     public static getBodyOfModifier(mod: string): string {
-        let buf = [];
-        let pattern = /(?<=(^|\s|：))[+-]?[\d&&\.]+(?=%?($|\s))/g;
-        let len = mod.length;
+        const buf = [];
+        const pattern = /(?<=(^|\s|：))[+-]?[\d&&.]+(?=%?($|\s))/g;
+        const len = mod.length;
         let lastIndex = 0;
 
-        while (true) {
-            let matches = pattern.exec(mod);
+        while (lastIndex < len) {
+            const matches = pattern.exec(mod);
             if (matches) {
-                let index = matches.index;
+                const index = matches.index;
                 if (lastIndex !== index) {
                     buf.push(mod.substring(lastIndex, index));
                 }
@@ -31,12 +31,12 @@ export class StatUtil {
     }
 
     public static getNonAscii(str: string): string {
-        let buff = new Uint16Array(str.length);
+        const buff = new Uint16Array(str.length);
         let size = 0;
 
         for (let i = 0; i < str.length; i++) {
             //not support ucs2 extended-characters currently
-            let char = str.charCodeAt(i);
+            const char = str.charCodeAt(i);
             if (char >= 256) {
                 buff[size++] = char;
             }
@@ -52,15 +52,15 @@ export class StatUtil {
         }
 
         template = template.substring(1, template.length - 1).replace(/\\\+/g, "+");
-        let buf = [];
+        const buf = [];
         const pattern = /\(\S+\)/g;
-        let len = template.length;
+        const len = template.length;
         let lastIndex = 0;
         let argIndex = 0;
-        while (true) {
-            let matches = pattern.exec(template);
+        while (lastIndex < len) {
+            const matches = pattern.exec(template);
             if (matches) {
-                let index = matches.index;
+                const index = matches.index;
                 if (lastIndex !== index) {
                     buf.push(template.substring(lastIndex, index));
                 }
@@ -68,7 +68,7 @@ export class StatUtil {
                 argIndex += 1;
                 lastIndex = pattern.lastIndex;
             } else {
-                if (lastIndex !== len) {
+                if (lastIndex < len) {
                     buf.push(template.substring(lastIndex, len));
                 }
                 break;

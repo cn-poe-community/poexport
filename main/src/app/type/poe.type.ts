@@ -1,5 +1,3 @@
-import { AxiosError } from "axios";
-
 export interface Character {
     class: string,
     name: string,

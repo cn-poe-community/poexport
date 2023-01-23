@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import { Character, HttpError, Items, PassiveSkills } from './type/poe.type';
 
 
