@@ -5,15 +5,11 @@
 <script lang="ts">
 export default {
   data() {
-    return {
-    };
+    return {};
   },
 
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -4,7 +4,9 @@
     <textarea class="itemData" v-model="itemTranslation"></textarea>
   </div>
   <button @click="translate" :disabled="item === ''">翻译</button>
-  <button @click="copyTranslation" :disabled="itemTranslation === ''">复制</button>
+  <button @click="copyTranslation" :disabled="itemTranslation === ''">
+    复制
+  </button>
 </template>
 
 <script lang="ts">
@@ -16,8 +18,7 @@ export default {
     };
   },
 
-  mounted() {
-  },
+  mounted() {},
 
   methods: {
     translate() {
@@ -30,8 +31,8 @@ export default {
 
     copyTranslation() {
       navigator.clipboard.writeText(this.itemTranslation);
-    }
-  }
+    },
+  },
 };
 </script>
 

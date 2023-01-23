@@ -1,26 +1,44 @@
 <script lang="ts" setup>
-import Exporter from './components/Exporter.vue';
-import Translator from './components/Translator.vue';
-import Database from './components/Database.vue';
-import Setting from './components/Setting.vue';
+import Exporter from "./components/Exporter.vue";
+import Translator from "./components/Translator.vue";
+import Database from "./components/Database.vue";
+import Setting from "./components/Setting.vue";
 </script>
 
 <template>
   <main>
     <div class="activitybar">
       <ul class="actions-container">
-        <li class="action-item" :class="{ checked: action === 'export' }" @click="switchAction('export')">
+        <li
+          class="action-item"
+          :class="{ checked: action === 'export' }"
+          @click="switchAction('export')"
+        >
           <a>BD导出</a>
         </li>
-        <li class="action-item" :class="{ checked: action === 'translation' }" @click="switchAction('translation')">
+        <li
+          class="action-item"
+          :class="{ checked: action === 'translation' }"
+          @click="switchAction('translation')"
+        >
           <a>物品翻译</a>
         </li>
-        <li class="action-item" :class="{ checked: action === 'query' }" @click="switchAction('query')">
+        <li
+          class="action-item"
+          :class="{ checked: action === 'query' }"
+          @click="switchAction('query')"
+        >
           <a>数据库查询</a>
         </li>
       </ul>
       <ul class="actions-container bottom">
-        <li class="action-item" :class="{ checked: action === 'setting' }" @click="switchAction('setting')">设置</li>
+        <li
+          class="action-item"
+          :class="{ checked: action === 'setting' }"
+          @click="switchAction('setting')"
+        >
+          设置
+        </li>
       </ul>
     </div>
     <div class="content">
@@ -40,14 +58,13 @@ export default {
     };
   },
 
-  mounted() {
-  },
+  mounted() {},
 
   methods: {
     switchAction(action: string) {
       this.action = action;
-    }
-  }
+    },
+  },
 };
 </script>
 

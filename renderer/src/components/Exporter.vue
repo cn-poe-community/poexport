@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>服务</h1>
-    <span>POB: {{ pobStatus }} </span><button v-if="pobStatus === 'NeedPatch'" @click="patch">更新</button><br />
+    <span>POB: {{ pobStatus }} </span
+    ><button v-if="pobStatus === 'NeedPatch'" @click="patch">更新</button><br />
     <span>POESESSID: {{ sessionStatus }}</span>
   </div>
   <div>
@@ -10,13 +11,14 @@
     <button @click="encode" :disabled="poeAccountName === ''">编码</button>
     <br />
     <input placeholder="编码结果" v-model="encodedValue" disabled />
-    <button :disabled="encodedValue === ''" @click="copyEncodedValue">复制</button>
+    <button :disabled="encodedValue === ''" @click="copyEncodedValue">
+      复制
+    </button>
   </div>
 </template>
 
 <script lang="ts">
-import { PatchFlagNames } from '@vue/shared';
-import type { MainAPI } from '../../../ipc/types';
+import type { MainAPI } from "../../../ipc/types";
 
 export default {
   data() {
@@ -49,13 +51,14 @@ export default {
     patch() {
       // @ts-ignore
       const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.patchPob().then(() => {
-        this.loadStatus();
-      }).catch(
-        (err) => {
+      mainAPI
+        .patchPob()
+        .then(() => {
+          this.loadStatus();
+        })
+        .catch((err) => {
           console.log(err);
-        }
-      );
+        });
     },
 
     async loadStatus() {
@@ -68,11 +71,9 @@ export default {
       } catch (err) {
         console.log(err);
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
