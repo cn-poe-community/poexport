@@ -6,7 +6,7 @@
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
-    "dev": "cross-env IS_DEV=true electron-forge start",
+    "dev": "chcp 65001&cross-env IS_DEV=true electron-forge start",
     "build": "electron-forge make",
     "package": "electron-forge package",
     "lint": "eslint --ext .ts,.tsx .",
