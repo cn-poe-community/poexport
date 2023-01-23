@@ -1,11 +1,14 @@
 export interface StatMap {
-    [id: string]: Stat
+    [id: string]: Array<Stat>
 }
 
 export interface Stat {
-    "text": {
-        [id: string]: {
-            [id: string]: string
-        }
-    }
+    id: string,
+    zh: string,
+    en: string,
+}
+
+export interface MappingEntry {
+    before: string,
+    after: string,
 }

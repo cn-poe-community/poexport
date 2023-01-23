@@ -30,6 +30,21 @@ export class StatUtil {
         return buf.join("");
     }
 
+    public static getNonAscii(str: string): string {
+        let buff = new Uint16Array(str.length);
+        let size = 0;
+
+        for (let i = 0; i < str.length; i++) {
+            //not support ucs2 extended-characters currently
+            let char = str.charCodeAt(i);
+            if (char >= 256) {
+                buff[size++] = char;
+            }
+        }
+
+        return Buffer.from(buff.subarray(0, size)).toString("utf16le");
+    }
+
     public static render(template: string, zhTemplate: string, zhMod: string): string | null {
         const args = new RegExp(zhTemplate).exec(zhMod);
         if (!args) {
@@ -50,7 +65,7 @@ export class StatUtil {
                     buf.push(template.substring(lastIndex, index));
                 }
                 buf.push(args[argIndex + 1]);
-                argIndex+=1;
+                argIndex += 1;
                 lastIndex = pattern.lastIndex;
             } else {
                 if (lastIndex !== len) {
