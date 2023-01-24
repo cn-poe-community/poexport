@@ -867,20 +867,6 @@
             }
         }
     },
-    "Heavy Quiver": {
-        "text": {
-            "0": "Heavy Quiver",
-            "1": "重矢箭袋"
-        },
-        "uniques": {
-            "Broadstroke": {
-                "text": {
-                    "0": "Broadstroke",
-                    "1": "疾袭之锋"
-                }
-            }
-        }
-    },
     "Archon Kite Shield": {
         "text": {
             "0": "Archon Kite Shield",

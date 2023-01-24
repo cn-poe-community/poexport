@@ -346,7 +346,7 @@
     },
     {
         "id": "stat_3695891184",
-        "zh": "^每击败一名敌人获得(\\S+)点生命$",
+        "zh": "^每击败一名敌人获得 (\\S+) 点生命$",
         "en": "^(\\S+) Life gained on Kill$"
     },
     {
@@ -506,7 +506,7 @@
     },
     {
         "id": "stat_1368271171",
-        "zh": "^每击败一名敌人获得(\\S+)点魔力$",
+        "zh": "^每击败一名敌人获得 (\\S+) 点魔力$",
         "en": "^(\\S+) Mana gained on Kill$"
     },
     {
@@ -671,7 +671,7 @@
     },
     {
         "id": "stat_4253454700",
-        "zh": "^该装备 (\\S+)% 攻击格挡率 (护盾)$",
+        "zh": "^该装备 (\\S+)% 攻击格挡率$",
         "en": "^(\\S+)% Chance to Block$"
     },
     {
@@ -3706,7 +3706,7 @@
     },
     {
         "id": "stat_3374054207",
-        "zh": "^召唤生物有(\\S+)% 攻击伤害格挡几率$",
+        "zh": "^召唤生物有 (\\S+)% 攻击伤害格挡几率$",
         "en": "^Minions have (\\S+)% Chance to Block Attack Damage$"
     },
     {
@@ -5681,12 +5681,12 @@
     },
     {
         "id": "stat_968369591",
-        "zh": "^药剂持续期间，攻击速度提高 (\\S+)%$",
+        "zh": "^生效期间，攻击速度提高 (\\S+)%$",
         "en": "^(\\S+)% increased Attack Speed during Flask effect$"
     },
     {
         "id": "stat_968369591",
-        "zh": "^药剂持续期间，攻击速度降低 (\\S+)%$",
+        "zh": "^生效期间，攻击速度降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Attack Speed during Flask effect$"
     },
     {
@@ -5831,8 +5831,8 @@
     },
     {
         "id": "stat_3969608626",
-        "zh": "^未保留的魔力全满时不会移除药剂效果\n药剂效果没有伫列$",
-        "en": "^Flask effect is not removed when Unreserved Mana is Filled\nFlask effect does not Queue$"
+        "zh": "^未保留的魔力充满时，效果不会消失\n效果不会堆叠$",
+        "en": "^Effect is not removed when Unreserved Mana is Filled\nEffect does not Queue$"
     },
     {
         "id": "stat_1991958615",
@@ -10611,8 +10611,8 @@
     },
     {
         "id": "stat_2922377850",
-        "zh": "^你格挡近战伤害时用惩戒诅咒敌人，其效果提高 60%，且无视诅咒限制$",
-        "en": "^Curse Enemies with Punishment when you Block their Melee Damage, with 60% increased Effect and ignoring Curse Limit$"
+        "zh": "^格挡近战攻击时对敌人附加惩戒诅咒，忽略诅咒上限。$",
+        "en": "^Curse Enemies with Punishment when you Block their Melee Damage, ignoring Curse Limit$"
     },
     {
         "id": "stat_4003593289",
@@ -10676,8 +10676,8 @@
     },
     {
         "id": "stat_541329769",
-        "zh": "^你格挡投射物攻击伤害时，用时空锁链诅咒敌人，其效果提高 60%，且无视诅咒限制$",
-        "en": "^Curse Enemies with Temporal Chains when you Block their Projectile Attack Damage, with 60% increased Effect and ignoring Curse Limit$"
+        "zh": "^格挡投射物攻击伤害时对敌人附加时空锁链诅咒，忽略诅咒上限。$",
+        "en": "^Curse Enemies with Temporal Chains when you Block their Projectile Attack Damage, ignoring Curse Limit$"
     },
     {
         "id": "stat_1213084913",
@@ -12246,8 +12246,8 @@
     },
     {
         "id": "stat_2048643052",
-        "zh": "^你格挡法术伤害时，用元素要害诅咒敌人，其效果提高 60%，且无视诅咒限制$",
-        "en": "^Curse Enemies with Elemental Weakness when you Block their Spell Damage, with 60% increased Effect and ignoring Curse Limit$"
+        "zh": "^格挡法术伤害时对敌人附加元素要害诅咒，忽略诅咒上限。$",
+        "en": "^Curse Enemies with Elemental Weakness when you Block their Spell Damage, ignoring Curse Limit$"
     },
     {
         "id": "stat_3718597497",
@@ -15701,8 +15701,8 @@
     },
     {
         "id": "stat_4259701244",
-        "zh": "^受到【活力】影响时，每击中一个敌人便会获得 (\\S+) 生命$",
-        "en": "^(\\S+) Life gained for each Enemy Hit while affected by Vitality$"
+        "zh": "^受活力影响时每击中一名敌人增加 (\\S+) 点生命$",
+        "en": "^Gain (\\S+) Life per Enemy Hit while affected by Vitality$"
     },
     {
         "id": "stat_3511815065",
@@ -23041,13 +23041,8 @@
     },
     {
         "id": "stat_3278399103",
-        "zh": "^药剂生效期间，对奉献地面上的敌人的暴击率提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Critical Strike Chance against Enemies on Consecrated Ground during Flask effect$"
-    },
-    {
-        "id": "stat_3278399103",
-        "zh": "^药剂生效期间，对奉献地面上的敌人的暴击率降低 (\\S+)%$",
-        "en": "^(\\S+)% reduced Critical Strike Chance against Enemies on Consecrated Ground during Flask effect$"
+        "zh": "^生效期间，对奉献地面上的敌人暴击率提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Critical Strike Chance against Enemies on Consecrated Ground during effect$"
     },
     {
         "id": "stat_2716882575",
@@ -24146,8 +24141,8 @@
     },
     {
         "id": "stat_3327304974",
-        "zh": "^元素抗性按照每 10 点全知穿透 (\\S+)%$",
-        "en": "^Penetrate (\\S+)% Elemental Resistances per 10 Omniscience$"
+        "zh": "^元素抗性按照每 15 点全知穿透 (\\S+)%$",
+        "en": "^Penetrate (\\S+)% Elemental Resistances per 15 Omniscience$"
     },
     {
         "id": "stat_3057722139",
@@ -25746,8 +25741,8 @@
     },
     {
         "id": "stat_458989037",
-        "zh": "^所有元素抗性按照每 10 点全知 \\+(\\S+)%$",
-        "en": "^\\+(\\S+)% to all Elemental Resistances per 10 Omniscience$"
+        "zh": "^所有元素抗性按照每 15 点全知 \\+(\\S+)%$",
+        "en": "^\\+(\\S+)% to all Elemental Resistances per 15 Omniscience$"
     },
     {
         "id": "stat_2647355055",
@@ -38598,5 +38593,10 @@
         "id": "stat_274716455",
         "zh": "^法术伤害的暴击伤害加成 (\\S+)%$",
         "en": "^(\\S+)% to Critical Strike Multiplier for Spell Damage$"
+    },
+    {
+        "id": "stat_1793005352",
+        "zh": "^灵魂奉献能使暴击伤害加成提高 (\\S+)%$",
+        "en": "^Spirit Offering grants (\\S+)% to Critical Strike Multiplier$"
     }
 ]
