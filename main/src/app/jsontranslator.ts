@@ -46,7 +46,7 @@ export class JsonTranslator {
                         continue;
                     }
 
-                    const value = requirement.value[0][0];
+                    const value = requirement.values[0][0];
                     if (value === ZH_CLASS_SCION) {
                         if (item.explicitMods) {
                             for (let i = 0; i < item.explicitMods.length; i++) {
