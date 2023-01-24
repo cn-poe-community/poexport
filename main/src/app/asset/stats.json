@@ -12006,12 +12006,12 @@
     },
     {
         "id": "stat_2008255263",
-        "zh": "^药剂生效期间，暴击率提高 (\\S+)%$",
+        "zh": "^生效期间，暴击率提高 (\\S+)%$",
         "en": "^(\\S+)% increased Critical Strike Chance during Effect$"
     },
     {
         "id": "stat_2008255263",
-        "zh": "^药剂生效期间，暴击率降低 (\\S+)%$",
+        "zh": "^生效期间，暴击率降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Critical Strike Chance during Effect$"
     },
     {
