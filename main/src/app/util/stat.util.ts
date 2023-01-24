@@ -1,43 +1,20 @@
 export class StatUtil {
-    public static getBodyOfTemplate(zhTemplate: string): string {
-        const body = zhTemplate.substring(1, zhTemplate.length - 1).replace(/\\\+/g, "").replace(/\(\\S\+\)/g, "#");
-        return this.getBodyOfModifier(body);
+    public static getBodyOfZhTemplate(template: string): string {
+        return this.getNonAsciiOrNonPer(template);
     }
 
-    public static getBodyOfModifier(mod: string): string {
-        const buf = [];
-        const pattern = /(?<=(^|\s|：))[+-]?[\d&&.]+(?=%?($|\s))/g;
-        const len = mod.length;
-        let lastIndex = 0;
-
-        while (lastIndex < len) {
-            const matches = pattern.exec(mod);
-            if (matches) {
-                const index = matches.index;
-                if (lastIndex !== index) {
-                    buf.push(mod.substring(lastIndex, index));
-                }
-                buf.push("#");
-                lastIndex = pattern.lastIndex;
-            } else {
-                if (lastIndex < len) {
-                    buf.push(mod.substring(lastIndex, len));
-                }
-                break;
-            }
-        }
-
-        return buf.join("");
+    public static getBodyOfZhModifier(mod: string): string {
+        return this.getNonAsciiOrNonPer(mod);
     }
 
-    public static getNonAscii(str: string): string {
+    public static getNonAsciiOrNonPer(str: string): string {
         const buff = new Uint16Array(str.length);
         let size = 0;
 
         for (let i = 0; i < str.length; i++) {
             //not support ucs2 extended-characters currently
             const char = str.charCodeAt(i);
-            if (char >= 256) {
+            if (char == 37 || char >= 256) {
                 buff[size++] = char;
             }
         }

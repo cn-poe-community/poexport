@@ -23,22 +23,25 @@ export class StatService {
             return res;
         }
 
-        const body = StatUtil.getBodyOfModifier(zhMod);
+        const body = StatUtil.getBodyOfZhModifier(zhMod);
         const stats = this.statProvider.provideStatByZhBody(body);
 
         if (stats) {
-            return this.doTranslate(stats, zhMod);
+            const result = this.doTranslate(stats, zhMod);
+            if (result) {
+                return result;
+            }
         }
 
-        const mapping = this.statProvider.provideMappingEntryByZhParts(StatUtil.getNonAscii(zhMod));
-        if (mapping) {
-            const r = new RegExp(mapping.before);
+        const entry = this.statProvider.provideZhMappingEntryByBody(StatUtil.getBodyOfZhModifier(zhMod));
+        if (entry) {
+            const r = new RegExp(entry.before);
 
             if (r.exec(zhMod)) {
-                zhMod = StatUtil.render(mapping.after, mapping.before, zhMod);
+                zhMod = StatUtil.render(entry.after, entry.before, zhMod);
             }
 
-            const body = StatUtil.getBodyOfModifier(zhMod);
+            const body = StatUtil.getBodyOfZhModifier(zhMod);
             const stats = this.statProvider.provideStatByZhBody(body);
 
             if (stats) {

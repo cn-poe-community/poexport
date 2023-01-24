@@ -5,12 +5,12 @@ import { StatUtil } from "../util/stat.util";
 
 export class StatProvider {
     private readonly statIndexByZhBody = new Map<string, Stat | Array<Stat>>();
-    private readonly mappingIndexByZhParts = new Map<string, MappingEntry>();
+    private readonly zhMappingIndexByBody = new Map<string, MappingEntry>();
 
     constructor() {
         const statList = stats as unknown as Array<Stat>;
         for (const stat of statList) {
-            const body = StatUtil.getBodyOfTemplate(stat.zh);
+            const body = StatUtil.getBodyOfZhTemplate(stat.zh);
             if (this.statIndexByZhBody.has(body)) {
                 // console.log(`warning: repeated template body: ${body}`);
                 const value = this.statIndexByZhBody.get(body);
@@ -27,8 +27,8 @@ export class StatProvider {
 
         const mapping = stats_mapping as unknown as Array<MappingEntry>;
         for (const entry of mapping) {
-            const zhParts = StatUtil.getNonAscii(entry.before);
-            this.mappingIndexByZhParts.set(zhParts, entry);
+            const body = StatUtil.getNonAsciiOrNonPer(entry.before);
+            this.zhMappingIndexByBody.set(body, entry);
         }
     }
 
@@ -41,8 +41,8 @@ export class StatProvider {
         return null;
     }
 
-    public provideMappingEntryByZhParts(parts: string): MappingEntry | null {
-        const entry = this.mappingIndexByZhParts.get(parts);
+    public provideZhMappingEntryByBody(body: string): MappingEntry | null {
+        const entry = this.zhMappingIndexByBody.get(body);
         if (entry) {
             return entry;
         }
