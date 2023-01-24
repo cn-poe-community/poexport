@@ -82,9 +82,10 @@ export class Exporter {
 
                 res.setHeader("Content-Type", "application/json");
                 res.writeHead(200);
-                res.end(JSON.stringify(data), "utf-8");
+                res.write(JSON.stringify(data), "utf-8");
             }).catch(error => {
                 res.writeHead((error as HttpError).status);
+            }).finally(() => {
                 res.end();
             });
     }
@@ -96,9 +97,10 @@ export class Exporter {
             .then(data => {
                 res.setHeader("Content-Type", "text/html; charset=UTF-8");
                 res.writeHead(200);
-                res.end(data);
+                res.write(data);
             }).catch(error => {
                 res.writeHead((error as HttpError).status);
+            }).finally(() => {
                 res.end();
             });
     }
@@ -116,9 +118,10 @@ export class Exporter {
 
                 res.setHeader("Content-Type", "application/json");
                 res.writeHead(200);
-                res.end(JSON.stringify(data));
+                res.write(JSON.stringify(data));
             }).catch(error => {
                 res.writeHead((error as HttpError).status);
+            }).finally(() => {
                 res.end();
             });
     }
@@ -136,9 +139,10 @@ export class Exporter {
 
                 res.setHeader("Content-Type", "application/json");
                 res.writeHead(200);
-                res.end(JSON.stringify(data));
+                res.write(JSON.stringify(data));
             }).catch(error => {
                 res.writeHead((error as HttpError).status);
+            }).finally(() => {
                 res.end();
             });
     }
