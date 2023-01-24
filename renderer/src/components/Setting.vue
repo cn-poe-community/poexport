@@ -42,7 +42,6 @@ export default {
     saveConfig() {
       // @ts-ignore
       const mainAPI = window.mainAPI as MainAPI;
-      // @ts-ignore
       const config: Config = {
         poeSessId: this.poeSessionId,
         pobPath: this.pobPath,

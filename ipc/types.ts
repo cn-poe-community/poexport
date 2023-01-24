@@ -3,7 +3,7 @@ export type IPCError = string;
 export interface Config {
     poeSessId: string,
     pobPath: string,
-    port: number,
+    port?: number,
 }
 
 export type SessionStatus = "ok" | "invalid";
