@@ -346,7 +346,7 @@
     },
     {
         "id": "stat_3695891184",
-        "zh": "^每击败一名敌人获得 (\\S+) 点生命$",
+        "zh": "^每击败一名敌人获得(\\S+)点生命$",
         "en": "^(\\S+) Life gained on Kill$"
     },
     {
@@ -506,7 +506,7 @@
     },
     {
         "id": "stat_1368271171",
-        "zh": "^每击败一名敌人获得 (\\S+) 点魔力$",
+        "zh": "^每击败一名敌人获得(\\S+)点魔力$",
         "en": "^(\\S+) Mana gained on Kill$"
     },
     {
@@ -672,7 +672,7 @@
     {
         "id": "stat_4253454700",
         "zh": "^该装备 (\\S+)% 攻击格挡率$",
-        "en": "^(\\S+)% Chance to Block$"
+        "en": "^(\\S+)% Chance to Block (Shields)$"
     },
     {
         "id": "stat_280731498",
@@ -1321,7 +1321,7 @@
     },
     {
         "id": "stat_820939409",
-        "zh": "^攻击每击中一名敌人获得 (\\S+) 点魔力$",
+        "zh": "^攻击每击中一名敌人获得(\\S+)点魔力$",
         "en": "^(\\S+) Mana gained for each Enemy hit by your Attacks$"
     },
     {
@@ -3471,7 +3471,7 @@
     },
     {
         "id": "stat_2503377690",
-        "zh": "^立即回复 (\\S+)% 回复量$",
+        "zh": "^立即回复(\\S+)% 回复量$",
         "en": "^(\\S+)% of Recovery applied Instantly$"
     },
     {
@@ -3706,7 +3706,7 @@
     },
     {
         "id": "stat_3374054207",
-        "zh": "^召唤生物有 (\\S+)% 攻击伤害格挡几率$",
+        "zh": "^召唤生物有(\\S+)% 攻击伤害格挡几率$",
         "en": "^Minions have (\\S+)% Chance to Block Attack Damage$"
     },
     {
@@ -11236,8 +11236,8 @@
     },
     {
         "id": "stat_3681057026",
-        "zh": "^格挡时回复能量护盾，数值等同于 (\\S+)% 的护甲$",
-        "en": "^Replenishes Energy Shield by (\\S+)% of Armour when you Block$"
+        "zh": "^格挡时回复相当于 (\\S+)% 护甲的能量盾$",
+        "en": "^Recover Energy Shield equal to (\\S+)% of Armour when you Block$"
     },
     {
         "id": "stat_446027070",
@@ -11488,6 +11488,11 @@
         "id": "stat_1916706958",
         "zh": "^施放时有 (\\S+)% 几率避免眩晕打断$",
         "en": "^(\\S+)% chance to Avoid interruption from Stuns while Casting$"
+    },
+    {
+        "id": "stat_1916706958",
+        "zh": "^施放时有 100% 几率避免眩晕打断$",
+        "en": "^Avoid interruption from Stuns while Casting$"
     },
     {
         "id": "stat_3587013273",
@@ -14701,11 +14706,6 @@
     },
     {
         "id": "stat_2457540491",
-        "zh": "^受到【坚定】影响时，承受的反射物理伤害提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Reflected Physical Damage taken while affected by Determination$"
-    },
-    {
-        "id": "stat_2457540491",
         "zh": "^受到【坚定】影响时，承受的反射物理伤害降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Reflected Physical Damage taken while affected by Determination$"
     },
@@ -15231,11 +15231,6 @@
     },
     {
         "id": "stat_68410701",
-        "zh": "^受到【坚定】影响时，你被暴击时受到的额外伤害提高 (\\S+)%$",
-        "en": "^You take (\\S+)% increased Extra Damage from Critical Strikes while affected by Determination$"
-    },
-    {
-        "id": "stat_68410701",
         "zh": "^受到【坚定】影响时，你被暴击时受到的额外伤害降低 (\\S+)%$",
         "en": "^You take (\\S+)% reduced Extra Damage from Critical Strikes while affected by Determination$"
     },
@@ -15701,7 +15696,7 @@
     },
     {
         "id": "stat_4259701244",
-        "zh": "^受活力影响时每击中一名敌人增加 (\\S+) 点生命$",
+        "zh": "^受活力影响时每击中一名敌人增加(\\S+)点生命$",
         "en": "^Gain (\\S+) Life per Enemy Hit while affected by Vitality$"
     },
     {
@@ -38596,7 +38591,237 @@
     },
     {
         "id": "stat_1793005352",
-        "zh": "^灵魂奉献能使暴击伤害加成提高 (\\S+)%$",
+        "zh": "^灵魂奉献能使暴击伤害加成提高(\\S+)%$",
         "en": "^Spirit Offering grants (\\S+)% to Critical Strike Multiplier$"
+    },
+    {
+        "id": "stat_322835727",
+        "zh": "^当你施放诅咒法术时，有 (\\S+)% 的几率获得一个暴击球$",
+        "en": "^(\\S+)% chance to gain a Power Charge when you Cast a Curse Spell$"
+    },
+    {
+        "id": "stat_973000407",
+        "zh": "^你的诅咒限制等于你的最大暴击球数量$",
+        "en": "^Your Curse Limit is equal to your maximum Power Charges$"
+    },
+    {
+        "id": "stat_1943415243",
+        "zh": "^赋予等级 (\\S+) 烈焰之触技能$",
+        "en": "^Grants Level (\\S+) Approaching Flames Skill$"
+    },
+    {
+        "id": "stat_3511992942",
+        "zh": "^火焰触碰时每秒受到 (\\S+) 点火焰伤害$",
+        "en": "^Take (\\S+) Fire Damage per Second while Flame-Touched$"
+    },
+    {
+        "id": "stat_349619704",
+        "zh": "^若你被火焰触碰，则获得肾上腺素$",
+        "en": "^Gain Adrenaline when you become Flame-Touched$"
+    },
+    {
+        "id": "stat_138579627",
+        "zh": "^若你不再被火焰触碰，则失去肾上腺素$",
+        "en": "^Lose Adrenaline when you cease to be Flame-Touched$"
+    },
+    {
+        "id": "stat_1027887872",
+        "zh": "^先祖图腾激活后，它们提供的增益效果提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Effect of Buffs your Ancestor Totems grant while Active$"
+    },
+    {
+        "id": "stat_3328802509",
+        "zh": "^激活的先祖图腾增益效果延续 (\\S+) 秒$",
+        "en": "^Buffs from Active Ancestor Totems Linger for (\\S+) second$"
+    },
+    {
+        "id": "stat_2643613764",
+        "zh": "^被诅咒的敌人无法对你施加元素异常状态$",
+        "en": "^Cursed Enemies cannot inflict Elemental Ailments on You$"
+    },
+    {
+        "id": "stat_1480595847",
+        "zh": "^法术造成的穿刺效果提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Effect of Impales inflicted with Spells$"
+    },
+    {
+        "id": "stat_4084476257",
+        "zh": "^[DNT]法术暴击时有 (\\S+)% 几率造成穿刺$",
+        "en": "^Critical Strikes with Spells have (\\S+)% chance to inflict Impale$"
+    },
+    {
+        "id": "stat_3990082744",
+        "zh": "^获得等于你混沌抗性一半的额外元素伤害减免。$",
+        "en": "^Gain additional Elemental Damage Reduction equal to half your Chaos Resistance$"
+    },
+    {
+        "id": "stat_2845551354",
+        "zh": "^你受到的点燃时间加成也适用于所有元素异常状态$",
+        "en": "^Modifiers to Ignite Duration on you apply to all Elemental Ailments$"
+    },
+    {
+        "id": "stat_2165415361",
+        "zh": "^生效期间，被你击败的敌人有 (\\S+)% 几率爆炸，造成其最大生命值十分之一的随机元素伤害$",
+        "en": "^Enemies you Kill during Effect have a (\\S+)% chance to Explode, dealing a tenth of their maximum Life as Damage of a Random Element$"
+    },
+    {
+        "id": "stat_41860024",
+        "zh": "^效果持续期间受到击中伤害，则生命损失的 (\\S+)% 会改为在 4 秒内逐渐丧失$",
+        "en": "^When Hit during effect, (\\S+)% of Life loss from Damage taken occurs over 4 seconds instead$"
+    },
+    {
+        "id": "stat_1196333117",
+        "zh": "^若力量是你最高的属性，当你静止时，脚下产生奉献地面$",
+        "en": "^You have Consecrated Ground around you while\nstationary if Strength is your highest Attribute$"
+    },
+    {
+        "id": "stat_2047846165",
+        "zh": "^若智慧是你最高的属性，则你暴击时，有 (\\S+)% 几率产生渎神地面$",
+        "en": "^(\\S+)% chance to create Profane Ground on Critical\nStrike if Intelligence is your highest Attribute$"
+    },
+    {
+        "id": "stat_3636871122",
+        "zh": "^你创造的渎神地面效果延续 1 秒$",
+        "en": "^Effects of Profane Ground you create Linger for 1 second$"
+    },
+    {
+        "id": "stat_3636871122",
+        "zh": "^你创造的渎神地面效果延续 (\\S+) 秒$",
+        "en": "^Effects of Profane Ground you create Linger for (\\S+) seconds$"
+    },
+    {
+        "id": "stat_3223376951",
+        "zh": "^攻击无法造成暴击$",
+        "en": "^Cannot deal Critical Strikes with Attacks$"
+    },
+    {
+        "id": "stat_2543019543",
+        "zh": "^你避免感电的几率加成也适用于所有元素异常状态$",
+        "en": "^Modifiers to Chance to Avoid being Shocked apply to all Elemental Ailments$"
+    },
+    {
+        "id": "stat_4281949537",
+        "zh": "^如果你在过去 10 秒内施放过元素要害，获得等同于物理伤害的 (\\S+)% 的随机元素伤害$",
+        "en": "^Gain (\\S+)% of Physical Damage as a Random Element if you've cast Elemental Weakness in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2304988974",
+        "zh": "^如果你在过去 10 秒内施放过易伤，则有 (\\S+)% 几率造成双倍伤害$",
+        "en": "^(\\S+)% chance to deal Double Damage if you've cast Vulnerability in the past 10 seconds$"
+    },
+    {
+        "id": "stat_1904031052",
+        "zh": "^如果你在过去 10 秒内施放过绝望，则在命中时施加 2 秒的死亡凋零$",
+        "en": "^Inflict Withered for 2 seconds on Hit if you've cast Despair in the past 10 seconds$"
+    },
+    {
+        "id": "stat_91505809",
+        "zh": "^如果你在过去 10 秒内施放过惩戒，则在命中时恐吓敌人$",
+        "en": "^Intimidate Enemies on Hit if you've cast Punishment in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2954796309",
+        "zh": "^如果你在过去 10 秒内施放过时空锁链，则技能冷却速率提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Cooldown Recovery Rate if you've cast Temporal Chains in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2713909980",
+        "zh": "^如果你在过去 10 秒内施放过惩戒，则对反射伤害免疫$",
+        "en": "^Immune to Reflected Damage if you've cast Punishment in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2921954092",
+        "zh": "^如果你在过去 10 秒内施放过元素要害，则对曝露免疫$",
+        "en": "^Immune to Exposure if you've cast Elemental Weakness in the past 10 seconds$"
+    },
+    {
+        "id": "stat_3339663313",
+        "zh": "^如果你在过去 10 秒内施放过导电，则对闪电曝露免疫$",
+        "en": "^Inflict Lightning Exposure on Hit if you've cast Conductivity in the past 10 seconds$"
+    },
+    {
+        "id": "stat_3259812992",
+        "zh": "^如果你在过去 10 秒内施放过易燃，则对火焰曝露免疫$",
+        "en": "^Inflict Fire Exposure on Hit if you've cast Flammability in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2517037025",
+        "zh": "^如果你在过去 10 秒内施放过导电，则不会受到感电影响$",
+        "en": "^You are Unaffected by Shock if you've cast Conductivity in the past 10 seconds$"
+    },
+    {
+        "id": "stat_40907696",
+        "zh": "^如果你在过去 10 秒内施放过易燃，则不会受到点燃影响$",
+        "en": "^You are Unaffected by Ignite if you've cast Flammability in the past 10 seconds$"
+    },
+    {
+        "id": "stat_1168138239",
+        "zh": "^如果你在过去 10 秒内施放过冻伤，则对冰霜曝露免疫$",
+        "en": "^Cold Exposure on Hit if you've cast Frostbite in the past 10 seconds$"
+    },
+    {
+        "id": "stat_4077357269",
+        "zh": "^如果你在过去 10 秒内施放过衰弱，则不会受到暴击的额外伤害$",
+        "en": "^Take no Extra Damage from Critical Strikes if you've cast Enfeeble in the past 10 seconds$"
+    },
+    {
+        "id": "stat_971937289",
+        "zh": "^如果你在过去 10 秒内施放过易伤，则不会受到流血影响$",
+        "en": "^You are Unaffected by Bleeding if you've cast Vulnerability in the past 10 seconds$"
+    },
+    {
+        "id": "stat_3616500790",
+        "zh": "^如果你在过去 10 秒内施放过时空锁链，则行动速度减缓不会低于基础速度$",
+        "en": "^Action Speed cannot be Slowed below Base Value if you've cast Temporal Chains in the past 10 seconds$"
+    },
+    {
+        "id": "stat_4194606073",
+        "zh": "^如果你在过去 10 秒内施放过冻伤，则不会受到冰冻影响$",
+        "en": "^You are Unaffected by Freeze if you've cast Frostbite in the past 10 seconds$"
+    },
+    {
+        "id": "stat_2773026887",
+        "zh": "^如果你在过去 10 秒内施放过绝望，则对诅咒免疫$",
+        "en": "^Immune to Curses if you've cast Despair in the past 10 seconds$"
+    },
+    {
+        "id": "stat_1776612984",
+        "zh": "^将物理伤害的 (\\S+)% 转化为一种随机元素$",
+        "en": "^(\\S+)% of Physical Damage converted to a random Element$"
+    },
+    {
+        "id": "stat_1463929958",
+        "zh": "^最大暴击几率为 50%$",
+        "en": "^Maximum Critical Strike Chance is 50%$"
+    },
+    {
+        "id": "stat_2511969244",
+        "zh": "^非暴击无法造成伤害$",
+        "en": "^Non-Critical Strikes deal no Damage$"
+    },
+    {
+        "id": "stat_1491870348",
+        "zh": "^对施法速度的增强与减弱也作用于攻击速度$",
+        "en": "^Increases and Reductions to Cast Speed apply to Attack Speed$"
+    },
+    {
+        "id": "stat_1406092431",
+        "zh": "^当你消灭一个被非光环魔蛊诅咒的敌人时，在魔蛊剩余\n的持续时间中免疫诅咒$",
+        "en": "^When you Kill an Enemy Cursed with a Non-Aura Hex, become Immune to\nCurses for remaining Hex Duration$"
+    },
+    {
+        "id": "stat_1807705940",
+        "zh": "^抑制法术伤害时恢复(\\S+)点生命$",
+        "en": "^Recover (\\S+) Life when you Suppress Spell Damage$"
+    },
+    {
+        "id": "stat_611279043",
+        "zh": "^每块聚光之石有(\\S+)%的几率免疫元素异常状态$",
+        "en": "^(\\S+)% chance to Avoid Elemental Ailments per Grand Spectrum$"
+    },
+    {
+        "id": "stat_3491968196",
+        "zh": "^【虚空匕首】以环状方式发射投射物$",
+        "en": "^Ethereal Knives fires Projectiles in a circle$"
     }
 ]
