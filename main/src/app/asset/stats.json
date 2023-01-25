@@ -1,8 +1,18 @@
 [
     {
-        "id": "append_flask_1",
+        "id": "flask_implicit_1",
         "zh": "^受到的火焰伤害总降 (\\S+)%$",
         "en": "^(\\S+)% less Fire Damage taken$"
+    },
+    {
+        "id": "flask_implicit_2",
+        "zh": "^【迷踪】状态$",
+        "en": "^Phasing$"
+    },
+    {
+        "id": "flask_implicit_3",
+        "zh": "^承受的冰霜总伤害降低 (\\S+)%$",
+        "en": "^(\\S+)% less Cold Damage taken$"
     },
     {
         "id": "stat_3299347043",
@@ -3851,13 +3861,8 @@
     },
     {
         "id": "stat_1869678332",
-        "zh": "^药剂生效期间，你绝对元素抗性中最低的一个会使你承受该元素的伤害提高 (\\S+)%$",
-        "en": "^During Flask Effect, (\\S+)% increased Damage taken of each Element for which your Uncapped Elemental Resistance is lowest$"
-    },
-    {
-        "id": "stat_1869678332",
-        "zh": "^药剂生效期间，你绝对元素抗性中最低的一个会使你承受该元素的伤害降低 (\\S+)%$",
-        "en": "^During Flask Effect, (\\S+)% reduced Damage taken of each Element for which your Uncapped Elemental Resistance is lowest$"
+        "zh": "^生效期间，你绝对元素抗性中最低的一个会使你承受该元素的伤害降低 (\\S+)%$",
+        "en": "^During Effect, (\\S+)% reduced Damage taken of each Element for which your Uncapped Elemental Resistance is lowest$"
     },
     {
         "id": "stat_1924591908",
@@ -5682,12 +5687,7 @@
     {
         "id": "stat_968369591",
         "zh": "^生效期间，攻击速度提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Attack Speed during Flask effect$"
-    },
-    {
-        "id": "stat_968369591",
-        "zh": "^生效期间，攻击速度降低 (\\S+)%$",
-        "en": "^(\\S+)% reduced Attack Speed during Flask effect$"
+        "en": "^(\\S+)% increased Attack Speed during Effect$"
     },
     {
         "id": "stat_3882662078",
@@ -6906,7 +6906,7 @@
     },
     {
         "id": "stat_3743301799",
-        "zh": "^受到的火焰伤害提高 (\\S+)%$",
+        "zh": "^受到的火焰伤害降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Fire Damage taken$"
     },
     {
@@ -7236,13 +7236,8 @@
     },
     {
         "id": "stat_3256116097",
-        "zh": "^药剂持续期间，施法速度提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Cast Speed during Flask effect$"
-    },
-    {
-        "id": "stat_3256116097",
-        "zh": "^药剂持续期间，施法速度降低 (\\S+)%$",
-        "en": "^(\\S+)% reduced Cast Speed during Flask effect$"
+        "zh": "^生效期间，施法速度提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Cast Speed during Effect$"
     },
     {
         "id": "stat_3150705301",
@@ -7982,7 +7977,7 @@
     {
         "id": "stat_2028847114",
         "zh": "^击中时对敌人附加元素要害诅咒。$",
-        "en": "^Curse Enemies with Elemental Weakness on Hit, with (\\S+)% increased Effect$"
+        "en": "^Curse Enemies with Elemental Weakness on Hit$"
     },
     {
         "id": "stat_778050954",
@@ -10493,11 +10488,6 @@
         "id": "stat_3541114083",
         "zh": "^获得 (\\S+) 级的【捕熊陷阱】$",
         "en": "^Grants Level (\\S+) Bear Trap Skill$"
-    },
-    {
-        "id": "stat_4265534424",
-        "zh": "^生效期间，你受到的诅咒效果提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Effect of Curses on you during Effect$"
     },
     {
         "id": "stat_4265534424",
@@ -22036,7 +22026,7 @@
     },
     {
         "id": "stat_3615541554",
-        "zh": "^生效期间，结界总降 (\\S+)%$",
+        "zh": "^生效期间，结界减少 (\\S+)%$",
         "en": "^(\\S+)% less Ward during Effect$"
     },
     {
@@ -28690,6 +28680,11 @@
         "en": "^While a Pinnacle Atlas Boss is in your Presence, Withered you Inflict expires (\\S+)% faster$"
     },
     {
+        "id": "stat_3457821036",
+        "zh": "^有一个异界图鉴最终首领出现在你面前：你施加的死亡凋零耗竭速度减慢 (\\S+)%$",
+        "en": "^While a Pinnacle Atlas Boss is in your Presence, Withered you Inflict expires (\\S+)% slower$"
+    },
+    {
         "id": "stat_649027123",
         "zh": "^有一个传奇怪物出现在你面前：【闪电之捷】的增益效果提高 (\\S+)%$",
         "en": "^While a Unique Enemy is in your Presence, Herald of Thunder has (\\S+)% increased Buff Effect$"
@@ -28993,6 +28988,11 @@
         "id": "stat_3262721796",
         "zh": "^有一个传奇怪物出现在你面前：你施加的死亡凋零耗竭速度加快 (\\S+)%$",
         "en": "^While a Unique Enemy is in your Presence, Withered you Inflict expires (\\S+)% faster$"
+    },
+    {
+        "id": "stat_3262721796",
+        "zh": "^有一个传奇怪物出现在你面前：你施加的死亡凋零耗竭速度减慢 (\\S+)%$",
+        "en": "^While a Unique Enemy is in your Presence, Withered you Inflict expires (\\S+)% slower$"
     },
     {
         "id": "stat_3015437071",
@@ -29586,7 +29586,7 @@
     },
     {
         "id": "stat_1625982517",
-        "zh": "^你施加的死亡凋零耗竭速度加快 (\\S+)%$",
+        "zh": "^你施加的死亡凋零耗竭速度减慢 (\\S+)%$",
         "en": "^Withered you Inflict expires (\\S+)% slower$"
     },
     {
@@ -39038,5 +39038,255 @@
         "id": "stat_2478268100",
         "zh": "^目盲时有(\\S+)%的几率在击中时获得一个狂怒球$",
         "en": "^(\\S+)% chance to gain a Frenzy Charge on Hit while Blinded$"
+    },
+    {
+        "id": "stat_3733114005",
+        "zh": "^周围敌人被灼烧$",
+        "en": "^Nearby Enemies are Scorched$"
+    },
+    {
+        "id": "stat_1777740627",
+        "zh": "^失去的生命被保留起来，\n直到你的生命在 (\\S+) 秒内没有再受到伤害$",
+        "en": "^Life that would be lost by taking Damage is instead Reserved\nuntil you take no Damage to Life for (\\S+) second$"
+    },
+    {
+        "id": "stat_3833160777",
+        "zh": "^所有击中的伤害都有冰缓效果$",
+        "en": "^All Damage with Hits can Chill$"
+    },
+    {
+        "id": "stat_244239777",
+        "zh": "^受到的所有攻击伤害会使你冰缓$",
+        "en": "^All Damage Taken from Hits can Chill you$"
+    },
+    {
+        "id": "stat_3119292058",
+        "zh": "^被你的攻击冰缓的敌人可以像冰冻一样击碎$",
+        "en": "^Enemies Chilled by your Hits can be Shattered as though Frozen$"
+    },
+    {
+        "id": "stat_3594661200",
+        "zh": "^被你的命中冰缓的敌人造成的伤害降低，效果相当于冰缓效果的一半$",
+        "en": "^Enemies Chilled by your Hits lessen their Damage dealt by half of Chill Effect$"
+    },
+    {
+        "id": "stat_3784504781",
+        "zh": "^镶嵌宝石的战吼技能拥有(\\S+)次冷却使用次数$",
+        "en": "^Socketed Warcry Skills have (\\S+) Cooldown Use$"
+    },
+    {
+        "id": "stat_1615324731",
+        "zh": "^攻击时，每有一个増助的战吼，\n便受到相当于生命值(\\S+)%的物理伤害$",
+        "en": "^When you Attack, take (\\S+)% of Life as Physical Damage for\neach Warcry Exerting the Attack$"
+    },
+    {
+        "id": "stat_2023285759",
+        "zh": "^每有一个増助的战吼，技能造成的伤害就提高(\\S+)%$",
+        "en": "^Skills deal (\\S+)% more Damage for each Warcry Exerting them$"
+    },
+    {
+        "id": "stat_2617837023",
+        "zh": "^受到精准光环影响时，暴击率提高(\\S+)%$",
+        "en": "^(\\S+)% more Critical Strike chance while affected by Precision$"
+    },
+    {
+        "id": "stat_4102244881",
+        "zh": "^受到怨毒光环影响时，你可以额外施加一个诅咒$",
+        "en": "^You can apply an additional Curse while affected by Malevolence$"
+    },
+    {
+        "id": "stat_3403419549",
+        "zh": "^受到奋锐光环影响时不受诅咒影响$",
+        "en": "^Unaffected by Curses while affected by Zealotry$"
+    },
+    {
+        "id": "stat_1585991257",
+        "zh": "^受到愤怒光环影响时始终造成烧灼$",
+        "en": "^Always Scorch while affected by Anger$"
+    },
+    {
+        "id": "stat_1808477254",
+        "zh": "^受到清晰光环影响时，你的秘术增强效果提高(\\S+)%$",
+        "en": "^(\\S+)% increased Effect of Arcane Surge on you while affected by Clarity$"
+    },
+    {
+        "id": "stat_3234824465",
+        "zh": "^受到元素净化光环影响时，所有元素抗性上限提高(\\S+)%$",
+        "en": "^(\\S+)% to all maximum Elemental Resistances while affected by Purity of Elements$"
+    },
+    {
+        "id": "stat_1960426186",
+        "zh": "^受到迅捷光环影响时，行动速度加快(\\S+)%$",
+        "en": "^(\\S+)% increased Action Speed while affected by Haste$"
+    },
+    {
+        "id": "stat_2499038519",
+        "zh": "^受到雷霆光环影响时始终造成精疲力尽$",
+        "en": "^Always Sap while affected by Wrath$"
+    },
+    {
+        "id": "stat_13285831",
+        "zh": "^受到憎恨光环影响时始终造成脆弱$",
+        "en": "^Always inflict Brittle while affected by Hatred$"
+    },
+    {
+        "id": "stat_1961516633",
+        "zh": "^使用尊严时消灭的敌人有(\\S+)%的几率爆炸，造成相当于最大生命值十分之一的物理伤害$",
+        "en": "^Enemies you Kill while using Pride have (\\S+)% chance to Explode, dealing a tenth of their maximum Life as Physical Damage$"
+    },
+    {
+        "id": "stat_3953667743",
+        "zh": "^受到闪电净化影响时\n，受到的火焰和冰霜伤害的(\\S+)%视为闪电伤害$",
+        "en": "^(\\S+)% of Fire and Cold Damage taken as Lightning Damage while\naffected by Purity of Lightning$"
+    },
+    {
+        "id": "stat_1723738042",
+        "zh": "^受到火焰净化影响时，受到的冰霜和闪电伤害的(\\S+)%视为火焰伤害$",
+        "en": "^(\\S+)% of Cold and Lightning Damage taken as Fire Damage while affected by Purity of Fire$"
+    },
+    {
+        "id": "stat_2189467271",
+        "zh": "^受到冰霜净化影响时，受到的火焰和闪电伤害的(\\S+)%视为冰霜伤害$",
+        "en": "^(\\S+)% of Fire and Lightning Damage taken as Cold Damage while affected by Purity of Ice$"
+    },
+    {
+        "id": "stat_2110586221",
+        "zh": "^受到坚定影响时，耐力球数量上限(\\S+)$",
+        "en": "^(\\S+) to Maximum Endurance Charges while affected by Determination$"
+    },
+    {
+        "id": "stat_1366273824",
+        "zh": "^受到活力影响时，被击中时在1秒内恢复(\\S+)%的生命值$",
+        "en": "^Regenerate (\\S+)% Life over one second when hit while affected by Vitality$"
+    },
+    {
+        "id": "stat_3458080964",
+        "zh": "^受到优雅影响时，狂怒球数量上限(\\S+)$",
+        "en": "^(\\S+) to Maximum Frenzy Charges while affected by Grace$"
+    },
+    {
+        "id": "stat_1465672972",
+        "zh": "^受到纪律影响时，暴击球数量上限(\\S+)$",
+        "en": "^(\\S+) to Maximum Power Charges while affected by Discipline$"
+    },
+    {
+        "id": "stat_2800254163",
+        "zh": "^禁用除精准之外的其他光环技能$",
+        "en": "^Aura Skills other than Precision are Disabled$"
+    },
+    {
+        "id": "stat_3292388799",
+        "zh": "^禁用除雷霆之外的其他光环技能$",
+        "en": "^Aura Skills other than Wrath are Disabled$"
+    },
+    {
+        "id": "stat_2517644375",
+        "zh": "^禁用除冰霜净化之外的其他光环技能$",
+        "en": "^Aura Skills other than Purity of Ice are Disabled$"
+    },
+    {
+        "id": "stat_2010835448",
+        "zh": "^禁用除清晰之外的其他光环技能$",
+        "en": "^Aura Skills other than Clarity are Disabled$"
+    },
+    {
+        "id": "stat_2185337019",
+        "zh": "^禁用除愤怒之外的其他光环技能$",
+        "en": "^Aura Skills other than Anger are Disabled$"
+    },
+    {
+        "id": "stat_110034065",
+        "zh": "^禁用除活力之外的其他光环技能$",
+        "en": "^Aura Skills other than Vitality are Disabled$"
+    },
+    {
+        "id": "stat_2523986538",
+        "zh": "^禁用除闪电净化之外的其他光环技能$",
+        "en": "^Aura Skills other than Purity of Lightning are Disabled$"
+    },
+    {
+        "id": "stat_374559518",
+        "zh": "^禁用除奋锐光环之外的其他光环技能$",
+        "en": "^Aura Skills other than Zealotry are Disabled$"
+    },
+    {
+        "id": "stat_1747401945",
+        "zh": "^禁用除优雅之外的其他光环技能$",
+        "en": "^Aura Skills other than Grace are Disabled$"
+    },
+    {
+        "id": "stat_2225434657",
+        "zh": "^禁用除元素净化之外的其他光环技能$",
+        "en": "^Aura Skills other than Purity of Elements are Disabled$"
+    },
+    {
+        "id": "stat_2204523353",
+        "zh": "^禁用除纪律之外的其他光环技能$",
+        "en": "^Aura Skills other than Discipline are Disabled$"
+    },
+    {
+        "id": "stat_3067441492",
+        "zh": "^禁用除迅捷之外的其他光环技能$",
+        "en": "^Aura Skills other than Haste are Disabled$"
+    },
+    {
+        "id": "stat_3970941380",
+        "zh": "^禁用除尊严之外的其他光环技能$",
+        "en": "^Aura Skills other than Pride are Disabled$"
+    },
+    {
+        "id": "stat_460973817",
+        "zh": "^禁用除坚定之外的其他光环技能$",
+        "en": "^Aura Skills other than Determination are Disabled$"
+    },
+    {
+        "id": "stat_3192291777",
+        "zh": "^禁用除火焰净化之外的其他光环技能$",
+        "en": "^Aura Skills other than Purity of Fire are Disabled$"
+    },
+    {
+        "id": "stat_3540033124",
+        "zh": "^禁用除怨毒光环之外的其他光环技能$",
+        "en": "^Aura Skills other than Malevolence are Disabled$"
+    },
+    {
+        "id": "stat_3348211884",
+        "zh": "^禁用除憎恨之外的其他光环技能$",
+        "en": "^Aura Skills other than Hatred are Disabled$"
+    },
+    {
+        "id": "stat_1865744989",
+        "zh": "^受到的混沌伤害的(\\S+)%无法穿透能量护盾$",
+        "en": "^(\\S+)% of Chaos Damage taken does not bypass Energy Shield$"
+    },
+    {
+        "id": "stat_3379724776",
+        "zh": "^受到的混沌伤害的(\\S+)%穿透能量护盾$",
+        "en": "^(\\S+)% of Non-Chaos Damage taken bypasses Energy Shield$"
+    },
+    {
+        "id": "stat_3215997147",
+        "zh": "^无上衰败$",
+        "en": "^Supreme Decadence$"
+    },
+    {
+        "id": "stat_1109900829",
+        "zh": "^如果首要为灭世者，则暴击有(\\S+)%的几率施加恶魔之触$",
+        "en": "^Critical Strikes have (\\S+)% chance to inflict Malignant Madness if The Eater of Worlds is dominant$"
+    },
+    {
+        "id": "stat_1109900829",
+        "zh": "^如果首要为灭世者，则暴击施加恶魔之触$",
+        "en": "^Critical Strikes inflict Malignant Madness if The Eater of Worlds is dominant$"
+    },
+    {
+        "id": "stat_3768948090",
+        "zh": "^如果首要为焚界者，则命中时消灭生命值低于15%的敌人$",
+        "en": "^Kill Enemies that have 15% or lower Life on Hit if The Searing Exarch is dominant$"
+    },
+    {
+        "id": "stat_791154540",
+        "zh": "^头部装备和手部装备提供的护甲值提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Armour from Equipped Helmet and Gloves$"
     }
 ]

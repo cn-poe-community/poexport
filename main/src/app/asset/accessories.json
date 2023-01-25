@@ -522,6 +522,12 @@
                     "0": "Crystallised Omniscience",
                     "1": "结晶全知"
                 }
+            },
+            "The Eternal Struggle": {
+                "text": {
+                    "0": "The Eternal Struggle",
+                    "1": "永恒之战"
+                }
             }
         }
     },
@@ -573,6 +579,12 @@
                 "text": {
                     "0": "Auxium",
                     "1": "奥术之符"
+                }
+            },
+            "The Burden of Truth": {
+                "text": {
+                    "0": "The Burden of Truth",
+                    "1": "真相之担"
                 }
             }
         }
@@ -1207,6 +1219,12 @@
                 "text": {
                     "0": "The Jinxed Juju",
                     "1": "厄运护符"
+                }
+            },
+            "Call of the Void": {
+                "text": {
+                    "0": "Call of the Void",
+                    "1": "虚空召唤"
                 }
             }
         }

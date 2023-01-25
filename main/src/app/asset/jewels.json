@@ -1066,6 +1066,12 @@
                     "0": "Watcher's Eye",
                     "1": "守望之眼"
                 }
+            },
+            "Sublime Vision": {
+                "text": {
+                    "0": "Sublime Vision",
+                    "1": "崇高愿景"
+                }
             }
         }
     },

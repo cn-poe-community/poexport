@@ -5070,5 +5070,35 @@
                 }
             }
         }
+    },
+    "Awakened Enlighten Support": {
+        "skills": {
+            "Awakened Enlighten Support": {
+                "text": {
+                    "0": "Awakened Enlighten Support",
+                    "1": "启蒙（强辅）"
+                }
+            }
+        }
+    },
+    "Awakened Empower Support": {
+        "skills": {
+            "Awakened Empower Support": {
+                "text": {
+                    "0": "Awakened Empower Support",
+                    "1": "赋能（强辅）"
+                }
+            }
+        }
+    },
+    "Awakened Enhance Support": {
+        "skills": {
+            "Awakened Enhance Support": {
+                "text": {
+                    "0": "Awakened Enhance Support",
+                    "1": "强化（强辅）"
+                }
+            }
+        }
     }
 }
