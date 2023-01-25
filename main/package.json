@@ -1,7 +1,7 @@
 {
   "name": "poe-cn-export",
   "productName": "poe-cn-export",
-  "version": "3.20.2",
+  "version": "3.20.3",
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
