@@ -205,13 +205,15 @@
                 "text": {
                     "0": "Allelopathy",
                     "1": "相生相克"
-                }
+                },
+                "isLeague": true
             },
             "Replica Allelopathy": {
                 "text": {
                     "0": "Replica Allelopathy",
                     "1": "相生相克【仿品】"
-                }
+                },
+                "isLeague": true
             }
         }
     },
@@ -857,7 +859,8 @@
                 "text": {
                     "0": "Briskwrap",
                     "1": "荒途"
-                }
+                },
+                "isLeague": true
             },
             "Wildwrap": {
                 "text": {
@@ -1801,6 +1804,18 @@
                 "text": {
                     "0": "Demon Stitcher",
                     "1": "恶魔缝补者"
+                }
+            },
+            "Allelopathy": {
+                "text": {
+                    "0": "Allelopathy",
+                    "1": "相生相克"
+                }
+            },
+            "Replica Allelopathy": {
+                "text": {
+                    "0": "Replica Allelopathy",
+                    "1": "相生相克【仿品】"
                 }
             }
         }
@@ -4861,7 +4876,14 @@
             "0": "Sun Leather",
             "1": "日光皮甲"
         },
-        "uniques": {}
+        "uniques": {
+            "Briskwrap": {
+                "text": {
+                    "0": "Briskwrap",
+                    "1": "荒途"
+                }
+            }
+        }
     },
     "Thief's Garb": {
         "text": {

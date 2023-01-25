@@ -18,7 +18,8 @@ export interface UniqueMap {
 export interface Unique {
     text: {
         [language: number]: string
-    }
+    },
+    isLeague?: boolean,
 }
 
 export interface BaseTypeIndexEntry {

@@ -331,7 +331,7 @@
     },
     {
         "id": "stat_1263695895",
-        "zh": "^照亮范围减小 (\\S+)%$",
+        "zh": "^照亮范围缩小 (\\S+)%$",
         "en": "^(\\S+)% reduced Light Radius$"
     },
     {
@@ -6091,7 +6091,7 @@
     },
     {
         "id": "stat_800141891",
-        "zh": "^(\\S+)% 的几率使敌人受到冰冻，感电与点燃$",
+        "zh": "^总是使敌人受到冰冻，感电与点燃$",
         "en": "^Always Freeze, Shock and Ignite$"
     },
     {
@@ -6226,7 +6226,7 @@
     },
     {
         "id": "stat_2419712247",
-        "zh": "^造成的异常状态持续时间延长 (\\S+)%$",
+        "zh": "^造成的异常状态持续时间缩短 (\\S+)%$",
         "en": "^(\\S+)% reduced Duration of Ailments on Enemies$"
     },
     {
@@ -7191,8 +7191,8 @@
     },
     {
         "id": "stat_1468606528",
-        "zh": "^击败敌人时有 10% 的几率触发 10 级【召唤幽狼】$",
-        "en": "^10% Chance to Trigger Level 10 Summon Spectral Wolf on Kill$"
+        "zh": "^消灭敌人时触发等级10召唤幽狼$",
+        "en": "^Trigger Level 10 Summon Spectral Wolf on Kill$"
     },
     {
         "id": "stat_2879593163",
@@ -10396,13 +10396,13 @@
     },
     {
         "id": "stat_3657377047",
-        "zh": "^你施放诅咒技能时有 (\\S+)% 的几率触发插入的诅咒技能，它有 0.25 秒冷却时间$",
-        "en": "^(\\S+)% chance to Trigger Socketed Curse Skill when you cast a Curse Skill, with a 0.25 second Cooldown$"
+        "zh": "^当你施放一个诅咒法术时，有#% 几率触发插槽诅咒法术，有 0.25 秒的冷却时间$",
+        "en": "^(\\S+)% chance to Trigger Socketed Curse Spell when you Cast a Curse Spell, with a 0.25 second Cooldown$"
     },
     {
         "id": "stat_3657377047",
-        "zh": "^你施放诅咒技能时触发插入的诅咒技能，它有 0.25 秒冷却时间$",
-        "en": "^Trigger Socketed Curse Skill when you cast a Curse Skill, with a 0.25 second Cooldown$"
+        "zh": "^当你施放一个诅咒法术时，触发插槽诅咒法术，有 0.25 秒的冷却时间$",
+        "en": "^Trigger Socketed Curse Spell when you Cast a Curse Spell, with a 0.25 second Cooldown$"
     },
     {
         "id": "stat_3638731729",
@@ -26026,7 +26026,7 @@
     },
     {
         "id": "stat_3423006863",
-        "zh": "^箭矢会穿透 1 个额外目标$",
+        "zh": "^箭矢会穿透 (\\S+) 个额外目标$",
         "en": "^Arrows Pierce (\\S+) additional Targets$"
     },
     {
@@ -38823,5 +38823,220 @@
         "id": "stat_3491968196",
         "zh": "^【虚空匕首】以环状方式发射投射物$",
         "en": "^Ethereal Knives fires Projectiles in a circle$"
+    },
+    {
+        "id": "stat_2878959938",
+        "zh": "^行动速度加快 (\\S+)%$",
+        "en": "^(\\S+)% increased Action Speed$"
+    },
+    {
+        "id": "stat_3091578504",
+        "zh": "^召唤生物的攻击和施法速度加快 (\\S+)%$",
+        "en": "^Minions have (\\S+)% increased Attack and Cast Speed$"
+    },
+    {
+        "id": "stat_2500585555",
+        "zh": "^周围每个灵枢都能使你每秒再生(\\S+)点生命$",
+        "en": "^For each nearby corpse, Regenerate (\\S+) Life per second$"
+    },
+    {
+        "id": "stat_504462346",
+        "zh": "^周围每个灵枢能使移动速度提高(\\S+)%$",
+        "en": "^For each nearby corpse, (\\S+)% increased Movement Speed$"
+    },
+    {
+        "id": "stat_482240997",
+        "zh": "^每块聚光之石使召唤生物暴击加成伤害提高(\\S+)%$",
+        "en": "^Minions have (\\S+)% to Critical Strike Multiplier per Grand Spectrum$"
+    },
+    {
+        "id": "stat_332217711",
+        "zh": "^每块聚光之石使最大生命增加(\\S+)%$",
+        "en": "^(\\S+)% increased Maximum Life per Grand Spectrum$"
+    },
+    {
+        "id": "stat_308799121",
+        "zh": "^暴击球下限按照每个聚光之石 (\\S+)$",
+        "en": "^(\\S+) to Minimum Power Charges per Grand Spectrum$"
+    },
+    {
+        "id": "stat_596758264",
+        "zh": "^狂怒球下限按照每个聚光之石 (\\S+)$",
+        "en": "^(\\S+) to Minimum Frenzy Charges per Grand Spectrum$"
+    },
+    {
+        "id": "stat_2276643899",
+        "zh": "^耐力球下限按照每个聚光之石 (\\S+)$",
+        "en": "^(\\S+) to Minimum Endurance Charges per Grand Spectrum$"
+    },
+    {
+        "id": "stat_746505085",
+        "zh": "^反射你的另一枚戒指$",
+        "en": "^Reflects your other Ring$"
+    },
+    {
+        "id": "stat_3947672598",
+        "zh": "^生命回复无效$",
+        "en": "^Life Recovery from Regeneration is not applied$"
+    },
+    {
+        "id": "stat_4103111421",
+        "zh": "^生命每秒回复(\\S+)，怒火每秒再生1点$",
+        "en": "^Regenerate 1 Rage per second for every (\\S+) Life Recovery per second from Regeneration$"
+    },
+    {
+        "id": "stat_2103621252",
+        "zh": "^击中传奇敌人时吞噬一个灵魂，每秒最多触发一次$",
+        "en": "^Eat a Soul when you Hit a Unique Enemy, no more than once every second$"
+    },
+    {
+        "id": "stat_1331907976",
+        "zh": "^没有传奇敌人出现在你面前时，每秒损失一个被吞噬的灵魂$",
+        "en": "^Lose an Eaten Soul every second while no Unique Enemy is in your Presence$"
+    },
+    {
+        "id": "stat_3153125103",
+        "zh": "^最多(\\S+)个被吞噬的灵魂$",
+        "en": "^Maximum (\\S+) Eaten Soul$"
+    },
+    {
+        "id": "stat_1520059289",
+        "zh": "^猛攻$",
+        "en": "^Onslaught$"
+    },
+    {
+        "id": "stat_4080206249",
+        "zh": "^当你受到暴击时获得最大数量的耐力球$",
+        "en": "^Gain up to maximum Endurance Charges when you take a Critical Strike$"
+    },
+    {
+        "id": "stat_598215770",
+        "zh": "^周围队友的耐力球数量上限和你的一样$",
+        "en": "^Your nearby party members maximum Endurance Charges is equal to yours$"
+    },
+    {
+        "id": "stat_3470876581",
+        "zh": "^低血时闪避值提高 (\\S+)$",
+        "en": "^(\\S+) to Evasion Rating while on Low Life$"
+    },
+    {
+        "id": "stat_2868692131",
+        "zh": "^生命值变低时获得灵巧$",
+        "en": "^Gain Elusive on reaching Low Life$"
+    },
+    {
+        "id": "stat_23466649",
+        "zh": "^你在生命值低时有迷踪效果$",
+        "en": "^You have Phasing while on Low Life$"
+    },
+    {
+        "id": "stat_324460247",
+        "zh": "^有 (\\S+)% 几率击中时用灰烬包裹敌人。$",
+        "en": "^(\\S+)% chance to Cover Enemies in Ash on Hit$"
+    },
+    {
+        "id": "stat_3304203764",
+        "zh": "^有(\\S+)%的几率格挡被诅咒的敌人的攻击伤害$",
+        "en": "^(\\S+)% Chance to Block Attack Damage from Cursed Enemies$"
+    },
+    {
+        "id": "stat_773846741",
+        "zh": "^利用魔蛊技能对你诅咒的敌人造成腐蚀效果，每秒造成(\\S+)点混沌伤害，持续8秒$",
+        "en": "^Inflict Decay on Enemies you Curse with Hex Skills, dealing (\\S+) Chaos Damage per Second for 8 Seconds$"
+    },
+    {
+        "id": "stat_1417394145",
+        "zh": "^魔像附加(\\S+)-(\\S+)点物理攻击伤害$",
+        "en": "^Golems have (\\S+) to (\\S+) Added Attack Physical Damage$"
+    },
+    {
+        "id": "stat_3605834869",
+        "zh": "^技能获得等于基础魔力消耗(\\S+)%的基础生命消耗$",
+        "en": "^Skills gain a Base Life Cost equal to (\\S+)% of Base Mana Cost$"
+    },
+    {
+        "id": "stat_4145689649",
+        "zh": "^击败敌人时能获得肾上腺素，持续(\\S+)秒$",
+        "en": "^Gain Adrenaline for (\\S+) second on kill$"
+    },
+    {
+        "id": "stat_2538411280",
+        "zh": "^施加攻击的技能有(\\S+)%的几率不计为攻击。$",
+        "en": "^Skills which Exert an Attack have (\\S+)% chance to not count that Attack$"
+    },
+    {
+        "id": "stat_4294344579",
+        "zh": "^敌人身上每有一个诅咒，附加(\\S+)-(\\S+)点混沌伤害$",
+        "en": "^Adds (\\S+) to (\\S+) Chaos Damage for each Curse on the Enemy$"
+    },
+    {
+        "id": "stat_973269941",
+        "zh": "^使用此武器攻击能造成相当于最大能量护盾(\\S+)%的额外最大闪电伤害。$",
+        "en": "^Attacks with this Weapon have Added Maximum Lightning Damage equal to (\\S+)% of your Maximum Energy Shield$"
+    },
+    {
+        "id": "stat_4197792189",
+        "zh": "^你可能会被一个罪魂触碰$",
+        "en": "^You can be Touched by Tormented Spirits$"
+    },
+    {
+        "id": "stat_3086896309",
+        "zh": "^每对敌人造成1%的冰缓效果就造成(\\S+)%的冰霜伤害，并视为额外的火焰伤害$",
+        "en": "^Gain (\\S+)% of Cold Damage as Extra Fire Damage per 1% Chill Effect on Enemy$"
+    },
+    {
+        "id": "stat_1383929411",
+        "zh": "^攻击被冰冻的敌人获得等同于(\\S+)%冰霜伤害的额外火焰伤害$",
+        "en": "^Gain (\\S+)% of Cold Damage as Extra Fire Damage against Frozen Enemies$"
+    },
+    {
+        "id": "stat_2168861013",
+        "zh": "^有(\\S+)%的几率使攻击你的敌人冰冻1秒$",
+        "en": "^(\\S+)% chance to Freeze Enemies for 1 second when they Hit you$"
+    },
+    {
+        "id": "stat_4217693429",
+        "zh": "^弓类攻击带终结效果$",
+        "en": "^Bow Attacks have Culling Strike$"
+    },
+    {
+        "id": "stat_147155654",
+        "zh": "^在你至少拥有400点力量值时有(\\S+)%的几率造成三倍伤害$",
+        "en": "^(\\S+)% chance to deal Triple Damage while you have at least 400 Strength$"
+    },
+    {
+        "id": "stat_1535606605",
+        "zh": "^在你至少拥有200点力量值时有(\\S+)%的几率造成两倍伤害$",
+        "en": "^(\\S+)% chance to deal Double Damage while you have at least 200 Strength$"
+    },
+    {
+        "id": "stat_3675300253",
+        "zh": "^近战打击技能对周围目标造成溅射伤害$",
+        "en": "^Melee Strike Skills deal Splash Damage to surrounding targets$"
+    },
+    {
+        "id": "stat_565784293",
+        "zh": "^击退距离延长 (\\S+)%$",
+        "en": "^(\\S+)% increased Knockback Distance$"
+    },
+    {
+        "id": "stat_1737583880",
+        "zh": "^拥有打击技能的近战攻击总能造成击退$",
+        "en": "^Melee Hits with Strike Skills always Knockback$"
+    },
+    {
+        "id": "stat_1405089557",
+        "zh": "^被击中时受到的所有伤害都可以点燃你$",
+        "en": "^All Damage Taken from Hits can Ignite you$"
+    },
+    {
+        "id": "stat_3410776118",
+        "zh": "^静止时耐力球数量下限等于耐力球数量上限\n静止时狂怒球数量下限等于狂怒球数量上限\n静止时暴击球数量下限等于暴击球数量上限$",
+        "en": "^Minimum Endurance Charges equal to Maximum while stationary\nMinimum Frenzy Charges equal to Maximum while stationary\nMinimum Power Charges equal to Maximum while stationary$"
+    },
+    {
+        "id": "stat_2478268100",
+        "zh": "^目盲时有(\\S+)%的几率在击中时获得一个狂怒球$",
+        "en": "^(\\S+)% chance to gain a Frenzy Charge on Hit while Blinded$"
     }
 ]

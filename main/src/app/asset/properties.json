@@ -54,6 +54,12 @@
                 "1": "品质（防御词缀）"
             }
         },
+        "Quality (Speed Modifiers)": {
+            "text": {
+                "0": "Quality (Speed Modifiers)",
+                "1": "品质（速度词缀）"
+            }
+        },
         "Quality (Attack Modifiers)": {
             "text": {
                 "0": "Quality (Attack Modifiers)",
