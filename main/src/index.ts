@@ -15,6 +15,10 @@ if (require('electron-squirrel-startup')) {
   app.quit();
 }
 
+if (!app.requestSingleInstanceLock()) {
+  app.exit()
+}
+
 const initIPC = (): void => {
   ipcMain.handle('dialog:openFolder', handleOpenFolder);
   ipcMain.handle('app:getConfig', handleGetConfig);
