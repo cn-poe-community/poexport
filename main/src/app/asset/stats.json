@@ -11481,7 +11481,7 @@
     },
     {
         "id": "stat_1916706958",
-        "zh": "^施放时有 100% 几率避免眩晕打断$",
+        "zh": "^施放时避免眩晕打断$",
         "en": "^Avoid interruption from Stuns while Casting$"
     },
     {
@@ -16046,7 +16046,7 @@
     },
     {
         "id": "stat_3801067695",
-        "zh": "^你受到的感电效果提高 (\\S+)%$",
+        "zh": "^你受到的感电效果降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Effect of Shock on you$"
     },
     {
@@ -39288,5 +39288,10 @@
         "id": "stat_791154540",
         "zh": "^头部装备和手部装备提供的护甲值提高 (\\S+)%$",
         "en": "^(\\S+)% increased Armour from Equipped Helmet and Gloves$"
+    },
+    {
+        "id": "stat_2560911401",
+        "zh": "^Base Spell Critical Strike Chance of Spells is equal to that of Main Hand Weapon$",
+        "en": "^Base Critical Strike Chance of Spells is the Critical Strike Chance of Main Hand Weapon$"
     }
 ]
