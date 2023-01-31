@@ -39273,5 +39273,35 @@
         "id": "stat_876831634",
         "zh": "^无法被冰冻$",
         "en": "^Cannot be Frozen$"
+    },
+    {
+        "id": "stat_4021566756",
+        "zh": "^承受的物理伤害有 (\\S+)% 吸纳为生命$",
+        "en": "^(\\S+)% of Physical Damage taken Recouped as Life$"
+    },
+    {
+        "id": "stat_8517868",
+        "zh": "^攻击伤害格挡率按照近期内被击中所承受的每 200 点火焰伤害 (\\S+)%$",
+        "en": "^(\\S+)% Chance to Block Attack Damage for every 200 Fire Damage taken from Hits Recently$"
+    },
+    {
+        "id": "stat_1642347505",
+        "zh": "^受到的冰霜伤害的 (\\S+)% 转为火焰伤害$",
+        "en": "^(\\S+)% of Cold Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_1244494473",
+        "zh": "^承受的闪电伤害有 (\\S+)% 视为火焰伤害$",
+        "en": "^(\\S+)% of Lightning Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_1004468512",
+        "zh": "^承受的物理伤害有 (\\S+)% 视为火焰伤害$",
+        "en": "^(\\S+)% of Physical Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_41178696",
+        "zh": "^你格挡近程敌人时灼烧它们$",
+        "en": "^Scorch Enemies in Close Range when you Block$"
     }
 ]
