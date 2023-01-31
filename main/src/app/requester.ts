@@ -18,6 +18,11 @@ export class Requester {
         this.session = session;
     }
 
+    /**
+     * 检查session有效性
+     * @param session 
+     * @returns session有效性。因网络故障、服务器维护等导致的检测失败，归类为无效。
+     */
     public static async isEffectiveSession(session: string): Promise<boolean> {
         try {
             await axios.get(TEST_URL, {

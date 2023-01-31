@@ -125,14 +125,15 @@ export class App {
         const config = this.configManager.getConfig();
 
         const status: ExporterStatus = {
-            sessionStatus: "ok",
-            pobStatus: "ok",
+            sessionStatus: "Ok",
+            pobStatus: "Ok",
+            port: 0,
         };
 
         try {
             const isEffective = await this.requester.isEffectiveSession();
             if (!isEffective) {
-                status.sessionStatus = "invalid";
+                status.sessionStatus = "Invalid";
             }
 
             const root = await Pob.getRoot(config.pobPath);
@@ -147,6 +148,8 @@ export class App {
         } catch (err) {
             throw new Error(err);
         }
+
+        status.port = this.configManager.getConfig().port;
 
         return status;
     }

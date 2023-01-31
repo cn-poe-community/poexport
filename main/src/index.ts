@@ -8,6 +8,9 @@ import { App } from './app/main';
 declare const MAIN_WINDOW_WEBPACK_ENTRY: string;
 declare const MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
+const MIN_HEIGHT = 500;
+const MIN_WIDTH = 600;
+
 const isDev = process.env.IS_DEV === 'true';
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -30,8 +33,10 @@ const initIPC = (): void => {
 const createWindow = (): void => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    height: 500,
-    width: 500,
+    height: MIN_HEIGHT,
+    width: MIN_WIDTH,
+    minHeight: MIN_HEIGHT,
+    minWidth: MIN_WIDTH,
     autoHideMenuBar: true,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,

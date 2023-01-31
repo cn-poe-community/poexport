@@ -6,12 +6,13 @@ export interface Config {
     port?: number,
 }
 
-export type SessionStatus = "ok" | "invalid";
-export type PobStatus = "ok" | "NeedPatch" | "NotFound";
+export type SessionStatus = "Ok" | "Invalid";
+export type PobStatus = "Ok" | "NeedPatch" | "NotFound";
 
 export interface ExporterStatus {
     sessionStatus: SessionStatus,
     pobStatus: PobStatus,
+    port: number,
 }
 
 export interface ElectronAPI {
