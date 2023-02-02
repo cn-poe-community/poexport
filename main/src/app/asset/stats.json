@@ -1421,13 +1421,8 @@
     },
     {
         "id": "stat_1514829491",
-        "zh": "^(\\S+)% 的几率避免被冰冻$",
-        "en": "^(\\S+)% chance to Avoid being Frozen$"
-    },
-    {
-        "id": "stat_1514829491",
         "zh": "^(\\S+)% 几率避免被冰冻$",
-        "en": "^Cannot be Frozen$"
+        "en": "^(\\S+)% chance to Avoid being Frozen$"
     },
     {
         "id": "stat_1172029298",
@@ -1666,13 +1661,8 @@
     },
     {
         "id": "stat_4262448838",
-        "zh": "^(\\S+)% 的几率避免被晕眩$",
-        "en": "^(\\S+)% chance to Avoid being Stunned$"
-    },
-    {
-        "id": "stat_4262448838",
         "zh": "^(\\S+)% 几率避免被晕眩$",
-        "en": "^Cannot be Stunned$"
+        "en": "^(\\S+)% chance to Avoid being Stunned$"
     },
     {
         "id": "stat_2435536961",
@@ -1901,13 +1891,8 @@
     },
     {
         "id": "stat_3005472710",
-        "zh": "^(\\S+)% 的几率避免元素异常状态$",
-        "en": "^(\\S+)% chance to Avoid Elemental Ailments$"
-    },
-    {
-        "id": "stat_3005472710",
         "zh": "^(\\S+)% 几率避免元素异常状态$",
-        "en": "^Cannot receive Elemental Ailments$"
+        "en": "^(\\S+)% chance to Avoid Elemental Ailments$"
     },
     {
         "id": "stat_211381198",
@@ -2041,13 +2026,8 @@
     },
     {
         "id": "stat_1783006896",
-        "zh": "^(\\S+)% 的几率避免被点燃$",
-        "en": "^(\\S+)% chance to Avoid being Ignited$"
-    },
-    {
-        "id": "stat_1783006896",
         "zh": "^(\\S+)% 几率避免被点燃$",
-        "en": "^Cannot be Ignited$"
+        "en": "^(\\S+)% chance to Avoid being Ignited$"
     },
     {
         "id": "stat_3496944181",
@@ -2616,13 +2596,8 @@
     },
     {
         "id": "stat_4053951709",
-        "zh": "^(\\S+)% 的几率免疫中毒$",
-        "en": "^(\\S+)% chance to Avoid being Poisoned$"
-    },
-    {
-        "id": "stat_4053951709",
         "zh": "^(\\S+)% 几率避免中毒$",
-        "en": "^Cannot be Poisoned$"
+        "en": "^(\\S+)% chance to Avoid being Poisoned$"
     },
     {
         "id": "stat_2937483991",
@@ -3556,13 +3531,8 @@
     },
     {
         "id": "stat_1871765599",
-        "zh": "^(\\S+)% 的几率避免被感电$",
-        "en": "^(\\S+)% chance to Avoid being Shocked$"
-    },
-    {
-        "id": "stat_1871765599",
         "zh": "^(\\S+)% 几率避免被感电$",
-        "en": "^Cannot be Shocked$"
+        "en": "^(\\S+)% chance to Avoid being Shocked$"
     },
     {
         "id": "stat_372478711",
@@ -4966,13 +4936,8 @@
     },
     {
         "id": "stat_1618589784",
-        "zh": "^有 (\\S+)% 的几率避免流血$",
-        "en": "^(\\S+)% chance to Avoid Bleeding$"
-    },
-    {
-        "id": "stat_1618589784",
         "zh": "^(\\S+)% 几率避免致流血$",
-        "en": "^Bleeding cannot be inflicted on you$"
+        "en": "^(\\S+)% chance to Avoid Bleeding$"
     },
     {
         "id": "stat_2483362276",
@@ -6066,8 +6031,8 @@
     },
     {
         "id": "stat_3612464552",
-        "zh": "^你被冻结后在接下来 (\\S+) 秒不能被冻结$",
-        "en": "^You cannot be Frozen for (\\S+) second after being Frozen$"
+        "zh": "^你被冻结后在接下来 1 秒不能被冻结$",
+        "en": "^You cannot be Frozen for 1 second after being Frozen$"
     },
     {
         "id": "stat_3612464552",
@@ -6111,8 +6076,8 @@
     },
     {
         "id": "stat_2306924373",
-        "zh": "^你被冰缓后在接下来 (\\S+) 秒不能被冰缓$",
-        "en": "^You cannot be Chilled for (\\S+) second after being Chilled$"
+        "zh": "^你被冰缓后在接下来 1 秒不能被冰缓$",
+        "en": "^You cannot be Chilled for 1 second after being Chilled$"
     },
     {
         "id": "stat_2306924373",
@@ -11481,7 +11446,7 @@
     },
     {
         "id": "stat_1916706958",
-        "zh": "^施放时有 100% 几率避免眩晕打断$",
+        "zh": "^施放时避免眩晕打断$",
         "en": "^Avoid interruption from Stuns while Casting$"
     },
     {
@@ -16046,7 +16011,7 @@
     },
     {
         "id": "stat_3801067695",
-        "zh": "^你受到的感电效果提高 (\\S+)%$",
+        "zh": "^你受到的感电效果降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Effect of Shock on you$"
     },
     {
@@ -39288,5 +39253,55 @@
         "id": "stat_791154540",
         "zh": "^头部装备和手部装备提供的护甲值提高 (\\S+)%$",
         "en": "^(\\S+)% increased Armour from Equipped Helmet and Gloves$"
+    },
+    {
+        "id": "stat_2560911401",
+        "zh": "^Base Spell Critical Strike Chance of Spells is equal to that of Main Hand Weapon$",
+        "en": "^Base Critical Strike Chance of Spells is the Critical Strike Chance of Main Hand Weapon$"
+    },
+    {
+        "id": "stat_331731406",
+        "zh": "^无法被点燃$",
+        "en": "^Cannot be Ignited$"
+    },
+    {
+        "id": "stat_491899612",
+        "zh": "^无法被感电$",
+        "en": "^Cannot be Shocked$"
+    },
+    {
+        "id": "stat_876831634",
+        "zh": "^无法被冰冻$",
+        "en": "^Cannot be Frozen$"
+    },
+    {
+        "id": "stat_4021566756",
+        "zh": "^承受的物理伤害有 (\\S+)% 吸纳为生命$",
+        "en": "^(\\S+)% of Physical Damage taken Recouped as Life$"
+    },
+    {
+        "id": "stat_8517868",
+        "zh": "^攻击伤害格挡率按照近期内被击中所承受的每 200 点火焰伤害 (\\S+)%$",
+        "en": "^(\\S+)% Chance to Block Attack Damage for every 200 Fire Damage taken from Hits Recently$"
+    },
+    {
+        "id": "stat_1642347505",
+        "zh": "^受到的冰霜伤害的 (\\S+)% 转为火焰伤害$",
+        "en": "^(\\S+)% of Cold Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_1244494473",
+        "zh": "^承受的闪电伤害有 (\\S+)% 视为火焰伤害$",
+        "en": "^(\\S+)% of Lightning Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_1004468512",
+        "zh": "^承受的物理伤害有 (\\S+)% 视为火焰伤害$",
+        "en": "^(\\S+)% of Physical Damage taken as Fire Damage$"
+    },
+    {
+        "id": "stat_41178696",
+        "zh": "^你格挡近程敌人时灼烧它们$",
+        "en": "^Scorch Enemies in Close Range when you Block$"
     }
 ]
