@@ -3,14 +3,14 @@
     <div class="status">
       <header>
         <h2>状态</h2>
-        <span class="material-symbols-outlined pointer refresh" @click="refresh">refresh</span>
+        <span class="material-symbols-outlined pointer refresh" @click="refresh" title="刷新">refresh</span>
       </header>
       <div class="line">
         <span class="line-content">
           <span class="line-left">POESESSID</span>
           <span class="line-right">
             <span class="material-symbols-outlined ok" v-if="status.sessionStatus === 'Ok'">check_circle</span>
-            <span class="material-symbols-outlined error" v-else>error</span>
+            <span class="material-symbols-outlined warning" v-else>error</span>
           </span>
         </span>
       </div>
@@ -63,6 +63,7 @@ export default {
   },
   data() {
     return {
+      ipcLocked: false,//A simple lock to prevent more than one ipc request triggered at the same time
       poeAccountName: "",
       encodedValue: "",
     };
@@ -85,16 +86,19 @@ export default {
     },
 
     patch() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
       // @ts-ignore
       const mainAPI = window.mainAPI as MainAPI;
-      mainAPI
-        .patchPob()
-        .then(() => {
-          this.loadStatus();
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      mainAPI.patchPob().then(() => {
+        this.loadStatus();
+      }).catch((err) => {
+        console.log(err);
+      }).finally(() => {
+        this.ipcLocked = false;
+      });
     },
     loadStatus() {
       // @ts-ignore
@@ -106,6 +110,10 @@ export default {
       });
     },
     refresh(event: MouseEvent) {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
       const target = event.target as HTMLElement;
       target.classList.add('refresh-start');
       // @ts-ignore
@@ -115,6 +123,7 @@ export default {
       }).catch(err => {
         console.log(err);
       }).finally(() => {
+        this.ipcLocked = false;
         target.classList.remove('refresh-start');
       });
     }

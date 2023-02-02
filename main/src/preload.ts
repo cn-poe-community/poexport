@@ -2,15 +2,19 @@
 // https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
 
 import { contextBridge, ipcRenderer } from 'electron';
-import { Config } from '../../ipc/types';
+import { Channels, Config } from '../../ipc/types';
 
 contextBridge.exposeInMainWorld('electronAPI', {
-    openFolder: () => ipcRenderer.invoke('dialog:openFolder'),
+    openFolder: () => ipcRenderer.invoke(Channels.DIALOG_OPEN_FLOOR),
 });
 
 contextBridge.exposeInMainWorld('mainAPI', {
-    getConfig: () => ipcRenderer.invoke('app:getConfig'),
-    setConfig: (config: Config) => ipcRenderer.invoke('app:setConfig', config),
-    getExporterStatus: () => ipcRenderer.invoke('app:getExporterStatus'),
-    patchPob: () => ipcRenderer.invoke('app:patchPob'),
+    getConfig: () => ipcRenderer.invoke(Channels.APP_GET_CONFIG),
+    resetConfig: () => ipcRenderer.invoke(Channels.APP_RESET_CONFIG),
+    setPoeSessId: (id: string) => ipcRenderer.invoke(Channels.APP_SET_POE_SESS_ID, id),
+    setPobPath: (path: string) => ipcRenderer.invoke(Channels.APP_SET_POB_PATH, path),
+    setPobProxySupported: (isSupported: boolean) => ipcRenderer.invoke(Channels.APP_SET_POB_PROXY_SUPPORTED, isSupported),
+    getExporterStatus: () => ipcRenderer.invoke(Channels.APP_GET_EXPORTER_STATUS),
+    patchPob: () => ipcRenderer.invoke(Channels.APP_PATCH_POB),
+    resetPob: () => ipcRenderer.invoke(Channels.APP_RESET_POB),
 });

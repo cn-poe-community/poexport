@@ -5,6 +5,12 @@ import { Config } from "../../../ipc/types";
 
 const CONFIG_NAME = "config.json";
 const DEFAULT_LISTENING_PORT = 8655;
+const DEFAULT_CONFIG = {
+    poeSessId: "",
+    pobPath: "",
+    port: DEFAULT_LISTENING_PORT,
+    pobProxySupported: false,
+};
 
 export class ConfigManager {
     private config: Config;
@@ -18,22 +24,21 @@ export class ConfigManager {
         const userDataPath = app.getPath('userData');
         this.configFullPath = path.join(userDataPath, CONFIG_NAME);
 
+        this.config = Object.assign({}, DEFAULT_CONFIG);
+
         if (fs.existsSync(this.configFullPath)) {
             const data = fs.readFileSync(this.configFullPath, "utf-8");
-            this.config = JSON.parse(data);
+            Object.assign(this.config, JSON.parse(data));
         } else {
-            this.config = {
-                poeSessId: "",
-                pobPath: "",
-                port: DEFAULT_LISTENING_PORT,
-            };
             this.saveConfig();
         }
     }
 
     private saveConfig() {
         fs.writeFile(this.configFullPath, JSON.stringify(this.config), (err) => {
-            throw err;
+            if (err) {
+                console.log(`write config error: ${err}`);
+            }
         });
     }
 
@@ -47,11 +52,41 @@ export class ConfigManager {
         this.saveConfig();
     }
 
-    public setPort(port: number) {
-        this.config.port = port;
+    public setPoeSessId(id: string) {
+        if (id === this.config.poeSessId) {
+            return;
+        }
+        this.config.poeSessId = id;
+        this.saveConfig();
+    }
 
-        fs.writeFile(this.configFullPath, JSON.stringify(this.config), (err) => {
-            throw err;
-        });
+    public setPobPath(path: string) {
+        if (path === this.config.pobPath) {
+            return;
+        }
+        this.config.pobPath = path;
+        this.saveConfig();
+    }
+
+    public setPort(port: number) {
+        if (port === this.config.port) {
+            return;
+        }
+        this.config.port = port;
+        this.saveConfig();
+    }
+
+    public setPobProxySupported(isSupported: boolean) {
+        if (isSupported === this.config.pobProxySupported) {
+            return;
+        }
+
+        this.config.pobProxySupported = isSupported;
+        this.saveConfig();
+    }
+
+    public resetConfig() {
+        this.config = Object.assign({}, DEFAULT_CONFIG);
+        this.saveConfig();
     }
 }

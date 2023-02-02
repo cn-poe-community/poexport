@@ -4,7 +4,7 @@
       <header class="header">
         <h1>设置</h1>
         <div>
-          <div class="button pointer">重置</div>
+          <div class="button pointer" @click="resetConfig">重置</div>
         </div>
       </header>
     </div>
@@ -19,14 +19,14 @@
               <label for="poeSessionId">POESESSID</label>
               <div class="line-right">
                 <input name="poeSessionId" v-model="poeSessionId" />
-                <button class="pointer">保存</button>
+                <button class="pointer" @click="setPoeSessId">保存</button>
               </div>
             </div>
             <div class="line">
               <label for="pobPath">POB文件夹</label>
               <div class="line-right">
                 <input name="pobPath" v-model="pobPath" disabled />
-                <button class="pointer" @click="openFolder">选择</button>
+                <button class="pointer" @click="setPobPath">选择</button>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@
                 <label for="poeSessionId">清除Patch</label>
               </div>
               <div class="line-right">
-                <button class="pointer">重置</button>
+                <button class="pointer" @click="resetPob">重置</button>
               </div>
             </div>
             <div class="line">
@@ -58,7 +58,7 @@
                 </VDropdown>
               </div>
               <div class="line-right">
-                <input type="checkbox" class="pointer">
+                <input type="checkbox" class="pointer" v-model="pobProxySupported" @change="setPobProxySupported">
               </div>
             </div>
           </div>
@@ -74,41 +74,118 @@ import type { Config, ElectronAPI, MainAPI } from "../../../ipc/types";
 export default {
   data() {
     return {
+      ipcLocked: false,
       poeSessionId: "",
       pobPath: "",
+      pobProxySupported: false,
     };
   },
 
-  async mounted() {
-    // @ts-ignore
-    const mainAPI = window.mainAPI as MainAPI;
-    const config: Config = await mainAPI.getConfig();
-    this.poeSessionId = config.poeSessId;
-    this.pobPath = config.pobPath;
+  mounted() {
+    this.loadConfig();
   },
 
   methods: {
-    async openFolder() {
-      // @ts-ignore
-      const electronAPI = window.electronAPI as ElectronAPI;
-      const filePath = await electronAPI.openFolder();
-      if (filePath) {
-        this.pobPath = filePath;
+    loadConfig() {
+      if (this.ipcLocked) {
+        return;
       }
-    },
-    saveConfig() {
+      this.ipcLocked = true;
       // @ts-ignore
       const mainAPI = window.mainAPI as MainAPI;
-      const config: Config = {
-        poeSessId: this.poeSessionId,
-        pobPath: this.pobPath,
-      };
-      mainAPI.setConfig(config).then((error) => {
-        if (error) {
-          console.log(error);
+      mainAPI.getConfig()
+        .then(config => {
+          this.poeSessionId = config.poeSessId;
+          this.pobPath = config.pobPath;
+          this.pobProxySupported = config.pobProxySupported;
+        }).catch(err => {
+          console.log(err);
+        }).finally(() => {
+          this.ipcLocked = false;
+        });
+    },
+    resetConfig() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
+      // @ts-ignore
+      const mainAPI = window.mainAPI as MainAPI;
+      mainAPI.resetConfig()
+        .catch(err => {
+          console.log(err);
+        }).finally(() => {
+          this.ipcLocked = false;
+          this.loadConfig();
+        });
+    },
+    setPoeSessId() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
+      // @ts-ignore
+      const mainAPI = window.mainAPI as MainAPI;
+      mainAPI.setPoeSessId(this.poeSessionId)
+        .catch(err => {
+          console.log(err);
+        }).finally(() => {
+          this.ipcLocked = false;
+        });
+    },
+    setPobPath() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
+      // @ts-ignore
+      const electronAPI = window.electronAPI as ElectronAPI;
+      const filePath = electronAPI.openFolder().then(path => {
+        if (path) {
+          this.pobPath = path;
+          // @ts-ignore
+          const mainAPI = window.mainAPI as MainAPI;
+          mainAPI.setPobPath(path)
+            .catch(err => {
+              console.log(err);
+            }).finally(() => {
+              this.ipcLocked = false;
+            });
         }
+      }).catch(err => {
+        console.log(err);
+      }).finally(() => {
+        this.ipcLocked = false;
       });
     },
+    setPobProxySupported() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
+      // @ts-ignore
+      const mainAPI = window.mainAPI as MainAPI;
+      mainAPI.setPobProxySupported(this.pobProxySupported)
+        .catch(err => {
+          console.log(err);
+        }).finally(() => {
+          this.ipcLocked = false;
+        });
+    },
+    resetPob() {
+      if (this.ipcLocked) {
+        return;
+      }
+      this.ipcLocked = true;
+      // @ts-ignore
+      const mainAPI = window.mainAPI as MainAPI;
+      mainAPI.resetPob()
+        .catch(err => {
+          console.log(err);
+        }).finally(() => {
+          this.ipcLocked = false;
+        });
+    }
   },
 };
 </script>
