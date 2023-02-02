@@ -8,7 +8,7 @@ const LAUNCH_RELATIVE_PATH = "Launch.lua";
 const MANIFEST_RELATIVE_PATH = "manifest.xml";
 
 const HOST_OF_TENCENT = "https://poe.game.qq.com/";
-const HOST_OF_LOCAL_PATTERN = `http://localhost:\d{1,5}/`;
+const HOST_OF_LOCAL_PATTERN = String.raw`http://localhost:\d{1,5}/`;
 
 const PROXY_SUPPORTED_PATCH_LINES = `\tlocal proxy_url = self.proxyURL
 \tif string.find(url, "^http://localhost") == 1 then
