@@ -80,7 +80,7 @@ export class Exporter {
                     character.league = this.betterLeagueName(character.league);
                 }
 
-                res.setHeader("Content-Type", "application/json");
+                res.setHeader("content-type", "application/json");
                 res.writeHead(200);
                 res.write(JSON.stringify(data), "utf-8");
             }).catch(error => {
@@ -95,7 +95,7 @@ export class Exporter {
         const accountName = decodeURIComponent(parts[parts.length - 1]);
         this.requester.viewProfile(accountName)
             .then(data => {
-                res.setHeader("Content-Type", "text/html; charset=UTF-8");
+                res.setHeader("content-type", "text/html; charset=UTF-8");
                 res.writeHead(200);
                 res.write(data);
             }).catch(error => {
@@ -116,7 +116,7 @@ export class Exporter {
             .then(data => {
                 this.jsonTranslator.translatePassiveSkills(data);
 
-                res.setHeader("Content-Type", "application/json");
+                res.setHeader("content-type", "application/json");
                 res.writeHead(200);
                 res.write(JSON.stringify(data));
             }).catch(error => {
@@ -137,7 +137,7 @@ export class Exporter {
             .then(data => {
                 this.jsonTranslator.translateItems(data);
 
-                res.setHeader("Content-Type", "application/json");
+                res.setHeader("content-type", "application/json");
                 res.writeHead(200);
                 res.write(JSON.stringify(data));
             }).catch(error => {
