@@ -2001,7 +2001,7 @@
     },
     {
         "id": "stat_1545858329",
-        "zh": "^所有闪电法术技能石等级 (\\S+)$",
+        "zh": "^所有闪电法术主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Lightning Spell Skill Gems$"
     },
     {
@@ -2536,7 +2536,7 @@
     },
     {
         "id": "stat_591105508",
-        "zh": "^所有火焰法术技能石等级 (\\S+)$",
+        "zh": "^所有火焰法术主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Fire Spell Skill Gems$"
     },
     {
@@ -2726,7 +2726,7 @@
     },
     {
         "id": "stat_1600707273",
-        "zh": "^所有物理法术技能石等级 (\\S+)$",
+        "zh": "^所有物理主动法术技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Physical Spell Skill Gems$"
     },
     {
@@ -3036,7 +3036,7 @@
     },
     {
         "id": "stat_2254480358",
-        "zh": "^所有冰霜法术技能石等级 (\\S+)$",
+        "zh": "^所有冰霜法术主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Cold Spell Skill Gems$"
     },
     {
@@ -3131,13 +3131,8 @@
     },
     {
         "id": "stat_3257279374",
-        "zh": "^对深渊怪物的伤害提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Damage against Abyssal Monsters$"
-    },
-    {
-        "id": "stat_3257279374",
-        "zh": "^(\\S+)% increased Damage with Hits and Ailments against Abyssal Monsters$",
-        "en": "^(\\S+)% reduced Damage against Abyssal Monsters$"
+        "zh": "^对深渊怪物造成的击中和异常状态伤害提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Damage with Hits and Ailments against Abyssal Monsters$"
     },
     {
         "id": "stat_4043416969",
@@ -5781,13 +5776,8 @@
     },
     {
         "id": "stat_1086057912",
-        "zh": "^召唤生物对深渊怪物的伤害提高 (\\S+)%$",
-        "en": "^Minions deal (\\S+)% increased Damage against Abyssal Monsters$"
-    },
-    {
-        "id": "stat_1086057912",
-        "zh": "^召唤生物对深渊怪物的伤害降低 (\\S+)%$",
-        "en": "^Minions deal (\\S+)% reduced Damage against Abyssal Monsters$"
+        "zh": "^召唤生物对深渊敌人造成的击中和异常状态伤害提高 (\\S+)%$",
+        "en": "^Minions deal (\\S+)% increased Damage with Hits and Ailments against Abyssal Monsters$"
     },
     {
         "id": "stat_80079005",
@@ -6106,8 +6096,8 @@
     },
     {
         "id": "stat_3829706447",
-        "zh": "^中毒 5 层以上的敌人被该武器攻击击中时，该武器附加 (\\S+) - (\\S+) 混沌伤害$",
-        "en": "^Attacks with this Weapon deal (\\S+)-(\\S+) added Chaos Damage against\nEnemies affected by at least 5 Poisons$"
+        "zh": "^使用该武器对受到至少5层中毒影响的敌人\n发起的攻击附加 (\\S+) - (\\S+) 点混沌伤害$",
+        "en": "^Attacks with this Weapon deal (\\S+) to (\\S+) added Chaos Damage against\nEnemies affected by at least 5 Poisons$"
     },
     {
         "id": "stat_2857427872",
@@ -6281,7 +6271,7 @@
     },
     {
         "id": "stat_4226189338",
-        "zh": "^所有混沌法术技能石等级 (\\S+)$",
+        "zh": "^所有混沌法术主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Chaos Spell Skill Gems$"
     },
     {
@@ -6346,12 +6336,12 @@
     },
     {
         "id": "stat_485151258",
-        "zh": "^对被点燃敌人的伤害提高 (\\S+)%$",
+        "zh": "^对点燃的敌人造成的击中和异常状态伤害提高 (\\S+)%$",
         "en": "^(\\S+)% increased Damage against Ignited Enemies$"
     },
     {
         "id": "stat_485151258",
-        "zh": "^对被点燃敌人的伤害降低 (\\S+)%$",
+        "zh": "^对点燃的敌人造成的击中和异常状态伤害降低 (\\S+)%$",
         "en": "^(\\S+)% reduced Damage against Ignited Enemies$"
     },
     {
@@ -7336,7 +7326,7 @@
     },
     {
         "id": "stat_124131830",
-        "zh": "^所有法术技能石等级 (\\S+)$",
+        "zh": "^所有法术主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Spell Skill Gems$"
     },
     {
@@ -9601,12 +9591,12 @@
     },
     {
         "id": "stat_1589090910",
-        "zh": "^【召唤魔侍】可以召唤 1 个额外魔侍勇士$",
+        "zh": "^召唤魔侍额外召唤一个魔侍$",
         "en": "^Summon an additional Skeleton Warrior with Summon Skeleton$"
     },
     {
         "id": "stat_1589090910",
-        "zh": "^【召唤魔侍】可以召唤 (\\S+) 个额外魔侍勇士$",
+        "zh": "^召唤魔侍额外召唤 (\\S+) 个魔侍$",
         "en": "^Summon (\\S+) additional Skeleton Warriors with Summon Skeleton$"
     },
     {
@@ -11346,7 +11336,7 @@
     },
     {
         "id": "stat_67169579",
-        "zh": "^所有混沌技能石等级 (\\S+)$",
+        "zh": "^所有混沌主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Chaos Skill Gems$"
     },
     {
@@ -13361,7 +13351,7 @@
     },
     {
         "id": "stat_619213329",
-        "zh": "^所有物理技能石等级 (\\S+)$",
+        "zh": "^所有物理主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Physical Skill Gems$"
     },
     {
@@ -13591,7 +13581,7 @@
     },
     {
         "id": "stat_493812998",
-        "zh": "^所有智慧技能石等级 (\\S+)$",
+        "zh": "^所有智慧主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Intelligence Skill Gems$"
     },
     {
@@ -13816,7 +13806,7 @@
     },
     {
         "id": "stat_2162097452",
-        "zh": "^所有召唤生物技能石等级 (\\S+)$",
+        "zh": "^所有召唤生物主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Minion Skill Gems$"
     },
     {
@@ -13856,8 +13846,8 @@
     },
     {
         "id": "stat_694123963",
-        "zh": "^你被脆弱诅咒，其效果提高 (\\S+)%$",
-        "en": "^You are Cursed with Vulnerability, with (\\S+)% increased Effect$"
+        "zh": "^你被脆弱诅咒了$",
+        "en": "^You are Cursed with Vulnerability$"
     },
     {
         "id": "stat_1962922582",
@@ -13986,7 +13976,7 @@
     },
     {
         "id": "stat_146924886",
-        "zh": "^所有敏捷技能石等级 (\\S+)$",
+        "zh": "^所有敏捷主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Dexterity Skill Gems$"
     },
     {
@@ -16016,7 +16006,7 @@
     },
     {
         "id": "stat_2339012908",
-        "zh": "^所有力量技能石等级 (\\S+)$",
+        "zh": "^所有力量主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Strength Skill Gems$"
     },
     {
@@ -16301,12 +16291,12 @@
     },
     {
         "id": "stat_205619502",
-        "zh": "^击败敌人时有 (\\S+)% 的几率触发 1 级的鲜血狂怒$",
+        "zh": "^击败敌人时有 (\\S+)% 的几率触发 1 级的【狂野怒火】$",
         "en": "^(\\S+)% chance to Trigger Level 1 Blood Rage when you Kill an Enemy$"
     },
     {
         "id": "stat_205619502",
-        "zh": "^击败敌人时触发 1 级的鲜血狂怒$",
+        "zh": "^击败敌人时触发 1 级的【狂野怒火】$",
         "en": "^Trigger Level 1 Blood Rage when you Kill an Enemy$"
     },
     {
@@ -16571,7 +16561,7 @@
     },
     {
         "id": "stat_1078455967",
-        "zh": "^所有冰霜技能石等级 (\\S+)$",
+        "zh": "^所有冰霜主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Cold Skill Gems$"
     },
     {
@@ -16971,7 +16961,7 @@
     },
     {
         "id": "stat_1147690586",
-        "zh": "^所有闪电技能石等级 (\\S+)$",
+        "zh": "^所有闪电主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Lightning Skill Gems$"
     },
     {
@@ -17031,7 +17021,7 @@
     },
     {
         "id": "stat_599749213",
-        "zh": "^所有火焰技能石等级 (\\S+)$",
+        "zh": "^所有火焰主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Fire Skill Gems$"
     },
     {
@@ -18986,8 +18976,8 @@
     },
     {
         "id": "stat_728246008",
-        "zh": "^新星法术对玩家造成的总伤害额外降低 30%\n在目标地点施放的新星法术改为在你周围施放$",
-        "en": "^Nova Spells deal 30% less Damage to Players\nNova Spells Cast at the targeted location instead of around you$"
+        "zh": "^新星技能对玩家造成的击中和异常状态伤害降低 30% \n新星技能不在周身施放，改为在目标位置施放$",
+        "en": "^Nova Spells deal 30% less Damage to Players with Hits and Ailments\nNova Spells Cast at the targeted location instead of around you$"
     },
     {
         "id": "stat_2549369799",
@@ -20106,8 +20096,8 @@
     },
     {
         "id": "stat_242822230",
-        "zh": "^当你拥有兽化的召唤生物时，攻击附加 (\\S+) - (\\S+) 基础物理伤害$",
-        "en": "^Adds (\\S+)-(\\S+) Physical Damage to Attacks while you have a Bestial Minion$"
+        "zh": "^拥有兽化召唤生物时为攻击附加 (\\S+) - (\\S+) 点物理伤害$",
+        "en": "^Adds (\\S+) to (\\S+) Physical Damage to Attacks while you have a Bestial Minion$"
     },
     {
         "id": "stat_139925400",
@@ -20216,8 +20206,8 @@
     },
     {
         "id": "stat_2152491486",
-        "zh": "^当你拥有兽化的召唤生物时，攻击时附加 (\\S+) - (\\S+) 基础混沌伤害$",
-        "en": "^Adds (\\S+)-(\\S+) Chaos Damage to Attacks while you have a Bestial Minion$"
+        "zh": "^拥有兽化召唤生物时为攻击附加 (\\S+) - (\\S+) 点混沌伤害$",
+        "en": "^Adds (\\S+) to (\\S+) Chaos Damage to Attacks while you have a Bestial Minion$"
     },
     {
         "id": "stat_3535421504",
@@ -22206,8 +22196,8 @@
     },
     {
         "id": "stat_697059777",
-        "zh": "^召唤魔侍勇士时，若你近期用该武器击中过敌人\n则它用该武器造成三倍伤害$",
-        "en": "^Summoned Skeleton Warriors deal Triple Damage with this\nWeapon if you've Hit with this Weapon Recently$"
+        "zh": "^如果你最近使用这把武器击中过，\n召唤的魔侍武士和魔侍兵使用该武器造成三倍伤害$",
+        "en": "^Summoned Skeleton Warriors and Soldiers deal Triple Damage with this\nWeapon if you've Hit with this Weapon Recently$"
     },
     {
         "id": "stat_1060236362",
@@ -22876,8 +22866,8 @@
     },
     {
         "id": "stat_2646007123",
-        "zh": "^召唤魔侍勇士时，它会持握你主手武器的副本$",
-        "en": "^Summoned Skeleton Warriors wield a copy of this Weapon while in your Main Hand$"
+        "zh": "^装备于你的主手时，召唤的魔侍武士和魔侍兵持有该武器$",
+        "en": "^Summoned Skeleton Warriors and Soldiers wield this Weapon while in your Main Hand$"
     },
     {
         "id": "stat_2309305223",
@@ -25556,12 +25546,12 @@
     },
     {
         "id": "stat_3655769732",
-        "zh": "^所有技能石品质 (\\S+)%$",
+        "zh": "^所有主动技能石品质 (\\S+)%$",
         "en": "^(\\S+)% to Quality of all Skill Gems$"
     },
     {
         "id": "stat_4283407333",
-        "zh": "^所有技能石等级 (\\S+)$",
+        "zh": "^所有主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Skill Gems$"
     },
     {
@@ -26141,7 +26131,7 @@
     },
     {
         "id": "stat_4180346416",
-        "zh": "^所有瓦尔技能石等级 (\\S+)$",
+        "zh": "^所有瓦尔主动技能石等级 (\\S+)$",
         "en": "^(\\S+) to Level of all Vaal Skill Gems$"
     },
     {
@@ -39256,7 +39246,7 @@
     },
     {
         "id": "stat_2560911401",
-        "zh": "^Base Spell Critical Strike Chance of Spells is equal to that of Main Hand Weapon$",
+        "zh": "^法术的基础法术暴击几率等于主手武器的暴击几率$",
         "en": "^Base Critical Strike Chance of Spells is the Critical Strike Chance of Main Hand Weapon$"
     },
     {
@@ -39303,5 +39293,20 @@
         "id": "stat_41178696",
         "zh": "^你格挡近程敌人时灼烧它们$",
         "en": "^Scorch Enemies in Close Range when you Block$"
+    },
+    {
+        "id": "stat_2423544033",
+        "zh": "^所有元素伤害转换为混沌伤害$",
+        "en": "^All Elemental Damage Converted to Chaos Damage$"
+    },
+    {
+        "id": "stat_663080464",
+        "zh": "^附近敌人的混沌抗性为 0$",
+        "en": "^Nearby Enemies' Chaos Resistance is 0$"
+    },
+    {
+        "id": "stat_1413930902",
+        "zh": "^玩家有20级冲刺技能$",
+        "en": "^Players have Level 20 Dash Skill$"
     }
 ]
