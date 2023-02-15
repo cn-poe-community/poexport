@@ -87,3 +87,12 @@ typings/
 
 # Electron-Forge
 out/
+
+# Yarn without Zero-Installs
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
