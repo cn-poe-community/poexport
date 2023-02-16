@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Character, HttpError, Items, PassiveSkills } from './type/poe.type';
+import { Character, Items, PassiveSkills } from './translator/type/poe.type';
 
 
 const TEST_URL = "https://poe.game.qq.com/trade";
@@ -125,5 +125,13 @@ export class Requester {
 
     public setSession(session: string) {
         this.session = session;
+    }
+}
+
+export class HttpError {
+    status: number;
+
+    constructor(status: number) {
+        this.status = status;
     }
 }

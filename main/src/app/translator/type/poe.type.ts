@@ -11,11 +11,3 @@ export interface PassiveSkills {
 export interface Items {
     items: Array<any>,
 }
-
-export class HttpError {
-    status: number;
-
-    constructor(status: number) {
-        this.status = status;
-    }
-}

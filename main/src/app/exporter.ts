@@ -1,8 +1,7 @@
 import * as http from "http";
 import { ConfigManager } from "./config";
-import { JsonTranslator } from "./jsontranslator";
-import { Requester } from "./requester";
-import { HttpError } from "./type/poe.type";
+import { JsonTranslator } from "./translator/jsontranslator";
+import { Requester, HttpError } from "./requester";
 
 const GET_CHARACTERS = "/character-window/get-characters";
 const VIEW_PROFILE = "/account/view-profile/";
