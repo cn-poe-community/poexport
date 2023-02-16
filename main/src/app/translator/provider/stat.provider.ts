@@ -1,11 +1,9 @@
 import stats from "../asset/stats.json";
-import stats_mapping from "../asset/stats_mapping.json";
-import { MappingEntry, Stat } from "../type/stat.type";
+import { Stat } from "../type/stat.type";
 import { StatUtil } from "../util/stat.util";
 
 export class StatProvider {
     private readonly statIndexByZhBody = new Map<string, Stat | Array<Stat>>();
-    private readonly zhMappingIndexByBody = new Map<string, MappingEntry>();
 
     constructor() {
         const statList = stats as unknown as Array<Stat>;
@@ -24,27 +22,12 @@ export class StatProvider {
                 this.statIndexByZhBody.set(body, stat);
             }
         }
-
-        const mapping = stats_mapping as unknown as Array<MappingEntry>;
-        for (const entry of mapping) {
-            const body = StatUtil.getNonAsciiOrNonPer(entry.before);
-            this.zhMappingIndexByBody.set(body, entry);
-        }
     }
 
     public provideStatByZhBody(zhBody: string): Stat | Array<Stat> | null {
         const stat = this.statIndexByZhBody.get(zhBody);
         if (stat) {
             return stat;
-        }
-
-        return null;
-    }
-
-    public provideZhMappingEntryByBody(body: string): MappingEntry | null {
-        const entry = this.zhMappingIndexByBody.get(body);
-        if (entry) {
-            return entry;
         }
 
         return null;

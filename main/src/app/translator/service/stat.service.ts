@@ -33,23 +33,6 @@ export class StatService {
             }
         }
 
-        const entry = this.statProvider.provideZhMappingEntryByBody(StatUtil.getBodyOfZhModifier(zhMod));
-        if (entry) {
-            const r = new RegExp(entry.before);
-
-            if (r.exec(zhMod)) {
-                zhMod = StatUtil.render(entry.after, entry.before, zhMod);
-            }
-
-            const body = StatUtil.getBodyOfZhModifier(zhMod);
-            const stats = this.statProvider.provideStatByZhBody(body);
-
-            if (stats) {
-                return this.doTranslate(stats, zhMod);
-            }
-        }
-
-
         return null;
     }
 

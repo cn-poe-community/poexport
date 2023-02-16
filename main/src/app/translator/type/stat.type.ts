@@ -3,8 +3,3 @@ export interface Stat {
     zh: string,
     en: string,
 }
-
-export interface MappingEntry {
-    before: string,
-    after: string,
-}
