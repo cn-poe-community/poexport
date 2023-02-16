@@ -8,6 +8,8 @@ poe-cn-export项目的后端部分。
 Setup
 ```sh
 yarn
+#or
+yarn install
 ```
 You may need a VPN network, or use proxy settrings to download `Electron`, like:
 ```bash
