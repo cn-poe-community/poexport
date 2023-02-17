@@ -30161,13 +30161,8 @@
     },
     {
         "id": "stat_3243861579",
-        "zh": "^属性词缀的效果提高 (\\S+)%$",
-        "en": "^Attribute Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3243861579",
-        "zh": "^属性词缀的效果降低 (\\S+)%$",
-        "en": "^Attribute Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延属性词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Attribute Modifier magnitudes$"
     },
     {
         "id": "stat_2472584898",
@@ -30181,13 +30176,8 @@
     },
     {
         "id": "stat_1498186316",
-        "zh": "^施法伤害词缀的效果提高 (\\S+)%$",
-        "en": "^Caster Damage Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_1498186316",
-        "zh": "^施法伤害词缀的效果降低 (\\S+)%$",
-        "en": "^Caster Damage Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延施法词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Caster Modifier magnitudes$"
     },
     {
         "id": "stat_2247138020",
@@ -30291,13 +30281,8 @@
     },
     {
         "id": "stat_3300369861",
-        "zh": "^防御词缀的效果提高 (\\S+)%$",
-        "en": "^Defence Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3300369861",
-        "zh": "^防御词缀的效果降低 (\\S+)%$",
-        "en": "^Defence Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延防御词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Defence Modifier magnitudes$"
     },
     {
         "id": "stat_995860222",
@@ -30351,13 +30336,8 @@
     },
     {
         "id": "stat_3514984677",
-        "zh": "^魔力词缀的效果提高 (\\S+)%$",
-        "en": "^Mana Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3514984677",
-        "zh": "^魔力词缀的效果降低 (\\S+)%$",
-        "en": "^Mana Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延魔力词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Mana Modifier magnitudes$"
     },
     {
         "id": "stat_246356360",
@@ -30475,19 +30455,9 @@
         "en": "^Life Modifiers have (\\S+)% increased Effect$"
     },
     {
-        "id": "stat_1308141466",
-        "zh": "^生命词缀的效果降低 (\\S+)%$",
-        "en": "^Life Modifiers have (\\S+)% reduced Effect$"
-    },
-    {
         "id": "stat_1335369947",
-        "zh": "^物理词缀的效果提高 (\\S+)%$",
-        "en": "^Physical Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_1335369947",
-        "zh": "^物理词缀的效果降低 (\\S+)%$",
-        "en": "^Physical Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延物理词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Physical Modifier magnitudes$"
     },
     {
         "id": "stat_1374371477",
@@ -30701,13 +30671,8 @@
     },
     {
         "id": "stat_3206904707",
-        "zh": "^冰霜词缀的效果提高 (\\S+)%$",
-        "en": "^Cold Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3206904707",
-        "zh": "^冰霜词缀的效果降低 (\\S+)%$",
-        "en": "^Cold Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延冰霜词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Cold Modifier magnitudes$"
     },
     {
         "id": "stat_1044970549",
@@ -30721,13 +30686,8 @@
     },
     {
         "id": "stat_2393315299",
-        "zh": "^暴击词缀的效果提高 (\\S+)%$",
-        "en": "^Critical Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_2393315299",
-        "zh": "^暴击词缀的效果降低 (\\S+)%$",
-        "en": "^Critical Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延暴击词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Critical Modifier magnitudes$"
     },
     {
         "id": "stat_4228580629",
@@ -30801,13 +30761,8 @@
     },
     {
         "id": "stat_3086446674",
-        "zh": "^异常状态词缀的效果提高 (\\S+)%$",
-        "en": "^Ailment Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3086446674",
-        "zh": "^异常状态词缀的效果降低 (\\S+)%$",
-        "en": "^Ailment Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延异常状态词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Ailment Modifier magnitudes$"
     },
     {
         "id": "stat_531461618",
@@ -30841,13 +30796,8 @@
     },
     {
         "id": "stat_3574578302",
-        "zh": "^火焰词缀的效果提高 (\\S+)%$",
-        "en": "^Fire Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3574578302",
-        "zh": "^火焰词缀的效果降低 (\\S+)%$",
-        "en": "^Fire Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延火焰词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Fire Modifier magnitudes$"
     },
     {
         "id": "stat_1255310381",
@@ -30896,13 +30846,8 @@
     },
     {
         "id": "stat_363924732",
-        "zh": "^速度词缀的效果提高 (\\S+)%$",
-        "en": "^Speed Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_363924732",
-        "zh": "^速度词缀的效果降低 (\\S+)%$",
-        "en": "^Speed Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延速度词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Speed Modifier magnitudes$"
     },
     {
         "id": "stat_257027296",
@@ -31166,13 +31111,8 @@
     },
     {
         "id": "stat_3418033798",
-        "zh": "^【鲜血狂怒】会使攻击速度总增 (\\S+)%$",
+        "zh": "^【狂野怒火】的攻击速度提高 (\\S+)%$",
         "en": "^Blood Rage grants additional (\\S+)% increased Attack Speed$"
-    },
-    {
-        "id": "stat_3418033798",
-        "zh": "^【鲜血狂怒】会使攻击速度总降 (\\S+)%$",
-        "en": "^Blood Rage grants additional (\\S+)% reduced Attack Speed$"
     },
     {
         "id": "stat_1961975107",
@@ -31231,13 +31171,8 @@
     },
     {
         "id": "stat_3624940721",
-        "zh": "^闪电词缀的效果提高 (\\S+)%$",
-        "en": "^Lightning Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3624940721",
-        "zh": "^闪电词缀的效果降低 (\\S+)%$",
-        "en": "^Lightning Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延闪电词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Lightning Modifier magnitudes$"
     },
     {
         "id": "stat_1366391108",
@@ -31371,8 +31306,8 @@
     },
     {
         "id": "stat_1040958896",
-        "zh": "^【召唤魔侍】有 (\\S+)% 的几率额外召唤 1 个魔侍勇士$",
-        "en": "^(\\S+)% chance to Summon an additional Skeleton Warrior with Summon Skeleton$"
+        "zh": "^召唤魔侍有 (\\S+)% 的几率额外召唤一个魔侍$",
+        "en": "^(\\S+)% chance to Summon an additional Skeleton with Summon Skeletons$"
     },
     {
         "id": "stat_2187415468",
@@ -31551,13 +31486,8 @@
     },
     {
         "id": "stat_3196512240",
-        "zh": "^混沌词缀的效果提高 (\\S+)%$",
-        "en": "^Chaos Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_3196512240",
-        "zh": "^混沌词缀的效果降低 (\\S+)%$",
-        "en": "^Chaos Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延混沌词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Chaos Modifier magnitudes$"
     },
     {
         "id": "stat_1175282728",
@@ -32051,7 +31981,7 @@
     },
     {
         "id": "stat_3152806535",
-        "zh": "^【鲜血狂怒】有额外 (\\S+)% 的几率在击败敌人时获得狂怒球$",
+        "zh": "^【狂野怒火】有额外 (\\S+)% 的几率在击败敌人时获得狂怒球$",
         "en": "^Blood Rage grants additional (\\S+)% chance to gain a Frenzy Charge on Kill$"
     },
     {
@@ -32501,13 +32431,8 @@
     },
     {
         "id": "stat_1972391381",
-        "zh": "^抗性词缀的效果提高 (\\S+)%$",
-        "en": "^Resistance Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_1972391381",
-        "zh": "^抗性词缀的效果降低 (\\S+)%$",
-        "en": "^Resistance Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延抗性词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Resistance Modifier magnitudes$"
     },
     {
         "id": "stat_1062615953",
@@ -33421,13 +33346,8 @@
     },
     {
         "id": "stat_430890565",
-        "zh": "^【怒焰奔腾】对燃烧中敌人的伤害提高 (\\S+)%$",
-        "en": "^(\\S+)% increased Flame Surge Damage against Burning Enemies$"
-    },
-    {
-        "id": "stat_430890565",
-        "zh": "^【怒焰奔腾】对燃烧中敌人的伤害降低 (\\S+)%$",
-        "en": "^(\\S+)% reduced Flame Surge Damage against Burning Enemies$"
+        "zh": "^对燃烧的敌人造成的击中和异常状态的怒焰奔腾伤害提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Flame Surge Damage with Hits and Ailments against Burning Enemies$"
     },
     {
         "id": "stat_1389191919",
@@ -36666,13 +36586,8 @@
     },
     {
         "id": "stat_2781179464",
-        "zh": "^【电光寒霜】的冰缓区域中移动速度加快 (\\S+)%$",
+        "zh": "^【电光寒霜】的冰缓区域的蔓延速度加快 (\\S+)%$",
         "en": "^Creeping Frost's Chilling Area has (\\S+)% increased Movement Speed$"
-    },
-    {
-        "id": "stat_2781179464",
-        "zh": "^【电光寒霜】的冰缓区域中移动速度减慢 (\\S+)%$",
-        "en": "^Creeping Frost's Chilling Area has (\\S+)% reduced Movement Speed$"
     },
     {
         "id": "stat_644285691",
@@ -37716,13 +37631,8 @@
     },
     {
         "id": "stat_2979443822",
-        "zh": "^伤害词缀的效果提高 (\\S+)%$",
-        "en": "^Damage Modifiers have (\\S+)% increased Effect$"
-    },
-    {
-        "id": "stat_2979443822",
-        "zh": "^伤害词缀的效果降低 (\\S+)%$",
-        "en": "^Damage Modifiers have (\\S+)% reduced Effect$"
+        "zh": "^外延伤害词缀增幅提高 (\\S+)%$",
+        "en": "^(\\S+)% increased Explicit Damage Modifier magnitudes$"
     },
     {
         "id": "stat_3640837971",
