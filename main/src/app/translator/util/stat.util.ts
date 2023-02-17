@@ -1,25 +1,24 @@
 export class StatUtil {
     public static getBodyOfZhTemplate(template: string): string {
-        return this.getNonAsciiOrNonPer(template);
+        return this.getNonAsciiOrPer(template);
     }
 
     public static getBodyOfZhModifier(mod: string): string {
-        return this.getNonAsciiOrNonPer(mod);
+        return this.getNonAsciiOrPer(mod);
     }
 
-    public static getNonAsciiOrNonPer(str: string): string {
-        const buff = new Uint16Array(str.length);
+    public static getNonAsciiOrPer(str: string): string {
+        const arr = new Uint16Array(str.length);
         let size = 0;
 
         for (let i = 0; i < str.length; i++) {
-            //not support ucs2 extended-characters currently
             const char = str.charCodeAt(i);
-            if (char == 37 || char >= 256) {
-                buff[size++] = char;
+            if (char == 37 || char > 127) {
+                arr[size++] = char;
             }
         }
 
-        return Buffer.from(buff.subarray(0, size)).toString("utf16le");
+        return Buffer.from(arr.buffer, 0, size * 2).toString("utf16le");
     }
 
     public static render(template: string, zhTemplate: string, zhMod: string): string | null {
