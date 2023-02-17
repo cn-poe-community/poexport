@@ -3,3 +3,15 @@ export interface Stat {
     zh: string,
     en: string,
 }
+
+export class CompoundedStatIndexEntry {
+    maxLineSize: number;
+    stats: CompoundedStat[];
+}
+
+export interface CompoundedStat {
+    lineSize: number;
+    stat: Stat;
+}
+
+export const COMPOUNDED_STAT_LINE_SEPARATOR = "\n";

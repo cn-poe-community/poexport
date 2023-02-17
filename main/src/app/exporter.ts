@@ -1,6 +1,6 @@
 import * as http from "http";
 import { ConfigManager } from "./config";
-import { JsonTranslator } from "./translator/jsontranslator";
+import { JsonTranslator } from "./translator/json_translator";
 import { Requester, HttpError } from "./requester";
 
 const GET_CHARACTERS = "/character-window/get-characters";

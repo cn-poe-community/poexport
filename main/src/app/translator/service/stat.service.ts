@@ -1,5 +1,5 @@
 import { StatProvider } from "../provider/stat.provider";
-import { Stat } from "../type/stat.type";
+import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
 import { StatUtil } from "../util/stat.util";
 import { PassiveSkillService } from "./passiveskill.service";
 
@@ -104,5 +104,43 @@ export class StatService {
         }
 
         return null;
+    }
+
+    public getMaxLineSizeOfCompoundedMod(firstLine: string): number {
+        const body = StatUtil.getBodyOfZhModifier(firstLine);
+        const stats = this.statProvider.providecompoundedStatByFirstLinesZhBody(body);
+        if (stats) {
+            return stats.maxLineSize;
+        }
+
+        return 0;
+    }
+
+    public translateCompoundedMod(lines: string[]): { result: string, lineSize: number } | undefined {
+        const body = StatUtil.getBodyOfZhModifier(lines[0]);
+        const stats = this.statProvider.providecompoundedStatByFirstLinesZhBody(body);
+        if (!stats) {
+            return;
+        }
+
+        for (const compoundedStat of stats.stats) {
+            const lineSize = compoundedStat.lineSize;
+            if (compoundedStat.lineSize > lines.length) {
+                continue;
+            }
+            const stat = compoundedStat.stat;
+            const mod = lines.slice(0, lineSize).join(COMPOUNDED_STAT_LINE_SEPARATOR);
+
+            if (StatUtil.getBodyOfZhTemplate(stat.zh) ===
+                StatUtil.getBodyOfZhModifier(mod)) {
+                const result = this.dotranslateMod(stat, mod);
+                if (result) {
+                    return {
+                        result: result,
+                        lineSize: lineSize,
+                    }
+                }
+            }
+        }
     }
 }

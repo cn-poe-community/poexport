@@ -18,7 +18,8 @@ import { ConfigManager } from "./config";
 import { Exporter } from "./exporter";
 import { PobManager } from "./pob";
 import { Requester } from "./requester";
-import { JsonTranslator } from "./translator/jsontranslator";
+import { JsonTranslator } from "./translator/json_translator";
+import { TextTranslator } from "./translator/text_translator";
 
 import { Channels, Config, ExporterStatus } from "../../../ipc/types";
 import { dialog, ipcMain } from "electron";
@@ -28,6 +29,7 @@ export class App {
     private configManager: ConfigManager;
     private requester: Requester;
     private jsonTranslator: JsonTranslator;
+    private textTranslator: TextTranslator;
 
     constructor() {
     }
@@ -127,6 +129,10 @@ export class App {
         }
     }
 
+    private async translateItem(content: string): Promise<string> {
+        return this.textTranslator.translate(content);
+    }
+
     public initTranslators() {
         const baseTypeProvider = new BaseTypeProvider();
         const baseTypeService = new BaseTypeService(baseTypeProvider);
@@ -146,6 +152,8 @@ export class App {
 
         this.jsonTranslator = new JsonTranslator(
             baseTypeService, itemService, requirementService, propertySerivce, gemService, statService);
+        this.textTranslator = new TextTranslator(
+            baseTypeService, itemService, requirementService, propertySerivce, gemService, statService);
     }
 
     public initIPC() {
@@ -158,5 +166,6 @@ export class App {
         ipcMain.handle(Channels.APP_GET_EXPORTER_STATUS, () => this.getExporterStatus());
         ipcMain.handle(Channels.APP_PATCH_POB, () => this.patchPob());
         ipcMain.handle(Channels.APP_RESET_POB, () => this.resetPob());
+        ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (_, content) => this.translateItem(content));
     }
 }

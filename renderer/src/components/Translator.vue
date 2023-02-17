@@ -13,10 +13,12 @@
         </button>
       </div>
     </div>
-  </div>
+</div>
 </template>
 
 <script lang="ts">
+import type { MainAPI } from "../../../ipc/types";
+
 export default {
   data() {
     return {
@@ -31,8 +33,9 @@ export default {
     translate() {
       const input = this.item;
       if (input) {
-        //TODO: add really codes
-        this.itemTranslation = input;
+        // @ts-ignore
+        const mainAPI = window.mainAPI as MainAPI;
+        mainAPI.translateItem(input).then(result => this.itemTranslation = result).catch(e => console.log(e));
       }
     },
 

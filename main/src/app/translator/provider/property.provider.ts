@@ -1,30 +1,18 @@
-import { names, values } from "../asset/properties.json";
-import { Language } from "../type/language.type";
-import { PropertyName, PropertyValue } from "../type/property.type";
+import properties from "../asset/properties.json";
+import { Property } from "../type/property.type";
 
 export class PropertyProvider {
-    private readonly namesIndexByZhText = new Map<string, string>();
-    private readonly valuesIndexByZhText = new Map<string, string>();
+    private readonly propertyIndexByZhName = new Map<string, Property>();
 
     constructor() {
-        for (const name in names) {
-            const data = (names as { [id: string]: PropertyName })[name] as PropertyName;
-            const zhName = data.text[Language.Chinese];
-            this.namesIndexByZhText.set(zhName, name);
-        }
-
-        for (const value in values) {
-            const data = (values as { [id: string]: PropertyValue })[value] as PropertyValue;
-            const zhValue = data.text[Language.Chinese];
-            this.valuesIndexByZhText.set(zhValue, value);
+        const propertyList = properties as unknown as Array<Property>;
+        for (const p of propertyList) {
+            const zh = p.zh;
+            this.propertyIndexByZhName.set(zh, p);
         }
     }
 
-    public provideNames(): Map<string, string> {
-        return this.namesIndexByZhText;
-    }
-
-    public provideValues(): Map<string, string> {
-        return this.valuesIndexByZhText;
+    public provideProperty(zhName: string): Property {
+        return this.propertyIndexByZhName.get(zhName);
     }
 }

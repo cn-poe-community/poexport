@@ -17,4 +17,5 @@ contextBridge.exposeInMainWorld('mainAPI', {
     getExporterStatus: () => ipcRenderer.invoke(Channels.APP_GET_EXPORTER_STATUS),
     patchPob: () => ipcRenderer.invoke(Channels.APP_PATCH_POB),
     resetPob: () => ipcRenderer.invoke(Channels.APP_RESET_POB),
+    translateItem: (content: string) => ipcRenderer.invoke(Channels.APP_TRANSLATE_ITEM, content),
 });

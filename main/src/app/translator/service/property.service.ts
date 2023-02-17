@@ -1,9 +1,6 @@
 import { PropertyProvider } from "../provider/property.provider";
 import { ZH_PROPERTY_NAME_LIMITED_TO } from "../type/property.type";
 
-const HISTORIC = "Historic";
-const ZH_HISTORIC = "史实";
-
 export class PropertyService {
     private readonly propertyProvider: PropertyProvider;
 
@@ -11,21 +8,26 @@ export class PropertyService {
         this.propertyProvider = propertyProvider;
     }
 
-    public translateName(zhName: string): string | null {
-        const names = this.propertyProvider.provideNames();
-        const name = names.get(zhName);
+    public translate(zhName: string, zhValue: string): { name: string | undefined, value: string | undefined } | undefined {
+        const p = this.propertyProvider.provideProperty(zhName);
+        if (p) {
+            const enName = p.en;
+            if (zhValue && p.values) {
+                for (const v of p.values) {
+                    if (zhValue === v.zh) {
+                        return {
+                            name: enName,
+                            value: v.en,
+                        }
+                    }
+                }
+            }
 
-        return name ? name : null;
-    }
-
-    public translateValue(zhName: string, zhValue: string): string | null {
-        if (zhName === ZH_PROPERTY_NAME_LIMITED_TO) {
-            return zhValue.replace(ZH_HISTORIC, HISTORIC);
+            return {
+                name: enName,
+                value: undefined,
+            }
         }
-
-        const values = this.propertyProvider.provideValues();
-        const value = values.get(zhValue);
-
-        return value ? value : null;
+        return;
     }
 }

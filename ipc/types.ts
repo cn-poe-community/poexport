@@ -27,6 +27,7 @@ export interface MainAPI {
     getExporterStatus: () => Promise<ExporterStatus>,
     patchPob: () => Promise<void>,
     resetPob: () => Promise<void>,
+    translateItem: (content: string) => Promise<string>,
 }
 
 export enum Channels {
@@ -39,4 +40,5 @@ export enum Channels {
     APP_GET_EXPORTER_STATUS = "app:getExporterStatus",
     APP_PATCH_POB = "app:patchPob",
     APP_RESET_POB = "app:resetPob",
+    APP_TRANSLATE_ITEM = "app:translateItem",
 }

@@ -1,13 +1,12 @@
-export interface PropertyName {
-    text: {
-        [id: string]: string
-    }
+export interface Property {
+    zh: string;
+    en: string;
+    values: PropertyValue[];
 }
 
 export interface PropertyValue {
-    text: {
-        [id: string]: string
-    }
+    zh: string;
+    en: string;
 }
 
 export const ZH_PROPERTY_NAME_LIMITED_TO = "仅限";
