@@ -4,6 +4,7 @@ import { ItemService } from "./service/item.service";
 import { PropertyService } from "./service/property.service";
 import { RequirementSerivce } from "./service/requirement.service";
 import { StatService } from "./service/stat.service";
+import { COMPOUNDED_STAT_LINE_SEPARATOR } from "./type/stat.type";
 
 export class TextTranslator {
     readonly baseTypeService: BaseTypeService;
@@ -108,11 +109,12 @@ class Part {
             //复合词缀
             const maxSize = translator.statService.getMaxLineSizeOfCompoundedMod(line.content);
             if (maxSize > 0) {
+                const mod = this.lines.slice(i, Math.min(i + maxSize, this.lines.length));
                 const translation = translator.statService
-                    .translateCompoundedMod(this.lines.slice(i, Math.min(i + maxSize, this.lines.length))
-                        .map(line => line.content));
+                    .translateCompoundedMod(mod
+                        .map(line => line.modifier));
                 if (translation) {
-                    buf.push(translation.result);
+                    buf.push(this.fillSuffixsOfCompoundedModTranslation(mod, translation.result));
                     i += translation.lineSize;
                     continue;
                 }
@@ -123,6 +125,21 @@ class Part {
         }
 
         return buf.join(LINE_SEPARATOR);
+    }
+
+    fillSuffixsOfCompoundedModTranslation(mod: Line[], translation: string): string {
+        const slices = translation.split(COMPOUNDED_STAT_LINE_SEPARATOR);
+        const buf = new Array<string>(slices.length);
+
+        for (let [i, slice] of slices.entries()) {
+            if (mod[i].suffix) {
+                buf.push(`${slice} ${mod[i].suffix}`);
+            } else {
+                buf.push(slice);
+            }
+        }
+
+        return buf.join(COMPOUNDED_STAT_LINE_SEPARATOR);
     }
 }
 
