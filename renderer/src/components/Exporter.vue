@@ -35,14 +35,14 @@
       <h2>URI 编码</h2>
       <div class="line">
         <span class="line-content">
-          <input placeholder="论坛账户名" v-model="poeAccountName" />
-          <button @click="encode" :disabled="poeAccountName === ''">编码</button>
+          <input placeholder="论坛账户名" v-model="inputs.poeAccountName" />
+          <button @click="encode" :disabled="inputs.poeAccountName === ''">编码</button>
         </span>
       </div>
       <div class="line">
         <span class="line-content">
-          <input placeholder="编码结果" v-model="encodedValue" disabled />
-          <button :disabled="encodedValue === ''" @click="copyEncodedValue">复制</button>
+          <input placeholder="编码结果" v-model="inputs.poeAccountNameEncoded" disabled />
+          <button :disabled="inputs.poeAccountNameEncoded === ''" @click="copyEncodedValue">复制</button>
         </span>
       </div>
     </div>
@@ -51,21 +51,21 @@
 
 <script lang="ts">
 import type { MainAPI } from "../../../ipc/types";
-import { useStatusStore } from '@/stores/main';
+import { useStatusStore, useInputsStore } from '@/stores/main';
 
 export default {
   setup() {
     const status = useStatusStore();
+    const inputs = useInputsStore();
 
     return {
       status,
+      inputs,
     }
   },
   data() {
     return {
       ipcLocked: false,//A simple lock to prevent more than one ipc request triggered at the same time
-      poeAccountName: "",
-      encodedValue: "",
     };
   },
   mounted() {
@@ -73,16 +73,16 @@ export default {
   },
   methods: {
     encode() {
-      const input = this.poeAccountName;
+      const input = this.inputs.poeAccountName;
       if (input) {
-        this.encodedValue = encodeURIComponent(input);
+        this.inputs.poeAccountNameEncoded = encodeURIComponent(input);
       } else {
-        this.encodedValue = "";
+        this.inputs.poeAccountNameEncoded = "";
       }
     },
 
     copyEncodedValue() {
-      navigator.clipboard.writeText(this.encodedValue);
+      navigator.clipboard.writeText(this.inputs.poeAccountNameEncoded);
     },
 
     patch() {

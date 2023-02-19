@@ -1,10 +1,11 @@
-import { PropertyProvider } from "../provider/property.provider";
+import { AttributeProvider } from "../provider/attribute.provider";
 
-export class PropertyService {
-    private readonly propProvider: PropertyProvider;
 
-    constructor(propProvider: PropertyProvider) {
-        this.propProvider = propProvider;
+export class AttributeService {
+    private readonly attrProvider: AttributeProvider;
+
+    constructor(attrProvider: AttributeProvider) {
+        this.attrProvider = attrProvider;
     }
 
     public translatePair(zhName: string, zhValue: string): { name: string, value: string | undefined } | undefined {
@@ -19,11 +20,11 @@ export class PropertyService {
     }
 
     private doTranslate(zhName: string, zhValue: string | undefined): { name: string, value: string | undefined } | undefined {
-        const prop = this.propProvider.provideProperty(zhName);
-        if (prop !== undefined) {
-            const enName = prop.en;
-            if (zhValue !== undefined && prop.values !== undefined) {
-                for (const v of prop.values) {
+        const attr = this.attrProvider.provideAttribute(zhName);
+        if (attr !== undefined) {
+            const enName = attr.en;
+            if (zhValue !== undefined && attr.values !== undefined) {
+                for (const v of attr.values) {
                     if (zhValue === v.zh) {
                         return {
                             name: enName,
@@ -38,5 +39,9 @@ export class PropertyService {
                 value: undefined,
             }
         }
+    }
+
+    public getRequirementZhName() {
+
     }
 }

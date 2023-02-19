@@ -149,9 +149,9 @@ export class JsonTranslator {
         if (item.properties) {
             for (const p of item.properties) {
                 const zhName = p.name;
-                const res = this.propertySerivce.translate(zhName, null);
-                if (res) {
-                    p.name = res.name;
+                const enName = this.propertySerivce.translateName(zhName);
+                if (enName) {
+                    p.name = enName;
                 } else {
                     console.log(`warning: should be translated: property name, ${zhName}`);
                 }
@@ -160,7 +160,7 @@ export class JsonTranslator {
                     if (p.values) {
                         for (const v of p.values) {
                             const zhValue = v[0];
-                            const res = this.propertySerivce.translate(zhName, zhValue);
+                            const res = this.propertySerivce.translatePair(zhName, zhValue);
                             if (res) {
                                 v[0] = res.value;
                             } else {

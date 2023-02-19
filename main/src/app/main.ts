@@ -13,6 +13,8 @@ import { PassiveSkillService } from "./translator/service/passiveskill.service";
 import { PropertyService } from "./translator/service/property.service";
 import { RequirementSerivce } from "./translator/service/requirement.service";
 import { StatService } from "./translator/service/stat.service";
+import { AttributeProvider } from "./translator/provider/attribute.provider";
+import { AttributeService } from "./translator/service/attribute.service";
 
 import { ConfigManager } from "./config";
 import { Exporter } from "./exporter";
@@ -149,11 +151,13 @@ export class App {
         const passiveSkillService = new PassiveSkillService(passiveSkillProvider);
         const statProvider = new StatProvider();
         const statService = new StatService(passiveSkillService, statProvider);
+        const attributeProvider = new AttributeProvider();
+        const attributeService = new AttributeService(attributeProvider);
 
         this.jsonTranslator = new JsonTranslator(
             baseTypeService, itemService, requirementService, propertySerivce, gemService, statService);
         this.textTranslator = new TextTranslator(
-            baseTypeService, itemService, requirementService, propertySerivce, gemService, statService);
+            baseTypeService, itemService, requirementService, propertySerivce, gemService, statService, attributeService);
     }
 
     public initIPC() {

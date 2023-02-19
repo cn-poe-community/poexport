@@ -11,3 +11,12 @@ export const useStatusStore = defineStore('status', {
     },
     actions: {},
 });
+
+export const useInputsStore = defineStore('inputs', {
+    state: () => ({
+        poeAccountName: "",
+        poeAccountNameEncoded: "",
+        textItem: "",
+        textItemTranlation: "",
+    })
+})

@@ -1,18 +1,83 @@
 [
     {
-        "id": "flask_implicit_1",
+        "id": "flask_property_1",
         "zh": "受到的火焰伤害总降 {0}%",
         "en": "{0}% less Fire Damage taken"
     },
     {
-        "id": "flask_implicit_2",
+        "id": "flask_property_2",
+        "zh": "承受的冰霜总伤害降低 {0}%",
+        "en": "{0}% less Cold Damage taken"
+    },
+    {
+        "id": "flask_property_3",
+        "zh": "受到的闪电伤害总降 {0}%",
+        "en": "{0}% less Lightning Damage taken"
+    },
+    {
+        "id": "flask_property_4",
         "zh": "【迷踪】状态",
         "en": "Phasing"
     },
     {
-        "id": "flask_implicit_3",
-        "zh": "承受的冰霜总伤害降低 {0}%",
-        "en": "{0}% less Cold Damage taken"
+        "id": "flask_property_5",
+        "zh": "护甲总增 {0}%",
+        "en": "{0}% more Armour"
+    },
+    {
+        "id": "flask_property_6",
+        "zh": "闪避值总增 {0}%",
+        "en": "{0}% more Evasion Rating"
+    },
+    {
+        "id": "flask_property_7",
+        "zh": "生效期间若你被晕眩，则你不会再次被晕眩",
+        "en": "Cannot be Stunned if you've been Stunned during Effect"
+    },
+    {
+        "id": "flask_property_8",
+        "zh": "持续 {0} 秒",
+        "en": "Lasts {0} Seconds"
+    },
+    {
+        "id": "flask_property_9",
+        "zh": "持续 {0} (augmented) 秒",
+        "en": "Lasts {0} (augmented) Seconds"
+    },
+    {
+        "id": "flask_property_10",
+        "zh": "每次使用会从 {0} 充能次数中消耗 {1} 次",
+        "en": "Consumes {1} of {0} Charges on use"
+    },
+    {
+        "id": "flask_property_11",
+        "zh": "每次使用会从 {0} 充能次数中消耗 {1} (augmented) 次",
+        "en": "Consumes {1} (augmented) of {0} Charges on use"
+    },
+    {
+        "id": "flask_property_12",
+        "zh": "目前有 {0} 充能次数",
+        "en": "Currently has {0} Charges"
+    },
+    {
+        "id": "flask_property_13",
+        "zh": "{0} 秒内回复 {1} 生命",
+        "en": "Recovers {1} Life over {0} Seconds"
+    },
+    {
+        "id": "flask_property_14",
+        "zh": "{0} 秒内回复 {1} (augmented) 生命",
+        "en": "Recovers {1} (augmented) Life over {0} Seconds"
+    },
+    {
+        "id": "flask_property_15",
+        "zh": "{0} 秒内回复 {1} 魔力",
+        "en": "Recovers {1} Mana over {0} Seconds"
+    },
+    {
+        "id": "flask_property_16",
+        "zh": "{0} 秒内回复 {1} (augmented) 魔力",
+        "en": "Recovers {1} (augmented) Mana over {0} Seconds"
     },
     {
         "id": "stat_3299347043",
@@ -39273,5 +39338,10 @@
         "id": "stat_725696472",
         "zh": "一次最多只能从一个激活的先祖图腾中获得 1 个增益效果",
         "en": "Maximum 1 Buff from an Active Ancestor Totem at a time"
+    },
+    {
+        "id": "stat_472812693",
+        "zh": "你技能的光环在你身上的效果提高 {0}%",
+        "en": "Auras from your Skills have {0}% increased Effect on you"
     }
 ]

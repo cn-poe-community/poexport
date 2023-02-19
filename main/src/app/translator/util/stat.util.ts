@@ -1,3 +1,5 @@
+import { escapeRegExp } from "./text.util";
+
 export class StatUtil {
     public static getBodyOfZhTemplate(template: string): string {
         return this.getNonAsciiOrPer(template);
@@ -85,7 +87,7 @@ export class Template {
      * @returns map contains positions and parameters ; undefined if the modifer doesnot matches the template. 
      */
     public parseParams(modifier: string): Map<number, string> | undefined {
-        const regStr = `^${this.segments.map(s => s.replace("+", "\\+")).join("(\\S+)")}$`;
+        const regStr = `^${this.segments.map(s => escapeRegExp(s)).join("(\\S+)")}$`;
         const execResult = new RegExp(regStr).exec(modifier);
 
         if (!execResult) {

@@ -1,46 +1,48 @@
 <template>
   <div class="container">
     <div class="data-container">
-      <textarea class="itemData" v-model="item"></textarea>
-      <textarea class="itemData" disabled v-model="itemTranslation"></textarea>
+      <textarea class="itemData" v-model="inputs.textItem"></textarea>
+      <textarea class="itemData" disabled v-model="inputs.textItemTranlation"></textarea>
     </div>
     <div class="dock">
       <span class="tip">* 仅支持POB使用到的与BD相关的装备的翻译。</span>
       <div class="buttons">
-        <button @click="translate" :disabled="item === ''">翻译</button>
-        <button @click="copyTranslation" :disabled="itemTranslation === ''">
+        <button @click="translate" :disabled="inputs.textItem === ''">翻译</button>
+        <button @click="copyTranslation" :disabled="inputs.textItemTranlation === ''">
           复制
         </button>
       </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script lang="ts">
 import type { MainAPI } from "../../../ipc/types";
+import { useInputsStore } from '@/stores/main';
 
 export default {
-  data() {
+  setup() {
+    const inputs = useInputsStore();
+
     return {
-      item: "",
-      itemTranslation: "",
-    };
+      inputs,
+    }
   },
 
   mounted() { },
 
   methods: {
     translate() {
-      const input = this.item;
+      const input = this.inputs.textItem;
       if (input) {
         // @ts-ignore
         const mainAPI = window.mainAPI as MainAPI;
-        mainAPI.translateItem(input).then(result => this.itemTranslation = result).catch(e => console.log(e));
+        mainAPI.translateItem(input).then(result => this.inputs.textItemTranlation = result).catch(e => console.log(e));
       }
     },
 
     copyTranslation() {
-      navigator.clipboard.writeText(this.itemTranslation);
+      navigator.clipboard.writeText(this.inputs.textItemTranlation);
     },
   },
 };

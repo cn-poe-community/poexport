@@ -1,3 +1,4 @@
+import { AttributeService } from "./service/attribute.service";
 import { BaseTypeService } from "./service/basetype.service";
 import { GemService } from "./service/gem.service";
 import { ItemService } from "./service/item.service";
@@ -13,19 +14,22 @@ export class TextTranslator {
     readonly propertySerivce: PropertyService;
     readonly gemService: GemService;
     readonly statService: StatService;
+    readonly attributeService: AttributeService;
 
     constructor(baseTypeService: BaseTypeService,
         itemService: ItemService,
         requirementService: RequirementSerivce,
         propertySerivce: PropertyService,
         gemService: GemService,
-        statService: StatService) {
+        statService: StatService,
+        attributeService: AttributeService) {
         this.baseTypeService = baseTypeService;
         this.itemService = itemService;
         this.requirementService = requirementService;
         this.propertySerivce = propertySerivce;
         this.gemService = gemService;
         this.statService = statService;
+        this.attributeService = attributeService;
     }
 
     public translate(content: string): string {
@@ -129,7 +133,7 @@ class Part {
 
     fillSuffixsOfCompoundedModTranslation(mod: Line[], translation: string): string {
         const slices = translation.split(COMPOUNDED_STAT_LINE_SEPARATOR);
-        const buf = new Array<string>(slices.length);
+        const buf = new Array<string>();
 
         for (let [i, slice] of slices.entries()) {
             if (mod[i].suffix) {
@@ -141,6 +145,12 @@ class Part {
 
         return buf.join(COMPOUNDED_STAT_LINE_SEPARATOR);
     }
+}
+
+enum LineType {
+    OnlyKey = 0,
+    KeyValue,
+    Modifier,
 }
 
 class Line {
@@ -182,7 +192,7 @@ class Line {
     getTranslation(ctx: Context): string {
         const translator = ctx.translator;
         if (this.type === LineType.KeyValue) {
-            const translation = translator.propertySerivce.translate(this.key, this.value);
+            let translation = translator.propertySerivce.translatePair(this.key, this.value);
             if (translation) {
                 if (translation.name) {
                     this.key = translation.name;
@@ -191,18 +201,37 @@ class Line {
                 if (translation.value) {
                     this.value = translation.value;
                 }
-            } else {
-                const keyTranslation = translator.requirementService.translateName(this.key);
-                if (keyTranslation) {
-                    this.key = keyTranslation;
+
+                return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
+            }
+
+            const keyTranslation = translator.requirementService.translateName(this.key);
+            if (keyTranslation) {
+                this.key = keyTranslation;
+                return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
+            }
+
+            translation = translator.attributeService.translatePair(this.key, this.value);
+
+            if (translation) {
+                if (translation.name) {
+                    this.key = translation.name;
+                }
+
+                if (translation.value) {
+                    this.value = translation.value;
                 }
             }
 
             return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
         } else if (this.type === LineType.OnlyKey) {
-            const translation = translator.propertySerivce.translate(this.key, null);
+            let translation = translator.propertySerivce.translateName(this.key);
             if (translation) {
-                this.key = translation.name;
+                this.key = translation;
+            }
+            translation = translator.attributeService.translateName(this.key);
+            if (translation) {
+                this.key = translation;
             }
 
             return `${this.key}${KEY_VALUE_SEPARATOR}`;
@@ -211,11 +240,14 @@ class Line {
             if (translation) {
                 this.modifier = translation;
             } else {
-                // 特殊词缀，如：弓，属于Property但比较特别，没有被翻译，放这里兜底
-                // 以后可能有更清晰的处理方式
-                const translation = translator.propertySerivce.translate(this.modifier, null);
-                if (translation) {
-                    this.modifier = translation.name;
+                // Some lines are properties,attributes
+                let translation = translator.propertySerivce.translateName(this.modifier);
+                if (translation !== undefined) {
+                    this.modifier = translation;
+                }
+                translation = translator.attributeService.translateName(this.modifier);
+                if (translation !== undefined) {
+                    this.modifier = translation;
                 }
             }
 
@@ -228,10 +260,4 @@ class Line {
             return this.modifier;
         }
     }
-}
-
-enum LineType {
-    OnlyKey = 0,
-    KeyValue,
-    Modifier,
 }
