@@ -4,7 +4,7 @@ export interface Stat {
     en: string,
 }
 
-export class CompoundedStatIndexEntry {
+export interface CompoundedStatIndexEntry {
     maxLineSize: number;
     stats: CompoundedStat[];
 }

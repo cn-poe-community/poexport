@@ -1,6 +1,6 @@
 import { StatProvider } from "../provider/stat.provider";
 import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
-import { StatUtil } from "../util/stat.util";
+import { StatUtil, Template } from "../util/stat.util";
 import { PassiveSkillService } from "./passiveskill.service";
 
 const ZhImpossibleEscapeModRegExp = /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
@@ -96,14 +96,19 @@ export class StatService {
     }
 
     dotranslateMod(stat: Stat, zhMod: string): string | null {
-        const r = new RegExp(stat.zh);
-        const matches = r.exec(zhMod);
-
-        if (matches) {
-            return StatUtil.render(stat.en, stat.zh, zhMod);
+        if (zhMod === stat.zh) {
+            return stat.en;
         }
 
-        return null;
+        const zhTpl = new Template(stat.zh);
+        const posParams = zhTpl.parseParams(zhMod);
+        if (posParams === undefined) {
+            return null;
+        }
+
+        const enTpl = new Template(stat.en);
+
+        return enTpl.render(posParams);
     }
 
     public getMaxLineSizeOfCompoundedMod(firstLine: string): number {
