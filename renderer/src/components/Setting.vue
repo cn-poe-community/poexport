@@ -69,7 +69,7 @@
 </template>
 
 <script lang="ts">
-import type { Config, ElectronAPI, MainAPI } from "../../../ipc/types";
+import type { AppWindow } from "../../../ipc/types";
 
 export default {
   data() {
@@ -91,9 +91,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.getConfig()
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.getConfig()
         .then(config => {
           this.poeSessionId = config.poeSessId;
           this.pobPath = config.pobPath;
@@ -109,9 +108,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.resetConfig()
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.resetConfig()
         .catch(err => {
           console.log(err);
         }).finally(() => {
@@ -124,9 +122,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.setPoeSessId(this.poeSessionId)
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.setPoeSessId(this.poeSessionId)
         .catch(err => {
           console.log(err);
         }).finally(() => {
@@ -138,14 +135,12 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const electronAPI = window.electronAPI as ElectronAPI;
-      const filePath = electronAPI.openFolder().then(path => {
+      const electronApi = (window as any as AppWindow).electronApi;
+      const filePath = electronApi.openFolder().then(path => {
         if (path) {
           this.pobPath = path;
-          // @ts-ignore
-          const mainAPI = window.mainAPI as MainAPI;
-          mainAPI.setPobPath(path)
+          const mainApi = (window as any as AppWindow).mainApi;
+          mainApi.setPobPath(path)
             .catch(err => {
               console.log(err);
             }).finally(() => {
@@ -163,9 +158,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.setPobProxySupported(this.pobProxySupported)
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.setPobProxySupported(this.pobProxySupported)
         .catch(err => {
           console.log(err);
         }).finally(() => {
@@ -177,9 +171,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.resetPob()
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.resetPob()
         .catch(err => {
           console.log(err);
         }).finally(() => {

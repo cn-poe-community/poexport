@@ -50,7 +50,7 @@
 </template>
 
 <script lang="ts">
-import type { MainAPI } from "../../../ipc/types";
+import type { AppWindow } from "../../../ipc/types";
 import { useStatusStore, useInputsStore } from '@/stores/main';
 
 export default {
@@ -90,9 +90,8 @@ export default {
         return;
       }
       this.ipcLocked = true;
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.patchPob().then(() => {
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.patchPob().then(() => {
         this.loadStatus();
       }).catch((err) => {
         console.log(err);
@@ -101,9 +100,8 @@ export default {
       });
     },
     loadStatus() {
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.getExporterStatus().then(status => {
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.getExporterStatus().then(status => {
         this.status.$patch(status);
       }).catch(err => {
         console.log(err);
@@ -116,9 +114,8 @@ export default {
       this.ipcLocked = true;
       const target = event.target as HTMLElement;
       target.classList.add('refresh-start');
-      // @ts-ignore
-      const mainAPI = window.mainAPI as MainAPI;
-      mainAPI.getExporterStatus().then(status => {
+      const mainApi = (window as any as AppWindow).mainApi;
+      mainApi.getExporterStatus().then(status => {
         this.status.$patch(status);
       }).catch(err => {
         console.log(err);

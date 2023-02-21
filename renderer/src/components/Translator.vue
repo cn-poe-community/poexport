@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import type { MainAPI } from "../../../ipc/types";
+import type { AppWindow } from "../../../ipc/types";
 import { useInputsStore } from '@/stores/main';
 
 export default {
@@ -35,9 +35,8 @@ export default {
     translate() {
       const input = this.inputs.textItem;
       if (input) {
-        // @ts-ignore
-        const mainAPI = window.mainAPI as MainAPI;
-        mainAPI.translateItem(input).then(result => this.inputs.textItemTranlation = result).catch(e => console.log(e));
+        const mainApi = (window as any as AppWindow).mainApi;
+        mainApi.translateItem(input).then(result => this.inputs.textItemTranlation = result).catch(e => console.log(e));
       }
     },
 

@@ -44,8 +44,7 @@ export class Exporter {
         }).listen(this.port);
 
         server.on('error', (e) => {
-            // @ts-ignore
-            if (e.code === 'EADDRINUSE') {
+            if ((e as any as { code: string }).code === 'EADDRINUSE') {
                 console.log(`exporter: Address 127.0.0.1:${this.port} in use, retrying...`);
 
                 setTimeout(() => {

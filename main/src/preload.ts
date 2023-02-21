@@ -4,11 +4,11 @@
 import { contextBridge, ipcRenderer } from 'electron';
 import { Channels, Config } from '../../ipc/types';
 
-contextBridge.exposeInMainWorld('electronAPI', {
+contextBridge.exposeInMainWorld('electronApi', {
     openFolder: () => ipcRenderer.invoke(Channels.DIALOG_OPEN_FLOOR),
 });
 
-contextBridge.exposeInMainWorld('mainAPI', {
+contextBridge.exposeInMainWorld('mainApi', {
     getConfig: () => ipcRenderer.invoke(Channels.APP_GET_CONFIG),
     resetConfig: () => ipcRenderer.invoke(Channels.APP_RESET_CONFIG),
     setPoeSessId: (id: string) => ipcRenderer.invoke(Channels.APP_SET_POE_SESS_ID, id),

@@ -14,11 +14,11 @@ export interface ExporterStatus {
     port: number,
 }
 
-export interface ElectronAPI {
+export interface ElectronApi {
     openFolder: () => Promise<string | undefined>
 }
 
-export interface MainAPI {
+export interface MainApi {
     getConfig: () => Promise<Config>,
     resetConfig: () => Promise<void>,
     setPoeSessId: (id: string) => Promise<void>,
@@ -41,4 +41,9 @@ export enum Channels {
     APP_PATCH_POB = "app:patchPob",
     APP_RESET_POB = "app:resetPob",
     APP_TRANSLATE_ITEM = "app:translateItem",
+}
+
+export interface AppWindow {
+    mainApi: MainApi;
+    electronApi: ElectronApi;
 }
