@@ -747,7 +747,7 @@
     {
         "id": "stat_4253454700",
         "zh": "该装备 {0}% 攻击格挡率",
-        "en": "{0}% Chance to Block (Shields)"
+        "en": "{0}% Chance to Block"
     },
     {
         "id": "stat_280731498",
@@ -1646,12 +1646,12 @@
     },
     {
         "id": "stat_388617051",
-        "zh": "充能次数按照每次使用提高 {0}%",
+        "zh": "每次使用消耗的充能次数提高 {0}%",
         "en": "{0}% increased Charges per use"
     },
     {
         "id": "stat_388617051",
-        "zh": "充能次数按照每次使用降低 {0}%",
+        "zh": "每次使用消耗的充能次数降低 {0}%",
         "en": "{0}% reduced Charges per use"
     },
     {
@@ -5371,7 +5371,7 @@
     },
     {
         "id": "stat_3112863846",
-        "zh": "你可以受到一个额外赌咒",
+        "zh": "你可以受到一个额外诅咒",
         "en": "An additional Curse can be applied to you"
     },
     {
@@ -13441,7 +13441,7 @@
     },
     {
         "id": "stat_1456464057",
-        "zh": "生效期间，{0}% 的物理攻击伤害转化为能量护盾偷取",
+        "zh": "生效期间，{0}% 的法术伤害转化为能量护盾偷取",
         "en": "{0}% of Spell Damage Leeched as Energy Shield during Effect"
     },
     {
@@ -24896,7 +24896,7 @@
     },
     {
         "id": "stat_591645420",
-        "zh": "插入的辅助宝石也能辅助你身体装备上的技能",
+        "zh": "插入的辅助宝石也能辅助你身体护甲上的技能",
         "en": "Socketed Support Gems can also Support Skills from your Body Armour"
     },
     {
@@ -38641,7 +38641,7 @@
     },
     {
         "id": "stat_2304988974",
-        "zh": "如果你在过去 10 秒内施放过易伤，则有 {0}% 几率造成双倍伤害",
+        "zh": "如果你在过去 10 秒内施放过脆弱，则有 {0}% 几率造成双倍伤害",
         "en": "{0}% chance to deal Double Damage if you've cast Vulnerability in the past 10 seconds"
     },
     {
@@ -38701,7 +38701,7 @@
     },
     {
         "id": "stat_971937289",
-        "zh": "如果你在过去 10 秒内施放过易伤，则不会受到流血影响",
+        "zh": "如果你在过去 10 秒内施放过脆弱，则不会受到流血影响",
         "en": "You are Unaffected by Bleeding if you've cast Vulnerability in the past 10 seconds"
     },
     {
@@ -39296,7 +39296,7 @@
     },
     {
         "id": "stat_2379274646",
-        "zh": "如果你在过去10秒内施放过衰弱，则 +{0}% 攻击伤害暴击加成",
+        "zh": "如果你在过去10秒内施放过衰弱，则 +{0}% 暴击伤害加成",
         "en": "+{0}% to Critical Strike Multiplier if you've cast Enfeeble in the past 10 seconds"
     },
     {
