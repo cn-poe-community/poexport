@@ -23,10 +23,20 @@ export class BaseTypeProvider {
             for (const id in baseTypeMap) {
                 const data = baseTypeMap[id];
                 const zhText = data.text[language];
-                if (this.baseTypeIndexByZhText.has(zhText)) {
-                    this.baseTypeIndexByZhText.get(zhText)?.push({ "category": category, "id": id });
+                if (Array.isArray(zhText)) {
+                    for (const t of zhText) {
+                        if (this.baseTypeIndexByZhText.has(t)) {
+                            this.baseTypeIndexByZhText.get(t)?.push({ "category": category, "id": id });
+                        } else {
+                            this.baseTypeIndexByZhText.set(t, [{ "category": category, "id": id }]);
+                        }
+                    }
                 } else {
-                    this.baseTypeIndexByZhText.set(zhText, [{ "category": category, "id": id }]);
+                    if (this.baseTypeIndexByZhText.has(zhText)) {
+                        this.baseTypeIndexByZhText.get(zhText)?.push({ "category": category, "id": id });
+                    } else {
+                        this.baseTypeIndexByZhText.set(zhText, [{ "category": category, "id": id }]);
+                    }
                 }
 
                 const uniques = data.uniques;

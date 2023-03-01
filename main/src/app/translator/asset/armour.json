@@ -572,7 +572,11 @@
     "Two-Toned Boots": {
         "text": {
             "0": "Two-Toned Boots",
-            "1": "异色鞋(冰闪)"
+            "1": [
+                "异色鞋(冰闪)",
+                "异色鞋 (火冰)",
+                "异色鞋 (火闪)"
+            ]
         },
         "uniques": {
             "Beacon of Madness": {

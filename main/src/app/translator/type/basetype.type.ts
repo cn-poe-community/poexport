@@ -6,7 +6,7 @@ export interface BaseTypeMap {
 
 export interface BaseType {
     text: {
-        [language: number]: string
+        [language: number]: string | Array<string>
     }
     uniques: UniqueMap
 }
