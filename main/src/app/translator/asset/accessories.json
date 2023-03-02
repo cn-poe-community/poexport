@@ -1,2045 +1,1409 @@
-{
-    "Ruby Ring": {
-        "text": {
-            "0": "Ruby Ring",
-            "1": "红玉戒指"
-        },
-        "uniques": {
-            "Ahkeli's Meadow": {
-                "text": {
-                    "0": "Ahkeli's Meadow",
-                    "1": "阿克莱的草原"
-                }
+[
+    {
+        "zh": "红玉戒指",
+        "en": "Ruby Ring",
+        "uniques": [
+            {
+                "zh": "阿克莱的草原",
+                "en": "Ahkeli's Meadow"
             },
-            "Ahkeli's Mountain": {
-                "text": {
-                    "0": "Ahkeli's Mountain",
-                    "1": "阿克莱的高山"
-                }
+            {
+                "zh": "阿克莱的高山",
+                "en": "Ahkeli's Mountain"
             },
-            "Ahkeli's Valley": {
-                "text": {
-                    "0": "Ahkeli's Valley",
-                    "1": "阿克莱的山谷"
-                }
+            {
+                "zh": "阿克莱的山谷",
+                "en": "Ahkeli's Valley"
             },
-            "Circle of Anguish": {
-                "text": {
-                    "0": "Circle of Anguish",
-                    "1": "苦痛之环"
-                }
+            {
+                "zh": "苦痛之环",
+                "en": "Circle of Anguish"
             },
-            "Emberwake": {
-                "text": {
-                    "0": "Emberwake",
-                    "1": "余烬之痕"
-                }
+            {
+                "zh": "余烬之痕",
+                "en": "Emberwake"
             },
-            "Mokou's Embrace": {
-                "text": {
-                    "0": "Mokou's Embrace",
-                    "1": "莫考之拥"
-                }
+            {
+                "zh": "莫考之拥",
+                "en": "Mokou's Embrace"
             },
-            "Ngamahu's Sign": {
-                "text": {
-                    "0": "Ngamahu's Sign",
-                    "1": "努葛玛呼之印"
-                }
+            {
+                "zh": "努葛玛呼之印",
+                "en": "Ngamahu's Sign"
             },
-            "Precursor's Emblem": {
-                "text": {
-                    "0": "Precursor's Emblem",
-                    "1": "先驱的纹章"
-                }
+            {
+                "zh": "先驱的纹章",
+                "en": "Precursor's Emblem"
             },
-            "Replica Emberwake": {
-                "text": {
-                    "0": "Replica Emberwake",
-                    "1": "余烬之痕【仿品】"
-                }
+            {
+                "zh": "余烬之痕【仿品】",
+                "en": "Replica Emberwake"
             },
-            "Warrior's Legacy": {
-                "text": {
-                    "0": "Warrior's Legacy",
-                    "1": "战士的遗产"
-                }
+            {
+                "zh": "战士的遗产",
+                "en": "Warrior's Legacy"
             }
-        }
+        ]
     },
-    "Gold Ring": {
-        "text": {
-            "0": "Gold Ring",
-            "1": "金光戒指"
-        },
-        "uniques": {
-            "Andvarius": {
-                "text": {
-                    "0": "Andvarius",
-                    "1": "贪欲之记"
-                }
+    {
+        "zh": "金光戒指",
+        "en": "Gold Ring",
+        "uniques": [
+            {
+                "zh": "贪欲之记",
+                "en": "Andvarius"
             },
-            "The Highwayman": {
-                "text": {
-                    "0": "The Highwayman",
-                    "1": "绿林豪侠"
-                }
+            {
+                "zh": "绿林豪侠",
+                "en": "The Highwayman"
             },
-            "Ventor's Gamble": {
-                "text": {
-                    "0": "Ventor's Gamble",
-                    "1": "赌神芬多"
-                }
+            {
+                "zh": "赌神芬多",
+                "en": "Ventor's Gamble"
             }
-        }
+        ]
     },
-    "Unset Ring": {
-        "text": {
-            "0": "Unset Ring",
-            "1": "潜能之戒"
-        },
-        "uniques": {
-            "Angler's Plait": {
-                "text": {
-                    "0": "Angler's Plait",
-                    "1": "渔夫之辫"
-                }
+    {
+        "zh": "潜能之戒",
+        "en": "Unset Ring",
+        "uniques": [
+            {
+                "zh": "渔夫之辫",
+                "en": "Angler's Plait"
             },
-            "Brinerot Mark": {
-                "text": {
-                    "0": "Brinerot Mark",
-                    "1": "布琳洛特印记"
-                }
+            {
+                "zh": "布琳洛特印记",
+                "en": "Brinerot Mark"
             },
-            "Essence Worm": {
-                "text": {
-                    "0": "Essence Worm",
-                    "1": "菁华蠕虫"
-                }
+            {
+                "zh": "菁华蠕虫",
+                "en": "Essence Worm"
             },
-            "Hallowed Ground": {
-                "text": {
-                    "0": "Hallowed Ground",
-                    "1": "魔诅之域"
-                }
+            {
+                "zh": "魔诅之域",
+                "en": "Hallowed Ground"
             },
-            "Malachai's Artifice": {
-                "text": {
-                    "0": "Malachai's Artifice",
-                    "1": "玛拉凯的巧技"
-                }
+            {
+                "zh": "玛拉凯的巧技",
+                "en": "Malachai's Artifice"
             },
-            "Mark of Submission": {
-                "text": {
-                    "0": "Mark of Submission",
-                    "1": "屈服印记"
-                }
+            {
+                "zh": "屈服印记",
+                "en": "Mark of Submission"
             },
-            "Mutewind Seal": {
-                "text": {
-                    "0": "Mutewind Seal",
-                    "1": "哑风封印"
-                }
+            {
+                "zh": "哑风封印",
+                "en": "Mutewind Seal"
             },
-            "Profane Proxy": {
-                "text": {
-                    "0": "Profane Proxy",
-                    "1": "渎神代理"
-                }
+            {
+                "zh": "渎神代理",
+                "en": "Profane Proxy"
             },
-            "Redblade Band": {
-                "text": {
-                    "0": "Redblade Band",
-                    "1": "红刃之环"
-                }
+            {
+                "zh": "红刃之环",
+                "en": "Redblade Band"
             },
-            "Replica Malachai's Artifice": {
-                "text": {
-                    "0": "Replica Malachai's Artifice",
-                    "1": "玛拉凯的巧技【仿品】"
-                }
+            {
+                "zh": "玛拉凯的巧技【仿品】",
+                "en": "Replica Malachai's Artifice"
             },
-            "Replica Voideye": {
-                "text": {
-                    "0": "Replica Voideye",
-                    "1": "虚空慧眼【仿品】"
-                }
+            {
+                "zh": "虚空慧眼【仿品】",
+                "en": "Replica Voideye"
             },
-            "Rotblood Promise": {
-                "text": {
-                    "0": "Rotblood Promise",
-                    "1": "腐血的承诺"
-                }
+            {
+                "zh": "腐血的承诺",
+                "en": "Rotblood Promise"
             },
-            "The Hungry Loop": {
-                "text": {
-                    "0": "The Hungry Loop",
-                    "1": "饥饿之环 "
-                }
+            {
+                "zh": "饥饿之环 ",
+                "en": "The Hungry Loop"
             },
-            "The Pariah": {
-                "text": {
-                    "0": "The Pariah",
-                    "1": "草民"
-                }
+            {
+                "zh": "草民",
+                "en": "The Pariah"
             },
-            "Triumvirate Authority": {
-                "text": {
-                    "0": "Triumvirate Authority",
-                    "1": "三头威仪"
-                }
+            {
+                "zh": "三头威仪",
+                "en": "Triumvirate Authority"
             },
-            "Vivinsect": {
-                "text": {
-                    "0": "Vivinsect",
-                    "1": "活解"
-                }
+            {
+                "zh": "活解",
+                "en": "Vivinsect"
             },
-            "Voideye": {
-                "text": {
-                    "0": "Voideye",
-                    "1": "虚空慧眼"
-                }
+            {
+                "zh": "虚空慧眼",
+                "en": "Voideye"
             }
-        }
+        ]
     },
-    "Coral Amulet": {
-        "text": {
-            "0": "Coral Amulet",
-            "1": "珊瑚护身符"
-        },
-        "uniques": {
-            "Araku Tiki": {
-                "text": {
-                    "0": "Araku Tiki",
-                    "1": "隐灵之符"
-                }
+    {
+        "zh": "珊瑚护身符",
+        "en": "Coral Amulet",
+        "uniques": [
+            {
+                "zh": "隐灵之符",
+                "en": "Araku Tiki"
             },
-            "Bloodgrip": {
-                "text": {
-                    "0": "Bloodgrip",
-                    "1": "鲜血支配"
-                }
+            {
+                "zh": "鲜血支配",
+                "en": "Bloodgrip"
             },
-            "Ngamahu Tiki": {
-                "text": {
-                    "0": "Ngamahu Tiki",
-                    "1": "努葛玛呼之像"
-                }
+            {
+                "zh": "努葛玛呼之像",
+                "en": "Ngamahu Tiki"
             },
-            "Tavukai": {
-                "text": {
-                    "0": "Tavukai",
-                    "1": "圣令"
-                }
+            {
+                "zh": "圣令",
+                "en": "Tavukai"
             },
-            "The Primordial Chain": {
-                "text": {
-                    "0": "The Primordial Chain",
-                    "1": "原始锁链"
-                }
+            {
+                "zh": "原始锁链",
+                "en": "The Primordial Chain"
             }
-        }
+        ]
     },
-    "Cloth Belt": {
-        "text": {
-            "0": "Cloth Belt",
-            "1": "饰布腰带"
-        },
-        "uniques": {
-            "Arn's Anguish": {
-                "text": {
-                    "0": "Arn's Anguish",
-                    "1": "阿恩的痛苦"
-                }
+    {
+        "zh": "饰布腰带",
+        "en": "Cloth Belt",
+        "uniques": [
+            {
+                "zh": "阿恩的痛苦",
+                "en": "Arn's Anguish"
             },
-            "Graven's Secret": {
-                "text": {
-                    "0": "Graven's Secret",
-                    "1": "葛拉文的秘宝"
-                }
+            {
+                "zh": "葛拉文的秘宝",
+                "en": "Graven's Secret"
             },
-            "Olesya's Delight": {
-                "text": {
-                    "0": "Olesya's Delight",
-                    "1": "奥莱西亚的喜悦"
-                }
+            {
+                "zh": "奥莱西亚的喜悦",
+                "en": "Olesya's Delight"
             },
-            "Perandus Blazon": {
-                "text": {
-                    "0": "Perandus Blazon",
-                    "1": "普兰德斯之印"
-                }
+            {
+                "zh": "普兰德斯之印",
+                "en": "Perandus Blazon"
             },
-            "Replica Soul Tether": {
-                "text": {
-                    "0": "Replica Soul Tether",
-                    "1": "灵魂羁绊【仿品】"
-                }
+            {
+                "zh": "灵魂羁绊【仿品】",
+                "en": "Replica Soul Tether"
             },
-            "Soul Tether": {
-                "text": {
-                    "0": "Soul Tether",
-                    "1": "灵魂羁绊"
-                }
+            {
+                "zh": "灵魂羁绊",
+                "en": "Soul Tether"
             },
-            "Soulthirst": {
-                "text": {
-                    "0": "Soulthirst",
-                    "1": "嗜魂"
-                }
+            {
+                "zh": "嗜魂",
+                "en": "Soulthirst"
             },
-            "Sunblast": {
-                "text": {
-                    "0": "Sunblast",
-                    "1": "日炎"
-                }
+            {
+                "zh": "日炎",
+                "en": "Sunblast"
             },
-            "The Druggery": {
-                "text": {
-                    "0": "The Druggery",
-                    "1": "复苏之药"
-                }
+            {
+                "zh": "复苏之药",
+                "en": "The Druggery"
             },
-            "The Flow Untethered": {
-                "text": {
-                    "0": "The Flow Untethered",
-                    "1": "流逝之时"
-                }
+            {
+                "zh": "流逝之时",
+                "en": "The Flow Untethered"
             },
-            "The Torrent's Reclamation": {
-                "text": {
-                    "0": "The Torrent's Reclamation",
-                    "1": "沧海桑田"
-                }
+            {
+                "zh": "沧海桑田",
+                "en": "The Torrent's Reclamation"
             }
-        }
+        ]
     },
-    "Chain Belt": {
-        "text": {
-            "0": "Chain Belt",
-            "1": "扣链腰带"
-        },
-        "uniques": {
-            "Ascent From Flesh": {
-                "text": {
-                    "0": "Ascent From Flesh",
-                    "1": "变节者"
-                }
+    {
+        "zh": "扣链腰带",
+        "en": "Chain Belt",
+        "uniques": [
+            {
+                "zh": "变节者",
+                "en": "Ascent From Flesh"
             },
-            "Auxium": {
-                "text": {
-                    "0": "Auxium",
-                    "1": "奥术之符"
-                }
+            {
+                "zh": "奥术之符",
+                "en": "Auxium"
             },
-            "Bated Breath": {
-                "text": {
-                    "0": "Bated Breath",
-                    "1": "凝息"
-                }
+            {
+                "zh": "凝息",
+                "en": "Bated Breath"
             },
-            "Chains of Emancipation": {
-                "text": {
-                    "0": "Chains of Emancipation",
-                    "1": "脱缚之锁"
-                }
+            {
+                "zh": "脱缚之锁",
+                "en": "Chains of Emancipation"
             },
-            "Coward's Chains": {
-                "text": {
-                    "0": "Coward's Chains",
-                    "1": "懦夫之链"
-                }
+            {
+                "zh": "懦夫之链",
+                "en": "Coward's Chains"
             },
-            "Coward's Legacy": {
-                "text": {
-                    "0": "Coward's Legacy",
-                    "1": "懦夫之遗"
-                }
+            {
+                "zh": "懦夫之遗",
+                "en": "Coward's Legacy"
             },
-            "Maligaro's Restraint": {
-                "text": {
-                    "0": "Maligaro's Restraint",
-                    "1": "马雷格罗的染血之环"
-                }
+            {
+                "zh": "马雷格罗的染血之环",
+                "en": "Maligaro's Restraint"
             },
-            "Replica Bated Breath": {
-                "text": {
-                    "0": "Replica Bated Breath",
-                    "1": "凝息【仿品】"
-                }
+            {
+                "zh": "凝息【仿品】",
+                "en": "Replica Bated Breath"
             }
-        }
+        ]
     },
-    "Topaz Ring": {
-        "text": {
-            "0": "Topaz Ring",
-            "1": "黄玉戒指"
-        },
-        "uniques": {
-            "Astral Projector": {
-                "text": {
-                    "0": "Astral Projector",
-                    "1": "星界投影"
-                }
+    {
+        "zh": "黄玉戒指",
+        "en": "Topaz Ring",
+        "uniques": [
+            {
+                "zh": "星界投影",
+                "en": "Astral Projector"
             },
-            "Circle of Regret": {
-                "text": {
-                    "0": "Circle of Regret",
-                    "1": "悔恨之环"
-                }
+            {
+                "zh": "悔恨之环",
+                "en": "Circle of Regret"
             },
-            "Kikazaru": {
-                "text": {
-                    "0": "Kikazaru",
-                    "1": "基加萨鲁"
-                }
+            {
+                "zh": "基加萨鲁",
+                "en": "Kikazaru"
             },
-            "Precursor's Emblem": {
-                "text": {
-                    "0": "Precursor's Emblem",
-                    "1": "先驱的纹章"
-                }
+            {
+                "zh": "先驱的纹章",
+                "en": "Precursor's Emblem"
             },
-            "Putembo's Meadow": {
-                "text": {
-                    "0": "Putembo's Meadow",
-                    "1": "普藤博的草原"
-                }
+            {
+                "zh": "普藤博的草原",
+                "en": "Putembo's Meadow"
             },
-            "Putembo's Mountain": {
-                "text": {
-                    "0": "Putembo's Mountain",
-                    "1": "普藤博的高山"
-                }
+            {
+                "zh": "普藤博的高山",
+                "en": "Putembo's Mountain"
             },
-            "Putembo's Valley": {
-                "text": {
-                    "0": "Putembo's Valley",
-                    "1": "普藤博的山谷"
-                }
+            {
+                "zh": "普藤博的山谷",
+                "en": "Putembo's Valley"
             },
-            "Storm Secret": {
-                "text": {
-                    "0": "Storm Secret",
-                    "1": "风暴之秘"
-                }
+            {
+                "zh": "风暴之秘",
+                "en": "Storm Secret"
             },
-            "Valako's Sign": {
-                "text": {
-                    "0": "Valako's Sign",
-                    "1": "瓦拉库之印"
-                }
+            {
+                "zh": "瓦拉库之印",
+                "en": "Valako's Sign"
             },
-            "Nimis": {
-                "text": {
-                    "0": "Nimis",
-                    "1": "尼米斯"
-                }
+            {
+                "zh": "尼米斯",
+                "en": "Nimis"
             }
-        }
+        ]
     },
-    "Onyx Amulet": {
-        "text": {
-            "0": "Onyx Amulet",
-            "1": "黑曜护身符"
-        },
-        "uniques": {
-            "Astramentis": {
-                "text": {
-                    "0": "Astramentis",
-                    "1": "均衡之符"
-                }
+    {
+        "zh": "黑曜护身符",
+        "en": "Onyx Amulet",
+        "uniques": [
+            {
+                "zh": "均衡之符",
+                "en": "Astramentis"
             },
-            "Aul's Uprising": {
-                "text": {
-                    "0": "Aul's Uprising",
-                    "1": "奥尔之兴"
-                }
+            {
+                "zh": "奥尔之兴",
+                "en": "Aul's Uprising"
             },
-            "Carnage Heart": {
-                "text": {
-                    "0": "Carnage Heart",
-                    "1": "屠戮之心"
-                }
+            {
+                "zh": "屠戮之心",
+                "en": "Carnage Heart"
             },
-            "Eye of Chayula": {
-                "text": {
-                    "0": "Eye of Chayula",
-                    "1": "寻宝者的心眼"
-                }
+            {
+                "zh": "寻宝者的心眼",
+                "en": "Eye of Chayula"
             },
-            "Hinekora's Sight": {
-                "text": {
-                    "0": "Hinekora's Sight",
-                    "1": "辛格拉的凝视"
-                }
+            {
+                "zh": "辛格拉的凝视",
+                "en": "Hinekora's Sight"
             },
-            "Impresence": {
-                "text": {
-                    "0": "Impresence",
-                    "1": "隐逝"
-                }
+            {
+                "zh": "隐逝",
+                "en": "Impresence"
             },
-            "Leadership's Price": {
-                "text": {
-                    "0": "Leadership's Price",
-                    "1": "领袖的代价"
-                }
+            {
+                "zh": "领袖的代价",
+                "en": "Leadership's Price"
             },
-            "Presence of Chayula": {
-                "text": {
-                    "0": "Presence of Chayula",
-                    "1": "夏乌拉之印"
-                }
+            {
+                "zh": "夏乌拉之印",
+                "en": "Presence of Chayula"
             },
-            "Solstice Vigil": {
-                "text": {
-                    "0": "Solstice Vigil",
-                    "1": "至日不眠"
-                }
+            {
+                "zh": "至日不眠",
+                "en": "Solstice Vigil"
             },
-            "Stranglegasp": {
-                "text": {
-                    "0": "Stranglegasp",
-                    "1": "绞杀之息"
-                }
+            {
+                "zh": "绞杀之息",
+                "en": "Stranglegasp"
             },
-            "Yoke of Suffering": {
-                "text": {
-                    "0": "Yoke of Suffering",
-                    "1": "苦难羁绊"
-                }
+            {
+                "zh": "苦难羁绊",
+                "en": "Yoke of Suffering"
             },
-            "Ashes of the Stars": {
-                "text": {
-                    "0": "Ashes of the Stars",
-                    "1": "群星之灰"
-                }
+            {
+                "zh": "群星之灰",
+                "en": "Ashes of the Stars"
             },
-            "Crystallised Omniscience": {
-                "text": {
-                    "0": "Crystallised Omniscience",
-                    "1": "结晶全知"
-                }
+            {
+                "zh": "结晶全知",
+                "en": "Crystallised Omniscience"
             },
-            "The Eternal Struggle": {
-                "text": {
-                    "0": "The Eternal Struggle",
-                    "1": "永恒之战"
-                }
+            {
+                "zh": "永恒之战",
+                "en": "The Eternal Struggle"
             }
-        }
+        ]
     },
-    "Paua Amulet": {
-        "text": {
-            "0": "Paua Amulet",
-            "1": "海灵护身符"
-        },
-        "uniques": {
-            "Atziri's Foible": {
-                "text": {
-                    "0": "Atziri's Foible",
-                    "1": "阿兹里圣徽"
-                }
+    {
+        "zh": "海灵护身符",
+        "en": "Paua Amulet",
+        "uniques": [
+            {
+                "zh": "阿兹里圣徽",
+                "en": "Atziri's Foible"
             },
-            "Replica Atziri's Foible": {
-                "text": {
-                    "0": "Replica Atziri's Foible",
-                    "1": "阿兹里圣徽【仿品】"
-                }
+            {
+                "zh": "阿兹里圣徽【仿品】",
+                "en": "Replica Atziri's Foible"
             },
-            "Sacrificial Heart": {
-                "text": {
-                    "0": "Sacrificial Heart",
-                    "1": "祭祀之心"
-                }
+            {
+                "zh": "祭祀之心",
+                "en": "Sacrificial Heart"
             },
-            "Sidhebreath": {
-                "text": {
-                    "0": "Sidhebreath",
-                    "1": "魔灵之符"
-                }
+            {
+                "zh": "魔灵之符",
+                "en": "Sidhebreath"
             },
-            "Zerphi's Heart": {
-                "text": {
-                    "0": "Zerphi's Heart",
-                    "1": "泽佛伊之心"
-                }
+            {
+                "zh": "泽佛伊之心",
+                "en": "Zerphi's Heart"
             }
-        }
+        ]
     },
-    "Crystal Belt": {
-        "text": {
-            "0": "Crystal Belt",
-            "1": "水晶腰带"
-        },
-        "uniques": {
-            "Auxium": {
-                "text": {
-                    "0": "Auxium",
-                    "1": "奥术之符"
-                }
+    {
+        "zh": "水晶腰带",
+        "en": "Crystal Belt",
+        "uniques": [
+            {
+                "zh": "奥术之符",
+                "en": "Auxium"
             },
-            "The Burden of Truth": {
-                "text": {
-                    "0": "The Burden of Truth",
-                    "1": "真相之担"
-                }
+            {
+                "zh": "真相之担",
+                "en": "The Burden of Truth"
             }
-        }
+        ]
     },
-    "Turquoise Amulet": {
-        "text": {
-            "0": "Turquoise Amulet",
-            "1": "青玉护身符"
-        },
-        "uniques": {
-            "Badge of the Brotherhood": {
-                "text": {
-                    "0": "Badge of the Brotherhood",
-                    "1": "兄弟会徽章"
-                }
+    {
+        "zh": "青玉护身符",
+        "en": "Turquoise Amulet",
+        "uniques": [
+            {
+                "zh": "兄弟会徽章",
+                "en": "Badge of the Brotherhood"
             },
-            "Fury Valve": {
-                "text": {
-                    "0": "Fury Valve",
-                    "1": "愤怒之阀"
-                }
+            {
+                "zh": "愤怒之阀",
+                "en": "Fury Valve"
             },
-            "Maligaro's Cruelty": {
-                "text": {
-                    "0": "Maligaro's Cruelty",
-                    "1": "马雷格罗的残酷"
-                }
+            {
+                "zh": "马雷格罗的残酷",
+                "en": "Maligaro's Cruelty"
             },
-            "Ungil's Harmony": {
-                "text": {
-                    "0": "Ungil's Harmony",
-                    "1": "恩吉尔的和谐"
-                }
+            {
+                "zh": "恩吉尔的和谐",
+                "en": "Ungil's Harmony"
             },
-            "Victario's Acuity": {
-                "text": {
-                    "0": "Victario's Acuity",
-                    "1": "维多里奥的捷思"
-                }
+            {
+                "zh": "维多里奥的捷思",
+                "en": "Victario's Acuity"
             },
-            "Warped Timepiece": {
-                "text": {
-                    "0": "Warped Timepiece",
-                    "1": "时空扭曲"
-                }
+            {
+                "zh": "时空扭曲",
+                "en": "Warped Timepiece"
             }
-        }
+        ]
     },
-    "Leather Belt": {
-        "text": {
-            "0": "Leather Belt",
-            "1": "皮革腰带"
-        },
-        "uniques": {
-            "Bear's Girdle": {
-                "text": {
-                    "0": "Bear's Girdle",
-                    "1": "熊之束腰"
-                }
+    {
+        "zh": "皮革腰带",
+        "en": "Leather Belt",
+        "uniques": [
+            {
+                "zh": "熊之束腰",
+                "en": "Bear's Girdle"
             },
-            "Cyclopean Coil": {
-                "text": {
-                    "0": "Cyclopean Coil",
-                    "1": "巨岩指套"
-                }
+            {
+                "zh": "巨岩指套",
+                "en": "Cyclopean Coil"
             },
-            "Gluttony": {
-                "text": {
-                    "0": "Gluttony",
-                    "1": "暴食"
-                }
+            {
+                "zh": "暴食",
+                "en": "Gluttony"
             },
-            "Headhunter": {
-                "text": {
-                    "0": "Headhunter",
-                    "1": "猎首"
-                }
+            {
+                "zh": "猎首",
+                "en": "Headhunter"
             },
-            "Hyperboreus": {
-                "text": {
-                    "0": "Hyperboreus",
-                    "1": "极北"
-                }
+            {
+                "zh": "极北",
+                "en": "Hyperboreus"
             },
-            "Immortal Flesh": {
-                "text": {
-                    "0": "Immortal Flesh",
-                    "1": "永生"
-                }
+            {
+                "zh": "永生",
+                "en": "Immortal Flesh"
             },
-            "Leash of Oblation": {
-                "text": {
-                    "0": "Leash of Oblation",
-                    "1": "圣体之绳"
-                }
+            {
+                "zh": "圣体之绳",
+                "en": "Leash of Oblation"
             },
-            "Pyroshock Clasp": {
-                "text": {
-                    "0": "Pyroshock Clasp",
-                    "1": "火爆之拥"
-                }
+            {
+                "zh": "火爆之拥",
+                "en": "Pyroshock Clasp"
             },
-            "Replica Headhunter": {
-                "text": {
-                    "0": "Replica Headhunter",
-                    "1": "猎首【仿品】"
-                }
+            {
+                "zh": "猎首【仿品】",
+                "en": "Replica Headhunter"
             },
-            "Umbilicus Immortalis": {
-                "text": {
-                    "0": "Umbilicus Immortalis",
-                    "1": "不朽系命"
-                }
+            {
+                "zh": "不朽系命",
+                "en": "Umbilicus Immortalis"
             },
-            "Wurm's Molt": {
-                "text": {
-                    "0": "Wurm's Molt",
-                    "1": "龙蜕之带"
-                }
+            {
+                "zh": "龙蜕之带",
+                "en": "Wurm's Molt"
             }
-        }
+        ]
     },
-    "Heavy Belt": {
-        "text": {
-            "0": "Heavy Belt",
-            "1": "重革腰带"
-        },
-        "uniques": {
-            "Belt of the Deceiver": {
-                "text": {
-                    "0": "Belt of the Deceiver",
-                    "1": "狡徒束腰"
-                }
+    {
+        "zh": "重革腰带",
+        "en": "Heavy Belt",
+        "uniques": [
+            {
+                "zh": "狡徒束腰",
+                "en": "Belt of the Deceiver"
             },
-            "Bisco's Leash": {
-                "text": {
-                    "0": "Bisco's Leash",
-                    "1": "比斯克的缰绳"
-                }
+            {
+                "zh": "比斯克的缰绳",
+                "en": "Bisco's Leash"
             },
-            "Doryani's Invitation": {
-                "text": {
-                    "0": "Doryani's Invitation",
-                    "1": "多里亚尼之约"
-                }
+            {
+                "zh": "多里亚尼之约",
+                "en": "Doryani's Invitation"
             },
-            "Dyadian Dawn": {
-                "text": {
-                    "0": "Dyadian Dawn",
-                    "1": "戴亚迪安的晨曦"
-                }
+            {
+                "zh": "戴亚迪安的晨曦",
+                "en": "Dyadian Dawn"
             },
-            "Mageblood": {
-                "text": {
-                    "0": "Mageblood",
-                    "1": "法师之血"
-                }
+            {
+                "zh": "法师之血",
+                "en": "Mageblood"
             },
-            "Meginord's Girdle": {
-                "text": {
-                    "0": "Meginord's Girdle",
-                    "1": "梅吉诺德的力量泉源"
-                }
+            {
+                "zh": "梅吉诺德的力量泉源",
+                "en": "Meginord's Girdle"
             },
-            "Mother's Embrace": {
-                "text": {
-                    "0": "Mother's Embrace",
-                    "1": "母亲的拥抱"
-                }
+            {
+                "zh": "母亲的拥抱",
+                "en": "Mother's Embrace"
             },
-            "Replica Siegebreaker": {
-                "text": {
-                    "0": "Replica Siegebreaker",
-                    "1": "突围者【仿品】"
-                }
+            {
+                "zh": "突围者【仿品】",
+                "en": "Replica Siegebreaker"
             },
-            "Siegebreaker": {
-                "text": {
-                    "0": "Siegebreaker",
-                    "1": "突围者"
-                }
+            {
+                "zh": "突围者",
+                "en": "Siegebreaker"
             },
-            "String of Servitude": {
-                "text": {
-                    "0": "String of Servitude",
-                    "1": "奴役之索"
-                }
+            {
+                "zh": "奴役之索",
+                "en": "String of Servitude"
             },
-            "Survivor's Guilt": {
-                "text": {
-                    "0": "Survivor's Guilt",
-                    "1": "幸存者的愧疚"
-                }
+            {
+                "zh": "幸存者的愧疚",
+                "en": "Survivor's Guilt"
             }
-        }
+        ]
     },
-    "Two-Stone Ring": {
-        "text": {
-            "0": "Two-Stone Ring",
-            "1": "双玉戒指"
-        },
-        "uniques": {
-            "Berek's Grip": {
-                "text": {
-                    "0": "Berek's Grip",
-                    "1": "贝雷克的冰与雷之曲"
-                }
+    {
+        "zh": "双玉戒指",
+        "en": "Two-Stone Ring",
+        "uniques": [
+            {
+                "zh": "贝雷克的冰与雷之曲",
+                "en": "Berek's Grip"
             },
-            "Berek's Pass": {
-                "text": {
-                    "0": "Berek's Pass",
-                    "1": "贝雷克的冰与火之歌"
-                }
+            {
+                "zh": "贝雷克的冰与火之歌",
+                "en": "Berek's Pass"
             },
-            "Berek's Respite": {
-                "text": {
-                    "0": "Berek's Respite",
-                    "1": "贝雷克的火与雷之乐"
-                }
+            {
+                "zh": "贝雷克的火与雷之乐",
+                "en": "Berek's Respite"
             },
-            "Call of the Brotherhood": {
-                "text": {
-                    "0": "Call of the Brotherhood",
-                    "1": "意志呼唤"
-                }
+            {
+                "zh": "意志呼唤",
+                "en": "Call of the Brotherhood"
             },
-            "Precursor's Emblem": {
-                "text": {
-                    "0": "Precursor's Emblem",
-                    "1": "先驱的纹章"
-                }
+            {
+                "zh": "先驱的纹章",
+                "en": "Precursor's Emblem"
             },
-            "Rigwald's Crest": {
-                "text": {
-                    "0": "Rigwald's Crest",
-                    "1": "瑞佛之冠"
-                }
+            {
+                "zh": "瑞佛之冠",
+                "en": "Rigwald's Crest"
             }
-        }
+        ]
     },
-    "Gold Amulet": {
-        "text": {
-            "0": "Gold Amulet",
-            "1": "帝金护身符"
-        },
-        "uniques": {
-            "Bisco's Collar": {
-                "text": {
-                    "0": "Bisco's Collar",
-                    "1": "比斯克的项圈"
-                }
+    {
+        "zh": "帝金护身符",
+        "en": "Gold Amulet",
+        "uniques": [
+            {
+                "zh": "比斯克的项圈",
+                "en": "Bisco's Collar"
             },
-            "Demigod's Presence": {
-                "text": {
-                    "0": "Demigod's Presence",
-                    "1": "升华之印"
-                }
+            {
+                "zh": "升华之印",
+                "en": "Demigod's Presence"
             },
-            "Perquil's Toe": {
-                "text": {
-                    "0": "Perquil's Toe",
-                    "1": "珀奎尔之趾"
-                }
+            {
+                "zh": "珀奎尔之趾",
+                "en": "Perquil's Toe"
             },
-            "Replica Winterheart": {
-                "text": {
-                    "0": "Replica Winterheart",
-                    "1": "冬之心【仿品】"
-                }
+            {
+                "zh": "冬之心【仿品】",
+                "en": "Replica Winterheart"
             },
-            "The Ascetic": {
-                "text": {
-                    "0": "The Ascetic",
-                    "1": "苦行"
-                }
+            {
+                "zh": "苦行",
+                "en": "The Ascetic"
             },
-            "The Effigon": {
-                "text": {
-                    "0": "The Effigon",
-                    "1": "耀阳徽记"
-                }
+            {
+                "zh": "耀阳徽记",
+                "en": "The Effigon"
             },
-            "The Ignomon": {
-                "text": {
-                    "0": "The Ignomon",
-                    "1": "烈阳徽记"
-                }
+            {
+                "zh": "烈阳徽记",
+                "en": "The Ignomon"
             },
-            "Winterheart": {
-                "text": {
-                    "0": "Winterheart",
-                    "1": "冬之心"
-                }
+            {
+                "zh": "冬之心",
+                "en": "Winterheart"
             }
-        }
+        ]
     },
-    "Amethyst Ring": {
-        "text": {
-            "0": "Amethyst Ring",
-            "1": "紫晶戒指"
-        },
-        "uniques": {
-            "Blackflame": {
-                "text": {
-                    "0": "Blackflame",
-                    "1": "黑焰"
-                }
+    {
+        "zh": "紫晶戒指",
+        "en": "Amethyst Ring",
+        "uniques": [
+            {
+                "zh": "黑焰",
+                "en": "Blackflame"
             },
-            "Circle of Nostalgia": {
-                "text": {
-                    "0": "Circle of Nostalgia",
-                    "1": "乡愁之环"
-                }
+            {
+                "zh": "乡愁之环",
+                "en": "Circle of Nostalgia"
             },
-            "Death Rush": {
-                "text": {
-                    "0": "Death Rush",
-                    "1": "亡者呼唤"
-                }
+            {
+                "zh": "亡者呼唤",
+                "en": "Death Rush"
             },
-            "Ming's Heart": {
-                "text": {
-                    "0": "Ming's Heart",
-                    "1": "明恩的慧心"
-                }
+            {
+                "zh": "明恩的慧心",
+                "en": "Ming's Heart"
             },
-            "Original Sin": {
-                "text": {
-                    "0": "Original Sin",
-                    "1": "原初之罪"
-                }
+            {
+                "zh": "原初之罪",
+                "en": "Original Sin"
             }
-        }
+        ]
     },
-    "Iron Ring": {
-        "text": {
-            "0": "Iron Ring",
-            "1": "锻铁戒指"
-        },
-        "uniques": {
-            "Blackheart": {
-                "text": {
-                    "0": "Blackheart",
-                    "1": "幽暗之语"
-                }
+    {
+        "zh": "锻铁戒指",
+        "en": "Iron Ring",
+        "uniques": [
+            {
+                "zh": "幽暗之语",
+                "en": "Blackheart"
             },
-            "Circle of Guilt": {
-                "text": {
-                    "0": "Circle of Guilt",
-                    "1": "罪恶之环"
-                }
+            {
+                "zh": "罪恶之环",
+                "en": "Circle of Guilt"
             },
-            "Icefang Orbit": {
-                "text": {
-                    "0": "Icefang Orbit",
-                    "1": "冰牙指环"
-                }
+            {
+                "zh": "冰牙指环",
+                "en": "Icefang Orbit"
             },
-            "Le Heup of All": {
-                "text": {
-                    "0": "Le Heup of All",
-                    "1": "英灵宝环"
-                }
+            {
+                "zh": "英灵宝环",
+                "en": "Le Heup of All"
             },
-            "The Warden's Brand": {
-                "text": {
-                    "0": "The Warden's Brand",
-                    "1": "守卫之铭"
-                }
+            {
+                "zh": "守卫之铭",
+                "en": "The Warden's Brand"
             },
-            "Venopuncture": {
-                "text": {
-                    "0": "Venopuncture",
-                    "1": "静脉穿刺"
-                }
+            {
+                "zh": "静脉穿刺",
+                "en": "Venopuncture"
             },
-            "Voidheart": {
-                "text": {
-                    "0": "Voidheart",
-                    "1": "虚空心灵"
-                }
+            {
+                "zh": "虚空心灵",
+                "en": "Voidheart"
             }
-        }
+        ]
     },
-    "Clutching Talisman": {
-        "text": {
-            "0": "Clutching Talisman",
-            "1": "咒箍魔符"
-        },
-        "uniques": {
-            "Blightwell": {
-                "text": {
-                    "0": "Blightwell",
-                    "1": "枯井"
-                }
+    {
+        "zh": "咒箍魔符",
+        "en": "Clutching Talisman",
+        "uniques": [
+            {
+                "zh": "枯井",
+                "en": "Blightwell"
             }
-        }
+        ]
     },
-    "Coral Ring": {
-        "text": {
-            "0": "Coral Ring",
-            "1": "珊瑚戒指"
-        },
-        "uniques": {
-            "Bloodboil": {
-                "text": {
-                    "0": "Bloodboil",
-                    "1": "沸血"
-                }
+    {
+        "zh": "珊瑚戒指",
+        "en": "Coral Ring",
+        "uniques": [
+            {
+                "zh": "沸血",
+                "en": "Bloodboil"
             },
-            "Kaom's Sign": {
-                "text": {
-                    "0": "Kaom's Sign",
-                    "1": "冈姆的远见"
-                }
+            {
+                "zh": "冈姆的远见",
+                "en": "Kaom's Sign"
             },
-            "Kaom's Way": {
-                "text": {
-                    "0": "Kaom's Way",
-                    "1": "冈姆之路"
-                }
+            {
+                "zh": "冈姆之路",
+                "en": "Kaom's Way"
             },
-            "Sibyl's Lament": {
-                "text": {
-                    "0": "Sibyl's Lament",
-                    "1": "希比尔之叹"
-                }
+            {
+                "zh": "希比尔之叹",
+                "en": "Sibyl's Lament"
             },
-            "Winterweave": {
-                "text": {
-                    "0": "Winterweave",
-                    "1": "冬日之织"
-                }
+            {
+                "zh": "冬日之织",
+                "en": "Winterweave"
             }
-        }
+        ]
     },
-    "Marble Amulet": {
-        "text": {
-            "0": "Marble Amulet",
-            "1": "大理石护身符"
-        },
-        "uniques": {
-            "Bloodgrip": {
-                "text": {
-                    "0": "Bloodgrip",
-                    "1": "鲜血支配"
-                }
+    {
+        "zh": "大理石护身符",
+        "en": "Marble Amulet",
+        "uniques": [
+            {
+                "zh": "鲜血支配",
+                "en": "Bloodgrip"
             }
-        }
+        ]
     },
-    "Amber Amulet": {
-        "text": {
-            "0": "Amber Amulet",
-            "1": "琥珀护身符"
-        },
-        "uniques": {
-            "Blood of Corruption": {
-                "text": {
-                    "0": "Blood of Corruption",
-                    "1": "堕落之血"
-                }
+    {
+        "zh": "琥珀护身符",
+        "en": "Amber Amulet",
+        "uniques": [
+            {
+                "zh": "堕落之血",
+                "en": "Blood of Corruption"
             },
-            "The Anvil": {
-                "text": {
-                    "0": "The Anvil",
-                    "1": "信念之砧"
-                }
+            {
+                "zh": "信念之砧",
+                "en": "The Anvil"
             },
-            "Xoph's Blood": {
-                "text": {
-                    "0": "Xoph's Blood",
-                    "1": "索伏之血"
-                }
+            {
+                "zh": "索伏之血",
+                "en": "Xoph's Blood"
             },
-            "Xoph's Heart": {
-                "text": {
-                    "0": "Xoph's Heart",
-                    "1": "索伏之心"
-                }
+            {
+                "zh": "索伏之心",
+                "en": "Xoph's Heart"
             }
-        }
+        ]
     },
-    "Lapis Amulet": {
-        "text": {
-            "0": "Lapis Amulet",
-            "1": "海玉护身符"
-        },
-        "uniques": {
-            "Choir of the Storm": {
-                "text": {
-                    "0": "Choir of the Storm",
-                    "1": "暴风之语"
-                }
+    {
+        "zh": "海玉护身符",
+        "en": "Lapis Amulet",
+        "uniques": [
+            {
+                "zh": "暴风之语",
+                "en": "Choir of the Storm"
             },
-            "Marylene's Fallacy": {
-                "text": {
-                    "0": "Marylene's Fallacy",
-                    "1": "玛莉琳的护体之符"
-                }
+            {
+                "zh": "玛莉琳的护体之符",
+                "en": "Marylene's Fallacy"
             },
-            "Stone of Lazhwar": {
-                "text": {
-                    "0": "Stone of Lazhwar",
-                    "1": "拉兹瓦的灵石"
-                }
+            {
+                "zh": "拉兹瓦的灵石",
+                "en": "Stone of Lazhwar"
             },
-            "Tear of Purity": {
-                "text": {
-                    "0": "Tear of Purity",
-                    "1": "纯净之泪"
-                }
+            {
+                "zh": "纯净之泪",
+                "en": "Tear of Purity"
             },
-            "The Ephemeral Bond": {
-                "text": {
-                    "0": "The Ephemeral Bond",
-                    "1": "短暂羁绊"
-                }
+            {
+                "zh": "短暂羁绊",
+                "en": "The Ephemeral Bond"
             },
-            "Voice of the Storm": {
-                "text": {
-                    "0": "Voice of the Storm",
-                    "1": "暴风之言"
-                }
+            {
+                "zh": "暴风之言",
+                "en": "Voice of the Storm"
             },
-            "Doedre's Tongue": {
-                "text": {
-                    "0": "Doedre's Tongue",
-                    "1": "德瑞之舌"
-                }
+            {
+                "zh": "德瑞之舌",
+                "en": "Doedre's Tongue"
             }
-        }
+        ]
     },
-    "Sapphire Ring": {
-        "text": {
-            "0": "Sapphire Ring",
-            "1": "蓝玉戒指"
-        },
-        "uniques": {
-            "Circle of Fear": {
-                "text": {
-                    "0": "Circle of Fear",
-                    "1": "恐惧之环"
-                }
+    {
+        "zh": "蓝玉戒指",
+        "en": "Sapphire Ring",
+        "uniques": [
+            {
+                "zh": "恐惧之环",
+                "en": "Circle of Fear"
             },
-            "Dream Fragments": {
-                "text": {
-                    "0": "Dream Fragments",
-                    "1": "梦语之痕"
-                }
+            {
+                "zh": "梦语之痕",
+                "en": "Dream Fragments"
             },
-            "Precursor's Emblem": {
-                "text": {
-                    "0": "Precursor's Emblem",
-                    "1": "先驱的纹章"
-                }
+            {
+                "zh": "先驱的纹章",
+                "en": "Precursor's Emblem"
             },
-            "Pyre": {
-                "text": {
-                    "0": "Pyre",
-                    "1": "燃焰"
-                }
+            {
+                "zh": "燃焰",
+                "en": "Pyre"
             },
-            "Replica Tasalio's Sign": {
-                "text": {
-                    "0": "Replica Tasalio's Sign",
-                    "1": "塔萨里奥之印【仿品】"
-                }
+            {
+                "zh": "塔萨里奥之印【仿品】",
+                "en": "Replica Tasalio's Sign"
             },
-            "Snakepit": {
-                "text": {
-                    "0": "Snakepit",
-                    "1": "蛇穴"
-                }
+            {
+                "zh": "蛇穴",
+                "en": "Snakepit"
             },
-            "Tasalio's Sign": {
-                "text": {
-                    "0": "Tasalio's Sign",
-                    "1": "塔萨里奥之印"
-                }
+            {
+                "zh": "塔萨里奥之印",
+                "en": "Tasalio's Sign"
             },
-            "Uzaza's Meadow": {
-                "text": {
-                    "0": "Uzaza's Meadow",
-                    "1": "乌扎萨的草原"
-                }
+            {
+                "zh": "乌扎萨的草原",
+                "en": "Uzaza's Meadow"
             },
-            "Uzaza's Mountain": {
-                "text": {
-                    "0": "Uzaza's Mountain",
-                    "1": "乌扎萨的高山"
-                }
+            {
+                "zh": "乌扎萨的高山",
+                "en": "Uzaza's Mountain"
             },
-            "Uzaza's Valley": {
-                "text": {
-                    "0": "Uzaza's Valley",
-                    "1": "乌扎萨的山谷"
-                }
+            {
+                "zh": "乌扎萨的山谷",
+                "en": "Uzaza's Valley"
             }
-        }
+        ]
     },
-    "Citrine Amulet": {
-        "text": {
-            "0": "Citrine Amulet",
-            "1": "黄晶护身符"
-        },
-        "uniques": {
-            "Daresso's Salute": {
-                "text": {
-                    "0": "Daresso's Salute",
-                    "1": "德瑞索的战礼"
-                }
+    {
+        "zh": "黄晶护身符",
+        "en": "Citrine Amulet",
+        "uniques": [
+            {
+                "zh": "德瑞索的战礼",
+                "en": "Daresso's Salute"
             },
-            "Eye of Innocence": {
-                "text": {
-                    "0": "Eye of Innocence",
-                    "1": "无罪之眼"
-                }
+            {
+                "zh": "无罪之眼",
+                "en": "Eye of Innocence"
             },
-            "Retaliation Charm": {
-                "text": {
-                    "0": "Retaliation Charm",
-                    "1": "复仇的魅力"
-                }
+            {
+                "zh": "复仇的魅力",
+                "en": "Retaliation Charm"
             },
-            "The Felbog Fang": {
-                "text": {
-                    "0": "The Felbog Fang",
-                    "1": "费伯之牙"
-                }
+            {
+                "zh": "费伯之牙",
+                "en": "The Felbog Fang"
             },
-            "The Jinxed Juju": {
-                "text": {
-                    "0": "The Jinxed Juju",
-                    "1": "厄运护符"
-                }
+            {
+                "zh": "厄运护符",
+                "en": "The Jinxed Juju"
             },
-            "Call of the Void": {
-                "text": {
-                    "0": "Call of the Void",
-                    "1": "虚空召唤"
-                }
+            {
+                "zh": "虚空召唤",
+                "en": "Call of the Void"
             }
-        }
+        ]
     },
-    "Stygian Vise": {
-        "text": {
-            "0": "Stygian Vise",
-            "1": "深渊腰带"
-        },
-        "uniques": {
-            "Darkness Enthroned": {
-                "text": {
-                    "0": "Darkness Enthroned",
-                    "1": "夜临"
-                }
+    {
+        "zh": "深渊腰带",
+        "en": "Stygian Vise",
+        "uniques": [
+            {
+                "zh": "夜临",
+                "en": "Darkness Enthroned"
             }
-        }
+        ]
     },
-    "Golden Obi": {
-        "text": {
-            "0": "Golden Obi",
-            "1": "金羽腰带"
-        },
-        "uniques": {
-            "Demigod's Bounty": {
-                "text": {
-                    "0": "Demigod's Bounty",
-                    "1": "升华珍宝"
-                }
+    {
+        "zh": "金羽腰带",
+        "en": "Golden Obi",
+        "uniques": [
+            {
+                "zh": "升华珍宝",
+                "en": "Demigod's Bounty"
             }
-        }
+        ]
     },
-    "Golden Hoop": {
-        "text": {
-            "0": "Golden Hoop",
-            "1": "金环"
-        },
-        "uniques": {
-            "Demigod's Eye": {
-                "text": {
-                    "0": "Demigod's Eye",
-                    "1": "升华之眼"
-                }
+    {
+        "zh": "金环",
+        "en": "Golden Hoop",
+        "uniques": [
+            {
+                "zh": "升华之眼",
+                "en": "Demigod's Eye"
             }
-        }
+        ]
     },
-    "Paua Ring": {
-        "text": {
-            "0": "Paua Ring",
-            "1": "海灵戒指"
-        },
-        "uniques": {
-            "Doedre's Damning": {
-                "text": {
-                    "0": "Doedre's Damning",
-                    "1": "德瑞的魔具"
-                }
+    {
+        "zh": "海灵戒指",
+        "en": "Paua Ring",
+        "uniques": [
+            {
+                "zh": "德瑞的魔具",
+                "en": "Doedre's Damning"
             },
-            "Fated End": {
-                "text": {
-                    "0": "Fated End",
-                    "1": "命中注定"
-                }
+            {
+                "zh": "命中注定",
+                "en": "Fated End"
             },
-            "Perandus Signet": {
-                "text": {
-                    "0": "Perandus Signet",
-                    "1": "普兰德斯之记"
-                }
+            {
+                "zh": "普兰德斯之记",
+                "en": "Perandus Signet"
             },
-            "Praxis": {
-                "text": {
-                    "0": "Praxis",
-                    "1": "普拉克斯"
-                }
+            {
+                "zh": "普拉克斯",
+                "en": "Praxis"
             },
-            "Replica Doedre's Damning": {
-                "text": {
-                    "0": "Replica Doedre's Damning",
-                    "1": "德瑞的魔具【仿品】"
-                }
+            {
+                "zh": "德瑞的魔具【仿品】",
+                "en": "Replica Doedre's Damning"
             }
-        }
+        ]
     },
-    "Agate Amulet": {
-        "text": {
-            "0": "Agate Amulet",
-            "1": "玛瑙护身符"
-        },
-        "uniques": {
-            "Extractor Mentis": {
-                "text": {
-                    "0": "Extractor Mentis",
-                    "1": "心灵抽取"
-                }
+    {
+        "zh": "玛瑙护身符",
+        "en": "Agate Amulet",
+        "uniques": [
+            {
+                "zh": "心灵抽取",
+                "en": "Extractor Mentis"
             },
-            "Shaper's Seed": {
-                "text": {
-                    "0": "Shaper's Seed",
-                    "1": "塑界者之籽"
-                }
+            {
+                "zh": "塑界者之籽",
+                "en": "Shaper's Seed"
             },
-            "The Aylardex": {
-                "text": {
-                    "0": "The Aylardex",
-                    "1": "埃拉黛丝"
-                }
+            {
+                "zh": "埃拉黛丝",
+                "en": "The Aylardex"
             },
-            "Voll's Devotion": {
-                "text": {
-                    "0": "Voll's Devotion",
-                    "1": "福尔的忠诚之符"
-                }
+            {
+                "zh": "福尔的忠诚之符",
+                "en": "Voll's Devotion"
             },
-            "Eternal Damnation": {
-                "text": {
-                    "0": "Eternal Damnation",
-                    "1": "永恒诅咒"
-                }
+            {
+                "zh": "永恒诅咒",
+                "en": "Eternal Damnation"
             }
-        }
+        ]
     },
-    "Greatwolf Talisman": {
-        "text": {
-            "0": "Greatwolf Talisman",
-            "1": "狼王魔符"
-        },
-        "uniques": {
-            "Eyes of the Greatwolf": {
-                "text": {
-                    "0": "Eyes of the Greatwolf",
-                    "1": "巨狼之眼"
-                }
+    {
+        "zh": "狼王魔符",
+        "en": "Greatwolf Talisman",
+        "uniques": [
+            {
+                "zh": "巨狼之眼",
+                "en": "Eyes of the Greatwolf"
             }
-        }
+        ]
     },
-    "Rustic Sash": {
-        "text": {
-            "0": "Rustic Sash",
-            "1": "素布腰带"
-        },
-        "uniques": {
-            "Faminebind": {
-                "text": {
-                    "0": "Faminebind",
-                    "1": "饥荒之结"
-                }
+    {
+        "zh": "素布腰带",
+        "en": "Rustic Sash",
+        "uniques": [
+            {
+                "zh": "饥荒之结",
+                "en": "Faminebind"
             },
-            "Feastbind": {
-                "text": {
-                    "0": "Feastbind",
-                    "1": "盛宴之结"
-                }
+            {
+                "zh": "盛宴之结",
+                "en": "Feastbind"
             },
-            "Prismweave": {
-                "text": {
-                    "0": "Prismweave",
-                    "1": "幻彩菱织"
-                }
+            {
+                "zh": "幻彩菱织",
+                "en": "Prismweave"
             },
-            "Replica Prismweave": {
-                "text": {
-                    "0": "Replica Prismweave",
-                    "1": "幻彩菱织【仿品】"
-                }
+            {
+                "zh": "幻彩菱织【仿品】",
+                "en": "Replica Prismweave"
             },
-            "The Retch": {
-                "text": {
-                    "0": "The Retch",
-                    "1": "呕吐"
-                }
+            {
+                "zh": "呕吐",
+                "en": "The Retch"
             }
-        }
+        ]
     },
-    "Diamond Ring": {
-        "text": {
-            "0": "Diamond Ring",
-            "1": "宝钻戒指"
-        },
-        "uniques": {
-            "Gifts from Above": {
-                "text": {
-                    "0": "Gifts from Above",
-                    "1": "神赐"
-                }
+    {
+        "zh": "宝钻戒指",
+        "en": "Diamond Ring",
+        "uniques": [
+            {
+                "zh": "神赐",
+                "en": "Gifts from Above"
             },
-            "Romira's Banquet": {
-                "text": {
-                    "0": "Romira's Banquet",
-                    "1": "罗米拉的潜力之环"
-                }
+            {
+                "zh": "罗米拉的潜力之环",
+                "en": "Romira's Banquet"
             }
-        }
+        ]
     },
-    "Blue Pearl Amulet": {
-        "text": {
-            "0": "Blue Pearl Amulet",
-            "1": "碧珠护身符"
-        },
-        "uniques": {
-            "Gloomfang": {
-                "text": {
-                    "0": "Gloomfang",
-                    "1": "昏暗之牙"
-                }
+    {
+        "zh": "碧珠护身符",
+        "en": "Blue Pearl Amulet",
+        "uniques": [
+            {
+                "zh": "昏暗之牙",
+                "en": "Gloomfang"
             }
-        }
+        ]
     },
-    "Moonstone Ring": {
-        "text": {
-            "0": "Moonstone Ring",
-            "1": "月光石戒指"
-        },
-        "uniques": {
-            "Heartbound Loop": {
-                "text": {
-                    "0": "Heartbound Loop",
-                    "1": "结魂之环"
-                }
+    {
+        "zh": "月光石戒指",
+        "en": "Moonstone Ring",
+        "uniques": [
+            {
+                "zh": "结魂之环",
+                "en": "Heartbound Loop"
             },
-            "Shavronne's Revelation": {
-                "text": {
-                    "0": "Shavronne's Revelation",
-                    "1": "薛朗的启示之环"
-                }
+            {
+                "zh": "薛朗的启示之环",
+                "en": "Shavronne's Revelation"
             },
-            "Timeclasp": {
-                "text": {
-                    "0": "Timeclasp",
-                    "1": "时光之握"
-                }
+            {
+                "zh": "时光之握",
+                "en": "Timeclasp"
             },
-            "Timetwist": {
-                "text": {
-                    "0": "Timetwist",
-                    "1": "时空扭曲"
-                }
+            {
+                "zh": "时空扭曲",
+                "en": "Timetwist"
             },
-            "Valyrium": {
-                "text": {
-                    "0": "Valyrium",
-                    "1": "女武神"
-                }
+            {
+                "zh": "女武神",
+                "en": "Valyrium"
             },
-            "Anathema": {
-                "text": {
-                    "0": "Anathema",
-                    "1": "咒逐"
-                }
+            {
+                "zh": "咒逐",
+                "en": "Anathema"
             }
-        }
+        ]
     },
-    "Jade Amulet": {
-        "text": {
-            "0": "Jade Amulet",
-            "1": "翠玉护身符"
-        },
-        "uniques": {
-            "Hyrri's Truth": {
-                "text": {
-                    "0": "Hyrri's Truth",
-                    "1": "西里的真相"
-                }
+    {
+        "zh": "翠玉护身符",
+        "en": "Jade Amulet",
+        "uniques": [
+            {
+                "zh": "西里的真相",
+                "en": "Hyrri's Truth"
             },
-            "Karui Charge": {
-                "text": {
-                    "0": "Karui Charge",
-                    "1": "卡鲁充能"
-                }
+            {
+                "zh": "卡鲁充能",
+                "en": "Karui Charge"
             },
-            "Karui Ward": {
-                "text": {
-                    "0": "Karui Ward",
-                    "1": "卡鲁的战徽"
-                }
+            {
+                "zh": "卡鲁的战徽",
+                "en": "Karui Ward"
             },
-            "Rashkaldor's Patience": {
-                "text": {
-                    "0": "Rashkaldor's Patience",
-                    "1": "拉什卡德的耐心"
-                }
+            {
+                "zh": "拉什卡德的耐心",
+                "en": "Rashkaldor's Patience"
             },
-            "Replica Hyrri's Truth": {
-                "text": {
-                    "0": "Replica Hyrri's Truth",
-                    "1": "西里的真相【仿品】"
-                }
+            {
+                "zh": "西里的真相【仿品】",
+                "en": "Replica Hyrri's Truth"
             },
-            "Replica Karui Ward": {
-                "text": {
-                    "0": "Replica Karui Ward",
-                    "1": "卡鲁的战徽【仿品】"
-                }
+            {
+                "zh": "卡鲁的战徽【仿品】",
+                "en": "Replica Karui Ward"
             },
-            "The Halcyon": {
-                "text": {
-                    "0": "The Halcyon",
-                    "1": "太平"
-                }
+            {
+                "zh": "太平",
+                "en": "The Halcyon"
             },
-            "The Pandemonius": {
-                "text": {
-                    "0": "The Pandemonius",
-                    "1": "群魔殿"
-                }
+            {
+                "zh": "群魔殿",
+                "en": "The Pandemonius"
             },
-            "Willowgift": {
-                "text": {
-                    "0": "Willowgift",
-                    "1": "柳树之赐"
-                }
+            {
+                "zh": "柳树之赐",
+                "en": "Willowgift"
             }
-        }
+        ]
     },
-    "Prismatic Ring": {
-        "text": {
-            "0": "Prismatic Ring",
-            "1": "三相戒指"
-        },
-        "uniques": {
-            "Lori's Lantern": {
-                "text": {
-                    "0": "Lori's Lantern",
-                    "1": "罗里的幸运之灯"
-                }
+    {
+        "zh": "三相戒指",
+        "en": "Prismatic Ring",
+        "uniques": [
+            {
+                "zh": "罗里的幸运之灯",
+                "en": "Lori's Lantern"
             },
-            "Precursor's Emblem": {
-                "text": {
-                    "0": "Precursor's Emblem",
-                    "1": "先驱的纹章"
-                }
+            {
+                "zh": "先驱的纹章",
+                "en": "Precursor's Emblem"
             },
-            "The Taming": {
-                "text": {
-                    "0": "The Taming",
-                    "1": "元素之章"
-                }
+            {
+                "zh": "元素之章",
+                "en": "The Taming"
             },
-            "Thief's Torment": {
-                "text": {
-                    "0": "Thief's Torment",
-                    "1": "窃罪"
-                }
+            {
+                "zh": "窃罪",
+                "en": "Thief's Torment"
             }
-        }
+        ]
     },
-    "Steel Ring": {
-        "text": {
-            "0": "Steel Ring",
-            "1": "合金戒指"
-        },
-        "uniques": {
-            "Mark of the Elder": {
-                "text": {
-                    "0": "Mark of the Elder",
-                    "1": "裂界之印"
-                }
+    {
+        "zh": "合金戒指",
+        "en": "Steel Ring",
+        "uniques": [
+            {
+                "zh": "裂界之印",
+                "en": "Mark of the Elder"
             }
-        }
+        ]
     },
-    "Opal Ring": {
-        "text": {
-            "0": "Opal Ring",
-            "1": "蛋白石戒指"
-        },
-        "uniques": {
-            "Mark of the Shaper": {
-                "text": {
-                    "0": "Mark of the Shaper",
-                    "1": "塑界之印"
-                }
+    {
+        "zh": "蛋白石戒指",
+        "en": "Opal Ring",
+        "uniques": [
+            {
+                "zh": "塑界之印",
+                "en": "Mark of the Shaper"
             },
-            "Stormfire": {
-                "text": {
-                    "0": "Stormfire",
-                    "1": "风暴之炎"
-                }
+            {
+                "zh": "风暴之炎",
+                "en": "Stormfire"
             },
-            "Polaric Devastation": {
-                "text": {
-                    "0": "Polaric Devastation",
-                    "1": "毁灭激波"
-                }
+            {
+                "zh": "毁灭激波",
+                "en": "Polaric Devastation"
             }
-        }
+        ]
     },
-    "Rotfeather Talisman": {
-        "text": {
-            "0": "Rotfeather Talisman",
-            "1": "死羽魔符"
-        },
-        "uniques": {
-            "Natural Hierarchy": {
-                "text": {
-                    "0": "Natural Hierarchy",
-                    "1": "自然组织"
-                }
+    {
+        "zh": "死羽魔符",
+        "en": "Rotfeather Talisman",
+        "uniques": [
+            {
+                "zh": "自然组织",
+                "en": "Natural Hierarchy"
             }
-        }
+        ]
     },
-    "Black Maw Talisman": {
-        "text": {
-            "0": "Black Maw Talisman",
-            "1": "黑牙魔符"
-        },
-        "uniques": {
-            "Night's Hold": {
-                "text": {
-                    "0": "Night's Hold",
-                    "1": "夜守"
-                }
+    {
+        "zh": "黑牙魔符",
+        "en": "Black Maw Talisman",
+        "uniques": [
+            {
+                "zh": "夜守",
+                "en": "Night's Hold"
             }
-        }
+        ]
     },
-    "Vanguard Belt": {
-        "text": {
-            "0": "Vanguard Belt",
-            "1": "先锋腰带"
-        },
-        "uniques": {
-            "Perseverance": {
-                "text": {
-                    "0": "Perseverance",
-                    "1": "恒毅意志"
-                }
+    {
+        "zh": "先锋腰带",
+        "en": "Vanguard Belt",
+        "uniques": [
+            {
+                "zh": "恒毅意志",
+                "en": "Perseverance"
             }
-        }
+        ]
     },
-    "Wereclaw Talisman": {
-        "text": {
-            "0": "Wereclaw Talisman",
-            "1": "亡爪魔符"
-        },
-        "uniques": {
-            "Rigwald's Curse": {
-                "text": {
-                    "0": "Rigwald's Curse",
-                    "1": "瑞佛诅咒"
-                }
+    {
+        "zh": "亡爪魔符",
+        "en": "Wereclaw Talisman",
+        "uniques": [
+            {
+                "zh": "瑞佛诅咒",
+                "en": "Rigwald's Curse"
             }
-        }
+        ]
     },
-    "Studded Belt": {
-        "text": {
-            "0": "Studded Belt",
-            "1": "扣钉腰带"
-        },
-        "uniques": {
-            "Ryslatha's Coil": {
-                "text": {
-                    "0": "Ryslatha's Coil",
-                    "1": "瑞斯拉萨的线圈"
-                }
+    {
+        "zh": "扣钉腰带",
+        "en": "Studded Belt",
+        "uniques": [
+            {
+                "zh": "瑞斯拉萨的线圈",
+                "en": "Ryslatha's Coil"
             },
-            "The Magnate": {
-                "text": {
-                    "0": "The Magnate",
-                    "1": "坚毅之环"
-                }
+            {
+                "zh": "坚毅之环",
+                "en": "The Magnate"
             },
-            "The Nomad": {
-                "text": {
-                    "0": "The Nomad",
-                    "1": "游牧之环"
-                }
+            {
+                "zh": "游牧之环",
+                "en": "The Nomad"
             },
-            "The Tactician": {
-                "text": {
-                    "0": "The Tactician",
-                    "1": "谋士之环"
-                }
+            {
+                "zh": "谋士之环",
+                "en": "The Tactician"
             }
-        }
+        ]
     },
-    "Ruby Amulet": {
-        "text": {
-            "0": "Ruby Amulet",
-            "1": "血色护身符"
-        },
-        "uniques": {
-            "Star of Wraeclast": {
-                "text": {
-                    "0": "Star of Wraeclast",
-                    "1": "瓦尔克拉斯之星"
-                }
+    {
+        "zh": "血色护身符",
+        "en": "Ruby Amulet",
+        "uniques": [
+            {
+                "zh": "瓦尔克拉斯之星",
+                "en": "Star of Wraeclast"
             }
-        }
+        ]
     },
-    "Jet Amulet": {
-        "text": {
-            "0": "Jet Amulet",
-            "1": "杰特护身符"
-        },
-        "uniques": {
-            "Talisman of the Victor": {
-                "text": {
-                    "0": "Talisman of the Victor",
-                    "1": "胜者护符"
-                }
+    {
+        "zh": "杰特护身符",
+        "en": "Jet Amulet",
+        "uniques": [
+            {
+                "zh": "胜者护符",
+                "en": "Talisman of the Victor"
             }
-        }
+        ]
     },
-    "Unset Amulet": {
-        "text": {
-            "0": "Unset Amulet",
-            "1": "潜能项链"
-        },
-        "uniques": {
-            "Uul-Netol's Vow": {
-                "text": {
-                    "0": "Uul-Netol's Vow",
-                    "1": "乌尔尼多之誓"
-                }
+    {
+        "zh": "潜能项链",
+        "en": "Unset Amulet",
+        "uniques": [
+            {
+                "zh": "乌尔尼多之誓",
+                "en": "Uul-Netol's Vow"
             }
-        }
+        ]
     },
-    "Seaglass Amulet": {
-        "text": {
-            "0": "Seaglass Amulet",
-            "1": "海晶护符"
-        },
-        "uniques": {}
+    {
+        "zh": "海晶护符",
+        "en": "Seaglass Amulet",
+        "uniques": []
     },
-    "Astrolabe Amulet": {
-        "text": {
-            "0": "Astrolabe Amulet",
-            "1": "星盘项链"
-        },
-        "uniques": {}
+    {
+        "zh": "星盘项链",
+        "en": "Astrolabe Amulet",
+        "uniques": []
     },
-    "Simplex Amulet": {
-        "text": {
-            "0": "Simplex Amulet",
-            "1": "朴实项链"
-        },
-        "uniques": {}
+    {
+        "zh": "朴实项链",
+        "en": "Simplex Amulet",
+        "uniques": []
     },
-    "Mandible Talisman": {
-        "text": {
-            "0": "Mandible Talisman",
-            "1": "巨颚魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "巨颚魔符",
+        "en": "Mandible Talisman",
+        "uniques": []
     },
-    "Chrysalis Talisman": {
-        "text": {
-            "0": "Chrysalis Talisman",
-            "1": "虫蛹魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "虫蛹魔符",
+        "en": "Chrysalis Talisman",
+        "uniques": []
     },
-    "Writhing Talisman": {
-        "text": {
-            "0": "Writhing Talisman",
-            "1": "狂癫魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "狂癫魔符",
+        "en": "Writhing Talisman",
+        "uniques": []
     },
-    "Bonespire Talisman": {
-        "text": {
-            "0": "Bonespire Talisman",
-            "1": "脊骨魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "脊骨魔符",
+        "en": "Bonespire Talisman",
+        "uniques": []
     },
-    "Ashscale Talisman": {
-        "text": {
-            "0": "Ashscale Talisman",
-            "1": "灰烬魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "灰烬魔符",
+        "en": "Ashscale Talisman",
+        "uniques": []
     },
-    "Lone Antler Talisman": {
-        "text": {
-            "0": "Lone Antler Talisman",
-            "1": "孤角魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "孤角魔符",
+        "en": "Lone Antler Talisman",
+        "uniques": []
     },
-    "Deep One Talisman": {
-        "text": {
-            "0": "Deep One Talisman",
-            "1": "深渊魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "深渊魔符",
+        "en": "Deep One Talisman",
+        "uniques": []
     },
-    "Breakrib Talisman": {
-        "text": {
-            "0": "Breakrib Talisman",
-            "1": "碎骨魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "碎骨魔符",
+        "en": "Breakrib Talisman",
+        "uniques": []
     },
-    "Deadhand Talisman": {
-        "text": {
-            "0": "Deadhand Talisman",
-            "1": "亡手魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "亡手魔符",
+        "en": "Deadhand Talisman",
+        "uniques": []
     },
-    "Undying Flesh Talisman": {
-        "text": {
-            "0": "Undying Flesh Talisman",
-            "1": "不朽魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "不朽魔符",
+        "en": "Undying Flesh Talisman",
+        "uniques": []
     },
-    "Rot Head Talisman": {
-        "text": {
-            "0": "Rot Head Talisman",
-            "1": "腐首魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "腐首魔符",
+        "en": "Rot Head Talisman",
+        "uniques": []
     },
-    "Hexclaw Talisman": {
-        "text": {
-            "0": "Hexclaw Talisman",
-            "1": "幻爪魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "幻爪魔符",
+        "en": "Hexclaw Talisman",
+        "uniques": []
     },
-    "Primal Skull Talisman": {
-        "text": {
-            "0": "Primal Skull Talisman",
-            "1": "皇骨魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "皇骨魔符",
+        "en": "Primal Skull Talisman",
+        "uniques": []
     },
-    "Splitnewt Talisman": {
-        "text": {
-            "0": "Splitnewt Talisman",
-            "1": "断螈魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "断螈魔符",
+        "en": "Splitnewt Talisman",
+        "uniques": []
     },
-    "Avian Twins Talisman": {
-        "text": {
-            "0": "Avian Twins Talisman",
-            "1": "双子魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "双子魔符",
+        "en": "Avian Twins Talisman",
+        "uniques": []
     },
-    "Fangjaw Talisman": {
-        "text": {
-            "0": "Fangjaw Talisman",
-            "1": "齿鲨魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "齿鲨魔符",
+        "en": "Fangjaw Talisman",
+        "uniques": []
     },
-    "Horned Talisman": {
-        "text": {
-            "0": "Horned Talisman",
-            "1": "尖角魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "尖角魔符",
+        "en": "Horned Talisman",
+        "uniques": []
     },
-    "Spinefuse Talisman": {
-        "text": {
-            "0": "Spinefuse Talisman",
-            "1": "潜能魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "潜能魔符",
+        "en": "Spinefuse Talisman",
+        "uniques": []
     },
-    "Three Rat Talisman": {
-        "text": {
-            "0": "Three Rat Talisman",
-            "1": "三鼠魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "三鼠魔符",
+        "en": "Three Rat Talisman",
+        "uniques": []
     },
-    "Monkey Twins Talisman": {
-        "text": {
-            "0": "Monkey Twins Talisman",
-            "1": "双猴魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "双猴魔符",
+        "en": "Monkey Twins Talisman",
+        "uniques": []
     },
-    "Longtooth Talisman": {
-        "text": {
-            "0": "Longtooth Talisman",
-            "1": "长牙魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "长牙魔符",
+        "en": "Longtooth Talisman",
+        "uniques": []
     },
-    "Monkey Paw Talisman": {
-        "text": {
-            "0": "Monkey Paw Talisman",
-            "1": "猴掌魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "猴掌魔符",
+        "en": "Monkey Paw Talisman",
+        "uniques": []
     },
-    "Three Hands Talisman": {
-        "text": {
-            "0": "Three Hands Talisman",
-            "1": "三手魔符"
-        },
-        "uniques": {}
+    {
+        "zh": "三手魔符",
+        "en": "Three Hands Talisman",
+        "uniques": []
     },
-    "Micro-Distillery Belt": {
-        "text": {
-            "0": "Micro-Distillery Belt",
-            "1": "低酿腰带"
-        },
-        "uniques": {}
+    {
+        "zh": "低酿腰带",
+        "en": "Micro-Distillery Belt",
+        "uniques": []
     },
-    "Mechalarm Belt": {
-        "text": {
-            "0": "Mechalarm Belt",
-            "1": "警戒腰带"
-        },
-        "uniques": {}
+    {
+        "zh": "警戒腰带",
+        "en": "Mechalarm Belt",
+        "uniques": []
     },
-    "Breach Ring": {
-        "text": {
-            "0": "Breach Ring",
-            "1": "裂隙戒指"
-        },
-        "uniques": {}
+    {
+        "zh": "裂隙戒指",
+        "en": "Breach Ring",
+        "uniques": []
     },
-    "Vermillion Ring": {
-        "text": {
-            "0": "Vermillion Ring",
-            "1": "朱砂之戒"
-        },
-        "uniques": {}
+    {
+        "zh": "朱砂之戒",
+        "en": "Vermillion Ring",
+        "uniques": []
     },
-    "Cerulean Ring": {
-        "text": {
-            "0": "Cerulean Ring",
-            "1": "天蓝之戒"
-        },
-        "uniques": {}
+    {
+        "zh": "天蓝之戒",
+        "en": "Cerulean Ring",
+        "uniques": []
     },
-    "Iolite Ring": {
-        "text": {
-            "0": "Iolite Ring",
-            "1": "青石戒指"
-        },
-        "uniques": {}
+    {
+        "zh": "青石戒指",
+        "en": "Iolite Ring",
+        "uniques": []
     },
-    "Cogwork Ring": {
-        "text": {
-            "0": "Cogwork Ring",
-            "1": "齿轮戒指"
-        },
-        "uniques": {}
+    {
+        "zh": "齿轮戒指",
+        "en": "Cogwork Ring",
+        "uniques": []
     },
-    "Geodesic Ring": {
-        "text": {
-            "0": "Geodesic Ring",
-            "1": "地线戒指"
-        },
-        "uniques": {}
+    {
+        "zh": "地线戒指",
+        "en": "Geodesic Ring",
+        "uniques": []
     },
-    "Thief's Trinket": {
-        "text": {
-            "0": "Thief's Trinket",
-            "1": "赏金猎人饰品"
-        },
-        "uniques": {}
+    {
+        "zh": "赏金猎人饰品",
+        "en": "Thief's Trinket",
+        "uniques": []
     },
-    "Ring": {
-        "text": {
-            "0": "Ring",
-            "1": "戒指"
-        },
-        "uniques": {
-            "Kalandra's Touch": {
-                "text": {
-                    "0": "Kalandra's Touch",
-                    "1": "卡兰德之触"
-                }
+    {
+        "zh": "戒指",
+        "en": "Ring",
+        "uniques": [
+            {
+                "zh": "卡兰德之触",
+                "en": "Kalandra's Touch"
             }
-        }
+        ]
     },
-    "Bone Ring": {
-        "text": {
-            "0": "Bone Ring",
-            "1": "骨环"
-        },
-        "uniques": {}
+    {
+        "zh": "骨环",
+        "en": "Bone Ring",
+        "uniques": []
     },
-    "Dusk Ring": {
-        "text": {
-            "0": "Dusk Ring",
-            "1": "戒指：暮色"
-        },
-        "uniques": {}
+    {
+        "zh": "戒指：暮色",
+        "en": "Dusk Ring",
+        "uniques": []
     },
-    "Gloam Ring": {
-        "text": {
-            "0": "Gloam Ring",
-            "1": "戒指：薄暮"
-        },
-        "uniques": {}
+    {
+        "zh": "戒指：薄暮",
+        "en": "Gloam Ring",
+        "uniques": []
     },
-    "Penumbra Ring": {
-        "text": {
-            "0": "Penumbra Ring",
-            "1": "戒指：半影"
-        },
-        "uniques": {}
+    {
+        "zh": "戒指：半影",
+        "en": "Penumbra Ring",
+        "uniques": []
     },
-    "Shadowed Ring": {
-        "text": {
-            "0": "Shadowed Ring",
-            "1": "戒指：暗影"
-        },
-        "uniques": {}
+    {
+        "zh": "戒指：暗影",
+        "en": "Shadowed Ring",
+        "uniques": []
     },
-    "Tenebrous Ring": {
-        "text": {
-            "0": "Tenebrous Ring",
-            "1": "戒指：暗黑"
-        },
-        "uniques": {}
+    {
+        "zh": "戒指：暗黑",
+        "en": "Tenebrous Ring",
+        "uniques": []
     }
-}
+]

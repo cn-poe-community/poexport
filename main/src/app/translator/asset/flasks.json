@@ -1,567 +1,401 @@
-{
-    "Amethyst Flask": {
-        "text": {
-            "0": "Amethyst Flask",
-            "1": "紫晶药剂"
-        },
-        "uniques": {
-            "Atziri's Promise": {
-                "text": {
-                    "0": "Atziri's Promise",
-                    "1": "阿兹里的诺言"
-                }
+[
+    {
+        "zh": "紫晶药剂",
+        "en": "Amethyst Flask",
+        "uniques": [
+            {
+                "zh": "阿兹里的诺言",
+                "en": "Atziri's Promise"
             },
-            "Progenesis": {
-                "text": {
-                    "0": "Progenesis",
-                    "1": "茁育助长"
-                }
+            {
+                "zh": "茁育助长",
+                "en": "Progenesis"
             }
-        }
+        ]
     },
-    "Sanctified Life Flask": {
-        "text": {
-            "0": "Sanctified Life Flask",
-            "1": "圣化生命药剂"
-        },
-        "uniques": {
-            "Blood of the Karui": {
-                "text": {
-                    "0": "Blood of the Karui",
-                    "1": "卡鲁之血"
-                }
+    {
+        "zh": "圣化生命药剂",
+        "en": "Sanctified Life Flask",
+        "uniques": [
+            {
+                "zh": "卡鲁之血",
+                "en": "Blood of the Karui"
             }
-        }
+        ]
     },
-    "Sulphur Flask": {
-        "text": {
-            "0": "Sulphur Flask",
-            "1": "硫磺药剂"
-        },
-        "uniques": {
-            "Bottled Faith": {
-                "text": {
-                    "0": "Bottled Faith",
-                    "1": "瓶中信仰"
-                }
+    {
+        "zh": "硫磺药剂",
+        "en": "Sulphur Flask",
+        "uniques": [
+            {
+                "zh": "瓶中信仰",
+                "en": "Bottled Faith"
             },
-            "Replica Sorrow of the Divine": {
-                "text": {
-                    "0": "Replica Sorrow of the Divine",
-                    "1": "神圣哀悼【仿品】"
-                }
+            {
+                "zh": "神圣哀悼【仿品】",
+                "en": "Replica Sorrow of the Divine"
             },
-            "The Overflowing Chalice": {
-                "text": {
-                    "0": "The Overflowing Chalice",
-                    "1": "高洁圣杯"
-                }
+            {
+                "zh": "高洁圣杯",
+                "en": "The Overflowing Chalice"
             },
-            "The Sorrow of the Divine": {
-                "text": {
-                    "0": "The Sorrow of the Divine",
-                    "1": "神圣哀悼"
-                }
+            {
+                "zh": "神圣哀悼",
+                "en": "The Sorrow of the Divine"
             }
-        }
+        ]
     },
-    "Silver Flask": {
-        "text": {
-            "0": "Silver Flask",
-            "1": "真银药剂"
-        },
-        "uniques": {
-            "Cinderswallow Urn": {
-                "text": {
-                    "0": "Cinderswallow Urn",
-                    "1": "灰烬之瓮"
-                }
+    {
+        "zh": "真银药剂",
+        "en": "Silver Flask",
+        "uniques": [
+            {
+                "zh": "灰烬之瓮",
+                "en": "Cinderswallow Urn"
             },
-            "Kiara's Determination": {
-                "text": {
-                    "0": "Kiara's Determination",
-                    "1": "奇亚拉的决心"
-                }
+            {
+                "zh": "奇亚拉的决心",
+                "en": "Kiara's Determination"
             }
-        }
+        ]
     },
-    "Diamond Flask": {
-        "text": {
-            "0": "Diamond Flask",
-            "1": "宝钻药剂"
-        },
-        "uniques": {
-            "Coralito's Signature": {
-                "text": {
-                    "0": "Coralito's Signature",
-                    "1": "克拉里多之名"
-                }
+    {
+        "zh": "宝钻药剂",
+        "en": "Diamond Flask",
+        "uniques": [
+            {
+                "zh": "克拉里多之名",
+                "en": "Coralito's Signature"
             }
-        }
+        ]
     },
-    "Ruby Flask": {
-        "text": {
-            "0": "Ruby Flask",
-            "1": "红玉药剂"
-        },
-        "uniques": {
-            "Coruscating Elixir": {
-                "text": {
-                    "0": "Coruscating Elixir",
-                    "1": "闪耀精华"
-                }
+    {
+        "zh": "红玉药剂",
+        "en": "Ruby Flask",
+        "uniques": [
+            {
+                "zh": "闪耀精华",
+                "en": "Coruscating Elixir"
             },
-            "Dying Sun": {
-                "text": {
-                    "0": "Dying Sun",
-                    "1": "逝日"
-                }
+            {
+                "zh": "逝日",
+                "en": "Dying Sun"
             }
-        }
+        ]
     },
-    "Large Hybrid Flask": {
-        "text": {
-            "0": "Large Hybrid Flask",
-            "1": "大型复合药剂"
-        },
-        "uniques": {
-            "Divination Distillate": {
-                "text": {
-                    "0": "Divination Distillate",
-                    "1": "宝视精华"
-                }
+    {
+        "zh": "大型复合药剂",
+        "en": "Large Hybrid Flask",
+        "uniques": [
+            {
+                "zh": "宝视精华",
+                "en": "Divination Distillate"
             }
-        }
+        ]
     },
-    "Greater Mana Flask": {
-        "text": {
-            "0": "Greater Mana Flask",
-            "1": "良质魔力药剂"
-        },
-        "uniques": {
-            "Doedre's Elixir": {
-                "text": {
-                    "0": "Doedre's Elixir",
-                    "1": "德瑞的妙药"
-                }
+    {
+        "zh": "良质魔力药剂",
+        "en": "Greater Mana Flask",
+        "uniques": [
+            {
+                "zh": "德瑞的妙药",
+                "en": "Doedre's Elixir"
             }
-        }
+        ]
     },
-    "Iron Flask": {
-        "text": {
-            "0": "Iron Flask",
-            "1": "坚铁药剂"
-        },
-        "uniques": {
-            "Elixir of the Unbroken Circle": {
-                "text": {
-                    "0": "Elixir of the Unbroken Circle",
-                    "1": "不坏圣环灵药"
-                }
+    {
+        "zh": "坚铁药剂",
+        "en": "Iron Flask",
+        "uniques": [
+            {
+                "zh": "不坏圣环灵药",
+                "en": "Elixir of the Unbroken Circle"
             },
-            "Olroth's Resolve": {
-                "text": {
-                    "0": "Olroth's Resolve",
-                    "1": "欧罗什的决心"
-                }
+            {
+                "zh": "欧罗什的决心",
+                "en": "Olroth's Resolve"
             },
-            "Starlight Chalice": {
-                "text": {
-                    "0": "Starlight Chalice",
-                    "1": "星光圣杯"
-                }
+            {
+                "zh": "星光圣杯",
+                "en": "Starlight Chalice"
             },
-            "Vorana's Preparation": {
-                "text": {
-                    "0": "Vorana's Preparation",
-                    "1": "沃拉娜的准备"
-                }
+            {
+                "zh": "沃拉娜的准备",
+                "en": "Vorana's Preparation"
             }
-        }
+        ]
     },
-    "Quartz Flask": {
-        "text": {
-            "0": "Quartz Flask",
-            "1": "石英药剂"
-        },
-        "uniques": {
-            "Forbidden Taste": {
-                "text": {
-                    "0": "Forbidden Taste",
-                    "1": "禁果"
-                }
+    {
+        "zh": "石英药剂",
+        "en": "Quartz Flask",
+        "uniques": [
+            {
+                "zh": "禁果",
+                "en": "Forbidden Taste"
             },
-            "Soul Catcher": {
-                "text": {
-                    "0": "Soul Catcher",
-                    "1": "捕魂者"
-                }
+            {
+                "zh": "捕魂者",
+                "en": "Soul Catcher"
             },
-            "Soul Ripper": {
-                "text": {
-                    "0": "Soul Ripper",
-                    "1": "裂魂者"
-                }
+            {
+                "zh": "裂魂者",
+                "en": "Soul Ripper"
             }
-        }
+        ]
     },
-    "Sanctified Mana Flask": {
-        "text": {
-            "0": "Sanctified Mana Flask",
-            "1": "圣化魔力药剂"
-        },
-        "uniques": {
-            "Lavianga's Spirit": {
-                "text": {
-                    "0": "Lavianga's Spirit",
-                    "1": "拉维安加之泉"
-                }
+    {
+        "zh": "圣化魔力药剂",
+        "en": "Sanctified Mana Flask",
+        "uniques": [
+            {
+                "zh": "拉维安加之泉",
+                "en": "Lavianga's Spirit"
             },
-            "Replica Lavianga's Spirit": {
-                "text": {
-                    "0": "Replica Lavianga's Spirit",
-                    "1": "拉维安加之泉【仿品】"
-                }
+            {
+                "zh": "拉维安加之泉【仿品】",
+                "en": "Replica Lavianga's Spirit"
             }
-        }
+        ]
     },
-    "Granite Flask": {
-        "text": {
-            "0": "Granite Flask",
-            "1": "坚岩药剂"
-        },
-        "uniques": {
-            "Lion's Roar": {
-                "text": {
-                    "0": "Lion's Roar",
-                    "1": "狮吼精华"
-                }
+    {
+        "zh": "坚岩药剂",
+        "en": "Granite Flask",
+        "uniques": [
+            {
+                "zh": "狮吼精华",
+                "en": "Lion's Roar"
             },
-            "Replica Rumi's Concoction": {
-                "text": {
-                    "0": "Replica Rumi's Concoction",
-                    "1": "鲁米的灵药【仿品】"
-                }
+            {
+                "zh": "鲁米的灵药【仿品】",
+                "en": "Replica Rumi's Concoction"
             },
-            "Rumi's Concoction": {
-                "text": {
-                    "0": "Rumi's Concoction",
-                    "1": "鲁米的灵药"
-                }
+            {
+                "zh": "鲁米的灵药",
+                "en": "Rumi's Concoction"
             }
-        }
+        ]
     },
-    "Quicksilver Flask": {
-        "text": {
-            "0": "Quicksilver Flask",
-            "1": "水银药剂"
-        },
-        "uniques": {
-            "Rotgut": {
-                "text": {
-                    "0": "Rotgut",
-                    "1": "伤胃酒"
-                }
+    {
+        "zh": "水银药剂",
+        "en": "Quicksilver Flask",
+        "uniques": [
+            {
+                "zh": "伤胃酒",
+                "en": "Rotgut"
             }
-        }
+        ]
     },
-    "Stibnite Flask": {
-        "text": {
-            "0": "Stibnite Flask",
-            "1": "迷雾药剂"
-        },
-        "uniques": {
-            "Sin's Rebirth": {
-                "text": {
-                    "0": "Sin's Rebirth",
-                    "1": "再生的罪恶"
-                }
+    {
+        "zh": "迷雾药剂",
+        "en": "Stibnite Flask",
+        "uniques": [
+            {
+                "zh": "再生的罪恶",
+                "en": "Sin's Rebirth"
             },
-            "Witchfire Brew": {
-                "text": {
-                    "0": "Witchfire Brew",
-                    "1": "巫酿之水"
-                }
+            {
+                "zh": "巫酿之水",
+                "en": "Witchfire Brew"
             }
-        }
+        ]
     },
-    "Sapphire Flask": {
-        "text": {
-            "0": "Sapphire Flask",
-            "1": "蓝玉药剂"
-        },
-        "uniques": {
-            "Taste of Hate": {
-                "text": {
-                    "0": "Taste of Hate",
-                    "1": "恨意"
-                }
+    {
+        "zh": "蓝玉药剂",
+        "en": "Sapphire Flask",
+        "uniques": [
+            {
+                "zh": "恨意",
+                "en": "Taste of Hate"
             }
-        }
+        ]
     },
-    "Bismuth Flask": {
-        "text": {
-            "0": "Bismuth Flask",
-            "1": "灰岩药剂"
-        },
-        "uniques": {
-            "The Wise Oak": {
-                "text": {
-                    "0": "The Wise Oak",
-                    "1": "聪明的欧克"
-                }
+    {
+        "zh": "灰岩药剂",
+        "en": "Bismuth Flask",
+        "uniques": [
+            {
+                "zh": "聪明的欧克",
+                "en": "The Wise Oak"
             },
-            "Oriath's End": {
-                "text": {
-                    "0": "Oriath's End",
-                    "1": "奥瑞亚的尽头"
-                }
+            {
+                "zh": "奥瑞亚的尽头",
+                "en": "Oriath's End"
             }
-        }
+        ]
     },
-    "Hallowed Hybrid Flask": {
-        "text": {
-            "0": "Hallowed Hybrid Flask",
-            "1": "祝福复合药剂"
-        },
-        "uniques": {
-            "The Writhing Jar": {
-                "text": {
-                    "0": "The Writhing Jar",
-                    "1": "扭曲之罐"
-                }
+    {
+        "zh": "祝福复合药剂",
+        "en": "Hallowed Hybrid Flask",
+        "uniques": [
+            {
+                "zh": "扭曲之罐",
+                "en": "The Writhing Jar"
             }
-        }
+        ]
     },
-    "Topaz Flask": {
-        "text": {
-            "0": "Topaz Flask",
-            "1": "黄玉药剂"
-        },
-        "uniques": {
-            "Vessel of Vinktar": {
-                "text": {
-                    "0": "Vessel of Vinktar",
-                    "1": "维克塔血器"
-                }
+    {
+        "zh": "黄玉药剂",
+        "en": "Topaz Flask",
+        "uniques": [
+            {
+                "zh": "维克塔血器",
+                "en": "Vessel of Vinktar"
             }
-        }
+        ]
     },
-    "Grand Mana Flask": {
-        "text": {
-            "0": "Grand Mana Flask",
-            "1": "优质魔力药剂"
-        },
-        "uniques": {
-            "Zerphi's Last Breath": {
-                "text": {
-                    "0": "Zerphi's Last Breath",
-                    "1": "泽佛伊的终息"
-                }
+    {
+        "zh": "优质魔力药剂",
+        "en": "Grand Mana Flask",
+        "uniques": [
+            {
+                "zh": "泽佛伊的终息",
+                "en": "Zerphi's Last Breath"
             }
-        }
+        ]
     },
-    "Small Hybrid Flask": {
-        "text": {
-            "0": "Small Hybrid Flask",
-            "1": "小型复合药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "小型复合药剂",
+        "en": "Small Hybrid Flask",
+        "uniques": []
     },
-    "Medium Hybrid Flask": {
-        "text": {
-            "0": "Medium Hybrid Flask",
-            "1": "中型复合药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "中型复合药剂",
+        "en": "Medium Hybrid Flask",
+        "uniques": []
     },
-    "Colossal Hybrid Flask": {
-        "text": {
-            "0": "Colossal Hybrid Flask",
-            "1": "高阶复合药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "高阶复合药剂",
+        "en": "Colossal Hybrid Flask",
+        "uniques": []
     },
-    "Sacred Hybrid Flask": {
-        "text": {
-            "0": "Sacred Hybrid Flask",
-            "1": "圣语复合药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "圣语复合药剂",
+        "en": "Sacred Hybrid Flask",
+        "uniques": []
     },
-    "Small Life Flask": {
-        "text": {
-            "0": "Small Life Flask",
-            "1": "小型生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "小型生命药剂",
+        "en": "Small Life Flask",
+        "uniques": []
     },
-    "Divine Life Flask": {
-        "text": {
-            "0": "Divine Life Flask",
-            "1": "不朽生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "不朽生命药剂",
+        "en": "Divine Life Flask",
+        "uniques": []
     },
-    "Eternal Life Flask": {
-        "text": {
-            "0": "Eternal Life Flask",
-            "1": "永恒生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "永恒生命药剂",
+        "en": "Eternal Life Flask",
+        "uniques": []
     },
-    "Medium Life Flask": {
-        "text": {
-            "0": "Medium Life Flask",
-            "1": "中型生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "中型生命药剂",
+        "en": "Medium Life Flask",
+        "uniques": []
     },
-    "Large Life Flask": {
-        "text": {
-            "0": "Large Life Flask",
-            "1": "大型生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "大型生命药剂",
+        "en": "Large Life Flask",
+        "uniques": []
     },
-    "Greater Life Flask": {
-        "text": {
-            "0": "Greater Life Flask",
-            "1": "良质生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "良质生命药剂",
+        "en": "Greater Life Flask",
+        "uniques": []
     },
-    "Grand Life Flask": {
-        "text": {
-            "0": "Grand Life Flask",
-            "1": "优质生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "优质生命药剂",
+        "en": "Grand Life Flask",
+        "uniques": []
     },
-    "Giant Life Flask": {
-        "text": {
-            "0": "Giant Life Flask",
-            "1": "巨型生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "巨型生命药剂",
+        "en": "Giant Life Flask",
+        "uniques": []
     },
-    "Colossal Life Flask": {
-        "text": {
-            "0": "Colossal Life Flask",
-            "1": "高阶生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "高阶生命药剂",
+        "en": "Colossal Life Flask",
+        "uniques": []
     },
-    "Sacred Life Flask": {
-        "text": {
-            "0": "Sacred Life Flask",
-            "1": "圣语生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "圣语生命药剂",
+        "en": "Sacred Life Flask",
+        "uniques": []
     },
-    "Hallowed Life Flask": {
-        "text": {
-            "0": "Hallowed Life Flask",
-            "1": "祝福生命药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "祝福生命药剂",
+        "en": "Hallowed Life Flask",
+        "uniques": []
     },
-    "Small Mana Flask": {
-        "text": {
-            "0": "Small Mana Flask",
-            "1": "小型魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "小型魔力药剂",
+        "en": "Small Mana Flask",
+        "uniques": []
     },
-    "Divine Mana Flask": {
-        "text": {
-            "0": "Divine Mana Flask",
-            "1": "不朽魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "不朽魔力药剂",
+        "en": "Divine Mana Flask",
+        "uniques": []
     },
-    "Eternal Mana Flask": {
-        "text": {
-            "0": "Eternal Mana Flask",
-            "1": "永恒魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "永恒魔力药剂",
+        "en": "Eternal Mana Flask",
+        "uniques": []
     },
-    "Medium Mana Flask": {
-        "text": {
-            "0": "Medium Mana Flask",
-            "1": "中型魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "中型魔力药剂",
+        "en": "Medium Mana Flask",
+        "uniques": []
     },
-    "Large Mana Flask": {
-        "text": {
-            "0": "Large Mana Flask",
-            "1": "大型魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "大型魔力药剂",
+        "en": "Large Mana Flask",
+        "uniques": []
     },
-    "Giant Mana Flask": {
-        "text": {
-            "0": "Giant Mana Flask",
-            "1": "巨型魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "巨型魔力药剂",
+        "en": "Giant Mana Flask",
+        "uniques": []
     },
-    "Colossal Mana Flask": {
-        "text": {
-            "0": "Colossal Mana Flask",
-            "1": "高阶魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "高阶魔力药剂",
+        "en": "Colossal Mana Flask",
+        "uniques": []
     },
-    "Sacred Mana Flask": {
-        "text": {
-            "0": "Sacred Mana Flask",
-            "1": "圣语魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "圣语魔力药剂",
+        "en": "Sacred Mana Flask",
+        "uniques": []
     },
-    "Hallowed Mana Flask": {
-        "text": {
-            "0": "Hallowed Mana Flask",
-            "1": "祝福魔力药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "祝福魔力药剂",
+        "en": "Hallowed Mana Flask",
+        "uniques": []
     },
-    "Basalt Flask": {
-        "text": {
-            "0": "Basalt Flask",
-            "1": "石化药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "石化药剂",
+        "en": "Basalt Flask",
+        "uniques": []
     },
-    "Aquamarine Flask": {
-        "text": {
-            "0": "Aquamarine Flask",
-            "1": "海蓝药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "海蓝药剂",
+        "en": "Aquamarine Flask",
+        "uniques": []
     },
-    "Gold Flask": {
-        "text": {
-            "0": "Gold Flask",
-            "1": "黄金药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "黄金药剂",
+        "en": "Gold Flask",
+        "uniques": []
     },
-    "Corundum Flask": {
-        "text": {
-            "0": "Corundum Flask",
-            "1": "刚玉药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "刚玉药剂",
+        "en": "Corundum Flask",
+        "uniques": []
     },
-    "Jade Flask": {
-        "text": {
-            "0": "Jade Flask",
-            "1": "翠玉药剂"
-        },
-        "uniques": {}
+    {
+        "zh": "翠玉药剂",
+        "en": "Jade Flask",
+        "uniques": []
     }
-}
+]

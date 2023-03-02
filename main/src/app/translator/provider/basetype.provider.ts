@@ -1,52 +1,47 @@
-import { BaseType, BaseTypeIndexEntry, BaseTypeMap } from "../type/basetype.type";
+import { BaseType } from "../type/basetype.type";
 
 import weapons from "../asset/weapons.json";
 import accessories from "../asset/accessories.json";
 import armour from "../asset/armour.json";
 import flasks from "../asset/flasks.json";
 import jewels from "../asset/jewels.json";
-import { Language } from "../type/language.type";
 import { EquipmentCategory } from "../type/category.type";
 
 export class BaseTypeProvider {
-    private readonly baseTypeIndexByZhText = new Map<string, BaseTypeIndexEntry[]>();
-    private readonly baseTypeIndexByUniqueZhText = new Map<string, BaseTypeIndexEntry[]>();
+    private readonly baseTypesIndexedByZh = new Map<string, BaseType[]>();
+    private readonly baseTypesIndexedByUniqueZh = new Map<string, BaseType[]>();
 
     constructor() {
-        const language = Language.Chinese;
         const categories = Object.values(EquipmentCategory).filter((x) => isNaN(Number(x)));
 
-        for (const c of categories) {
-            const category = c as EquipmentCategory;
-            const baseTypeMap = this.provide(category);
+        for (const category of categories) {
+            const baseTypeList = this.provideBaseTypesByCategory(category);
 
-            for (const id in baseTypeMap) {
-                const data = baseTypeMap[id];
-                const zhText = data.text[language];
-                if (Array.isArray(zhText)) {
-                    for (const t of zhText) {
-                        if (this.baseTypeIndexByZhText.has(t)) {
-                            this.baseTypeIndexByZhText.get(t)?.push({ "category": category, "id": id });
+            for (const baseType of baseTypeList) {
+                const zh = baseType.zh;
+                if (Array.isArray(zh)) {
+                    for (const text of zh) {
+                        if (this.baseTypesIndexedByZh.has(text)) {
+                            this.baseTypesIndexedByZh.get(text)?.push(baseType);
                         } else {
-                            this.baseTypeIndexByZhText.set(t, [{ "category": category, "id": id }]);
+                            this.baseTypesIndexedByZh.set(text, [baseType]);
                         }
                     }
                 } else {
-                    if (this.baseTypeIndexByZhText.has(zhText)) {
-                        this.baseTypeIndexByZhText.get(zhText)?.push({ "category": category, "id": id });
+                    if (this.baseTypesIndexedByZh.has(zh)) {
+                        this.baseTypesIndexedByZh.get(zh)?.push(baseType);
                     } else {
-                        this.baseTypeIndexByZhText.set(zhText, [{ "category": category, "id": id }]);
+                        this.baseTypesIndexedByZh.set(zh, [baseType]);
                     }
                 }
 
-                const uniques = data.uniques;
-                for (const uid in uniques) {
-                    const udata = uniques[uid];
-                    const uzhText = udata.text[language];
-                    if (uzhText in this.baseTypeIndexByUniqueZhText) {
-                        this.baseTypeIndexByUniqueZhText.get(uzhText)?.push({ "category": category, "id": id });
+                const uniques = baseType.uniques;
+                for (const unique of uniques) {
+                    const zh = unique.zh;
+                    if (zh in this.baseTypesIndexedByUniqueZh) {
+                        this.baseTypesIndexedByUniqueZh.get(zh)?.push(baseType);
                     } else {
-                        this.baseTypeIndexByUniqueZhText.set(uzhText, [{ "category": category, "id": id }]);
+                        this.baseTypesIndexedByUniqueZh.set(zh, [baseType]);
                     }
                 }
             }
@@ -54,8 +49,8 @@ export class BaseTypeProvider {
     }
 
 
-    public provide(group: EquipmentCategory): BaseTypeMap {
-        switch (group) {
+    private provideBaseTypesByCategory(category: EquipmentCategory): BaseType[] {
+        switch (category) {
             case EquipmentCategory.Weapon:
                 return weapons;
             case EquipmentCategory.Accessory:
@@ -69,27 +64,9 @@ export class BaseTypeProvider {
         }
     }
 
-    public provideBaseType(category: EquipmentCategory, id: string): BaseType | null {
-        const baseTypeMap = this.provide(category)
-        if (id in baseTypeMap) {
-            return baseTypeMap[id];
-        }
-        return null;
-    }
+    public provideBaseTypesByZh(zh: string): BaseType[] | undefined {
+        const entries = this.baseTypesIndexedByZh.get(zh);
 
-    public provideBaseTypeByZhText(zhText: string): BaseType[] {
-        const entries = this.baseTypeIndexByZhText.get(zhText);
-        if (entries) {
-            const val: BaseType[] = [];
-            for (const entry of entries) {
-                const baseType = this.provideBaseType(entry.category, entry.id);
-                if (baseType) {
-                    val.push(baseType);
-                }
-            }
-            return val;
-        }
-
-        return [];
+        return entries;
     }
 }

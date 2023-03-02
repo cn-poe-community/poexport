@@ -1,6 +1,5 @@
 import { BaseTypeProvider } from "../provider/basetype.provider";
 import { BaseType } from "../type/basetype.type";
-import { Language } from "../type/language.type";
 
 const ZH_SUPERIOR_PREFIX = "精良的 ";
 const SUPERIOR_PREFIX = "Superior ";
@@ -8,35 +7,38 @@ const ZH_SYNTHESISED_PREFIX = "忆境 ";
 const SYNTHESISED_PREIFX = "Synthesised ";
 
 export class BaseTypeService {
-    private readonly baseTypeProvider: BaseTypeProvider;
+    constructor(private readonly baseTypeProvider: BaseTypeProvider) { }
 
-    constructor(baseTypeProvider: BaseTypeProvider) {
-        this.baseTypeProvider = baseTypeProvider;
-    }
-
-    public getBaseTypeByZhText(zhBaseType: string, zhName?: string): BaseType | null {
-        const list = this.baseTypeProvider.provideBaseTypeByZhText(zhBaseType);
-        if (list.length === 0) {
-            return null;
+    /**
+     * 
+     * @param zhName item's zh name. There may be duplicate zh basetypes, uniques's zh name can help translating.
+     */
+    public getBaseTypeByZh(zh: string, zhName?: string): BaseType | undefined {
+        const list = this.baseTypeProvider.provideBaseTypesByZh(zh);
+        if (list === undefined) {
+            return undefined;
         }
 
-        if (list.length === 1 || !zhName) {
+        if (list.length === 1 || zhName === undefined) {
             return list[0];
         }
 
         for (const b of list) {
-            for (const uid in b.uniques) {
-                const udata = b.uniques[uid];
-                const uzhText = udata.text[Language.Chinese];
-                if (uzhText === zhName) {
+            for (const unique of b.uniques) {
+                if (unique.zh === zhName) {
                     return b;
                 }
             }
         }
-        return null;
+        return undefined;
     }
 
-    public getBaseTypeByZhTypeLine(zhTypeLine: string, zhName?: string): BaseType | null {
+    /**
+     * Infer the zh base type by zh base type line, and returns the matched BaseType.
+     * 
+     * @param zhName item's zh name. There may be duplicate zh basetypes, uniques's zh name can help translating.
+     */
+    public getBaseTypeByZhTypeLine(zhTypeLine: string, zhName?: string): { baseType: BaseType, "zhBaseType": string } | undefined {
         if (zhTypeLine.startsWith(ZH_SUPERIOR_PREFIX)) {
             zhTypeLine = zhTypeLine.substring(ZH_SUPERIOR_PREFIX.length);
         }
@@ -45,27 +47,26 @@ export class BaseTypeService {
             zhTypeLine = zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length)
         }
 
-        const res = this.getBaseTypeByZhText(zhTypeLine);
-        if (res) {
-            return res;
+        //The zh type line without prefix may be a zh base type.
+        const b = this.getBaseTypeByZh(zhTypeLine, zhName);
+        if (b !== undefined) {
+            return { baseType: b, zhBaseType: zhTypeLine };
         }
 
-        //处理修饰词存在的情况：
+        //处理修饰词存在的情况: 
         //如“显著的幼龙之大型星团珠宝”，其修饰词为：“显著的”、“幼龙之”，其zhBaseType为“大型星团珠宝”
         //
-        //修饰词以`的`、`之`结尾，但`的`、`之`同时可能出现在zhBaseType中
+        //修饰词以`的`、`之`结尾，但`的`、`之`同时可能出现在zhBaseType中，如`潜能之戒`
         //以`的`、`之`为修饰词结尾，将baseType拆分为一个slices
         //
-        //此时存在以下情况：
-        // - slices[last]就是zhBaseType
-        // - slices[last]是zhBaseType的末尾部分，需要补充其它slice来组成完整的zhBaseType
-
+        //我们可以逐步去除修饰词，来检测剩余部分是否是一个zhBaseType.
         const pattern = /.+?[之的]/ug;
         if (pattern.test(zhTypeLine)) {
+            //reset pattern status because we used `.test()` before
             pattern.lastIndex = 0;
 
             const len = zhTypeLine.length;
-            const slices = [];
+            let slices = [];
             let lastIndex = 0;
             while (lastIndex < len) {
                 const matches = pattern.exec(zhTypeLine);
@@ -81,42 +82,28 @@ export class BaseTypeService {
                 }
             }
 
-            //zhTypeLine不包含“之”或“的”
-            const last = slices[slices.length - 1];
-            const res = this.getBaseTypeByZhText(last, zhName);
-            if (res) {
-                return res;
-            }
-
-            //baseType可能包含“之”或“的”
-
-            //TODO：这里有一个假设，一个包含`之`或`的`的baseType不是另一个baseType的末尾部分
-            // 这在大多数情况下都成立，但无法保证
-            // 应当在数据库中检查是否存在这种可能性，并且在每次更新数据库后都进行检查
-
-            let possible = last;
-            for (let i = slices.length - 2; i > 0; i--) {
-                possible = slices[i] + possible;
-                const res = this.getBaseTypeByZhText(possible, zhName);
-                if (res) {
-                    return res;
+            for (let i = slices.length; i > 0; i--) {
+                const possible = slices.join();
+                const b = this.getBaseTypeByZh(possible, zhName);
+                if (b !== undefined) {
+                    return { baseType: b, zhBaseType: possible };
                 }
+                slices = slices.slice(1);
             }
         }
 
-        return null;
+        return undefined;
     }
 
-    public translateBaseType(zhBaseType: string, zhName?: string): string | null {
-        const b = this.getBaseTypeByZhText(zhBaseType, zhName);
-        if (b) {
-            return b.text[Language.English];
+    public translateBaseType(zhBaseType: string, zhName?: string): string | undefined {
+        const b = this.getBaseTypeByZh(zhBaseType, zhName);
+        if (b !== undefined) {
+            return b.en;
         }
-        return null;
+        return undefined;
     }
 
     /**
-     * 获取typeLine。
      * 
      * 一般情况下，物品的typeLine等价于baseType。魔法物品有所不同，其在baseType的基础上多了一堆修饰词前缀。
      * 修饰词的翻译很麻烦，且用处不大，这里选择去掉修饰词，仅保留baseType。
@@ -125,28 +112,28 @@ export class BaseTypeService {
      * @param zhTypeLine 
      * @param zhName 
      */
-    public translateTypeLine(zhTypeLine: string, zhName?: string): string | null {
+    public translateTypeLine(zhTypeLine: string, zhName?: string): string | undefined {
         if (zhTypeLine.startsWith(ZH_SUPERIOR_PREFIX)) {
-            const res = this.translateTypeLine(zhTypeLine.substring(ZH_SUPERIOR_PREFIX.length), zhName);
-            if (res) {
-                return SUPERIOR_PREFIX + res;
+            const t = this.translateTypeLine(zhTypeLine.substring(ZH_SUPERIOR_PREFIX.length), zhName);
+            if (t !== undefined) {
+                return SUPERIOR_PREFIX + t;
             }
-            return null;
+            return undefined;
         }
 
         if (zhTypeLine.startsWith(ZH_SYNTHESISED_PREFIX)) {
-            const res = this.translateTypeLine(zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length), zhName);
-            if (res) {
-                return SYNTHESISED_PREIFX + res;
+            const t = this.translateTypeLine(zhTypeLine.substring(ZH_SYNTHESISED_PREFIX.length), zhName);
+            if (t !== undefined) {
+                return SYNTHESISED_PREIFX + t;
             }
-            return null;
+            return undefined;
         }
 
         const b = this.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
-        if (b) {
-            return b.text[Language.English];
+        if (b !== undefined) {
+            return b.baseType.en;
         }
 
-        return null;
+        return undefined;
     }
 }

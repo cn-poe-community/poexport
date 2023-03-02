@@ -98,8 +98,13 @@ class Part {
                     //name
                     const zhName = line.content;
                     const zhTypeLine = this.lines[this.lines.length - 1].content;
-                    const baseType = translator.baseTypeService.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
-                    buf.push(translator.itemService.translateName(zhName, baseType.text[1]));
+                    const result = translator.baseTypeService.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
+                    if (result !== undefined) {
+                        const zhBaseType = result.zhBaseType;
+                        buf.push(translator.itemService.translateName(zhName, zhBaseType));
+                    } else {
+                        buf.push(translator.itemService.translateName(zhName, zhTypeLine));
+                    }
                     i++;
                     continue;
                 } else if (i === this.lines.length - 1) {

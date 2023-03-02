@@ -11,15 +11,14 @@ export class ItemService {
     }
 
     public translateName(zhName: string, zhBaseType: string): string {
-        const baseTypes = this.baseTypeProvider.provideBaseTypeByZhText(zhBaseType);
+        const baseTypes = this.baseTypeProvider.provideBaseTypesByZh(zhBaseType);
 
-        for (const b of baseTypes) {
-            const uniques = b.uniques;
-            for (const uid in uniques) {
-                const udata = uniques[uid];
-                const uzhText = udata.text[Language.Chinese];
-                if (uzhText === zhName) {
-                    return udata.text[Language.English];
+        for (const baseType of baseTypes) {
+            const uniques = baseType.uniques;
+            for (const unique of uniques) {
+                const uniqueZh = unique.zh;
+                if (uniqueZh === zhName) {
+                    return unique.en;
                 }
             }
         }
