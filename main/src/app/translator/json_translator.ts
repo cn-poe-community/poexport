@@ -288,6 +288,10 @@ export class JsonTranslator {
             }
         }
 
+        if (item.hybrid) {
+            item.hybrid.baseTypeName = this.gemService.translateTypeLine(item.hybrid.baseTypeName);
+        }
+
         if (item.properties) {
             for (const p of item.properties) {
                 const res = this.gemService.translatePropertyName(p.name);
