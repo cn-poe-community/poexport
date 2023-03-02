@@ -376,8 +376,8 @@
     },
     {
         "id": "stat_53045048",
-        "zh": "{0} 点闪避值 (区域)",
-        "en": "{0} to Evasion Rating (Local)"
+        "zh": "{0} 点闪避值",
+        "en": "{0} to Evasion Rating"
     },
     {
         "id": "stat_3321629045",
@@ -526,8 +526,8 @@
     },
     {
         "id": "stat_691932474",
-        "zh": "{0} 命中值 (区域)",
-        "en": "{0} to Accuracy Rating (Local)"
+        "zh": "{0} 命中值",
+        "en": "{0} to Accuracy Rating"
     },
     {
         "id": "stat_2866361420",
@@ -601,8 +601,8 @@
     },
     {
         "id": "stat_3484657501",
-        "zh": "{0} 护甲 (区域)",
-        "en": "{0} to Armour (Local)"
+        "zh": "{0} 护甲",
+        "en": "{0} to Armour"
     },
     {
         "id": "stat_967627487",
@@ -2526,13 +2526,13 @@
     },
     {
         "id": "stat_669069897",
-        "zh": "物理攻击伤害的 {0}% 转化为魔力偷取 (区域)",
-        "en": "{0}% of Physical Attack Damage Leeched as Mana (Local)"
+        "zh": "物理攻击伤害的 {0}% 转化为魔力偷取",
+        "en": "{0}% of Physical Attack Damage Leeched as Mana"
     },
     {
         "id": "stat_55876295",
-        "zh": "物理攻击伤害的 {0}% 会转化为生命偷取 (区域)",
-        "en": "{0}% of Physical Attack Damage Leeched as Life (Local)"
+        "zh": "物理攻击伤害的 {0}% 会转化为生命偷取",
+        "en": "{0}% of Physical Attack Damage Leeched as Life"
     },
     {
         "id": "stat_2304729532",
@@ -39343,5 +39343,15 @@
         "id": "stat_472812693",
         "zh": "你技能的光环在你身上的效果提高 {0}%",
         "en": "Auras from your Skills have {0}% increased Effect on you"
+    },
+    {
+        "id": "stat_1462364052",
+        "zh": "在生命不满时使用可以缓速周围敌人，使它们的移动速度减慢 {0}%",
+        "en": "Hinders nearby Enemies with {0}% reduced Movement Speed if used while not on Full Life"
+    },
+    {
+        "id": "stat_2323739383",
+        "zh": "召唤生物有 {0}% 的几率用法术击中时使敌人缓速",
+        "en": "Minions have {0}% chance to Hinder Enemies on Hit with Spells"
     }
 ]
