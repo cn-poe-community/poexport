@@ -18,21 +18,21 @@ export class PassiveSkillProvider {
             if (data.stats !== undefined) {
                 continue;
             }
-            const zhName = data["name"][Language.Chinese];
+            const zhName = data["name"][Language.CHINESE];
             this.notablesIndexByZhName.set(zhName, data);
         }
 
         const keystoneMap = keystones as NodeMap;
         for (const id in keystoneMap) {
             const data = keystoneMap[id];
-            const zhName = data["name"][Language.Chinese];
+            const zhName = data["name"][Language.CHINESE];
             this.keystonesIndexByZhName.set(zhName, data);
         }
 
         const ascendantMap = ascendant as NodeMap;
         for (const id in ascendantMap) {
             const data = ascendantMap[id];
-            const zhName = data["name"][Language.Chinese];
+            const zhName = data["name"][Language.CHINESE];
             this.ascendantIndexByZhName.set(zhName, data);
         }
     }

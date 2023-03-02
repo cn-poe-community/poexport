@@ -11,7 +11,7 @@ export class PassiveSkillService {
     public translateNotable(zh: string): string | null {
         const node = this.passiveSkillProvider.provideNotableByZhName(zh);
         if (node) {
-            return node.name[Language.English];
+            return node.name[Language.ENGLISH];
         }
 
         return null;
@@ -20,7 +20,7 @@ export class PassiveSkillService {
     public translateKeystone(zh: string): string | null {
         const node = this.passiveSkillProvider.provideKeystoneByZhName(zh);
         if (node) {
-            return node.name[Language.English];
+            return node.name[Language.ENGLISH];
         }
 
         return null;
@@ -29,7 +29,7 @@ export class PassiveSkillService {
     public translateAscendant(zh: string): string | null {
         const node = this.passiveSkillProvider.provideAscendantByZhName(zh);
         if (node) {
-            return node.name[Language.English];
+            return node.name[Language.ENGLISH];
         }
 
         return null;

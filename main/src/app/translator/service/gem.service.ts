@@ -1,12 +1,12 @@
 import { GemProvider } from "../provider/gem.provider";
 
-const qualityTypes = new Map([
+const QUALITY_TYPES = new Map([
     ["分歧", "Divergent"],
     ["异常", "Anomalous"],
     ["魅影", "Phantasmal"]
 ]);
 
-const propertyNames = new Map([
+const PROPERTY_NAMES = new Map([
     ["等级", "Level"],
     ["品质", "Quality"]
 ]);
@@ -26,7 +26,7 @@ export class GemService {
     public translateTypeLine(zhTypeLine: string): string | null {
         let qualityTypePrefix = "";
         let zhSkill = zhTypeLine;
-        for (const [zh, en] of qualityTypes) {
+        for (const [zh, en] of QUALITY_TYPES) {
             const zhQualityTypePrefix = `${zh} `;
             if (zhSkill.startsWith(zhQualityTypePrefix)) {
                 qualityTypePrefix = `${en} `;
@@ -40,8 +40,8 @@ export class GemService {
     }
 
     public translatePropertyName(zhName: string): string | null {
-        if (propertyNames.has(zhName)) {
-            const res = propertyNames.get(zhName);
+        if (PROPERTY_NAMES.has(zhName)) {
+            const res = PROPERTY_NAMES.get(zhName);
             if (res) {
                 return res;
             }

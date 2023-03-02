@@ -85,13 +85,13 @@ class Part {
 
         let isMetaPart = false;
         let firstLine = this.lines[0];
-        if (firstLine.type === LineType.KeyValue && firstLine.key === ZH_ITEM_CLASS) {
+        if (firstLine.type === LineType.KEY_VALUE && firstLine.key === ZH_ITEM_CLASS) {
             isMetaPart = true;
         }
 
         for (let i = 0; i < this.lines.length;) {
             const line = this.lines[i];
-            if (isMetaPart && line.type === LineType.Modifier) {
+            if (isMetaPart && line.type === LineType.MODIFIER) {
                 //一般而言，倒数两行是name和typeLine
                 //但是魔法物品有所不同，只有typeLine一行
                 if (i === this.lines.length - 2) {
@@ -153,9 +153,9 @@ class Part {
 }
 
 enum LineType {
-    OnlyKey = 0,
-    KeyValue,
-    Modifier,
+    ONLY_KEY = 0,
+    KEY_VALUE,
+    MODIFIER,
 }
 
 class Line {
@@ -172,17 +172,17 @@ class Line {
             const pair = content.split(KEY_VALUE_SEPARATOR);
             //may happen
             if (pair.length !== 2) {
-                this.type = LineType.Modifier;
+                this.type = LineType.MODIFIER;
             } else {
-                this.type = LineType.KeyValue;
+                this.type = LineType.KEY_VALUE;
                 this.key = pair[0];
                 this.value = pair[1];
             }
         } else if (content.endsWith(":")) {
-            this.type = LineType.OnlyKey;
+            this.type = LineType.ONLY_KEY;
             this.key = content.substring(0, content.length - 1);
         } else {
-            this.type = LineType.Modifier;
+            this.type = LineType.MODIFIER;
             let pattern = new RegExp("(.+)\\s(\\(\\w+\\))$");
             let matchs = pattern.exec(content);
             if (matchs) {
@@ -196,7 +196,7 @@ class Line {
 
     getTranslation(ctx: Context): string {
         const translator = ctx.translator;
-        if (this.type === LineType.KeyValue) {
+        if (this.type === LineType.KEY_VALUE) {
             let translation = translator.propertySerivce.translatePair(this.key, this.value);
             if (translation) {
                 if (translation.name) {
@@ -229,7 +229,7 @@ class Line {
             }
 
             return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
-        } else if (this.type === LineType.OnlyKey) {
+        } else if (this.type === LineType.ONLY_KEY) {
             let translation = translator.propertySerivce.translateName(this.key);
             if (translation) {
                 this.key = translation;

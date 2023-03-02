@@ -11,7 +11,7 @@ export class GemProvider {
             const skills = data.skills;
             for (const skill in skills) {
                 const skillData = skills[skill];
-                const zhSkill = skillData.text[Language.Chinese];
+                const zhSkill = skillData.text[Language.CHINESE];
                 this.skillsIndexByZh.set(zhSkill, skill);
             }
         }

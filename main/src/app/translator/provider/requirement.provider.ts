@@ -9,13 +9,13 @@ export class RequirementProvider {
     constructor() {
         for (const name in names) {
             const data = (names as { [id: string]: RequirementName })[name] as RequirementName;
-            const zhName = data.text[Language.Chinese];
+            const zhName = data.text[Language.CHINESE];
             this.namesIndexByZhText.set(zhName, name);
         }
 
         for (const suffix in suffixes) {
             const data = (suffixes as { [id: string]: RequirementSuffix })[suffix] as RequirementSuffix;
-            const zhSuffix = data.text[Language.Chinese];
+            const zhSuffix = data.text[Language.CHINESE];
             this.suffixesIndexByZhText.set(zhSuffix, suffix);
         }
     }

@@ -1,7 +1,7 @@
 export enum EquipmentCategory {
-    Weapon = "weapon",
-    Accessory = "accessory",
-    Armour = "armour",
-    Flask = "flask",
-    Jewel = "jewel",
+    WEAPON = "weapon",
+    ACCESSORY = "accessory",
+    ARMOUR = "armour",
+    FLASK = "flask",
+    JEWEL = "jewel",
 }

@@ -51,15 +51,15 @@ export class BaseTypeProvider {
 
     private provideBaseTypesByCategory(category: EquipmentCategory): BaseType[] {
         switch (category) {
-            case EquipmentCategory.Weapon:
+            case EquipmentCategory.WEAPON:
                 return weapons;
-            case EquipmentCategory.Accessory:
+            case EquipmentCategory.ACCESSORY:
                 return accessories;
-            case EquipmentCategory.Armour:
+            case EquipmentCategory.ARMOUR:
                 return armour;
-            case EquipmentCategory.Flask:
+            case EquipmentCategory.FLASK:
                 return flasks;
-            case EquipmentCategory.Jewel:
+            case EquipmentCategory.JEWEL:
                 return jewels;
         }
     }

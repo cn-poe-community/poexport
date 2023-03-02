@@ -164,12 +164,12 @@ export class App {
         ipcMain.handle(Channels.DIALOG_OPEN_FLOOR, () => this.handleOpenFolder());
         ipcMain.handle(Channels.APP_GET_CONFIG, () => this.getConfig());
         ipcMain.handle(Channels.APP_RESET_CONFIG, () => this.resetConfig());
-        ipcMain.handle(Channels.APP_SET_POE_SESS_ID, (_, id) => { this.setPoeSessId(id) });
-        ipcMain.handle(Channels.APP_SET_POB_PATH, (_, path) => { this.setPobPath(path) });
-        ipcMain.handle(Channels.APP_SET_POB_PROXY_SUPPORTED, (_, isSupported) => { this.setPobProxySupported(isSupported) });
+        ipcMain.handle(Channels.APP_SET_POE_SESS_ID, (event, id) => { this.setPoeSessId(id) });
+        ipcMain.handle(Channels.APP_SET_POB_PATH, (event, path) => { this.setPobPath(path) });
+        ipcMain.handle(Channels.APP_SET_POB_PROXY_SUPPORTED, (event, isSupported) => { this.setPobProxySupported(isSupported) });
         ipcMain.handle(Channels.APP_GET_EXPORTER_STATUS, () => this.getExporterStatus());
         ipcMain.handle(Channels.APP_PATCH_POB, () => this.patchPob());
         ipcMain.handle(Channels.APP_RESET_POB, () => this.resetPob());
-        ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (_, content) => this.translateItem(content));
+        ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (event, content) => this.translateItem(content));
     }
 }

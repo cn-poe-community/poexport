@@ -3,10 +3,10 @@ import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
 import { StatUtil, Template } from "../util/stat.util";
 import { PassiveSkillService } from "./passiveskill.service";
 
-const ZhImpossibleEscapeModRegExp = /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
-const ZhAnointedModRegExp = /^配置 (.+)$/;
-const ZhForbiddenFleshModRegExp = /^禁断之火上有匹配的词缀则配置 (.+)$/;
-const ZhForbiddenFlameModRegExp = /^禁断之肉上有匹配的词缀则配置 (.+)$/;
+const ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP = /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
+const ZH_ANOINTED_MOD_REGEXP = /^配置 (.+)$/;
+const ZH_FORBIDDEN_FLESH_MOD_REGEXP = /^禁断之火上有匹配的词缀则配置 (.+)$/;
+const ZH_FORBIDDEN_FLAME_MOD_REGEXP = /^禁断之肉上有匹配的词缀则配置 (.+)$/;
 
 export class StatService {
     private readonly passiveSkillService: PassiveSkillService;
@@ -37,7 +37,7 @@ export class StatService {
     }
 
     dealWithPassiveSkillMod(zhMod: string): string | null | undefined {
-        let matches = ZhImpossibleEscapeModRegExp.exec(zhMod);
+        let matches = ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.exec(zhMod);
         if (matches) {
             const zhKeystone = matches[1];
             const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
@@ -48,7 +48,7 @@ export class StatService {
             }
         }
 
-        matches = ZhAnointedModRegExp.exec(zhMod);
+        matches = ZH_ANOINTED_MOD_REGEXP.exec(zhMod);
         if (matches) {
             const zhNoteable = matches[1];
             const notable = this.passiveSkillService.translateNotable(zhNoteable);
@@ -59,7 +59,7 @@ export class StatService {
             }
         }
 
-        matches = ZhForbiddenFlameModRegExp.exec(zhMod);
+        matches = ZH_FORBIDDEN_FLAME_MOD_REGEXP.exec(zhMod);
         if (matches) {
             const zhAscendant = matches[1];
             const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
@@ -68,7 +68,7 @@ export class StatService {
             }
         }
 
-        matches = ZhForbiddenFleshModRegExp.exec(zhMod);
+        matches = ZH_FORBIDDEN_FLESH_MOD_REGEXP.exec(zhMod);
         if (matches) {
             const zhAscendant = matches[1];
             const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
