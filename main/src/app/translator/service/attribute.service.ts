@@ -8,7 +8,7 @@ export class AttributeService {
         this.attrProvider = attrProvider;
     }
 
-    public translatePair(zhName: string, zhValue: string): { name: string, value: string | undefined } | undefined {
+    public translatePair(zhName: string, zhValue: string): { name: string, value?: string } | undefined {
         return this.doTranslate(zhName, zhValue);
     }
 
@@ -19,7 +19,7 @@ export class AttributeService {
         }
     }
 
-    private doTranslate(zhName: string, zhValue: string | undefined): { name: string, value: string | undefined } | undefined {
+    private doTranslate(zhName: string, zhValue?: string): { name: string, value?: string } | undefined {
         const attr = this.attrProvider.provideAttribute(zhName);
         if (attr !== undefined) {
             const enName = attr.en;
@@ -39,9 +39,5 @@ export class AttributeService {
                 value: undefined,
             }
         }
-    }
-
-    public getRequirementZhName() {
-
     }
 }

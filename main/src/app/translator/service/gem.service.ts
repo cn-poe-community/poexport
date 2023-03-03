@@ -17,13 +17,12 @@ export class GemService {
         this.gemProvider = gemProvider;
     }
 
-    public translateBaseType(zhBaseType: string): string | null {
+    public translateBaseType(zhBaseType: string): string | undefined {
         zhBaseType = zhBaseType.replace("(", "（").replace(")", "）");
-        const res = this.gemProvider.provideSkills().get(zhBaseType);
-        return res ? res : null;
+        return this.gemProvider.provideSkills().get(zhBaseType);
     }
 
-    public translateTypeLine(zhTypeLine: string): string | null {
+    public translateTypeLine(zhTypeLine: string): string | undefined {
         let qualityTypePrefix = "";
         let zhSkill = zhTypeLine;
         for (const [zh, en] of QUALITY_TYPES) {
@@ -36,17 +35,14 @@ export class GemService {
         }
 
         const skill = this.translateBaseType(zhSkill);
-        return skill ? `${qualityTypePrefix}${skill}` : null;
+        return skill !== undefined ? `${qualityTypePrefix}${skill}` : undefined;
     }
 
-    public translatePropertyName(zhName: string): string | null {
+    public translatePropertyName(zhName: string): string | undefined {
         if (PROPERTY_NAMES.has(zhName)) {
-            const res = PROPERTY_NAMES.get(zhName);
-            if (res) {
-                return res;
-            }
+            return PROPERTY_NAMES.get(zhName);
         }
 
-        return null;
+        return undefined;
     }
 }

@@ -161,8 +161,8 @@ enum LineType {
 class Line {
     type: LineType;
     content: string;
-    key: string | null;
-    value: string | null;
+    key?: string;
+    value?: string;
     modifier: string;
     suffix: string;
 

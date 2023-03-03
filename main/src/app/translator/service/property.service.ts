@@ -7,7 +7,7 @@ export class PropertyService {
         this.propProvider = propProvider;
     }
 
-    public translatePair(zhName: string, zhValue: string): { name: string, value: string | undefined } | undefined {
+    public translatePair(zhName: string, zhValue: string): { name: string, value?: string } | undefined {
         return this.doTranslate(zhName, zhValue);
     }
 
@@ -18,7 +18,7 @@ export class PropertyService {
         }
     }
 
-    private doTranslate(zhName: string, zhValue: string | undefined): { name: string, value: string | undefined } | undefined {
+    private doTranslate(zhName: string, zhValue?: string): { name: string, value?: string } | undefined {
         const prop = this.propProvider.provideProperty(zhName);
         if (prop !== undefined) {
             const enName = prop.en;

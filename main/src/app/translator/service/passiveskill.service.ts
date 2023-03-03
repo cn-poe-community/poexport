@@ -8,30 +8,30 @@ export class PassiveSkillService {
         this.passiveSkillProvider = passiveSkillProvider;
     }
 
-    public translateNotable(zh: string): string | null {
+    public translateNotable(zh: string): string | undefined {
         const node = this.passiveSkillProvider.provideNotableByZhName(zh);
-        if (node) {
+        if (node !== undefined) {
             return node.name[Language.ENGLISH];
         }
 
-        return null;
+        return undefined;
     }
 
-    public translateKeystone(zh: string): string | null {
+    public translateKeystone(zh: string): string | undefined {
         const node = this.passiveSkillProvider.provideKeystoneByZhName(zh);
-        if (node) {
+        if (node !== undefined) {
             return node.name[Language.ENGLISH];
         }
 
-        return null;
+        return undefined;
     }
 
-    public translateAscendant(zh: string): string | null {
+    public translateAscendant(zh: string): string | undefined {
         const node = this.passiveSkillProvider.provideAscendantByZhName(zh);
-        if (node) {
+        if (node !== undefined) {
             return node.name[Language.ENGLISH];
         }
 
-        return null;
+        return undefined;
     }
 }

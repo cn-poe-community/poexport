@@ -37,30 +37,15 @@ export class PassiveSkillProvider {
         }
     }
 
-    public provideNotableByZhName(zhName: string): Node | null {
-        const val = this.notablesIndexByZhName.get(zhName);
-        if (val) {
-            return val;
-        }
-
-        return null;
+    public provideNotableByZhName(zhName: string): Node | undefined {
+        return this.notablesIndexByZhName.get(zhName);
     }
 
-    public provideKeystoneByZhName(zhName: string): Node | null {
-        const val = this.keystonesIndexByZhName.get(zhName);
-        if (val) {
-            return val;
-        }
-
-        return null;
+    public provideKeystoneByZhName(zhName: string): Node | undefined {
+        return this.keystonesIndexByZhName.get(zhName);
     }
 
-    public provideAscendantByZhName(zhName: string): Node | null {
-        const val = this.ascendantIndexByZhName.get(zhName);
-        if (val) {
-            return val;
-        }
-
-        return null;
+    public provideAscendantByZhName(zhName: string): Node | undefined {
+        return this.ascendantIndexByZhName.get(zhName);
     }
 }

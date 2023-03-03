@@ -17,93 +17,114 @@ export class StatService {
         this.statProvider = statProvider;
     }
 
-    public translateMod(zhMod: string): string | null {
-        const res = this.dealWithPassiveSkillMod(zhMod);
-        if (res || res === null) {
-            return res;
+    public translateMod(zhMod: string): string | undefined {
+        if (this.isImpossibleEscapeMod(zhMod)) {
+            return this.translateImpossibleEscapeMod(zhMod);
+        }
+
+        if (this.isAnointedMod(zhMod)) {
+            return this.translateAnointedMod(zhMod);
+        }
+
+        if (this.isForbiddenFlameMod(zhMod)) {
+            return this.translateForbiddenFlameMod(zhMod);
+        }
+
+        if (this.isForbiddenFleshMod(zhMod)) {
+            return this.translateForbiddenFleshMod(zhMod);
         }
 
         const body = StatUtil.getBodyOfZhModifier(zhMod);
-        const stats = this.statProvider.provideStatByZhBody(body);
+        const stats = this.statProvider.provideStatsByZhBody(body);
 
-        if (stats) {
-            const result = this.doTranslate(stats, zhMod);
-            if (result) {
-                return result;
-            }
-        }
-
-        return null;
-    }
-
-    dealWithPassiveSkillMod(zhMod: string): string | null | undefined {
-        let matches = ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.exec(zhMod);
-        if (matches) {
-            const zhKeystone = matches[1];
-            const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
-            if (keystone) {
-                return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`
-            } else {
-                return null;
-            }
-        }
-
-        matches = ZH_ANOINTED_MOD_REGEXP.exec(zhMod);
-        if (matches) {
-            const zhNoteable = matches[1];
-            const notable = this.passiveSkillService.translateNotable(zhNoteable);
-            if (notable) {
-                return `Allocates ${notable}`;
-            } else {
-                return null;
-            }
-        }
-
-        matches = ZH_FORBIDDEN_FLAME_MOD_REGEXP.exec(zhMod);
-        if (matches) {
-            const zhAscendant = matches[1];
-            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
-            if (ascendant) {
-                return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flesh`;
-            }
-        }
-
-        matches = ZH_FORBIDDEN_FLESH_MOD_REGEXP.exec(zhMod);
-        if (matches) {
-            const zhAscendant = matches[1];
-            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
-            if (ascendant) {
-                return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flame`;
+        if (stats !== undefined) {
+            for (const stat of stats) {
+                const result = this.dotranslateMod(stat, zhMod);
+                if (result !== undefined) {
+                    return result;
+                }
             }
         }
 
         return undefined;
     }
 
-    doTranslate(stats: Stat | Array<Stat>, zhMod: string): string | null {
-        if (Array.isArray(stats)) {
-            for (const stat of stats) {
-                const val = this.dotranslateMod(stat, zhMod);
-                if (val) {
-                    return val;
-                }
-            }
-        } else {
-            return this.dotranslateMod(stats, zhMod);
-        }
-
-        return null;
+    isImpossibleEscapeMod(zhMod: string): boolean {
+        return ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.test(zhMod);
     }
 
-    dotranslateMod(stat: Stat, zhMod: string): string | null {
+    translateImpossibleEscapeMod(zhMod: string): string | undefined {
+        const matches = ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.exec(zhMod);
+        if (matches !== null) {
+            const zhKeystone = matches[1];
+            const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
+            if (keystone !== undefined) {
+                return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`
+            }
+        }
+
+        return undefined;
+    }
+
+    isAnointedMod(zhMod: string): boolean {
+        return ZH_ANOINTED_MOD_REGEXP.test(zhMod);
+    }
+
+    translateAnointedMod(zhMod: string): string | undefined {
+        const matches = ZH_ANOINTED_MOD_REGEXP.exec(zhMod);
+        if (matches !== null) {
+            const zhNoteable = matches[1];
+            const notable = this.passiveSkillService.translateNotable(zhNoteable);
+            if (notable !== undefined) {
+                return `Allocates ${notable}`;
+            }
+        }
+        return undefined;
+    }
+
+    isForbiddenFlameMod(zhMod: string): boolean {
+        return ZH_FORBIDDEN_FLAME_MOD_REGEXP.test(zhMod);
+    }
+
+    translateForbiddenFlameMod(zhMod: string): string | undefined {
+        const matches = ZH_FORBIDDEN_FLAME_MOD_REGEXP.exec(zhMod);
+        if (matches !== null) {
+            const zhAscendant = matches[1];
+            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            if (ascendant !== undefined) {
+                return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flesh`;
+            }
+        }
+
+        return undefined;
+    }
+
+    isForbiddenFleshMod(zhMod: string): boolean {
+        return ZH_FORBIDDEN_FLESH_MOD_REGEXP.test(zhMod);
+    }
+
+    translateForbiddenFleshMod(zhMod: string): string | undefined {
+        const matches = ZH_FORBIDDEN_FLESH_MOD_REGEXP.exec(zhMod);
+        if (matches !== null) {
+            const zhAscendant = matches[1];
+            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            if (ascendant !== undefined) {
+                return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flame`;
+            }
+        }
+        return undefined;
+    }
+
+    dotranslateMod(stat: Stat, zhMod: string): string | undefined {
         if (zhMod === stat.zh) {
             return stat.en;
         }
 
         const zhTpl = new Template(stat.zh);
         const posParams = zhTpl.parseParams(zhMod);
+        //does not match
         if (posParams === undefined) {
-            return null;
+            return undefined;
         }
 
         const enTpl = new Template(stat.en);
@@ -113,22 +134,29 @@ export class StatService {
 
     public getMaxLineSizeOfCompoundedMod(firstLine: string): number {
         const body = StatUtil.getBodyOfZhModifier(firstLine);
-        const stats = this.statProvider.providecompoundedStatByFirstLinesZhBody(body);
-        if (stats) {
-            return stats.maxLineSize;
+        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        if (entry !== undefined) {
+            return entry.maxLineSize;
         }
 
         return 0;
     }
 
+    /**
+     * Translate compounded mod for text item.
+     * 
+     * Caller should use `getMaxLineSizeOfCompoundedMod` before to get the max lines of candidates which has the first line.
+     * 
+     * The method uses the `lines` to infer a compounded mod, returns the translation.
+     */
     public translateCompoundedMod(lines: string[]): { result: string, lineSize: number } | undefined {
         const body = StatUtil.getBodyOfZhModifier(lines[0]);
-        const stats = this.statProvider.providecompoundedStatByFirstLinesZhBody(body);
-        if (!stats) {
+        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        if (entry === undefined) {
             return;
         }
 
-        for (const compoundedStat of stats.stats) {
+        for (const compoundedStat of entry.stats) {
             const lineSize = compoundedStat.lineSize;
             if (compoundedStat.lineSize > lines.length) {
                 continue;
@@ -139,7 +167,7 @@ export class StatService {
             if (StatUtil.getBodyOfZhTemplate(stat.zh) ===
                 StatUtil.getBodyOfZhModifier(mod)) {
                 const result = this.dotranslateMod(stat, mod);
-                if (result) {
+                if (result !== undefined) {
                     return {
                         result: result,
                         lineSize: lineSize,
@@ -147,5 +175,7 @@ export class StatService {
                 }
             }
         }
+
+        return undefined;
     }
 }

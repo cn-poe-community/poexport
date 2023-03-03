@@ -11,25 +11,20 @@ export class RequirementSerivce {
         this.characterService = characterService;
     }
 
-    public translateName(zhName: string): string | null {
+    public translateName(zhName: string): string | undefined {
         const names = this.requirementProvider.provideNames();
-        const name = names.get(zhName);
-
-        return name ? name : null;
+        return names.get(zhName);
     }
 
-    public translateValue(zhName: string, zhValue: string): string | null {
+    public translateValue(zhName: string, zhValue: string): string | undefined {
         if (zhName === ZH_REQUIREMENT_NAME_CLASS) {
-            const res = this.characterService.translateClass(zhValue);
-            return res;
+            return this.characterService.translateClass(zhValue);
         }
-        return null;
+        return undefined;
     }
 
-    public translateSuffix(zhSuffix: string): string | null {
+    public translateSuffix(zhSuffix: string): string | undefined {
         const suffixes = this.requirementProvider.provideSuffixes();
-        const suffix = suffixes.get(zhSuffix);
-
-        return suffix ? suffix : null;
+        return suffixes.get(zhSuffix);
     }
 }
