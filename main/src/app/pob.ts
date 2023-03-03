@@ -10,12 +10,11 @@ const MANIFEST_RELATIVE_PATH = "manifest.xml";
 const HOST_OF_TENCENT = "https://poe.game.qq.com/";
 const HOST_OF_LOCAL_PATTERN = String.raw`http://localhost:\d{1,5}/`;
 
-const PROXY_SUPPORTED_PATCH_LINES = `\tlocal proxy_url = self.proxyURL
-\tif string.find(url, "^http://localhost") == 1 then
-\t\tproxy_url = ""
-\tend
-\tlocal id = LaunchSubScript(script, "", "ConPrintf", url, params.header, params.body, self.connectionProtocol, proxy_url)`
-    .replace("\r\n", "\n");
+const PROXY_SUPPORTED_PATCH_LINES = `\tlocal proxy_url = self.proxyURL\n` +
+    `\tif string.find(url, "^http://localhost") == 1 then\n` +
+    `\t\tproxy_url = ""\n` +
+    `\tend\n` +
+    `\tlocal id = LaunchSubScript(script, "", "ConPrintf", url, params.header, params.body, self.connectionProtocol, proxy_url)`;
 
 const PROXY_SUPPORTED_PATCH_TOKEN = `^http://localhost`;
 const PROXY_SUPPORTED_PATCH_POSITION = `\tlocal id = LaunchSubScript(script, "", "ConPrintf", url, params.header, params.body, self.connectionProtocol, self.proxyURL)`;
