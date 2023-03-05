@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="encoder">
-      <h2>URI 编码</h2>
+      <h2>URL 编码</h2>
       <div class="line">
         <span class="line-content">
           <input placeholder="论坛账户名" v-model="inputs.poeAccountName" />
