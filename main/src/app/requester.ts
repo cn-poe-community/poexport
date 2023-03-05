@@ -128,10 +128,14 @@ export class Requester {
     }
 }
 
-export class HttpError {
+/**
+ * 
+ */
+export class HttpError extends Error {
     status: number;
 
     constructor(status: number) {
+        super(status.toString());
         this.status = status;
     }
 }
