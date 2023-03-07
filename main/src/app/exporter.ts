@@ -70,7 +70,7 @@ export class Exporter {
         this.requester.getCharacters(accountName, realm)
             .then(data => {
                 for (const character of data) {
-                    character.league = this.betterLeagueName(character.league);
+                    character.league = this.translateLeague(character.league);
                 }
 
                 res.setHeader("content-type", "application/json");
@@ -140,16 +140,23 @@ export class Exporter {
             });
     }
 
-    betterLeagueName(league: string) {
-        return league.replace("永久", "Standard")
-            .replace("虚空", "Void")
-            .replace("赛季", "")
-            .replace("季前赛", "Pre")
-            .replace("独狼", "SSF_")
-            .replace("专家", "HC_")
-            .replace("无情", "R_")
-            .replace("（", "(")
-            .replace("）", ")");
+    private static readonly LEAGUE_NAME_SEGMENT_MAPPRINGS: Map<string, string> = new Map([
+        ["永久", "Standard"],
+        ["虚空", "Void"],
+        ["赛季", ""],
+        ["季前赛", "Pre"],
+        ["独狼", "SSF_"],
+        ["专家", "HC_"],
+        ["无情", "R_"],
+        ["（", "("],
+        ["）", ")"],
+    ]);
+
+    /**
+     * Translate chinese league to english league.
+     */
+    translateLeague(league: string) {
+        return league.replace(/永久|虚空|赛季|季前赛|独狼|专家|无情|（|）/g, match => Exporter.LEAGUE_NAME_SEGMENT_MAPPRINGS.get(match));
     }
 
     /**
