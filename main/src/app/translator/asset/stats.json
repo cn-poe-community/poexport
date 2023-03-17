@@ -8916,7 +8916,7 @@
     },
     {
         "id": "stat_655871604",
-        "zh": "周围敌人击中造成的伤害特别幸运",
+        "zh": "周围友军击中造成的伤害特别幸运",
         "en": "Nearby Allies' Damage with Hits is Lucky"
     },
     {
@@ -34741,12 +34741,12 @@
     },
     {
         "id": "stat_3524326896",
-        "zh": "霜寒爆的冷却回复率提高 {0}%",
+        "zh": "寒霜爆的冷却回复率提高 #%",
         "en": "Frost Bomb has {0}% increased Cooldown Recovery Rate"
     },
     {
         "id": "stat_3524326896",
-        "zh": "霜寒爆的冷却回复率降低 {0}%",
+        "zh": "寒霜爆的冷却回复率降低 {0}%",
         "en": "Frost Bomb has {0}% reduced Cooldown Recovery Rate"
     },
     {
@@ -35066,12 +35066,12 @@
     },
     {
         "id": "stat_1451372148",
-        "zh": "霜寒爆的效果区域扩大 {0}%",
+        "zh": "寒霜爆的效果区域扩大 {0}%",
         "en": "{0}% increased Frost Bomb Area of Effect"
     },
     {
         "id": "stat_1451372148",
-        "zh": "霜寒爆的效果区域缩小 {0}%",
+        "zh": "寒霜爆的效果区域缩小 {0}%",
         "en": "{0}% reduced Frost Bomb Area of Effect"
     },
     {
@@ -39353,5 +39353,815 @@
         "id": "stat_2323739383",
         "zh": "召唤生物有 {0}% 的几率用法术击中时使敌人缓速",
         "en": "Minions have {0}% chance to Hinder Enemies on Hit with Spells"
+    },
+    {
+        "id": "stat_3082079953",
+        "zh": "元素抗性被你最高的元素抗性上限封顶",
+        "en": "Elemental Resistances are capped by your highest Maximum Elemental Resistance instead"
+    },
+    {
+        "id": "stat_3002506763",
+        "zh": "有 {0}% 的几率在法术击中时使敌人缓速",
+        "en": "{0}% chance to Hinder Enemies on Hit with Spells"
+    },
+    {
+        "id": "stat_1702195217",
+        "zh": "{0}% 攻击伤害格挡几率",
+        "en": "{0}% Chance to Block Attack Damage"
+    },
+    {
+        "id": "stat_19803471",
+        "zh": "{0}% 格挡法术伤害几率",
+        "en": "{0}% Chance to Block Spell Damage"
+    },
+    {
+        "id": "stat_3285748758",
+        "zh": "燃烧伤害在你近期内每次使非感电敌人陷入感电时提高 {0}%，最多 120%",
+        "en": "{0}% increased Burning Damage for each time you have Shocked a Non-Shocked Enemy Recently, up to a maximum of 120%"
+    },
+    {
+        "id": "stat_3274973940",
+        "zh": "插入的技能石被 {0} 级的圣祝辅助",
+        "en": "Socketed Gems are Supported by Level {0} Divine Blessing"
+    },
+    {
+        "id": "stat_1692879867",
+        "zh": "你受到的流血持续时间提高 {0}%",
+        "en": "{0}% increased Bleed Duration on you"
+    },
+    {
+        "id": "stat_1692879867",
+        "zh": "你受到的流血持续时间降低 {0}%",
+        "en": "{0}% reduced Bleed Duration on you"
+    },
+    {
+        "id": "stat_3301100256",
+        "zh": "你受到的中毒持续时间提高 {0}%",
+        "en": "{0}% increased Poison Duration on you"
+    },
+    {
+        "id": "stat_3301100256",
+        "zh": "你受到的中毒持续时间降低 {0}%",
+        "en": "{0}% reduced Poison Duration on you"
+    },
+    {
+        "id": "stat_2093523445",
+        "zh": "攻击你时附加{0}-{1}点物理伤害",
+        "en": "Adds {0} to {1} Physical Damage to Attacks against you"
+    },
+    {
+        "id": "stat_1021552211",
+        "zh": "召唤的魔侍武士将会一直跟着你",
+        "en": "Summoned Skeleton Warriors are Permanent and Follow you"
+    },
+    {
+        "id": "stat_4069440714",
+        "zh": "伤害的 {0}% 转化为生命偷取",
+        "en": "{0}% of Damage Leeched as Life"
+    },
+    {
+        "id": "stat_2070361501",
+        "zh": "你承受的来自中毒敌人的暴击额外伤害提高 {0}%",
+        "en": "You take {0}% increased Extra Damage from Critical Strikes by Poisoned Enemies"
+    },
+    {
+        "id": "stat_2070361501",
+        "zh": "你承受的来自中毒敌人的暴击额外伤害降低 {0}%",
+        "en": "You take {0}% reduced Extra Damage from Critical Strikes by Poisoned Enemies"
+    },
+    {
+        "id": "stat_2491363440",
+        "zh": "攻击你时附加{0}-{1}点闪电伤害",
+        "en": "Adds {0} to {1} Lightning Damage to Attacks against you"
+    },
+    {
+        "id": "stat_2298311736",
+        "zh": "在范围内至少有 40 点力量的情况下，炼狱战吼增助攻击的点燃伤害总增 {0}%",
+        "en": "With at least 40 Strength in Radius, Attacks Exerted by Infernal Cry deal {0}% more Damage with Ignite"
+    },
+    {
+        "id": "stat_2471517399",
+        "zh": "在范围内至少有 40 点力量的情况下禁用燃尽",
+        "en": "With at least 40 Strength in Radius, Combust is Disabled"
+    },
+    {
+        "id": "stat_3945908658",
+        "zh": "召唤生物有 {0}% 的几率造成点燃状态",
+        "en": "Minions have {0}% chance to Ignite"
+    },
+    {
+        "id": "stat_3998967779",
+        "zh": "召唤生物有{0}%的几率造成攻击流血",
+        "en": "Minions have {0}% chance to cause Bleeding with Attacks"
+    },
+    {
+        "id": "stat_264042266",
+        "zh": "召唤生物 {0}% 的物理伤害转化为冰霜伤害",
+        "en": "Minions convert {0}% of Physical Damage to Cold Damage"
+    },
+    {
+        "id": "stat_2127433866",
+        "zh": "攻击你时附加{0}-{1}点火焰伤害",
+        "en": "Adds {0} to {1} Fire Damage to Attacks against you"
+    },
+    {
+        "id": "stat_617462123",
+        "zh": "攻击你时附加{0}-{1}点冰霜伤害",
+        "en": "Adds {0} to {1} Cold Damage to Attacks against you"
+    },
+    {
+        "id": "stat_935592011",
+        "zh": "召唤生物不会造成冰霜以外的伤害",
+        "en": "Minions deal no Non-Cold Damage"
+    },
+    {
+        "id": "stat_440248135",
+        "zh": "插入的弓类技能触发时，造成的伤害总增 {0}%",
+        "en": "Socketed Triggered Bow Skills deal 40% less Damage"
+    },
+    {
+        "id": "stat_771127912",
+        "zh": "每秒损失{0}点生命",
+        "en": "Lose {0} Life per second"
+    },
+    {
+        "id": "stat_2881111359",
+        "zh": "{0}% 法术格挡几率",
+        "en": "{0}% Chance to Block Spell Damage"
+    },
+    {
+        "id": "stat_407482587",
+        "zh": "非吟唱技能消耗{0}魔力",
+        "en": "Non-Channelling Skills Cost {0} Mana"
+    },
+    {
+        "id": "stat_2889807051",
+        "zh": "近战击中视为暴走能量\n暴走",
+        "en": "Melee Hits count as Rampage Kills\nRampage"
+    },
+    {
+        "id": "stat_4170725899",
+        "zh": "枯萎技能会使干扰持续时间延长 {0}%",
+        "en": "Blight has {0}% increased Hinder Duration"
+    },
+    {
+        "id": "stat_222829382",
+        "zh": "在范围内至少有 40 点智慧的情况下，枯萎的施法速度加快 {0}%",
+        "en": "With at least 40 Intelligence in Radius, Blight has {0}% increased Cast Speed"
+    },
+    {
+        "id": "stat_973574623",
+        "zh": "插入的投射物法术发射一枚额外投射物",
+        "en": "Socketed Projectile Spells fire an additional Projectile"
+    },
+    {
+        "id": "stat_973574623",
+        "zh": "插入的投射物法术发射 {0} 枚额外投射物",
+        "en": "Socketed Projectile Spells fire {0} additional Projectiles"
+    },
+    {
+        "id": "stat_838272676",
+        "zh": "每秒损失{0}点魔力",
+        "en": "Lose {0} Mana per second"
+    },
+    {
+        "id": "stat_2443457281",
+        "zh": "插入的投射物法术的击中伤害总增 {0}%",
+        "en": "Socketed Projectile Spells deal {0}% more Damage with Hits"
+    },
+    {
+        "id": "stat_3104895675",
+        "zh": "插入的投射物法术的技能效果持续时间总增 {0}%",
+        "en": "Socketed Projectile Spells have {0}% more Skill Effect Duration"
+    },
+    {
+        "id": "stat_3849554033",
+        "zh": "邪法宗师",
+        "en": "Hex Master"
+    },
+    {
+        "id": "stat_1302845655",
+        "zh": "每个被你用暴击击中的敌人都使你有 {0}% 的几率获得一个狂怒球",
+        "en": "{0}% chance to gain a Frenzy Charge for each Enemy you hit with a Critical Strike"
+    },
+    {
+        "id": "stat_3235941702",
+        "zh": "插入的投射物法术环状发射投射物",
+        "en": "Socketed Projectile Spells fire Projectiles in a circle"
+    },
+    {
+        "id": "stat_2522975315",
+        "zh": "达到狂怒球数量上限时失去所有狂怒球，并使你下次施放的弓类攻击发射相同数量的额外箭矢",
+        "en": "Lose all Frenzy Charges on reaching Maximum Frenzy Charges to make the next Bow Attack you perform fire that many additional Arrows"
+    },
+    {
+        "id": "stat_1604736568",
+        "zh": "击败敌人会回复 {0}% 魔力",
+        "en": "Recover {0}% of Mana on Kill"
+    },
+    {
+        "id": "stat_3565956680",
+        "zh": "对致盲敌人的击中和异常状态伤害提高 {0}%",
+        "en": "{0}% increased Damage with Hits and Ailments against Blinded Enemies"
+    },
+    {
+        "id": "stat_207863952",
+        "zh": "可以储存灵魂供插入的瓦尔技能额外使用 {0} 次",
+        "en": "Socketed Vaal Skills have 20% chance to regain consumed Souls when used"
+    },
+    {
+        "id": "stat_4096273663",
+        "zh": "技艺精湛",
+        "en": "Precise Technique"
+    },
+    {
+        "id": "stat_3285021988",
+        "zh": "如果最近使用过瓦尔技能，则每击中一名敌人增加{0}点生命",
+        "en": "Gain {0} Life per Enemy Hit if you have used a Vaal Skill Recently"
+    },
+    {
+        "id": "stat_2313899959",
+        "zh": "在魔力不满时使用可以缓速周围敌人，使它们的移动速度减慢 {0}%",
+        "en": "Hinders nearby Enemies with {0}% reduced Movement Speed if used while not on Full Mana"
+    },
+    {
+        "id": "stat_2836980154",
+        "zh": "你无法拥有非幽魂召唤生物",
+        "en": "You cannot have Non-Spectre Minions"
+    },
+    {
+        "id": "stat_4082111882",
+        "zh": "满血时闪避值提高 {0}",
+        "en": "{0} to Evasion Rating while on Full Life"
+    },
+    {
+        "id": "stat_699756626",
+        "zh": "你使用的水银药剂也能用于周围友军",
+        "en": "Quicksilver Flasks you Use also apply to nearby Allies"
+    },
+    {
+        "id": "stat_2574694107",
+        "zh": "插槽中的非瓦尔宝石等级增加{0}",
+        "en": "{0} to Level of Socketed Non-Vaal Gems"
+    },
+    {
+        "id": "stat_2693705594",
+        "zh": "{0}%的物理攻击伤害被敌人吸取为生命",
+        "en": "{0}% of Physical Attack Damage Leeched by Enemy as Life"
+    },
+    {
+        "id": "stat_3150000576",
+        "zh": "魔卫抗性提高 {0}%",
+        "en": "Raised Zombies have {0}% to all Resistances"
+    },
+    {
+        "id": "stat_407390981",
+        "zh": "{0}%的物理攻击伤害被敌人吸取为魔力",
+        "en": "{0}% of Physical Attack Damage Leeched by Enemy as Mana"
+    },
+    {
+        "id": "stat_849152640",
+        "zh": "非光环技能在专注时不消耗魔力或生命",
+        "en": "Non-Aura Skills Cost no Mana or Life while Focused"
+    },
+    {
+        "id": "stat_2674214144",
+        "zh": "当敌人击中你时有 {0}% 的几率给予对方一个随机魔蛊，并且无视诅咒限制",
+        "en": "{0}% chance to Curse Enemies which Hit you with a random Hex, ignoring Curse Limit"
+    },
+    {
+        "id": "stat_4070519133",
+        "zh": "低血时，有 {0}% 的几率格挡法术伤害",
+        "en": "{0}% Chance to Block Spell Damage while on Low Life"
+    },
+    {
+        "id": "stat_3119612865",
+        "zh": "召唤生物有 {0}% 额外物理伤害减免",
+        "en": "Minions have {0}% additional Physical Damage Reduction"
+    },
+    {
+        "id": "stat_10224385",
+        "zh": "召唤生物获得 {0}% 最大全元素抗性",
+        "en": "Minions have {0}% to all maximum Elemental Resistances"
+    },
+    {
+        "id": "stat_3482587079",
+        "zh": "击中你时附加{0}-{1}点冰霜伤害",
+        "en": "Adds {0} to {1} Cold Damage to Hits against you"
+    },
+    {
+        "id": "stat_3266609002",
+        "zh": "非光环魔蛊每秒效果提高 20%",
+        "en": "Non-Aura Hexes gain 20% increased Effect per second"
+    },
+    {
+        "id": "stat_2923069345",
+        "zh": "击中你时附加{0}-{1}点闪电伤害",
+        "en": "Adds {0} to {1} Lightning Damage to Hits against you"
+    },
+    {
+        "id": "stat_2417456003",
+        "zh": "非光环魔蛊在达到基础效果 {0}% 时衰减",
+        "en": "Non-Aura Hexes expire upon reaching {0}% of base Effect"
+    },
+    {
+        "id": "stat_3416664215",
+        "zh": "作为光环效果施放的元素要害不具有保留效果",
+        "en": "Elemental Weakness has no Reservation if Cast as an Aura"
+    },
+    {
+        "id": "stat_2097195894",
+        "zh": "作为光环效果施放的惩戒不产生保留效果",
+        "en": "Punishment has no Reservation if Cast as an Aura"
+    },
+    {
+        "id": "stat_491450213",
+        "zh": "召唤生物的暴击率提高 {0}%",
+        "en": "Minions have {0}% increased Critical Strike Chance"
+    },
+    {
+        "id": "stat_56919069",
+        "zh": "作为光环施放的衰弱不具有保留效果",
+        "en": "Enfeeble has no Reservation if Cast as an Aura"
+    },
+    {
+        "id": "stat_1905034712",
+        "zh": "击中你时附加{0}-{1}点火焰伤害",
+        "en": "Adds {0} to {1} Fire Damage to Hits against you"
+    },
+    {
+        "id": "stat_4157542794",
+        "zh": "不能造成物理或元素伤害",
+        "en": "Deal no Physical or Elemental Damage"
+    },
+    {
+        "id": "stat_2564857472",
+        "zh": "对你施用的魔法功能药剂具有{0}%增益效果",
+        "en": "Magic Utility Flasks applied to you have {0}% increased Effect"
+    },
+    {
+        "id": "stat_932096321",
+        "zh": "你的火焰伤害可以感电",
+        "en": "Your Fire Damage can Shock"
+    },
+    {
+        "id": "stat_2161482953",
+        "zh": "濒血状态时每秒恢复{0}生命",
+        "en": "Regenerate {0} Life per Second while on Low Life"
+    },
+    {
+        "id": "stat_4021083819",
+        "zh": "装入技能槽的已触发技能造成双倍伤害",
+        "en": "Socketed Triggered Skills deal Double Damage"
+    },
+    {
+        "id": "stat_1178188780",
+        "zh": "吟唱技能消耗{0}魔力",
+        "en": "Channelling Skills Cost {0} Mana"
+    },
+    {
+        "id": "stat_380759151",
+        "zh": "你的闪电伤害可以冰冻",
+        "en": "Your Lightning Damage can Freeze"
+    },
+    {
+        "id": "stat_831284309",
+        "zh": "召唤的劲弩有{0}%的几率造成点燃",
+        "en": "Summoned Arbalists have {0}% chance to Ignite"
+    },
+    {
+        "id": "stat_2727188901",
+        "zh": "技能投出的陷阱会被随机扔在目标位置附近",
+        "en": "Traps from Skills are thrown randomly around targeted location"
+    },
+    {
+        "id": "stat_2052458107",
+        "zh": "召唤的劲弩有{0}%的几率造成冰冻",
+        "en": "Summoned Arbalists have {0}% chance to Freeze"
+    },
+    {
+        "id": "stat_1861759600",
+        "zh": "敌人无法触发陷阱",
+        "en": "Traps cannot be triggered by Enemies"
+    },
+    {
+        "id": "stat_2144847042",
+        "zh": "召唤的劲弩有{0}%的几率造成感电",
+        "en": "Summoned Arbalists have {0}% chance to Shock"
+    },
+    {
+        "id": "stat_2142803347",
+        "zh": "击败敌人时有{0}%的几率损失一个狂怒球",
+        "en": "{0}% chance to lose a Frenzy Charge on Kill"
+    },
+    {
+        "id": "stat_627015097",
+        "zh": "击败敌人时有{0}%的几率损失一个耐力球",
+        "en": "{0}% chance to lose an Endurance Charge on Kill"
+    },
+    {
+        "id": "stat_385361774",
+        "zh": "攻击你时附加{0}-{1}点混沌伤害",
+        "en": "Adds {0} to {1} Chaos Damage to Attacks against you"
+    },
+    {
+        "id": "stat_497196601",
+        "zh": "专注时，{0}%的伤害被敌人吸取为生命",
+        "en": "{0}% of Damage Leeched by Enemy as Life while Focused"
+    },
+    {
+        "id": "stat_178386603",
+        "zh": "每个狂怒球会使你被命中时附加{0}-{1}点火焰伤害",
+        "en": "Adds {0} to {1} Cold Damage to Hits against you per Frenzy Charge"
+    },
+    {
+        "id": "stat_3181879507",
+        "zh": "当你专注时使自己感电{0}秒",
+        "en": "Shock yourself for {0} Seconds when you Focus"
+    },
+    {
+        "id": "stat_1882929618",
+        "zh": "此物品上的技能石受到 {0} 级的【强化版虚空操纵】辅助",
+        "en": "Socketed Gems are Supported by Level {0} Awakened Void Manipulation"
+    },
+    {
+        "id": "stat_1661347488",
+        "zh": "每秒损失{0}%生命",
+        "en": "Lose {0}% of Life per second"
+    },
+    {
+        "id": "stat_248982637",
+        "zh": "击中你时获得等同于物理伤害{0}%的额外火焰伤害",
+        "en": "Hits against you gain {0}% of Physical Damage as Extra Fire Damage"
+    },
+    {
+        "id": "stat_3062849155",
+        "zh": "插入的技能石被 {0} 级的恒祝辅助",
+        "en": "Socketed Gems are Supported by Level {0} Eternal Blessing"
+    },
+    {
+        "id": "stat_2858930612",
+        "zh": "有{0}%的几率在使用技能时损失10%的魔力",
+        "en": "{0}% chance to lose 10% of Mana when you use a Skill"
+    },
+    {
+        "id": "stat_2509486489",
+        "zh": "此物品上的技能石受到 {0} 级的【强化版附加冰霜伤害】辅助",
+        "en": "Socketed Gems are Supported by Level {0} Awakened Added Cold Damage"
+    },
+    {
+        "id": "stat_3271464175",
+        "zh": "{0}%的冰霜伤害被敌人吸取为生命",
+        "en": "{0}% of Cold Damage Leeched by Enemy as Life"
+    },
+    {
+        "id": "stat_3462081007",
+        "zh": "插槽中的宝石受{0}级强化聚能支持",
+        "en": "Socketed Gems are Supported by Level {0} Overcharge"
+    },
+    {
+        "id": "stat_2622009823",
+        "zh": "连锁范围扩大 {0}%",
+        "en": "{0}% increased Chaining range"
+    },
+    {
+        "id": "stat_3484910620",
+        "zh": "尊严的魔力保留效能提高 {0}%",
+        "en": "Pride has {0}% increased Mana Reservation Efficiency"
+    },
+    {
+        "id": "stat_493707013",
+        "zh": "此物品上的技能石受到 {0} 级的【强化版燃烧伤害】辅助",
+        "en": "Socketed Gems are Supported by Level {0} Awakened Burning Damage"
+    },
+    {
+        "id": "stat_271119551",
+        "zh": "此物品上的技能石受到 {0} 级的【强化版精准破坏】辅助",
+        "en": "Socketed Gems are Supported by Level {0} Awakened Controlled Destruction"
+    },
+    {
+        "id": "stat_45548764",
+        "zh": "{0}%的火焰伤害被敌人吸取为生命",
+        "en": "{0}% of Fire Damage Leeched by Enemy as Life"
+    },
+    {
+        "id": "stat_3925004212",
+        "zh": "{0}%的闪电伤害被敌人吸取为生命",
+        "en": "{0}% of Lightning Damage Leeched by Enemy as Life"
+    },
+    {
+        "id": "stat_3966666111",
+        "zh": "伤害按照每 100 点智慧提高 {0}%",
+        "en": "{0}% increased Damage per 100 Intelligence"
+    },
+    {
+        "id": "stat_1069618951",
+        "zh": "右边的戒指栏位：召唤生物受到的伤害提高{0}%",
+        "en": "Right ring slot: Minions take {0}% increased Damage"
+    },
+    {
+        "id": "stat_1916904011",
+        "zh": "左边的戒指栏位：召唤生物受到的伤害降低{0}%",
+        "en": "Left ring slot: Minions take {0}% reduced Damage"
+    },
+    {
+        "id": "stat_1997664024",
+        "zh": "移动时留下力竭地面，持续 {0} 秒",
+        "en": "Drops Sapped Ground while moving, lasting {0} seconds"
+    },
+    {
+        "id": "stat_4279053153",
+        "zh": "右边的戒指栏位：你受到的诅咒效果增强{0}%",
+        "en": "Right ring slot: {0}% increased Effect of Curses on you"
+    },
+    {
+        "id": "stat_496053892",
+        "zh": "左边的戒指栏位：你受到的诅咒效果减弱{0}%",
+        "en": "Left ring slot: {0}% reduced Effect of Curses on you"
+    },
+    {
+        "id": "stat_342670903",
+        "zh": "伤害按照每 100 点敏捷提高 {0}%",
+        "en": "{0}% increased Damage per 100 Dexterity"
+    },
+    {
+        "id": "stat_3388565132",
+        "zh": "你施加的冻结会扩散给范围 {0} 内的其它敌人",
+        "en": "Freezes you inflict spread to other Enemies within a Radius of {0}"
+    },
+    {
+        "id": "stat_4274080377",
+        "zh": "伤害按照每 100 点力量提高 {0}%",
+        "en": "{0}% increased Damage per 100 Strength"
+    },
+    {
+        "id": "stat_1234687045",
+        "zh": "手部装备和脚部装备提供的能量护盾上限提高 {0}%",
+        "en": "{0}% increased Maximum Energy Shield from Equipped Gloves and Boots"
+    },
+    {
+        "id": "stat_3714003708",
+        "zh": "攻击伤害的暴击伤害加成 {0}%",
+        "en": "{0}% to Critical Strike Multiplier for Attack Damage"
+    },
+    {
+        "id": "stat_2457848738",
+        "zh": "右边的戒指栏位：你处于异常状态的时间增加{0}%",
+        "en": "Right ring slot: {0}% increased Duration of Ailments on You"
+    },
+    {
+        "id": "stat_221309863",
+        "zh": "左边的戒指栏位：你处于异常状态的时间减少{0}%",
+        "en": "Left ring slot: {0}% reduced Duration of Ailments on You"
+    },
+    {
+        "id": "stat_3126680545",
+        "zh": "命中值按照每个狂怒球 {0}",
+        "en": "{0} to Accuracy Rating per Frenzy Charge"
+    },
+    {
+        "id": "stat_3320868777",
+        "zh": "左边的戒指栏位：技能效果的持续时间增加{0}%",
+        "en": "Left ring slot: {0}% increased Skill Effect Duration"
+    },
+    {
+        "id": "stat_2239667237",
+        "zh": "右边的戒指栏位：技能效果持续时间减少{0}%",
+        "en": "Right ring slot: {0}% reduced Skill Effect Duration"
+    },
+    {
+        "id": "stat_623823763",
+        "zh": "头部装备和脚部装备提供的闪避值提高 {0}%",
+        "en": "{0}% increased Evasion Rating from Equipped Helmet and Boots"
+    },
+    {
+        "id": "stat_49183689",
+        "zh": "有 {0}% 的几率在击中时使敌人陷入熄灭状态",
+        "en": "{0}% chance to Extinguish Enemies on Hit"
+    },
+    {
+        "id": "stat_3903907406",
+        "zh": "近期内被你击中的敌人的生命再生率降低 {0}%",
+        "en": "Enemies you've Hit Recently have {0}% reduced Life Regeneration rate"
+    },
+    {
+        "id": "stat_744858137",
+        "zh": "右边的戒指栏位：受到的冰霜伤害的{0}%转化为闪电伤害",
+        "en": "Right ring slot: {0}% of Cold Damage from Hits taken as Lightning Damage"
+    },
+    {
+        "id": "stat_450178102",
+        "zh": "左边的戒指栏位：受到的闪电伤害的{0}%转化为冰霜伤害",
+        "en": "Left ring slot: {0}% of Lightning Damage from Hits taken as Cold Damage"
+    },
+    {
+        "id": "stat_1871491972",
+        "zh": "承受伤害按照每 {0} 点力量总降 1%",
+        "en": "1% less Damage Taken per {0} Strength"
+    },
+    {
+        "id": "stat_3533655459",
+        "zh": "每 {0} 秒获得一个暴击球",
+        "en": "Gain a Power Charge every {0} seconds"
+    },
+    {
+        "id": "stat_1801289192",
+        "zh": "骸骨奉献效果提高 {0}%",
+        "en": "Bone Offering has {0}% increased Effect"
+    },
+    {
+        "id": "stat_3906868545",
+        "zh": "每 {0} 秒获得一个狂怒球",
+        "en": "Gain a Frenzy Charge every {0} seconds"
+    },
+    {
+        "id": "stat_2874488491",
+        "zh": "承受伤害按照每 {0} 点智慧总降 1%",
+        "en": "1% less Damage Taken per {0} Intelligence"
+    },
+    {
+        "id": "stat_2555092341",
+        "zh": "每 {0} 秒获得一个耐力球",
+        "en": "Gain an Endurance Charge every {0} seconds"
+    },
+    {
+        "id": "stat_17730902",
+        "zh": "左边的戒指栏位：受到的火焰伤害的{0}%转化为闪电伤害",
+        "en": "Left ring slot: {0}% of Fire Damage from Hits taken as Lightning Damage"
+    },
+    {
+        "id": "stat_1905512385",
+        "zh": "右边的戒指栏位：受到的闪电伤害的{0}%转化为火焰伤害",
+        "en": "Right ring slot: {0}% of Lightning Damage from Hits taken as Fire Damage"
+    },
+    {
+        "id": "stat_1240056437",
+        "zh": "迅捷的光环效果提高 {0}%",
+        "en": "Haste has {0}% increased Aura Effect"
+    },
+    {
+        "id": "stat_824762042",
+        "zh": "承受伤害按照每 {0} 点敏捷总降 1%",
+        "en": "1% less Damage Taken per {0} Dexterity"
+    },
+    {
+        "id": "stat_2828309116",
+        "zh": "有一个异界图鉴最终首领出现在你面前：技能效果持续时间延长 {0}%",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Skill Effect Duration"
+    },
+    {
+        "id": "stat_1954944666",
+        "zh": "有一个异界图鉴最终首领出现在你面前：火焰伤害的 {0}% 转化为生命偷取",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% of Fire Damage Leeched as Life"
+    },
+    {
+        "id": "stat_1896842319",
+        "zh": "有一个异界图鉴最终首领出现在你面前：闪电伤害的 {0}% 转化为生命偷取",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% of Lightning Damage Leeched as Life"
+    },
+    {
+        "id": "stat_339123312",
+        "zh": "有一个异界图鉴最终首领出现在你面前：冰霜伤害的 {0}% 转化为生命偷取",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% of Cold Damage Leeched as Life"
+    },
+    {
+        "id": "stat_10259064",
+        "zh": "有一个异界图鉴最终首领出现在你面前：混沌伤害的 {0}% 转化为生命偷取",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% of Chaos Damage Leeched as Life"
+    },
+    {
+        "id": "stat_2500914030",
+        "zh": "有一个异界图鉴最终首领出现在你面前：物理伤害的 {0}% 转化为生命偷取",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% of Physical Damage Leeched as Life"
+    },
+    {
+        "id": "stat_3544391750",
+        "zh": "灵魂奉献效果提高 {0}%",
+        "en": "Spirit Offering has {0}% increased Effect"
+    },
+    {
+        "id": "stat_3456379680",
+        "zh": "血肉奉献效果提高 {0}%",
+        "en": "Flesh Offering has {0}% increased Effect"
+    },
+    {
+        "id": "stat_3056045252",
+        "zh": "召唤生物承受的反射伤害降低 {0}%",
+        "en": "Minions take {0}% reduced Reflected Damage"
+    },
+    {
+        "id": "stat_2662416009",
+        "zh": "暴风之盾的增益效果提高 {0}%",
+        "en": "Tempest Shield has {0}% increased Buff Effect"
+    },
+    {
+        "id": "stat_1323927995",
+        "zh": "左边的戒指栏位：受到的冰霜伤害的{0}%转化为火焰伤害",
+        "en": "Left ring slot: {0}% of Cold Damage from Hits taken as Fire Damage"
+    },
+    {
+        "id": "stat_2478238773",
+        "zh": "右边的戒指栏位：受到的火焰伤害的{0}%转化为冰霜伤害",
+        "en": "Right ring slot: {0}% of Fire Damage from Hits taken as Cold Damage"
+    },
+    {
+        "id": "stat_3803013948",
+        "zh": "【电球】以环状方式发射投射物",
+        "en": "Spark fires Projectiles in a circle"
+    },
+    {
+        "id": "stat_1460853241",
+        "zh": "火山裂缝发射 1 个额外投射物",
+        "en": "Volcanic Fissure fires an additional Projectile"
+    },
+    {
+        "id": "stat_1460853241",
+        "zh": "火山裂缝发射 {0} 个额外投射物",
+        "en": "Volcanic Fissure fires {0} additional Projectiles"
+    },
+    {
+        "id": "stat_3893203185",
+        "zh": "电流场额外连锁1次",
+        "en": "Galvanic Field Chains an additional time"
+    },
+    {
+        "id": "stat_3809563078",
+        "zh": "冰封军团的冷却回复率提高 {0}%",
+        "en": "Frozen Legion has {0}% increased Cooldown Recovery Rate"
+    },
+    {
+        "id": "stat_2876793597",
+        "zh": "冰封军团有 +1 次冷却时间次数",
+        "en": "Frozen Legion has +1 Cooldown Use"
+    },
+    {
+        "id": "stat_2876793597",
+        "zh": "冰封军团有 {0} 次冷却时间次数",
+        "en": "Frozen Legion has {0} Cooldown Uses"
+    },
+    {
+        "id": "stat_2511245659",
+        "zh": "闪电环廊造成的伤害增加{0}%",
+        "en": "Lightning Conduit deals {0}% increased Damage"
+    },
+    {
+        "id": "stat_2898302567",
+        "zh": "【蓄力疾风闪】最终伤害范围 {0}",
+        "en": "Charged Dash has {0} to Radius of each Wave's last damage Area"
+    },
+    {
+        "id": "stat_4084540709",
+        "zh": "风暴漩涡的伤害提高 {0}%",
+        "en": "Orb of Storms deals {0}% increased Damage"
+    },
+    {
+        "id": "stat_373677479",
+        "zh": "火山裂缝延伸速度加快 {0}%",
+        "en": "Volcanic Fissure travels {0}% faster"
+    },
+    {
+        "id": "stat_3583185303",
+        "zh": "炼金师之印诅咒效果增强{0}%",
+        "en": "{0}% increased Alchemist's Mark Curse Effect"
+    },
+    {
+        "id": "stat_1048825825",
+        "zh": "冰封横扫造成的伤害增加 {0}%",
+        "en": "Frozen Sweep deals {0}% increased Damage"
+    },
+    {
+        "id": "stat_648647905",
+        "zh": "裂地之击的角度扩大 {0}%",
+        "en": "Ground Slam has a {0}% increased angle"
+    },
+    {
+        "id": "stat_1124690737",
+        "zh": "火山裂缝造成的伤害增加 {0}%",
+        "en": "Volcanic Fissure deals {0}% increased Damage"
+    },
+    {
+        "id": "stat_2437571727",
+        "zh": "闪电环廊的施法速度增加{0}%",
+        "en": "Lightning Conduit has {0}% increased Cast Speed"
+    },
+    {
+        "id": "stat_3821213705",
+        "zh": "电流场造成的伤害增加{0}%",
+        "en": "Galvanic Field deals {0}% increased Damage"
+    },
+    {
+        "id": "stat_2364563825",
+        "zh": "电流场的施法速度增加{0}%",
+        "en": "Galvanic Field has {0}% increased Cast Speed"
+    },
+    {
+        "id": "stat_3610197448",
+        "zh": "被你的战吼嘲讽的敌人受到的伤害提高 {0}%",
+        "en": "Enemies Taunted by your Warcries take {0}% increased Damage"
+    },
+    {
+        "id": "stat_2939195168",
+        "zh": "击败敌人时有{0}%的几率损失一个暴击球",
+        "en": "{0}% chance to lose a Power Charge on Kill"
     }
 ]
