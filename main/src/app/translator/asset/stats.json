@@ -422,7 +422,12 @@
     {
         "id": "stat_3695891184",
         "zh": "每击败一名敌人获得{0}点生命",
-        "en": "{0} Life gained on Kill"
+        "en": "Gain {0} Life per Enemy Killed"
+    },
+    {
+        "id": "stat_3695891184",
+        "zh": "每击败一名敌人损失{0}点生命",
+        "en": "Lose {0} Life per Enemy Killed"
     },
     {
         "id": "stat_809229260",
@@ -512,7 +517,7 @@
     {
         "id": "stat_2797971005",
         "zh": "你的攻击击中每个敌人会回复 {0} 生命",
-        "en": "{0} Life gained for each Enemy hit by your Attacks"
+        "en": "Gain {0} Life per Enemy Hit with Attacks"
     },
     {
         "id": "stat_1062208444",
@@ -582,7 +587,7 @@
     {
         "id": "stat_1368271171",
         "zh": "每击败一名敌人获得{0}点魔力",
-        "en": "{0} Mana gained on Kill"
+        "en": "Gain {0} Mana per Enemy Killed"
     },
     {
         "id": "stat_2106365538",
@@ -732,7 +737,7 @@
     {
         "id": "stat_821021828",
         "zh": "每击中一名敌人获得 {0} 点生命",
-        "en": "{0} Life gained for each Enemy hit by Attacks"
+        "en": "Grants {0} Life per Enemy Hit"
     },
     {
         "id": "stat_1290399200",
@@ -1160,11 +1165,6 @@
         "en": "Historic"
     },
     {
-        "id": "stat_57434274",
-        "zh": "经验值加成提高 {0}%",
-        "en": "{0}% increased Experience gain"
-    },
-    {
         "id": "stat_3550868361",
         "zh": "斧类攻击的攻击速度提高 {0}%",
         "en": "{0}% increased Attack Speed with Axes"
@@ -1397,7 +1397,7 @@
     {
         "id": "stat_820939409",
         "zh": "攻击每击中一名敌人获得{0}点魔力",
-        "en": "{0} Mana gained for each Enemy hit by your Attacks"
+        "en": "Gain {0} Mana per Enemy Hit with Attacks"
     },
     {
         "id": "stat_1519615863",
@@ -1962,7 +1962,7 @@
     {
         "id": "stat_211381198",
         "zh": "攻击每击中一名敌人获得{0}点能量护盾",
-        "en": "{0} Energy Shield gained for each Enemy hit by your Attacks"
+        "en": "Gain {0} Energy Shield per Enemy Hit with Attacks"
     },
     {
         "id": "stat_2381842786",
@@ -2457,12 +2457,12 @@
     {
         "id": "stat_2018035324",
         "zh": "生命在你每次用法术击中敌人时 {0}",
-        "en": "{0} Life gained for each Enemy hit by your Spells"
+        "en": "Gain {0} Life per Enemy Hit with Spells"
     },
     {
         "id": "stat_2018035324",
         "zh": "生命在你每次用法术击中敌人时失去 {0} 点",
-        "en": "Lose {0} Life for each Enemy hit by your Spells"
+        "en": "Lose {0} Life per Enemy Hit with Spells"
     },
     {
         "id": "stat_287491423",
@@ -2976,7 +2976,7 @@
     },
     {
         "id": "stat_4058681894",
-        "zh": "你的暴击不会造成额外伤害",
+        "zh": "你的暴击不造成额外暴击伤害",
         "en": "Your Critical Strikes do not deal extra Damage"
     },
     {
@@ -3406,8 +3406,8 @@
     },
     {
         "id": "stat_1119465199",
-        "zh": "混沌伤害不能穿透能量护盾",
-        "en": "Chaos Damage does not bypass Energy Shield"
+        "zh": "受到的混沌伤害无法穿透能量护盾",
+        "en": "Chaos Damage taken does not bypass Energy Shield"
     },
     {
         "id": "stat_810772344",
@@ -3492,7 +3492,7 @@
     {
         "id": "stat_338121249",
         "zh": "击中时对敌人附加易燃诅咒。",
-        "en": "Curse Enemies with Flammability on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Flammability on Hit"
     },
     {
         "id": "stat_211836731",
@@ -3662,7 +3662,7 @@
     {
         "id": "stat_640052854",
         "zh": "每击中一名敌人获得 {0} 点魔力",
-        "en": "{0} Mana gained for each Enemy hit by Attacks"
+        "en": "Grants {0} Mana per Enemy Hit"
     },
     {
         "id": "stat_429867172",
@@ -4191,8 +4191,8 @@
     },
     {
         "id": "stat_3477714116",
-        "zh": "格挡时用脆弱诅咒敌人，其效果提高 20%",
-        "en": "Curse Enemies with Vulnerability on Block, with 20% increased Effect"
+        "zh": "格挡时对敌人附加脆弱诅咒。",
+        "en": "Curse Enemies with Vulnerability on Block"
     },
     {
         "id": "stat_2135335407",
@@ -4261,8 +4261,8 @@
     },
     {
         "id": "stat_893903361",
-        "zh": "击败被点燃的敌人回复 {0} 生命",
-        "en": "{0} Life gained on Killing Ignited Enemies"
+        "zh": "每击败一名被点燃的敌人获得{0}点生命",
+        "en": "Gain {0} Life per Ignited Enemy Killed"
     },
     {
         "id": "stat_2917449574",
@@ -4711,7 +4711,7 @@
     },
     {
         "id": "stat_3881647885",
-        "zh": "若范围内含有 40 点智慧，造成的死亡凋零效果持续 {0} 秒",
+        "zh": "在范围内至少有 40 点智慧的情况下，枯萎在接下来 {0} 秒内施加凋零",
         "en": "With at least 40 Intelligence in Radius, Blight inflicts Withered for {0} seconds"
     },
     {
@@ -4896,8 +4896,8 @@
     },
     {
         "id": "stat_2918129907",
-        "zh": "你的图腾被毁时，给你施加一种随机魔蛊，其总效果总增 {0}%",
-        "en": "Inflicts a random Hex on you when your Totems die, with {0}% more Effect"
+        "zh": "你的图腾死亡时对你施加一种随机魔蛊。",
+        "en": "Inflicts a random Hex on you when your Totems die"
     },
     {
         "id": "stat_1337327984",
@@ -4946,18 +4946,8 @@
     },
     {
         "id": "stat_4271082039",
-        "zh": "低血时有 {0}% 的几率避免被点燃",
+        "zh": "濒血状态时有 {0}% 几率避免被点燃",
         "en": "{0}% chance to Avoid being Ignited while on Low Life"
-    },
-    {
-        "id": "stat_4271082039",
-        "zh": "低血时不会被点燃",
-        "en": "Cannot be Ignited while on Low Life"
-    },
-    {
-        "id": "stat_38301299",
-        "zh": "低血时 {0}% 火焰抗性",
-        "en": "{0}% to Fire Resistance while on Low Life"
     },
     {
         "id": "stat_38301299",
@@ -5026,8 +5016,8 @@
     },
     {
         "id": "stat_2528955616",
-        "zh": "击败敌人回复 {0} 能量护盾",
-        "en": "{0} Energy Shield gained on Kill"
+        "zh": "每击败一名敌人获得{0}点能量护盾",
+        "en": "Gain {0} Energy Shield per Enemy Killed"
     },
     {
         "id": "stat_3240073117",
@@ -5261,8 +5251,8 @@
     },
     {
         "id": "stat_743992531",
-        "zh": "被击中时，你反射给敌人的 {0}% 伤害变为回复生命",
-        "en": "{0}% of Damage you Reflect to Enemies when Hit is gained as Life"
+        "zh": "被击中时你反射给敌人的伤害有{0}%转化为生命偷取",
+        "en": "{0}% of Damage you Reflect to Enemies when Hit is leeched as Life"
     },
     {
         "id": "stat_2949096603",
@@ -5417,7 +5407,7 @@
     {
         "id": "stat_426847518",
         "zh": "击中时对敌人附加冻伤诅咒。",
-        "en": "Curse Enemies with Frostbite on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Frostbite on Hit"
     },
     {
         "id": "stat_3986030307",
@@ -5432,12 +5422,7 @@
     {
         "id": "stat_3751996449",
         "zh": "击败敌人时有 {0}% 的几率触发 8 级的【召唤愤怒狂灵】",
-        "en": "{0}% chance to Trigger Level 8 Summon Raging Spirit on Kill"
-    },
-    {
-        "id": "stat_3751996449",
-        "zh": "击败敌人时触发 8 级的【召唤愤怒狂灵】",
-        "en": "Trigger Level 8 Summon Raging Spirit on Kill"
+        "en": "{0}% chance to Trigger Level 10 Summon Raging Spirit on Kill"
     },
     {
         "id": "stat_1285587221",
@@ -5587,7 +5572,7 @@
     {
         "id": "stat_2764915899",
         "zh": "击中时对敌人附加绝望诅咒。",
-        "en": "Curse Enemies with Despair on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Despair on Hit"
     },
     {
         "id": "stat_2098320128",
@@ -5736,12 +5721,12 @@
     },
     {
         "id": "stat_3103494675",
-        "zh": "若范围内含 40 点敏捷，【冰霜射击】会穿透 1 个额外目标",
+        "zh": "若范围内含有 40 点敏捷，【冰霜射击】会额外穿透 1 个目标",
         "en": "With at least 40 Dexterity in Radius, Ice Shot Pierces an additional Target"
     },
     {
         "id": "stat_3103494675",
-        "zh": "若范围内含 40 点敏捷，【冰霜射击】会穿透 {0} 个额外目标",
+        "zh": "若范围内含有 40 点敏捷，【冰霜射击】会额外穿透 {0} 个目标",
         "en": "With at least 40 Dexterity in Radius, Ice Shot Pierces {0} additional Targets"
     },
     {
@@ -6392,7 +6377,7 @@
     {
         "id": "stat_3967845372",
         "zh": "击中时对敌人附加脆弱诅咒。",
-        "en": "Curse Enemies with Vulnerability on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Vulnerability on Hit"
     },
     {
         "id": "stat_2105456174",
@@ -6402,12 +6387,12 @@
     {
         "id": "stat_485151258",
         "zh": "对点燃的敌人造成的击中和异常状态伤害提高 {0}%",
-        "en": "{0}% increased Damage against Ignited Enemies"
+        "en": "{0}% increased Damage with Hits and Ailments against Ignited Enemies"
     },
     {
         "id": "stat_485151258",
         "zh": "对点燃的敌人造成的击中和异常状态伤害降低 {0}%",
-        "en": "{0}% reduced Damage against Ignited Enemies"
+        "en": "{0}% reduced Damage with Hits and Ailments against Ignited Enemies"
     },
     {
         "id": "stat_3111456397",
@@ -6761,13 +6746,13 @@
     },
     {
         "id": "stat_4078194486",
-        "zh": "药剂效果结束时，回复 {0}% 生命",
-        "en": "Recover {0}% of Life at the end of the Flask Effect"
+        "zh": "效果结束时，回复 {0}% 生命",
+        "en": "Recover {0}% of Life at the end of the Effect"
     },
     {
         "id": "stat_4078194486",
-        "zh": "药剂效果结束时，回复全部生命",
-        "en": "Recover Full Life at the end of the Flask Effect"
+        "zh": "效果结束时，回复到满血",
+        "en": "Recover Full Life at the end of the Effect"
     },
     {
         "id": "stat_4007482102",
@@ -6932,7 +6917,7 @@
     {
         "id": "stat_710372469",
         "zh": "击中时对敌人附加导电诅咒。",
-        "en": "Curse Enemies with Conductivity on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Conductivity on Hit"
     },
     {
         "id": "stat_2614321687",
@@ -7156,13 +7141,13 @@
     },
     {
         "id": "stat_3804297142",
-        "zh": "击中时用衰弱诅咒非诅咒敌人，其效果提高 80%",
-        "en": "Curse Non-Cursed Enemies with Enfeeble on Hit, with 80% increased Effect"
+        "zh": "击中时对未受诅咒的敌人附加衰弱诅咒。",
+        "en": "Curse Non-Cursed Enemies with Enfeeble on Hit"
     },
     {
         "id": "stat_3804297142",
-        "zh": "有 {0}% 的几率在击中时用衰弱诅咒非诅咒敌人，其效果提高 80%",
-        "en": "{0}% chance to Curse Non-Cursed Enemies with Enfeeble on Hit, with 80% increased Effect"
+        "zh": "有 {0}% 几率击中时对未受诅咒的敌人附加衰弱诅咒。",
+        "en": "{0}% chance to Curse Non-Cursed Enemies with Enfeeble on Hit"
     },
     {
         "id": "stat_3192592092",
@@ -7401,13 +7386,8 @@
     },
     {
         "id": "stat_3706656107",
-        "zh": "若你近期内使用过火焰技能，则有 {0}% 的几率避免被冰冻或冰缓",
-        "en": "{0}% chance to Avoid being Frozen or Chilled if you have used a Fire Skill Recently"
-    },
-    {
-        "id": "stat_3706656107",
-        "zh": "若你近期内使用过火焰技能，则不会被冰冻或冰缓",
-        "en": "Cannot be Chilled or Frozen if you have used a Fire Skill Recently"
+        "zh": "如果你最近使用过火系技能，则有 {0}% 几率避免被冰缓或冰冻",
+        "en": "{0}% chance to Avoid being Chilled or Frozen if you have used a Fire Skill Recently"
     },
     {
         "id": "stat_2864779809",
@@ -7531,13 +7511,8 @@
     },
     {
         "id": "stat_1053326368",
-        "zh": "药剂持续期间，有 {0}% 的几率避免被冰缓",
-        "en": "{0}% chance to Avoid being Chilled during Flask effect"
-    },
-    {
-        "id": "stat_1053326368",
-        "zh": "药剂持续期间无法被冰缓",
-        "en": "Cannot be Chilled during Flask effect"
+        "zh": "生效期间，有 {0}% 几率避免被冰缓",
+        "en": "{0}% chance to Avoid being Chilled during Effect"
     },
     {
         "id": "stat_625682777",
@@ -7581,13 +7556,8 @@
     },
     {
         "id": "stat_2872815301",
-        "zh": "药剂持续期间，有 {0}% 的几率避免被冰冻",
-        "en": "{0}% chance to Avoid being Frozen during Flask effect"
-    },
-    {
-        "id": "stat_2872815301",
-        "zh": "药剂持续期间无法被冰冻",
-        "en": "Cannot be Frozen during Flask effect"
+        "zh": "生效期间，有 {0}% 几率避免被冰冻",
+        "en": "{0}% chance to Avoid being Frozen during Effect"
     },
     {
         "id": "stat_3680664274",
@@ -7621,8 +7591,8 @@
     },
     {
         "id": "stat_825352061",
-        "zh": "获得 {0} 级【死神光环】",
-        "en": "Grants Level {0} Death Aura Skill"
+        "zh": "装备时触发 {0} 级陨命光环",
+        "en": "Trigger Level {0} Death Aura when Equipped"
     },
     {
         "id": "stat_828179689",
@@ -7736,8 +7706,8 @@
     },
     {
         "id": "stat_3577316952",
-        "zh": "使用药剂时，失去从噬魂者获得的效果",
-        "en": "Lose Souls gained from Soul Eater when you use a Flask"
+        "zh": "使用药剂时损失所有被吞噬的灵魂",
+        "en": "Lose all Eaten Souls when you use a Flask"
     },
     {
         "id": "stat_1723061251",
@@ -7947,7 +7917,7 @@
     {
         "id": "stat_1736172673",
         "zh": "武器造成的伤害穿透 {0}% 元素抗性",
-        "en": "Damage with Weapons Penetrates {0}% Elemental Resistance"
+        "en": "Damage with Weapons Penetrates {0}% Elemental Resistances"
     },
     {
         "id": "stat_3085465082",
@@ -8106,13 +8076,8 @@
     },
     {
         "id": "stat_2872105818",
-        "zh": "在【猛攻】状态期间有 {0}% 的几率避免被冰缓",
+        "zh": "猛攻期间，有 {0}% 几率避免被冰缓",
         "en": "{0}% chance to Avoid being Chilled during Onslaught"
-    },
-    {
-        "id": "stat_2872105818",
-        "zh": "在【猛攻】状态期间无法被冰缓",
-        "en": "Cannot be Chilled during Onslaught"
     },
     {
         "id": "stat_3914638685",
@@ -8896,8 +8861,8 @@
     },
     {
         "id": "stat_2229840047",
-        "zh": "药剂持续期间，混沌伤害不会穿透能量护盾",
-        "en": "Chaos Damage does not bypass Energy Shield during effect"
+        "zh": "效果期间受到的混沌伤害无法穿透能量护盾",
+        "en": "Chaos Damage taken does not bypass Energy Shield during effect"
     },
     {
         "id": "stat_1840985759",
@@ -9096,13 +9061,8 @@
     },
     {
         "id": "stat_986616727",
-        "zh": "魔蛊会从被击败的敌人身上传输给一个周围的敌人",
-        "en": "Hexes on Slain Enemies are transferred to a nearby Enemy"
-    },
-    {
-        "id": "stat_986616727",
-        "zh": "魔蛊会从被击败的敌人身上传输给 {0} 个周围的敌人",
-        "en": "Hexes on Slain Enemies are transferred to {0} nearby Enemies"
+        "zh": "当受魔蛊影响的敌人死亡时，魔蛊会转移到附近 30 范围内的所有敌人",
+        "en": "Hexes Transfer to all Enemies in a range of 30 when Hexed Enemy dies"
     },
     {
         "id": "stat_4181057577",
@@ -9346,8 +9306,8 @@
     },
     {
         "id": "stat_3127641775",
-        "zh": "你的魔卫和灵体可以获得药剂效果",
-        "en": "Flasks apply to your Raised Zombies and Spectres"
+        "zh": "你使用的药剂可以用于复苏的魔卫和幽魂",
+        "en": "Flasks you Use apply to your Raised Zombies and Spectres"
     },
     {
         "id": "stat_1085545682",
@@ -9657,12 +9617,12 @@
     {
         "id": "stat_1589090910",
         "zh": "召唤魔侍额外召唤一个魔侍",
-        "en": "Summon an additional Skeleton Warrior with Summon Skeleton"
+        "en": "Summon an additional Skeleton with Summon Skeletons"
     },
     {
         "id": "stat_1589090910",
         "zh": "召唤魔侍额外召唤 {0} 个魔侍",
-        "en": "Summon {0} additional Skeleton Warriors with Summon Skeleton"
+        "en": "Summon {0} additional Skeletons with Summon Skeletons"
     },
     {
         "id": "stat_2437193018",
@@ -9786,8 +9746,8 @@
     },
     {
         "id": "stat_2474196346",
-        "zh": "你的法术每击中 1 个敌人会回复 {0} 魔力",
-        "en": "{0} Mana gained for each Enemy Hit by your Spells"
+        "zh": "法术击中一名敌人获得{0}点魔力",
+        "en": "Gain {0} Mana per Enemy Hit with Spells"
     },
     {
         "id": "stat_648019518",
@@ -9911,7 +9871,7 @@
     },
     {
         "id": "stat_2212731469",
-        "zh": "每装备一个【裂界者物品】，异常状态 {0}% 伤害持续时间加成",
+        "zh": "每装备一个【裂界者物品】，异常状态 {0}% 持续伤害加成",
         "en": "{0}% to Damage over Time Multiplier for Ailments per Elder Item Equipped"
     },
     {
@@ -10111,13 +10071,8 @@
     },
     {
         "id": "stat_510304734",
-        "zh": "药剂生效期间，你施加的中毒持续时间延长 {0}%",
-        "en": "{0}% increased Duration of Poisons you inflict during Flask effect"
-    },
-    {
-        "id": "stat_510304734",
-        "zh": "药剂生效期间，你施加的中毒持续时间缩短 {0}%",
-        "en": "{0}% reduced Duration of Poisons you inflict during Flask effect"
+        "zh": "生效期间，你造成的中毒持续时间提高 {0}%",
+        "en": "{0}% increased Duration of Poisons you inflict during Effect"
     },
     {
         "id": "stat_3652138990",
@@ -10126,13 +10081,8 @@
     },
     {
         "id": "stat_778036553",
-        "zh": "生效期间，瓦尔技能的暴击率提高 {0}%",
-        "en": "Vaal Skills have {0}% increased Critical Strike Chance during effect"
-    },
-    {
-        "id": "stat_778036553",
-        "zh": "生效期间，瓦尔技能的暴击率降低 {0}%",
-        "en": "Vaal Skills have {0}% reduced Critical Strike Chance during effect"
+        "zh": "瓦尔技能生效期间增加{0}%暴击率",
+        "en": "{0}% increased Critical Strike Chance with Vaal Skills during effect"
     },
     {
         "id": "stat_1922061483",
@@ -10411,7 +10361,7 @@
     },
     {
         "id": "stat_3657377047",
-        "zh": "当你施放一个诅咒法术时，有#% 几率触发插槽诅咒法术，有 0.25 秒的冷却时间",
+        "zh": "当你施放一个诅咒法术时，有{0}% 几率触发插槽诅咒法术，有 0.25 秒的冷却时间",
         "en": "{0}% chance to Trigger Socketed Curse Spell when you Cast a Curse Spell, with a 0.25 second Cooldown"
     },
     {
@@ -10466,13 +10416,8 @@
     },
     {
         "id": "stat_654971543",
-        "zh": "击中时触发一个插入的闪电法术，它有 0.25 秒冷却时间\n触发时，插入的闪电法术没有消耗",
+        "zh": "击中时触发一个插入的闪电法术，它有 0.25 秒冷却时间\n插入的闪电法术触发时无花费",
         "en": "Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown\nSocketed Lightning Spells have no Cost if Triggered"
-    },
-    {
-        "id": "stat_654971543",
-        "zh": "击中时有 {0}% 的几率触发一个插入的闪电法术，它有 0.25 秒冷却时间\n插入的闪电法术没有消耗",
-        "en": "{0}% chance to Trigger a Socketed Lightning Spell on Hit, with a 0.25 second Cooldown\nSocketed Lightning Spells have no Cost if Triggered"
     },
     {
         "id": "stat_635485889",
@@ -10546,8 +10491,8 @@
     },
     {
         "id": "stat_3072303874",
-        "zh": "你的攻击给敌人施加的每个诅咒都使你获得 {0} 点生命",
-        "en": "{0} Life gained for each Cursed Enemy hit by your Attacks"
+        "zh": "攻击击中一名受诅咒的敌人增加{0}点生命",
+        "en": "Gain {0} Life per Cursed Enemy Hit with Attacks"
     },
     {
         "id": "stat_1859244771",
@@ -10556,8 +10501,8 @@
     },
     {
         "id": "stat_2087996552",
-        "zh": "你的攻击给敌人施加的每个诅咒都使你获得 {0} 点魔力",
-        "en": "{0} Mana gained for each Cursed Enemy hit by your Attacks"
+        "zh": "攻击击中一名受诅咒的敌人获得{0}点魔力",
+        "en": "Gain {0} Mana per Cursed Enemy Hit with Attacks"
     },
     {
         "id": "stat_2773515950",
@@ -10671,8 +10616,8 @@
     },
     {
         "id": "stat_3008104268",
-        "zh": "混沌伤害无法规避召唤生物的能量护盾",
-        "en": "Chaos Damage does not bypass Minions' Energy Shield"
+        "zh": "受到的混沌伤害无法穿透召唤生物的能量护盾",
+        "en": "Chaos Damage taken does not bypass Minions' Energy Shield"
     },
     {
         "id": "stat_3101897388",
@@ -10831,13 +10776,8 @@
     },
     {
         "id": "stat_3981960937",
-        "zh": "被冰缓时有 {0}% 的几率避免被感电",
+        "zh": "冰缓时有 {0}% 几率避免被感电",
         "en": "{0}% chance to Avoid being Shocked while Chilled"
-    },
-    {
-        "id": "stat_3981960937",
-        "zh": "被冰缓时不会被感电",
-        "en": "Cannot be Shocked while Chilled"
     },
     {
         "id": "stat_2900833792",
@@ -10866,7 +10806,7 @@
     },
     {
         "id": "stat_3504652942",
-        "zh": "每个狂怒球 {0}% 中毒伤害持续时间加成",
+        "zh": "每个狂怒球 {0}% 中毒持续伤害加成",
         "en": "{0}% to Damage over Time Multiplier for Poison per Frenzy Charge"
     },
     {
@@ -11682,7 +11622,7 @@
     {
         "id": "stat_658443507",
         "zh": "药剂持续期间免疫点燃\n使用时移除燃烧效果",
-        "en": "Immunity to Ignite during Flask effect\nRemoves Burning on use"
+        "en": "Immunity to Ignite during Effect\nRemoves Burning on use"
     },
     {
         "id": "stat_1473444150",
@@ -11866,12 +11806,7 @@
     },
     {
         "id": "stat_607839150",
-        "zh": "周围敌人被干扰，移动速度提高 {0}%",
-        "en": "Nearby Enemies are Hindered, with {0}% increased Movement Speed"
-    },
-    {
-        "id": "stat_607839150",
-        "zh": "周围敌人被干扰，移动速度降低 {0}%",
+        "zh": "周围敌人被缓速，移动速度减慢 {0}%",
         "en": "Nearby Enemies are Hindered, with {0}% reduced Movement Speed"
     },
     {
@@ -12191,8 +12126,8 @@
     },
     {
         "id": "stat_2331104018",
-        "zh": "格挡击中造成的伤害无法规避能量护盾\n非格挡击中造成的伤害始终规避能量护盾",
-        "en": "Damage from Blocked Hits cannot bypass Energy Shield\nDamage from Unblocked hits always bypasses Energy Shield"
+        "zh": "从格挡的攻击中受到的伤害无法忽略能量护盾\n从未格挡的攻击中受到的伤害始终忽略能量护盾",
+        "en": "Damage taken from Blocked Hits cannot bypass Energy Shield\nDamage taken from Unblocked hits always bypasses Energy Shield"
     },
     {
         "id": "stat_3651611160",
@@ -12466,8 +12401,8 @@
     },
     {
         "id": "stat_156080652",
-        "zh": "其中 1 个增加的天赋为终焉必临",
-        "en": "1 Added Passive Skill is Inevitable Doom"
+        "zh": "1 个添加的被动天赋为邪恶之眼",
+        "en": "1 Added Passive Skill is Evil Eye"
     },
     {
         "id": "stat_589991690",
@@ -12851,8 +12786,8 @@
     },
     {
         "id": "stat_4204954479",
-        "zh": "药剂效果结束时，立刻触发魔力回复",
-        "en": "Mana Recovery occurs instantly at the end of the Flask effect"
+        "zh": "魔力回复会在效果结束时立即开始",
+        "en": "Mana Recovery occurs instantly at the end of Effect"
     },
     {
         "id": "stat_1503812817",
@@ -13392,7 +13327,7 @@
     {
         "id": "stat_3433724931",
         "zh": "击中时对敌人附加时空锁链诅咒。",
-        "en": "Curse Enemies with Temporal Chains on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Temporal Chains on Hit"
     },
     {
         "id": "stat_1866211373",
@@ -13407,12 +13342,7 @@
     {
         "id": "stat_1104120660",
         "zh": "被标记的敌人被击败后，你的咒印转移给另一个敌人",
-        "en": "Your Mark transfers to another Enemy when Marked Enemy dies"
-    },
-    {
-        "id": "stat_1104120660",
-        "zh": "被标记的敌人被击败后，你的咒印有 {0}% 的几率转移给另一个敌人",
-        "en": "Your Mark has a {0}% chance to transfer to another Enemy when Marked Enemy dies"
+        "en": "Your Mark Transfers to another Enemy when Marked Enemy dies"
     },
     {
         "id": "stat_619213329",
@@ -15442,7 +15372,7 @@
     {
         "id": "stat_883169830",
         "zh": "每穿透一个敌人，投射物的击中和异常状态伤害提高 {0}%",
-        "en": "Projectiles deal {0}% increased Damage for each Enemy Pierced"
+        "en": "Projectiles deal {0}% increased Damage with Hits and Ailments for each Enemy Pierced"
     },
     {
         "id": "stat_2350411833",
@@ -15846,13 +15776,8 @@
     },
     {
         "id": "stat_3151397056",
-        "zh": "【猛攻】效果提高 {0}%",
-        "en": "{0}% increased Onslaught Effect"
-    },
-    {
-        "id": "stat_3151397056",
         "zh": "你受到的猛攻效果增强 {0}%",
-        "en": "{0}% reduced Onslaught Effect"
+        "en": "{0}% increased Effect of Onslaught on you"
     },
     {
         "id": "stat_3922006600",
@@ -15921,8 +15846,8 @@
     },
     {
         "id": "stat_3765507527",
-        "zh": "受到【纪律】影响时，每击中一个敌人便会获得 {0} 能量护盾",
-        "en": "{0} Energy Shield gained for each Enemy Hit while affected by Discipline"
+        "zh": "受纪律影响时每击中一名敌人获得{0}点能量护盾",
+        "en": "Gain {0} Energy Shield per Enemy Hit while affected by Discipline"
     },
     {
         "id": "stat_970844066",
@@ -17331,8 +17256,8 @@
     },
     {
         "id": "stat_3225265684",
-        "zh": "装备 {0} 个被腐化物品时：受到混沌伤害的 50% 由能量护盾承受，受到物理伤害的 50% 会穿透能量护盾",
-        "en": "With {0} Corrupted Items Equipped: 50% of Chaos Damage does not bypass Energy Shield, and 50% of Physical Damage bypasses Energy Shield"
+        "zh": "装备{0}件腐化物品：受到的混沌伤害的50%不会穿透能量护盾，受到的物理伤害的50%会穿透能量护盾",
+        "en": "With {0} Corrupted Items Equipped: 50% of Chaos Damage taken does not bypass Energy Shield, and 50% of Physical Damage taken bypasses Energy Shield"
     },
     {
         "id": "stat_1965393792",
@@ -17606,8 +17531,8 @@
     },
     {
         "id": "stat_2213584313",
-        "zh": "击中时用脆弱诅咒敌人，它的效果提高 40%",
-        "en": "Curse Enemies with Vulnerability on Hit, with 40% increased Effect"
+        "zh": "有 {0}% 几率击中时对敌人附加脆弱诅咒。",
+        "en": "{0}% chance to Curse Enemies with Vulnerability on Hit"
     },
     {
         "id": "stat_3909952544",
@@ -17846,8 +17771,8 @@
     },
     {
         "id": "stat_4007740198",
-        "zh": "你的感电效果只能提高承受伤害，最大 {0}%",
-        "en": "Your Shocks can only increase Damage taken by up to a maximum of {0}%"
+        "zh": "最大感电效果+40%",
+        "en": "+40% to Maximum Effect of Shock"
     },
     {
         "id": "stat_232331266",
@@ -18031,12 +17956,12 @@
     },
     {
         "id": "stat_1790172543",
-        "zh": "击中和异常状态对流血敌人的伤害提高 {0}%",
+        "zh": "对流血敌人的击中和异常状态伤害提高 {0}%",
         "en": "{0}% increased Damage with Hits and Ailments against Bleeding Enemies"
     },
     {
         "id": "stat_1790172543",
-        "zh": "击中和异常状态对流血敌人的伤害降低 {0}%",
+        "zh": "对流血敌人的击中和异常状态伤害降低 {0}%",
         "en": "{0}% reduced Damage with Hits and Ailments  against Bleeding Enemies"
     },
     {
@@ -18161,12 +18086,12 @@
     },
     {
         "id": "stat_576528026",
-        "zh": "物理伤害在使用骄傲时提高 {0}%",
+        "zh": "使用【尊严】时，物理伤害提高 {0}%",
         "en": "{0}% increased Physical Damage while using Pride"
     },
     {
         "id": "stat_576528026",
-        "zh": "物理伤害在使用骄傲时降低 {0}%",
+        "zh": "使用【尊严】时，物理伤害降低 {0}%",
         "en": "{0}% reduced Physical Damage while using Pride"
     },
     {
@@ -18211,12 +18136,12 @@
     },
     {
         "id": "stat_3790386828",
-        "zh": "击败敌人使药剂充能获取率总增 {0}%",
+        "zh": "击败敌人的药剂充能获取率总增 {0}%",
         "en": "{0}% more Flask Charges gained from Kills"
     },
     {
         "id": "stat_3790386828",
-        "zh": "击败敌人使药剂充能获取率总降 {0}%",
+        "zh": "击败敌人的药剂充能获取率总降 {0}%",
         "en": "{0}% less Flask Charges gained from Kills"
     },
     {
@@ -18335,11 +18260,6 @@
         "en": "Frostbite has no Reservation if Cast as an Aura"
     },
     {
-        "id": "stat_4122946258",
-        "zh": "不朽辛迪加成员有 {0}% 的几率额外掉落一个加密物品",
-        "en": "Immortal Syndicate Members have {0}% chance to drop an additional Veiled Item"
-    },
-    {
         "id": "stat_1546046884",
         "zh": "暴击时获得 1 点充能",
         "en": "Gain a Flask Charge when you deal a Critical Strike"
@@ -18451,7 +18371,7 @@
     },
     {
         "id": "stat_2736708072",
-        "zh": "被【怨毒光环】影响时，{0}% 伤害持续时间加成",
+        "zh": "被【怨毒光环】影响时，{0}% 持续伤害加成",
         "en": "{0}% to Damage over Time Multiplier while affected by Malevolence"
     },
     {
@@ -18636,12 +18556,12 @@
     },
     {
         "id": "stat_3993865658",
-        "zh": "骄傲的魔力保留效能提高 {0}%",
+        "zh": "尊严的魔力保留效能提高 {0}%",
         "en": "Pride has {0}% increased Mana Reservation Efficiency"
     },
     {
         "id": "stat_3993865658",
-        "zh": "骄傲的魔力保留效能降低 {0}%",
+        "zh": "尊严的魔力保留效能降低 {0}%",
         "en": "Pride has {0}% reduced Mana Reservation Efficiency"
     },
     {
@@ -20021,7 +19941,12 @@
     },
     {
         "id": "stat_313419608",
-        "zh": "若诅咒持续时间耗减了 25%，则被你诅咒的敌人也被【缓速】，移动速度减慢 {0}%",
+        "zh": "如果诅咒持续时间已经过去 25%，则你诅咒的敌人会被缓速",
+        "en": "Enemies Cursed by you are Hindered if 25% of Curse Duration expired"
+    },
+    {
+        "id": "stat_313419608",
+        "zh": "如果诅咒持续时间已经过去 25%，则你诅咒的敌人的移动速度被减缓 25%",
         "en": "Enemies Cursed by you are Hindered with {0}% reduced Movement\nSpeed if 25% of Curse Duration expired"
     },
     {
@@ -20211,7 +20136,7 @@
     },
     {
         "id": "stat_1485085047",
-        "zh": "投射物有 {0}% 的几率在碰撞地面时\n按照影响你的每件锐利之凝珠宝产生连锁效果，最多 20%",
+        "zh": "投射物有 {0}% 的几率在碰撞地形时\n按照影响你的每件锐利之凝珠宝产生连锁效果，最多 20%",
         "en": "Projectiles have {0}% chance to be able to Chain when colliding with terrain per\nSearching Eye Jewel affecting you, up to a maximum of 20%"
     },
     {
@@ -20316,8 +20241,8 @@
     },
     {
         "id": "stat_545593248",
-        "zh": "药剂效果结束时，周围敌人在 {0} 秒内陷入疲惫状态",
-        "en": "Debilitate nearby Enemies for {0} Seconds when Flask Effect ends"
+        "zh": "效果结束时，对周围的敌人造成 {0} 秒疲惫",
+        "en": "Debilitate nearby Enemies for {0} Seconds when Effect ends"
     },
     {
         "id": "stat_3623716321",
@@ -20371,8 +20296,8 @@
     },
     {
         "id": "stat_1649099067",
-        "zh": "该武器每击中 1 个被致盲的敌人会回复 {0} 生命",
-        "en": "{0} Life gained for each Blinded Enemy Hit by this Weapon"
+        "zh": "使用此武器每击中一名目盲敌人获得{0}点生命值",
+        "en": "Gain {0} Life per Blinded Enemy Hit with this Weapon"
     },
     {
         "id": "stat_1871938116",
@@ -20606,18 +20531,8 @@
     },
     {
         "id": "stat_720398262",
-        "zh": "有 {0}% 的几率在阻灵术持续期间避免击中造成的元素伤害",
+        "zh": "阻灵术期间，有 {0}% 几率避免受到的元素伤害",
         "en": "{0}% chance to Avoid Elemental Damage from Hits during Soul Gain Prevention"
-    },
-    {
-        "id": "stat_720398262",
-        "zh": "在阻灵术持续期间避免击中造成的元素伤害",
-        "en": "Avoid Elemental Damage from Hits during Soul Gain Prevention"
-    },
-    {
-        "id": "stat_416299653",
-        "zh": "区域完成时提供异界图鉴任务的几率 +{0}%",
-        "en": "Areas have +{0}% chance to grant an Atlas Mission on Completion"
     },
     {
         "id": "stat_3629143471",
@@ -20676,12 +20591,12 @@
     },
     {
         "id": "stat_3190526553",
-        "zh": "所有攻击在至少有 1 个缓速蔓藤的情况下都施加中毒",
+        "zh": "所有伤害都对至少被 1 个缓速蔓藤影响的敌人施加中毒",
         "en": "All Damage inflicts Poison against Enemies affected by at least 1 Grasping Vine"
     },
     {
         "id": "stat_3190526553",
-        "zh": "所有攻击在至少有 {0} 个缓速蔓藤的情况下都施加中毒",
+        "zh": "所有伤害都对至少被 {0} 个缓速蔓藤影响的敌人施加中毒",
         "en": "All Damage inflicts Poison against Enemies affected by at least {0} Grasping Vines"
     },
     {
@@ -20706,7 +20621,7 @@
     },
     {
         "id": "stat_430044247",
-        "zh": "玩家和他们的召唤生物每秒再生 {0}% 生命",
+        "zh": "玩家和他们的召唤生物每秒再生 {0}%生命",
         "en": "Players and their Minions Regenerate {0}% of Life per second"
     },
     {
@@ -20986,12 +20901,7 @@
     },
     {
         "id": "stat_3469279727",
-        "zh": "周围静止的敌人每秒获得一个缓速蔓藤",
-        "en": "Nearby stationary Enemies gain a Grasping Vine every second"
-    },
-    {
-        "id": "stat_3469279727",
-        "zh": "周围静止的敌人每 {0} 秒获得一个缓速蔓藤",
+        "zh": "周围静止的敌人每 {0} 秒获得一个缓速藤蔓",
         "en": "Nearby stationary Enemies gain a Grasping Vine every {0} seconds"
     },
     {
@@ -21006,8 +20916,8 @@
     },
     {
         "id": "stat_3000966016",
-        "zh": "伤害的 {0}% 规避结界",
-        "en": "{0}% of Damage bypasses Ward"
+        "zh": "受到的伤害的{0}%穿透结界",
+        "en": "{0}% of Damage taken bypasses Ward"
     },
     {
         "id": "stat_3738009328",
@@ -21501,13 +21411,8 @@
     },
     {
         "id": "stat_3945147290",
-        "zh": "有 {0}% 的几率在你格挡时获得一个暴击球",
+        "zh": "格挡时有 {0}% 的几率获得暴击球",
         "en": "{0}% chance to gain a Power Charge when you Block"
-    },
-    {
-        "id": "stat_3945147290",
-        "zh": "在你格挡时获得一个暴击球",
-        "en": "Gain a Power Charge when you Block"
     },
     {
         "id": "stat_2008219439",
@@ -22371,8 +22276,8 @@
     },
     {
         "id": "stat_2776399916",
-        "zh": "格挡时用易燃诅咒敌人，其效果提高 20%",
-        "en": "Curse Enemies with Flammability on Block, with 20% increased Effect"
+        "zh": "格挡时对敌人附加易燃诅咒。",
+        "en": "Curse Enemies with Flammability on Block"
     },
     {
         "id": "stat_2760138143",
@@ -22411,8 +22316,8 @@
     },
     {
         "id": "stat_887556907",
-        "zh": "混沌伤害在非低血状态下无法规避能量护盾",
-        "en": "Chaos Damage does not bypass Energy Shield while not on Low Life"
+        "zh": "未处于濒血状态时，受到的混沌伤害无法忽略能量护盾",
+        "en": "Chaos Damage taken does not bypass Energy Shield while not on Low Life"
     },
     {
         "id": "stat_4272678430",
@@ -22551,8 +22456,8 @@
     },
     {
         "id": "stat_120895749",
-        "zh": "攻击击中每个点燃的敌人会回复 {0} 生命",
-        "en": "{0} Life gained for each Ignited Enemy hit by your Attacks"
+        "zh": "攻击每击中一名被点燃的敌人获得{0}点生命",
+        "en": "Gain {0} Life for each Ignited Enemy hit with Attacks"
     },
     {
         "id": "stat_3057154383",
@@ -22631,12 +22536,12 @@
     },
     {
         "id": "stat_3734675602",
-        "zh": "获得 {0} 级的主动技能【奋锐光环】",
+        "zh": "提供 {0} 级奋锐光环",
         "en": "Grants Level {0} Zealotry Skill"
     },
     {
         "id": "stat_3086585712",
-        "zh": "获得 {0} 级的主动技能【怨毒光环】",
+        "zh": "提供 {0} 级怨毒光环",
         "en": "Grants Level {0} Malevolence Skill"
     },
     {
@@ -22711,8 +22616,8 @@
     },
     {
         "id": "stat_3617672145",
-        "zh": "结界破坏时移除药剂效果",
-        "en": "Flask Effect is removed when Ward Breaks"
+        "zh": "结界破碎时效果结束",
+        "en": "Effect is removed when Ward Breaks"
     },
     {
         "id": "stat_2132884933",
@@ -22816,8 +22721,8 @@
     },
     {
         "id": "stat_2881210047",
-        "zh": "将承受的 {0}% 冰霜伤害视为闪电伤害",
-        "en": "{0}% of Cold Damage taken as Lightning"
+        "zh": "受到的冰霜伤害的 {0}% 转为火焰伤害",
+        "en": "{0}% of Cold Damage taken as Lightning Damage"
     },
     {
         "id": "stat_1012072406",
@@ -22861,8 +22766,8 @@
     },
     {
         "id": "stat_4142376596",
-        "zh": "将承受的 {0}% 火焰伤害视为闪电伤害",
-        "en": "{0}% of Fire Damage taken as Lightning"
+        "zh": "受到的火焰伤害的 {0}% 转为闪电伤害",
+        "en": "{0}% of Fire Damage taken as Lightning Damage"
     },
     {
         "id": "stat_4231915769",
@@ -23047,7 +22952,7 @@
     {
         "id": "stat_3278399103",
         "zh": "生效期间，对奉献地面上的敌人暴击率提高 {0}%",
-        "en": "{0}% increased Critical Strike Chance against Enemies on Consecrated Ground during effect"
+        "en": "{0}% increased Critical Strike Chance against Enemies on Consecrated Ground during Effect"
     },
     {
         "id": "stat_2716882575",
@@ -23426,7 +23331,7 @@
     },
     {
         "id": "stat_3612470379",
-        "zh": "获得 {0} 级的主动技能【尊严】",
+        "zh": "提供 {0} 级尊严",
         "en": "Grants Level {0} Pride Skill"
     },
     {
@@ -23581,13 +23486,8 @@
     },
     {
         "id": "stat_3976991498",
-        "zh": "击败魔法敌人时，获得它的非血族词缀，持续 20 秒",
-        "en": "When you Kill a Magic Monster gain its Non-Bloodline Modifiers for 20 seconds"
-    },
-    {
-        "id": "stat_3976991498",
-        "zh": "击败魔法敌人时，有 {0}% 的几率获得它的非血族词缀，持续 20 秒",
-        "en": "{0}% chance when you Kill a Magic Monster to gain\nits Non-Bloodline Modifiers for 20 seconds"
+        "zh": "有 20% 几率在你击杀一个魔法怪物时获得其词缀，持续 60 秒。",
+        "en": "When you Kill a Magic Monster gain its Modifiers for 60 seconds"
     },
     {
         "id": "stat_1409669176",
@@ -23621,13 +23521,8 @@
     },
     {
         "id": "stat_3554614456",
-        "zh": "骄傲没有保留效果",
+        "zh": "尊严没有保留效果",
         "en": "Pride has no Reservation"
-    },
-    {
-        "id": "stat_2388347909",
-        "zh": "最左边的 1 个魔法非恢复类药剂给你持续提供药剂效果",
-        "en": "Leftmost 1 Magic Utility Flask constantly applies its Flask Effect to you"
     },
     {
         "id": "stat_2388347909",
@@ -23826,13 +23721,8 @@
     },
     {
         "id": "stat_1093704472",
-        "zh": "获得【女神的祝福】时有 {0}% 的几率避免被冰冻，冰缓，或点燃",
-        "en": "{0}% chance to Avoid being Frozen, Chilled or Ignited with Her Blessing"
-    },
-    {
-        "id": "stat_1093704472",
-        "zh": "获得【女神的祝福】时无法被冰冻，冰缓，或点燃",
-        "en": "Cannot be Frozen, Chilled or Ignited with Her Blessing"
+        "zh": "受到女神的祝福有 {0}% 几率避免被点燃、冰缓或冰冻",
+        "en": "{0}% chance to Avoid being Ignited, Chilled or Frozen with Her Blessing"
     },
     {
         "id": "stat_4170338365",
@@ -24086,13 +23976,8 @@
     },
     {
         "id": "stat_3595254837",
-        "zh": "移动时留下【燃烧地面】，在 1 秒内每秒造成 {0} 点火焰伤害",
-        "en": "Drops Burning Ground while moving, dealing {0} Fire Damage per second for 1 second"
-    },
-    {
-        "id": "stat_3595254837",
-        "zh": "移动时留下【燃烧地面】，在 4 秒内每秒造成 {0} 点火焰伤害",
-        "en": "Drops Burning Ground while moving, dealing {0} Fire Damage per second for 4 seconds"
+        "zh": "移动时留下【燃烧地面】，在 {0} 秒内每秒造成 {1} 点火焰伤害",
+        "en": "Drops Burning Ground while moving, dealing {1} Fire Damage per second for {0} seconds"
     },
     {
         "id": "stat_1309947938",
@@ -24181,18 +24066,13 @@
     },
     {
         "id": "stat_911839512",
-        "zh": "药剂生效期间，你施加的感电状态扩散给 {0} 格内的其它敌人",
-        "en": "Shocks you inflict during Flask effect spread to other Enemies in a radius of {0}"
+        "zh": "你造成的感电会波及半径 {0} 内的其他敌人",
+        "en": "Shocks you inflict during Effect spread to other Enemies in a radius of {0}"
     },
     {
         "id": "stat_3338065776",
-        "zh": "你施加的感电效果在药剂生效期间提高 {0}%",
-        "en": "{0}% increased Effect of Shocks you inflict during Flask effect"
-    },
-    {
-        "id": "stat_3338065776",
-        "zh": "你施加的感电效果在药剂生效期间降低 {0}%",
-        "en": "{0}% reduced Effect of Shocks you inflict during Flask effect"
+        "zh": "生效期间，你造成的感电效果提高 {0}%",
+        "en": "{0}% increased Effect of Shocks you inflict during Effect"
     },
     {
         "id": "stat_1841503755",
@@ -24541,13 +24421,8 @@
     },
     {
         "id": "stat_2891175306",
-        "zh": "药剂生效期间，结界提高 {0}%",
-        "en": "{0}% increased Ward during Flask effect"
-    },
-    {
-        "id": "stat_2891175306",
-        "zh": "药剂生效期间，结界降低 {0}%",
-        "en": "{0}% reduced Ward during Flask effect"
+        "zh": "生效期间，结界增强 {0}%",
+        "en": "{0}% increased Ward during Effect"
     },
     {
         "id": "indexable_support_42",
@@ -25261,13 +25136,8 @@
     },
     {
         "id": "stat_2228892313",
-        "zh": "击中时有 {0}% 的几率碾压敌人",
+        "zh": "击中时有{0}%的几率碾压",
         "en": "{0}% chance to Crush on Hit"
-    },
-    {
-        "id": "stat_2228892313",
-        "zh": "击中时碾压敌人",
-        "en": "Crush on Hit"
     },
     {
         "id": "indexable_support_112",
@@ -25571,7 +25441,7 @@
     },
     {
         "id": "stat_1876637240",
-        "zh": "插入的技能石被 {0} 级的【法术凝聚】辅助",
+        "zh": "此物品上的技能石受到 {0} 级的 法术凝聚 辅助",
         "en": "Socketed Gems are Supported by Level {0} Intensify"
     },
     {
@@ -25608,6 +25478,11 @@
         "id": "stat_1193925814",
         "zh": "魔力药剂每 3 秒获得 1 次使用机会",
         "en": "Mana Flasks gain 1 Charge every 3 seconds"
+    },
+    {
+        "id": "stat_1193925814",
+        "zh": "魔力药剂每 3 秒获得 {0} 次使用机会",
+        "en": "Mana Flasks gain {0} Charges every 3 seconds"
     },
     {
         "id": "stat_3655769732",
@@ -25766,12 +25641,12 @@
     },
     {
         "id": "stat_375932027",
-        "zh": "你在承受暴击时获得一个缓速藤蔓",
+        "zh": "你承受暴击时获得一个缓速藤蔓",
         "en": "You gain a Grasping Vine when you take a Critical Strike"
     },
     {
         "id": "stat_375932027",
-        "zh": "你在承受暴击时获得 {0} 个缓速藤蔓",
+        "zh": "你承受暴击时获得 {0} 个缓速藤蔓",
         "en": "You gain {0} Grasping Vines when you take a Critical Strike"
     },
     {
@@ -26147,7 +26022,7 @@
     {
         "id": "stat_1625819882",
         "zh": "击中时对敌人附加衰弱诅咒。",
-        "en": "Curse Enemies with Enfeeble on Hit, with {0}% increased Effect"
+        "en": "Curse Enemies with Enfeeble on Hit"
     },
     {
         "id": "stat_240289863",
@@ -26367,7 +26242,7 @@
     {
         "id": "stat_1923210508",
         "zh": "每次敌人被连锁，投射物的击中和异常状态伤害提高 {0}%",
-        "en": "Projectiles deal {0}% increased Damage for each time they have Chained"
+        "en": "Projectiles deal {0}% increased Damage with Hits and Ailments for each time they have Chained"
     },
     {
         "id": "stat_461472247",
@@ -26632,12 +26507,12 @@
     {
         "id": "stat_1425651005",
         "zh": "受到的投射物技能攻击伤害提高 {0}%",
-        "en": "{0}% increased Damage taken from Projectiles"
+        "en": "{0}% increased Damage taken from Projectiles Hits"
     },
     {
         "id": "stat_1425651005",
         "zh": "受到的投射物击中伤害降低 {0}%",
-        "en": "{0}% reduced Damage taken from Projectiles"
+        "en": "{0}% reduced Damage taken from Projectile Hits"
     },
     {
         "id": "stat_2428621158",
@@ -27422,7 +27297,7 @@
     {
         "id": "stat_64193828",
         "zh": "有一个传奇怪物出现在你面前：攻击有 {0}% 的几率导致流血",
-        "en": "While a Unique Enemy is in your Presence, Attacks cannot cause Bleeding"
+        "en": "While a Unique Enemy is in your Presence, Attacks have {0}% chance to cause Bleeding"
     },
     {
         "id": "stat_371531651",
@@ -27632,7 +27507,7 @@
     {
         "id": "stat_4014428128",
         "zh": "有一个异界图鉴最终首领出现在你面前：攻击有 {0}% 的几率导致流血",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, Attacks cannot cause Bleeding"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, Attacks have {0}% chance to cause Bleeding"
     },
     {
         "id": "stat_1771822543",
@@ -28067,17 +27942,12 @@
     {
         "id": "stat_1829486532",
         "zh": "有一个传奇怪物出现在你面前：行动速度减慢 {0}%",
-        "en": "While a Unique Enemy is in your Presence, {0}% reduced Action Speed"
-    },
-    {
-        "id": "stat_1585769763",
-        "zh": "目盲效果提高 {0}%",
-        "en": "{0}% increased Blind Effect"
+        "en": "While a Unique Enemy is in your Presence, {0}% increased Action Speed"
     },
     {
         "id": "stat_1585769763",
         "zh": "致盲效果提高{0}%",
-        "en": "{0}% reduced Blind Effect"
+        "en": "{0}% increased Blind Effect"
     },
     {
         "id": "stat_1283684786",
@@ -28087,7 +27957,7 @@
     {
         "id": "stat_2570471069",
         "zh": "有一个传奇怪物出现在你面前：近期内被你击中的敌人的生命再生率降低 {0}%",
-        "en": "While a Unique Enemy is in your Presence, Enemies you've Hit Recently have {0}% increased Life Regeneration rate"
+        "en": "While a Unique Enemy is in your Presence, Enemies you've Hit Recently have {0}% reduced Life Regeneration rate"
     },
     {
         "id": "stat_2558323947",
@@ -28161,8 +28031,8 @@
     },
     {
         "id": "stat_2251857767",
-        "zh": "有一个异界图鉴最终首领出现在你面前：行动速度减慢 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% reduced Action Speed"
+        "zh": "有一个异界图鉴最终首领出现在你面前：行动速度加快 {0}%",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Action Speed"
     },
     {
         "id": "stat_221690080",
@@ -28307,7 +28177,7 @@
     {
         "id": "stat_3178090061",
         "zh": "有一个异界图鉴最终首领出现在你面前：受到的反射伤害降低 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Reflected Damage taken"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% reduced Reflected Damage taken"
     },
     {
         "id": "stat_2917444195",
@@ -28367,7 +28237,7 @@
     {
         "id": "stat_1941017392",
         "zh": "有一个传奇怪物出现在你面前：受到的反射伤害降低 {0}%",
-        "en": "While a Unique Enemy is in your Presence, {0}% increased Reflected Damage taken"
+        "en": "While a Unique Enemy is in your Presence, {0}% reduced Reflected Damage taken"
     },
     {
         "id": "stat_1714653952",
@@ -28402,7 +28272,7 @@
     {
         "id": "stat_3407071583",
         "zh": "有一个异界图鉴最终首领出现在你面前：近期内被你击中的敌人的生命再生率降低 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, Enemies you've Hit Recently have {0}% increased Life Regeneration rate"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, Enemies you've Hit Recently have {0}% reduced Life Regeneration rate"
     },
     {
         "id": "stat_2619970520",
@@ -28676,8 +28546,13 @@
     },
     {
         "id": "stat_4045839821",
-        "zh": "有一个异界图鉴最终首领出现在你面前：投射物会穿透 {0} 个额外目标",
+        "zh": "有一个异界图鉴最终首领出现在你面前：投射物会穿透 1 个额外目标",
         "en": "While a Pinnacle Atlas Boss is in your Presence, Projectiles Pierce an additional Target"
+    },
+    {
+        "id": "stat_4045839821",
+        "zh": "有一个异界图鉴最终首领出现在你面前：投射物会穿透 {0} 个额外目标",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, Projectiles Pierce {0} additional Targets"
     },
     {
         "id": "stat_4224921626",
@@ -28761,8 +28636,13 @@
     },
     {
         "id": "stat_3924473787",
-        "zh": "有一个传奇怪物出现在你面前：投射物会穿透 {0} 个额外目标",
+        "zh": "有一个传奇怪物出现在你面前：投射物会穿透 1 个额外目标",
         "en": "While a Unique Enemy is in your Presence, Projectiles Pierce an additional Target"
+    },
+    {
+        "id": "stat_3924473787",
+        "zh": "有一个传奇怪物出现在你面前：投射物会穿透 {0} 个额外目标",
+        "en": "While a Unique Enemy is in your Presence, Projectiles Pierce {0} additional Targets"
     },
     {
         "id": "stat_2029969019",
@@ -28777,7 +28657,7 @@
     {
         "id": "stat_3209267362",
         "zh": "有一个异界图鉴最终首领出现在你面前：你受到的猛攻效果增强 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Onslaught Effect"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Effect of Onslaught on you"
     },
     {
         "id": "stat_2441896589",
@@ -28807,7 +28687,7 @@
     {
         "id": "stat_4146719724",
         "zh": "有一个异界图鉴最终首领出现在你面前：有 {0}% 的几率造成冻结状态",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, Always Freezes Enemies on Hit"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% chance to Freeze"
     },
     {
         "id": "stat_1648511635",
@@ -28912,7 +28792,7 @@
     {
         "id": "stat_1116269888",
         "zh": "有一个传奇怪物出现在你面前：攻击的魔力消耗降低 {0}%",
-        "en": "While a Unique Enemy is in your Presence, {0}% increased Mana Cost of Attacks"
+        "en": "While a Unique Enemy is in your Presence, {0}% reduced Mana Cost of Attacks"
     },
     {
         "id": "stat_942478380",
@@ -28926,8 +28806,13 @@
     },
     {
         "id": "stat_2150799098",
-        "zh": "有一个传奇怪物出现在你面前：药剂每 3 秒获得 {0} 次使用机会",
+        "zh": "有一个传奇怪物出现在你面前：药剂每 3 秒获得 1 次使用机会",
         "en": "While a Unique Enemy is in your Presence, Flasks gain a Charge every 3 seconds"
+    },
+    {
+        "id": "stat_2150799098",
+        "zh": "有一个传奇怪物出现在你面前：药剂每 3 秒获得 {0} 次使用机会",
+        "en": "While a Unique Enemy is in your Presence, Flasks gain {0} Charges every 3 seconds"
     },
     {
         "id": "stat_865433929",
@@ -28962,7 +28847,7 @@
     {
         "id": "stat_3671920033",
         "zh": "有一个异界图鉴最终首领出现在你面前：攻击的魔力消耗降低 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% increased Mana Cost of Attacks"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, {0}% reduced Mana Cost of Attacks"
     },
     {
         "id": "stat_3598887112",
@@ -28977,7 +28862,7 @@
     {
         "id": "stat_505327219",
         "zh": "有一个异界图鉴最终首领出现在你面前：召唤生物承受的反射伤害降低 {0}%",
-        "en": "While a Pinnacle Atlas Boss is in your Presence, Minions take {0}% increased Reflected Damage"
+        "en": "While a Pinnacle Atlas Boss is in your Presence, Minions take {0}% reduced Reflected Damage"
     },
     {
         "id": "stat_771845579",
@@ -29027,7 +28912,7 @@
     {
         "id": "stat_1096728982",
         "zh": "有一个传奇怪物出现在你面前：有 {0}% 的几率造成冻结状态",
-        "en": "While a Unique Enemy is in your Presence, Always Freezes Enemies on Hit"
+        "en": "While a Unique Enemy is in your Presence, {0}% chance to Freeze"
     },
     {
         "id": "stat_2293353005",
@@ -29162,7 +29047,7 @@
     {
         "id": "stat_491577732",
         "zh": "有一个传奇怪物出现在你面前：你受到的猛攻效果增强 {0}%",
-        "en": "While a Unique Enemy is in your Presence, {0}% increased Onslaught Effect"
+        "en": "While a Unique Enemy is in your Presence, {0}% increased Effect of Onslaught on you"
     },
     {
         "id": "stat_2621869142",
@@ -29406,8 +29291,13 @@
     },
     {
         "id": "stat_1519845279",
-        "zh": "有一个异界图鉴最终首领出现在你面前：药剂每 3 秒获得 {0} 次使用机会",
+        "zh": "有一个异界图鉴最终首领出现在你面前：药剂每 3 秒获得 1 次使用机会",
         "en": "While a Pinnacle Atlas Boss is in your Presence, Flasks gain a Charge every 3 seconds"
+    },
+    {
+        "id": "stat_1519845279",
+        "zh": "有一个异界图鉴最终首领出现在你面前：药剂每 3 秒获得 {0} 次使用机会",
+        "en": "While a Pinnacle Atlas Boss is in your Presence, Flasks gain {0} Charges every 3 seconds"
     },
     {
         "id": "stat_2814835155",
@@ -29622,7 +29512,7 @@
     {
         "id": "stat_1499657170",
         "zh": "有一个传奇怪物出现在你面前：召唤生物承受的反射伤害降低 {0}%",
-        "en": "While a Unique Enemy is in your Presence, Minions take {0}% increased Reflected Damage"
+        "en": "While a Unique Enemy is in your Presence, Minions take {0}% reduced Reflected Damage"
     },
     {
         "id": "stat_2420972973",
@@ -30516,8 +30406,8 @@
     },
     {
         "id": "stat_1308141466",
-        "zh": "生命词缀的效果提高 {0}%",
-        "en": "Life Modifiers have {0}% increased Effect"
+        "zh": "外延生命词缀增幅提高 {0}%",
+        "en": "{0}% increased Explicit Life Modifier magnitudes"
     },
     {
         "id": "stat_1335369947",
@@ -30542,7 +30432,7 @@
     {
         "id": "stat_2461552986",
         "zh": "【电弧】额外连锁弹射 {0} 次",
-        "en": "Arc Chains an additional {0} times"
+        "en": "Arc Chains {0} additional times"
     },
     {
         "id": "stat_3469967347",
@@ -34231,12 +34121,7 @@
     },
     {
         "id": "stat_303359279",
-        "zh": "【裂魂术】也会使敌人缓速，移动速度提高 {0}%",
-        "en": "Soulrend also Hinders Enemies, with {0}% increased Movement Speed"
-    },
-    {
-        "id": "stat_303359279",
-        "zh": "【裂魂术】也会使敌人缓速，移动速度降低 {0}%",
+        "zh": "裂魂术也会使敌人缓速，移动速度减慢 {0}%",
         "en": "Soulrend also Hinders Enemies, with {0}% reduced Movement Speed"
     },
     {
@@ -34741,13 +34626,8 @@
     },
     {
         "id": "stat_3524326896",
-        "zh": "寒霜爆的冷却回复率提高 #%",
+        "zh": "寒霜爆的冷却回复率提高 {0}%",
         "en": "Frost Bomb has {0}% increased Cooldown Recovery Rate"
-    },
-    {
-        "id": "stat_3524326896",
-        "zh": "寒霜爆的冷却回复率降低 {0}%",
-        "en": "Frost Bomb has {0}% reduced Cooldown Recovery Rate"
     },
     {
         "id": "stat_2287986752",
@@ -34776,8 +34656,8 @@
     },
     {
         "id": "stat_3139672534",
-        "zh": "【定罪波】的特效会使元素抗性 {0}%",
-        "en": "Wave of Conviction's Exposure applies {0}% Elemental Resistance"
+        "zh": "定罪波的暴露对元素抗性额外施加{0}%效果",
+        "en": "Wave of Conviction's Exposure applies an extra {0}% to Elemental Resistance"
     },
     {
         "id": "stat_2681941384",
@@ -35261,7 +35141,7 @@
     },
     {
         "id": "stat_1298820272",
-        "zh": "{0}% 烈焰魔像的元素抗性",
+        "zh": "烈焰魔像的元素抗性 {0}%",
         "en": "{0}% increased Flame Golem Elemental Resistances"
     },
     {
@@ -36131,13 +36011,8 @@
     },
     {
         "id": "stat_2432759583",
-        "zh": "火屑地雷的投掷速度加快 {0}%",
+        "zh": "火屑地雷投掷速度提高 {0}%",
         "en": "Pyroclast Mine has {0}% increased Throwing Speed"
-    },
-    {
-        "id": "stat_2432759583",
-        "zh": "火屑地雷的投掷速度减慢 {0}%",
-        "en": "Pyroclast Mine has {0}% reduced Throwing Speed"
     },
     {
         "id": "stat_2343571547",
@@ -36446,8 +36321,8 @@
     },
     {
         "id": "stat_2563177940",
-        "zh": "【剧毒旋风】有 {0}% 的几率继续抓回【回旋之刃】发射的投射物",
-        "en": "Venom Gyre has a {0}% chance to keep caught Projectiles fired by using Whirling Blades"
+        "zh": "剧毒旋风有 {0}% 几率让每一个抓回的投射物发射回旋之刃",
+        "en": "Venom Gyre has a {0}% chance to keep each caught Projectile fired with Whirling Blades"
     },
     {
         "id": "stat_931713173",
@@ -37536,13 +37411,8 @@
     },
     {
         "id": "stat_865263728",
-        "zh": "【激励战吼】的增益效果提高 {0}%",
+        "zh": "【激励战吼】增益效果提高 {0}%",
         "en": "{0}% increased Rallying Cry Buff Effect"
-    },
-    {
-        "id": "stat_865263728",
-        "zh": "【激励战吼】的增益效果降低 {0}%",
-        "en": "{0}% reduced Rallying Cry Buff Effect"
     },
     {
         "id": "stat_4225882962",
@@ -37566,13 +37436,8 @@
     },
     {
         "id": "stat_945725535",
-        "zh": "【激励战吼】的增益效果提高 {0}%",
+        "zh": "【激励战吼】增益效果提高 {0}%",
         "en": "{0}% increased Rallying Cry Buff Effect"
-    },
-    {
-        "id": "stat_945725535",
-        "zh": "【激励战吼】的增益效果降低 {0}%",
-        "en": "{0}% reduced Rallying Cry Buff Effect"
     },
     {
         "id": "stat_2982851186",
@@ -39535,6 +39400,11 @@
         "en": "Socketed Projectile Spells have {0}% more Skill Effect Duration"
     },
     {
+        "id": "stat_3104895675",
+        "zh": "插入的投射物法术的技能效果持续时间总降 {0}%",
+        "en": "Socketed Projectile Spells have {0}% less Skill Effect Duration"
+    },
+    {
         "id": "stat_3849554033",
         "zh": "邪法宗师",
         "en": "Hex Master"
@@ -39905,14 +39775,14 @@
         "en": "{0}% to Critical Strike Multiplier for Attack Damage"
     },
     {
-        "id": "stat_2457848738",
-        "zh": "右边的戒指栏位：你处于异常状态的时间增加{0}%",
-        "en": "Right ring slot: {0}% increased Duration of Ailments on You"
-    },
-    {
         "id": "stat_221309863",
         "zh": "左边的戒指栏位：你处于异常状态的时间减少{0}%",
         "en": "Left ring slot: {0}% reduced Duration of Ailments on You"
+    },
+    {
+        "id": "stat_2457848738",
+        "zh": "右边的戒指栏位：你处于异常状态的时间增加{0}%",
+        "en": "Right ring slot: {0}% increased Duration of Ailments on You"
     },
     {
         "id": "stat_3126680545",
@@ -39921,13 +39791,13 @@
     },
     {
         "id": "stat_3320868777",
-        "zh": "左边的戒指栏位：技能效果的持续时间增加{0}%",
-        "en": "Left ring slot: {0}% increased Skill Effect Duration"
+        "zh": "左边的戒指栏位：技能效果的持续时间减少{0}%",
+        "en": "Left ring slot: {0}% reduced Skill Effect Duration"
     },
     {
         "id": "stat_2239667237",
-        "zh": "右边的戒指栏位：技能效果持续时间减少{0}%",
-        "en": "Right ring slot: {0}% reduced Skill Effect Duration"
+        "zh": "右边的戒指栏位：技能效果持续时间增加{0}%",
+        "en": "Right ring slot: {0}% increased Skill Effect Duration"
     },
     {
         "id": "stat_623823763",
@@ -40163,5 +40033,25 @@
         "id": "stat_2939195168",
         "zh": "击败敌人时有{0}%的几率损失一个暴击球",
         "en": "{0}% chance to lose a Power Charge on Kill"
+    },
+    {
+        "id": "stat_624257168",
+        "zh": "击败敌人使药剂充能获取率总降 {0}%",
+        "en": "{0}% less Flask Charges gained from Kills"
+    },
+    {
+        "id": "stat_2148556029",
+        "zh": "获得 {0} 级的主动技能【怨毒光环】",
+        "en": "Grants Level {0} Malevolence Skill"
+    },
+    {
+        "id": "stat_3224664127",
+        "zh": "获得 {0} 级的主动技能【奋锐光环】",
+        "en": "Grants Level {0} Zealotry Skill"
+    },
+    {
+        "id": "stat_4184565463",
+        "zh": "获得 {0} 级的主动技能【尊严】",
+        "en": "Grants Level {0} Pride Skill"
     }
 ]
