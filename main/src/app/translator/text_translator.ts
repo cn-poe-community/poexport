@@ -61,7 +61,7 @@ class TextItem {
     parts: Part[];
 
     constructor(content: string) {
-        let partsContents = content.split(PART_SEPARATOR);
+        const partsContents = content.split(PART_SEPARATOR);
 
         this.parts = partsContents.map((partContent) => new Part(partContent));
     }
@@ -77,18 +77,18 @@ class TextItem {
 class Part {
     lines: Line[];
 
-    constructor(content: String) {
-        let linesContents = content.split(LINE_SEPARATOR);
+    constructor(content: string) {
+        const linesContents = content.split(LINE_SEPARATOR);
         this.lines = linesContents.map((lineContent) => new Line(lineContent));
     }
 
     getTranslation(ctx: Context): string {
         ctx.part = this;
         const translator = ctx.translator;
-        let buf = [];
+        const buf = [];
 
         let isMetaPart = false;
-        let firstLine = this.lines[0];
+        const firstLine = this.lines[0];
         if (
             firstLine.type === LineType.KEY_VALUE &&
             firstLine.key === ZH_ITEM_CLASS
@@ -181,7 +181,7 @@ class Part {
         const slices = translation.split(COMPOUNDED_STAT_LINE_SEPARATOR);
         const buf = new Array<string>();
 
-        for (let [i, slice] of slices.entries()) {
+        for (const [i, slice] of slices.entries()) {
             if (mod[i].suffix) {
                 buf.push(`${slice} ${mod[i].suffix}`);
             } else {
@@ -224,8 +224,8 @@ class Line {
             this.key = content.substring(0, content.length - 1);
         } else {
             this.type = LineType.MODIFIER;
-            let pattern = new RegExp("(.+)\\s(\\(\\w+\\))$");
-            let matchs = pattern.exec(content);
+            const pattern = new RegExp("(.+)\\s(\\(\\w+\\))$");
+            const matchs = pattern.exec(content);
             if (matchs) {
                 this.modifier = matchs[1];
                 this.suffix = matchs[2];

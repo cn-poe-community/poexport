@@ -208,7 +208,7 @@ export class PobManager {
             return this.version;
         }
 
-        const pattern = /<Version number="([\d\.]+)"/g;
+        const pattern = /<Version number="([\d.]+)"/g;
         const matches = pattern.exec(data);
         if (matches) {
             this.version = matches[1];

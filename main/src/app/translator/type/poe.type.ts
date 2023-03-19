@@ -5,9 +5,9 @@ export interface Character {
 }
 
 export interface PassiveSkills {
-    items: Array<any>;
+    items: Array<unknown>;
 }
 
 export interface Items {
-    items: Array<any>;
+    items: Array<unknown>;
 }

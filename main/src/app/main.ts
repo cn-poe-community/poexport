@@ -33,8 +33,6 @@ export class App {
     private jsonTranslator: JsonTranslator;
     private textTranslator: TextTranslator;
 
-    constructor() {}
-
     public init() {
         this.initTranslators();
 

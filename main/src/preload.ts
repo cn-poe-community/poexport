@@ -2,7 +2,7 @@
 // https://www.electronjs.org/docs/latest/tutorial/process-model#preload-scripts
 
 import { contextBridge, ipcRenderer } from "electron";
-import { Channels, Config } from "./ipc/types";
+import { Channels } from "./ipc/types";
 
 contextBridge.exposeInMainWorld("electronApi", {
     openFolder: () => ipcRenderer.invoke(Channels.DIALOG_OPEN_FLOOR),

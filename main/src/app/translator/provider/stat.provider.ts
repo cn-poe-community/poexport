@@ -49,8 +49,7 @@ export class StatProvider {
             }
         }
 
-        for (const [_, value] of this
-            .compoundedStatsIndexedByFirstLinesZhBody) {
+        for (const value of this.compoundedStatsIndexedByFirstLinesZhBody.values()) {
             if (value.stats.length > 1) {
                 value.stats.sort((a, b) => b.lineSize - a.lineSize); //max to min
             }
