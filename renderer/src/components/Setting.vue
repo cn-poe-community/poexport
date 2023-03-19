@@ -156,7 +156,7 @@ export default {
       }
       this.ipcLocked = true;
       const electronApi = (window as any as AppWindow).electronApi;
-      const filePath = electronApi
+      electronApi
         .openFolder()
         .then((path) => {
           if (path) {
