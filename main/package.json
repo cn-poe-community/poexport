@@ -10,7 +10,8 @@
     "build": "electron-forge make",
     "package": "electron-forge package",
     "lint": "eslint --ext .ts,.tsx .",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write ."
   },
   "author": {
     "name": "hybo"

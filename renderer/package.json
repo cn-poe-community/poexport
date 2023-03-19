@@ -8,7 +8,7 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "pretty": "prettier --write ."
+    "format": "prettier --write ."
   },
   "dependencies": {
     "floating-vue": "^2.0.0-beta.20",
