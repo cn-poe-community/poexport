@@ -47,18 +47,31 @@
             <div class="line">
               <div class="line-left">
                 <label for="poeSessionId">Proxy支持</label>
-                <VDropdown :distance="1" :placement="'right'" :triggers="['hover', 'focus']">
+                <VDropdown
+                  :distance="1"
+                  :placement="'right'"
+                  :triggers="['hover', 'focus']"
+                >
                   <span class="material-symbols-outlined warning">warning</span>
                   <template #popper>
                     <div class="tooltip-container">
-                      <div>一些代理不支持本软件，你可以取消POB代理设置，或使用该选项。</div>
-                      <div class="warning">警告：该选项会修改POB代码，可能导致POB无法正常启动。</div>
+                      <div>
+                        一些代理不支持本软件，你可以取消POB代理设置，或使用该选项。
+                      </div>
+                      <div class="warning">
+                        警告：该选项会修改POB代码，可能导致POB无法正常启动。
+                      </div>
                     </div>
                   </template>
                 </VDropdown>
               </div>
               <div class="line-right">
-                <input type="checkbox" class="pointer" v-model="pobProxySupported" @change="setPobProxySupported">
+                <input
+                  type="checkbox"
+                  class="pointer"
+                  v-model="pobProxySupported"
+                  @change="setPobProxySupported"
+                />
               </div>
             </div>
           </div>
@@ -92,14 +105,17 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.getConfig()
-        .then(config => {
+      mainApi
+        .getConfig()
+        .then((config) => {
           this.poeSessionId = config.poeSessId;
           this.pobPath = config.pobPath;
           this.pobProxySupported = config.pobProxySupported;
-        }).catch(err => {
+        })
+        .catch((err) => {
           console.log(err);
-        }).finally(() => {
+        })
+        .finally(() => {
           this.ipcLocked = false;
         });
     },
@@ -109,10 +125,12 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.resetConfig()
-        .catch(err => {
+      mainApi
+        .resetConfig()
+        .catch((err) => {
           console.log(err);
-        }).finally(() => {
+        })
+        .finally(() => {
           this.ipcLocked = false;
           this.loadConfig();
         });
@@ -123,10 +141,12 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.setPoeSessId(this.poeSessionId)
-        .catch(err => {
+      mainApi
+        .setPoeSessId(this.poeSessionId)
+        .catch((err) => {
           console.log(err);
-        }).finally(() => {
+        })
+        .finally(() => {
           this.ipcLocked = false;
         });
     },
@@ -136,22 +156,28 @@ export default {
       }
       this.ipcLocked = true;
       const electronApi = (window as any as AppWindow).electronApi;
-      const filePath = electronApi.openFolder().then(path => {
-        if (path) {
-          this.pobPath = path;
-          const mainApi = (window as any as AppWindow).mainApi;
-          mainApi.setPobPath(path)
-            .catch(err => {
-              console.log(err);
-            }).finally(() => {
-              this.ipcLocked = false;
-            });
-        }
-      }).catch(err => {
-        console.log(err);
-      }).finally(() => {
-        this.ipcLocked = false;
-      });
+      const filePath = electronApi
+        .openFolder()
+        .then((path) => {
+          if (path) {
+            this.pobPath = path;
+            const mainApi = (window as any as AppWindow).mainApi;
+            mainApi
+              .setPobPath(path)
+              .catch((err) => {
+                console.log(err);
+              })
+              .finally(() => {
+                this.ipcLocked = false;
+              });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          this.ipcLocked = false;
+        });
     },
     setPobProxySupported() {
       if (this.ipcLocked) {
@@ -159,10 +185,12 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.setPobProxySupported(this.pobProxySupported)
-        .catch(err => {
+      mainApi
+        .setPobProxySupported(this.pobProxySupported)
+        .catch((err) => {
           console.log(err);
-        }).finally(() => {
+        })
+        .finally(() => {
           this.ipcLocked = false;
         });
     },
@@ -172,13 +200,15 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.resetPob()
-        .catch(err => {
+      mainApi
+        .resetPob()
+        .catch((err) => {
           console.log(err);
-        }).finally(() => {
+        })
+        .finally(() => {
           this.ipcLocked = false;
         });
-    }
+    },
   },
 };
 </script>
@@ -217,32 +247,32 @@ export default {
   border-radius: 3px;
 }
 
-.section-lines>.line {
+.section-lines > .line {
   display: flex;
   justify-content: space-between;
   padding: 5px 10px;
   border-radius: 3px;
 }
 
-.section-lines>.line:hover {
+.section-lines > .line:hover {
   background-color: #cccccc;
 }
 
-.section-lines>.line>.line-left {
+.section-lines > .line > .line-left {
   display: flex;
 }
 
-.section-lines>.line>.line-right {
+.section-lines > .line > .line-right {
   vertical-align: bottom;
 }
 
-.section-lines>.line>.line-right>button {
+.section-lines > .line > .line-right > button {
   display: inline;
   margin-left: 10px;
 }
 
 .line .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
   position: relative;
   top: 2px;
   line-height: 16px;

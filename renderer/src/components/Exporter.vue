@@ -3,13 +3,22 @@
     <div class="status">
       <header>
         <h2>状态</h2>
-        <span class="material-symbols-outlined pointer refresh" @click="refresh" title="刷新">refresh</span>
+        <span
+          class="material-symbols-outlined pointer refresh"
+          @click="refresh"
+          title="刷新"
+          >refresh</span
+        >
       </header>
       <div class="line">
         <span class="line-content">
           <span class="line-left">POESESSID</span>
           <span class="line-right">
-            <span class="material-symbols-outlined ok" v-if="status.sessionStatus === 'Ok'">check_circle</span>
+            <span
+              class="material-symbols-outlined ok"
+              v-if="status.sessionStatus === 'Ok'"
+              >check_circle</span
+            >
             <span class="material-symbols-outlined warning" v-else>error</span>
           </span>
         </span>
@@ -18,8 +27,17 @@
         <span class="line-content">
           <span class="line-left">POB</span>
           <span class="line-right">
-            <span class="material-symbols-outlined ok" v-if="status.pobStatus === 'Ok'">check_circle</span>
-            <span class="update pointer" v-else-if="status.pobStatus === 'NeedPatch'" @click="patch">更新</span>
+            <span
+              class="material-symbols-outlined ok"
+              v-if="status.pobStatus === 'Ok'"
+              >check_circle</span
+            >
+            <span
+              class="update pointer"
+              v-else-if="status.pobStatus === 'NeedPatch'"
+              @click="patch"
+              >更新</span
+            >
             <span class="material-symbols-outlined warning" v-else>error</span>
           </span>
         </span>
@@ -36,13 +54,24 @@
       <div class="line">
         <span class="line-content">
           <input placeholder="论坛账户名" v-model="inputs.poeAccountName" />
-          <button @click="encode" :disabled="inputs.poeAccountName === ''">编码</button>
+          <button @click="encode" :disabled="inputs.poeAccountName === ''">
+            编码
+          </button>
         </span>
       </div>
       <div class="line">
         <span class="line-content">
-          <input placeholder="编码结果" v-model="inputs.poeAccountNameEncoded" disabled />
-          <button :disabled="inputs.poeAccountNameEncoded === ''" @click="copyEncodedValue">复制</button>
+          <input
+            placeholder="编码结果"
+            v-model="inputs.poeAccountNameEncoded"
+            disabled
+          />
+          <button
+            :disabled="inputs.poeAccountNameEncoded === ''"
+            @click="copyEncodedValue"
+          >
+            复制
+          </button>
         </span>
       </div>
     </div>
@@ -51,7 +80,7 @@
 
 <script lang="ts">
 import type { AppWindow } from "../../../ipc/types";
-import { useStatusStore, useInputsStore } from '@/stores/main';
+import { useStatusStore, useInputsStore } from "@/stores/main";
 
 export default {
   setup() {
@@ -61,11 +90,11 @@ export default {
     return {
       status,
       inputs,
-    }
+    };
   },
   data() {
     return {
-      ipcLocked: false,//A simple lock to prevent more than one ipc request triggered at the same time
+      ipcLocked: false, //A simple lock to prevent more than one ipc request triggered at the same time
     };
   },
   mounted() {
@@ -91,21 +120,28 @@ export default {
       }
       this.ipcLocked = true;
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.patchPob().then(() => {
-        this.loadStatus();
-      }).catch((err) => {
-        console.log(err);
-      }).finally(() => {
-        this.ipcLocked = false;
-      });
+      mainApi
+        .patchPob()
+        .then(() => {
+          this.loadStatus();
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          this.ipcLocked = false;
+        });
     },
     loadStatus() {
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.getExporterStatus().then(status => {
-        this.status.$patch(status);
-      }).catch(err => {
-        console.log(err);
-      });
+      mainApi
+        .getExporterStatus()
+        .then((status) => {
+          this.status.$patch(status);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
     refresh(event: MouseEvent) {
       if (this.ipcLocked) {
@@ -113,17 +149,21 @@ export default {
       }
       this.ipcLocked = true;
       const target = event.target as HTMLElement;
-      target.classList.add('refresh-start');
+      target.classList.add("refresh-start");
       const mainApi = (window as any as AppWindow).mainApi;
-      mainApi.getExporterStatus().then(status => {
-        this.status.$patch(status);
-      }).catch(err => {
-        console.log(err);
-      }).finally(() => {
-        this.ipcLocked = false;
-        target.classList.remove('refresh-start');
-      });
-    }
+      mainApi
+        .getExporterStatus()
+        .then((status) => {
+          this.status.$patch(status);
+        })
+        .catch((err) => {
+          console.log(err);
+        })
+        .finally(() => {
+          this.ipcLocked = false;
+          target.classList.remove("refresh-start");
+        });
+    },
   },
 };
 </script>
@@ -138,7 +178,7 @@ h2 {
   margin-left: 10px;
 }
 
-.container>div:nth-child(n+2) {
+.container > div:nth-child(n + 2) {
   margin-top: 30px;
   border-top: 1px solid #dddddd;
 }
@@ -153,31 +193,29 @@ h2 {
   display: flex;
 }
 
-.status>header {
+.status > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.status>header>h1 {
+.status > header > h1 {
   display: inline-block;
 }
 
-.status>header>.refresh {
+.status > header > .refresh {
   margin-right: 10px;
   color: #111111;
 }
 
 @keyframes rotate {
-
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   to {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
-
 }
 
 .refresh-start {
@@ -186,7 +224,6 @@ h2 {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-play-state: running;
-
 }
 
 .status .line:hover {
@@ -199,7 +236,7 @@ h2 {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
   position: relative;
   top: 5px;
   line-height: 16px;

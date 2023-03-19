@@ -9,19 +9,34 @@ import Setting from "./components/Setting.vue";
   <main>
     <div class="activitybar">
       <ul class="actions-container">
-        <li class="action-item pointer" :class="{ checked: action === 'export' }" @click="switchAction('export')">
+        <li
+          class="action-item pointer"
+          :class="{ checked: action === 'export' }"
+          @click="switchAction('export')"
+        >
           <a>BD导出</a>
         </li>
-        <li class="action-item pointer" :class="{ checked: action === 'translation' }"
-          @click="switchAction('translation')">
+        <li
+          class="action-item pointer"
+          :class="{ checked: action === 'translation' }"
+          @click="switchAction('translation')"
+        >
           <a>物品翻译</a>
         </li>
-        <li class="action-item pointer" :class="{ checked: action === 'query' }" @click="switchAction('query')">
+        <li
+          class="action-item pointer"
+          :class="{ checked: action === 'query' }"
+          @click="switchAction('query')"
+        >
           <a>数据库查询</a>
         </li>
       </ul>
       <ul class="actions-container bottom">
-        <li class="action-item pointer" :class="{ checked: action === 'setting' }" @click="switchAction('setting')">
+        <li
+          class="action-item pointer"
+          :class="{ checked: action === 'setting' }"
+          @click="switchAction('setting')"
+        >
           设置
         </li>
       </ul>
@@ -43,7 +58,7 @@ export default {
     };
   },
 
-  mounted() { },
+  mounted() {},
 
   methods: {
     switchAction(action: string) {
