@@ -1,17 +1,17 @@
-import { expect, test } from '@jest/globals';
+import { expect, test } from "@jest/globals";
 import { Pob } from "../../src/app/pob";
 
 function testGetRoot() {
     const testcases = [
         "D:/AppsInDisk/PoeCharm_v20220713",
         "D:/AppsInDisk/PoeCharm_v20220713/PathOfBuilding-Community",
-        "D:/"
+        "D:/",
     ];
 
     const results = [
         "D:/AppsInDisk/PoeCharm_v20220713/PathOfBuilding-Community",
         "D:/AppsInDisk/PoeCharm_v20220713/PathOfBuilding-Community",
-        ""
+        "",
     ];
 
     for (let i = 0; i < testcases.length; i++) {

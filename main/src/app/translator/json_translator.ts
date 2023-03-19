@@ -4,7 +4,10 @@ import { ItemService } from "./service/item.service";
 import { PropertyService } from "./service/property.service";
 import { RequirementSerivce } from "./service/requirement.service";
 import { StatService } from "./service/stat.service";
-import { ZH_PROPERTY_NAME_LIMITED_TO, ZH_PROPERTY_NAME_RADIUS } from "./type/property.type";
+import {
+    ZH_PROPERTY_NAME_LIMITED_TO,
+    ZH_PROPERTY_NAME_RADIUS,
+} from "./type/property.type";
 import { ZH_REQUIREMENT_NAME_CLASS } from "./type/requirement.type";
 
 const ZH_THIEFS_TRINKET = "赏金猎人饰品";
@@ -22,12 +25,14 @@ export class JsonTranslator {
     private readonly gemService: GemService;
     private readonly statService: StatService;
 
-    constructor(baseTypeService: BaseTypeService,
+    constructor(
+        baseTypeService: BaseTypeService,
         itemService: ItemService,
         requirementService: RequirementSerivce,
         propertySerivce: PropertyService,
         gemService: GemService,
-        statService: StatService) {
+        statService: StatService
+    ) {
         this.baseTypeService = baseTypeService;
         this.itemService = itemService;
         this.requirementService = requirementService;
@@ -37,7 +42,11 @@ export class JsonTranslator {
     }
 
     preHandleItem(item: any) {
-        if (item.name && (item.name === ZH_FORBIDDEN_FLAME || item.name === ZH_FORBIDDEN_FLESH)) {
+        if (
+            item.name &&
+            (item.name === ZH_FORBIDDEN_FLAME ||
+                item.name === ZH_FORBIDDEN_FLESH)
+        ) {
             if (item.requirements) {
                 for (const requirement of item.requirements) {
                     const name = requirement.name;
@@ -51,8 +60,15 @@ export class JsonTranslator {
                         if (item.explicitMods) {
                             for (let i = 0; i < item.explicitMods.length; i++) {
                                 const zhStat = item.explicitMods[i] as string;
-                                if (zhStat.endsWith(ZH_PASSIVESKILL_ASCENDANT_ASSASSIN)) {
-                                    item.explicitMods[i] = zhStat.replace(ZH_PASSIVESKILL_ASCENDANT_ASSASSIN, ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED);
+                                if (
+                                    zhStat.endsWith(
+                                        ZH_PASSIVESKILL_ASCENDANT_ASSASSIN
+                                    )
+                                ) {
+                                    item.explicitMods[i] = zhStat.replace(
+                                        ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
+                                        ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED
+                                    );
                                 }
                             }
                         }
@@ -69,7 +85,10 @@ export class JsonTranslator {
         const translatedItems = [];
         for (const item of items) {
             //Skip non-build items
-            if (item.inventoryId === "MainInventory" || item.baseType === ZH_THIEFS_TRINKET) {
+            if (
+                item.inventoryId === "MainInventory" ||
+                item.baseType === ZH_THIEFS_TRINKET
+            ) {
                 continue;
             }
 
@@ -93,16 +112,23 @@ export class JsonTranslator {
             if (res) {
                 item.name = res;
             } else {
-                console.log(`warning: should be translated: item name, ${zhName}`);
+                console.log(
+                    `warning: should be translated: item name, ${zhName}`
+                );
             }
         }
 
         if (zhBaseType) {
-            const res = this.baseTypeService.translateBaseType(zhBaseType, zhName);
+            const res = this.baseTypeService.translateBaseType(
+                zhBaseType,
+                zhName
+            );
             if (res) {
                 item.baseType = res;
             } else {
-                console.log(`warning: should be translated: base type, ${zhBaseType}`);
+                console.log(
+                    `warning: should be translated: base type, ${zhBaseType}`
+                );
             }
         }
 
@@ -117,18 +143,25 @@ export class JsonTranslator {
                 if (res) {
                     r.name = res;
                 } else {
-                    console.log(`warning: should be translated: requirement name, ${zhName}`);
+                    console.log(
+                        `warning: should be translated: requirement name, ${zhName}`
+                    );
                 }
 
                 if (zhName === ZH_REQUIREMENT_NAME_CLASS) {
                     if (r.values) {
                         for (const v of r.values) {
                             const zhValue = v[0];
-                            const res = this.requirementService.translateValue(zhName, zhValue);
+                            const res = this.requirementService.translateValue(
+                                zhName,
+                                zhValue
+                            );
                             if (res) {
                                 v[0] = res;
                             } else {
-                                console.log(`warning: should be translated: requirement value, ${zhValue}`);
+                                console.log(
+                                    `warning: should be translated: requirement value, ${zhValue}`
+                                );
                             }
                         }
                     }
@@ -136,11 +169,14 @@ export class JsonTranslator {
 
                 if (r.suffix) {
                     const zhSuffix = r.suffix;
-                    const res = this.requirementService.translateSuffix(zhSuffix);
+                    const res =
+                        this.requirementService.translateSuffix(zhSuffix);
                     if (res) {
                         r.suffix = res;
                     } else {
-                        console.log(`warning: should be translated: requirement suffix, ${zhSuffix}`);
+                        console.log(
+                            `warning: should be translated: requirement suffix, ${zhSuffix}`
+                        );
                     }
                 }
             }
@@ -153,18 +189,28 @@ export class JsonTranslator {
                 if (enName) {
                     p.name = enName;
                 } else {
-                    console.log(`warning: should be translated: property name, ${zhName}`);
+                    console.log(
+                        `warning: should be translated: property name, ${zhName}`
+                    );
                 }
 
-                if (zhName === ZH_PROPERTY_NAME_LIMITED_TO || zhName === ZH_PROPERTY_NAME_RADIUS) {
+                if (
+                    zhName === ZH_PROPERTY_NAME_LIMITED_TO ||
+                    zhName === ZH_PROPERTY_NAME_RADIUS
+                ) {
                     if (p.values) {
                         for (const v of p.values) {
                             const zhValue = v[0];
-                            const res = this.propertySerivce.translatePair(zhName, zhValue);
+                            const res = this.propertySerivce.translatePair(
+                                zhName,
+                                zhValue
+                            );
                             if (res) {
                                 v[0] = res.value;
                             } else {
-                                console.log(`warning: should be translated: property value, ${zhValue}`);
+                                console.log(
+                                    `warning: should be translated: property value, ${zhValue}`
+                                );
                             }
                         }
                     }
@@ -189,7 +235,9 @@ export class JsonTranslator {
                 if (res) {
                     item.enchantMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -201,7 +249,9 @@ export class JsonTranslator {
                 if (res) {
                     item.explicitMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -213,7 +263,9 @@ export class JsonTranslator {
                 if (res) {
                     item.implicitMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -225,7 +277,9 @@ export class JsonTranslator {
                 if (res) {
                     item.craftedMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -237,7 +291,9 @@ export class JsonTranslator {
                 if (res) {
                     item.utilityMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -249,7 +305,9 @@ export class JsonTranslator {
                 if (res) {
                     item.fracturedMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -261,7 +319,9 @@ export class JsonTranslator {
                 if (res) {
                     item.scourgeMods[i] = res;
                 } else {
-                    console.log(`warning: should be translated: stat: ${zhStat}`);
+                    console.log(
+                        `warning: should be translated: stat: ${zhStat}`
+                    );
                 }
             }
         }
@@ -275,7 +335,9 @@ export class JsonTranslator {
             if (res) {
                 item.baseType = res;
             } else {
-                console.log(`warning: should be translated: gem base type: ${zhBaseType}`);
+                console.log(
+                    `warning: should be translated: gem base type: ${zhBaseType}`
+                );
             }
         }
 
@@ -284,12 +346,16 @@ export class JsonTranslator {
             if (res) {
                 item.typeLine = res;
             } else {
-                console.log(`warning: should be translated: gem type line: ${zhTypeLine}`);
+                console.log(
+                    `warning: should be translated: gem type line: ${zhTypeLine}`
+                );
             }
         }
 
         if (item.hybrid) {
-            item.hybrid.baseTypeName = this.gemService.translateTypeLine(item.hybrid.baseTypeName);
+            item.hybrid.baseTypeName = this.gemService.translateTypeLine(
+                item.hybrid.baseTypeName
+            );
         }
 
         if (item.properties) {

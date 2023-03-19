@@ -7,7 +7,9 @@ export class CharacterProvider {
 
     constructor() {
         for (const c in classes) {
-            const data = (classes as { [id: string]: CharacterClass })[c] as CharacterClass;
+            const data = (classes as { [id: string]: CharacterClass })[
+                c
+            ] as CharacterClass;
             const zh = data.text[Language.CHINESE];
             this.classesIndexByZhText.set(zh, c);
         }

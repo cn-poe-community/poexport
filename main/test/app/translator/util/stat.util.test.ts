@@ -1,4 +1,4 @@
-import { expect, test } from '@jest/globals';
+import { expect, test } from "@jest/globals";
 import { Template } from "../../../../src/app/translator/util/stat.util";
 
 function testCreateTemplate() {
@@ -17,7 +17,9 @@ function testCreateTemplate() {
 
 function testRenderTemplate() {
     const zhTemplate = new Template("{1}% 的几率在击中敌人后获得怒火 +{0}");
-    const enTemplate = new Template("grant +{0} Rage with {1}% chance if it Hits Enemies");
+    const enTemplate = new Template(
+        "grant +{0} Rage with {1}% chance if it Hits Enemies"
+    );
     const zhMod = "90% 的几率在击中敌人后获得怒火 +5";
     const enMod = "grant +5 Rage with 90% chance if it Hits Enemies";
 

@@ -16,13 +16,15 @@ export class TextTranslator {
     readonly statService: StatService;
     readonly attributeService: AttributeService;
 
-    constructor(baseTypeService: BaseTypeService,
+    constructor(
+        baseTypeService: BaseTypeService,
         itemService: ItemService,
         requirementService: RequirementSerivce,
         propertySerivce: PropertyService,
         gemService: GemService,
         statService: StatService,
-        attributeService: AttributeService) {
+        attributeService: AttributeService
+    ) {
         this.baseTypeService = baseTypeService;
         this.itemService = itemService;
         this.requirementService = requirementService;
@@ -61,12 +63,14 @@ class TextItem {
     constructor(content: string) {
         let partsContents = content.split(PART_SEPARATOR);
 
-        this.parts = partsContents.map(partContent => new Part(partContent));
+        this.parts = partsContents.map((partContent) => new Part(partContent));
     }
 
     getTranslation(ctx: Context): string {
         ctx.item = this;
-        return this.parts.map(part => part.getTranslation(ctx)).join(PART_SEPARATOR);
+        return this.parts
+            .map((part) => part.getTranslation(ctx))
+            .join(PART_SEPARATOR);
     }
 }
 
@@ -75,7 +79,7 @@ class Part {
 
     constructor(content: String) {
         let linesContents = content.split(LINE_SEPARATOR);
-        this.lines = linesContents.map(lineContent => new Line(lineContent));
+        this.lines = linesContents.map((lineContent) => new Line(lineContent));
     }
 
     getTranslation(ctx: Context): string {
@@ -85,11 +89,14 @@ class Part {
 
         let isMetaPart = false;
         let firstLine = this.lines[0];
-        if (firstLine.type === LineType.KEY_VALUE && firstLine.key === ZH_ITEM_CLASS) {
+        if (
+            firstLine.type === LineType.KEY_VALUE &&
+            firstLine.key === ZH_ITEM_CLASS
+        ) {
             isMetaPart = true;
         }
 
-        for (let i = 0; i < this.lines.length;) {
+        for (let i = 0; i < this.lines.length; ) {
             const line = this.lines[i];
             if (isMetaPart && line.type === LineType.MODIFIER) {
                 //一般而言，倒数两行是name和typeLine
@@ -97,33 +104,64 @@ class Part {
                 if (i === this.lines.length - 2) {
                     //name
                     const zhName = line.content;
-                    const zhTypeLine = this.lines[this.lines.length - 1].content;
-                    const result = translator.baseTypeService.getBaseTypeByZhTypeLine(zhTypeLine, zhName);
+                    const zhTypeLine =
+                        this.lines[this.lines.length - 1].content;
+                    const result =
+                        translator.baseTypeService.getBaseTypeByZhTypeLine(
+                            zhTypeLine,
+                            zhName
+                        );
                     if (result !== undefined) {
                         const zhBaseType = result.zhBaseType;
-                        buf.push(translator.itemService.translateName(zhName, zhBaseType));
+                        buf.push(
+                            translator.itemService.translateName(
+                                zhName,
+                                zhBaseType
+                            )
+                        );
                     } else {
-                        buf.push(translator.itemService.translateName(zhName, zhTypeLine));
+                        buf.push(
+                            translator.itemService.translateName(
+                                zhName,
+                                zhTypeLine
+                            )
+                        );
                     }
                     i++;
                     continue;
                 } else if (i === this.lines.length - 1) {
                     //typeline
-                    buf.push(translator.baseTypeService.translateTypeLine(line.content));
+                    buf.push(
+                        translator.baseTypeService.translateTypeLine(
+                            line.content
+                        )
+                    );
                     i++;
                     continue;
                 }
             }
 
             //复合词缀
-            const maxSize = translator.statService.getMaxLineSizeOfCompoundedMod(line.content);
+            const maxSize =
+                translator.statService.getMaxLineSizeOfCompoundedMod(
+                    line.content
+                );
             if (maxSize > 0) {
-                const mod = this.lines.slice(i, Math.min(i + maxSize, this.lines.length));
-                const translation = translator.statService
-                    .translateCompoundedMod(mod
-                        .map(line => line.modifier));
+                const mod = this.lines.slice(
+                    i,
+                    Math.min(i + maxSize, this.lines.length)
+                );
+                const translation =
+                    translator.statService.translateCompoundedMod(
+                        mod.map((line) => line.modifier)
+                    );
                 if (translation) {
-                    buf.push(this.fillSuffixsOfCompoundedModTranslation(mod, translation.result));
+                    buf.push(
+                        this.fillSuffixsOfCompoundedModTranslation(
+                            mod,
+                            translation.result
+                        )
+                    );
                     i += translation.lineSize;
                     continue;
                 }
@@ -136,7 +174,10 @@ class Part {
         return buf.join(LINE_SEPARATOR);
     }
 
-    fillSuffixsOfCompoundedModTranslation(mod: Line[], translation: string): string {
+    fillSuffixsOfCompoundedModTranslation(
+        mod: Line[],
+        translation: string
+    ): string {
         const slices = translation.split(COMPOUNDED_STAT_LINE_SEPARATOR);
         const buf = new Array<string>();
 
@@ -197,7 +238,10 @@ class Line {
     getTranslation(ctx: Context): string {
         const translator = ctx.translator;
         if (this.type === LineType.KEY_VALUE) {
-            let translation = translator.propertySerivce.translatePair(this.key, this.value);
+            let translation = translator.propertySerivce.translatePair(
+                this.key,
+                this.value
+            );
             if (translation) {
                 if (translation.name) {
                     this.key = translation.name;
@@ -210,13 +254,18 @@ class Line {
                 return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
             }
 
-            const keyTranslation = translator.requirementService.translateName(this.key);
+            const keyTranslation = translator.requirementService.translateName(
+                this.key
+            );
             if (keyTranslation) {
                 this.key = keyTranslation;
                 return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
             }
 
-            translation = translator.attributeService.translatePair(this.key, this.value);
+            translation = translator.attributeService.translatePair(
+                this.key,
+                this.value
+            );
 
             if (translation) {
                 if (translation.name) {
@@ -230,7 +279,9 @@ class Line {
 
             return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
         } else if (this.type === LineType.ONLY_KEY) {
-            let translation = translator.propertySerivce.translateName(this.key);
+            let translation = translator.propertySerivce.translateName(
+                this.key
+            );
             if (translation) {
                 this.key = translation;
             }
@@ -241,22 +292,26 @@ class Line {
 
             return `${this.key}${KEY_VALUE_SEPARATOR}`;
         } else {
-            const translation = translator.statService.translateMod(this.modifier);
+            const translation = translator.statService.translateMod(
+                this.modifier
+            );
             if (translation) {
                 this.modifier = translation;
             } else {
                 // Some lines are properties,attributes
-                let translation = translator.propertySerivce.translateName(this.modifier);
+                let translation = translator.propertySerivce.translateName(
+                    this.modifier
+                );
                 if (translation !== undefined) {
                     this.modifier = translation;
                 }
-                translation = translator.attributeService.translateName(this.modifier);
+                translation = translator.attributeService.translateName(
+                    this.modifier
+                );
                 if (translation !== undefined) {
                     this.modifier = translation;
                 }
             }
-
-
 
             if (this.suffix) {
                 return `${this.modifier} ${this.suffix}`;

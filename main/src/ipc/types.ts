@@ -1,33 +1,33 @@
 export interface Config {
-    poeSessId: string,
-    pobPath: string,
-    port: number,
-    pobProxySupported: boolean,
+    poeSessId: string;
+    pobPath: string;
+    port: number;
+    pobProxySupported: boolean;
 }
 
 export type SessionStatus = "Ok" | "Invalid";
 export type PobStatus = "Ok" | "NeedPatch" | "NotFound";
 
 export interface ExporterStatus {
-    sessionStatus: SessionStatus,
-    pobStatus: PobStatus,
-    port: number,
+    sessionStatus: SessionStatus;
+    pobStatus: PobStatus;
+    port: number;
 }
 
 export interface ElectronApi {
-    openFolder: () => Promise<string | undefined>
+    openFolder: () => Promise<string | undefined>;
 }
 
 export interface MainApi {
-    getConfig: () => Promise<Config>,
-    resetConfig: () => Promise<void>,
-    setPoeSessId: (id: string) => Promise<void>,
-    setPobPath: (path: string) => Promise<void>,
-    setPobProxySupported: (isSupported: boolean) => Promise<void>,
-    getExporterStatus: () => Promise<ExporterStatus>,
-    patchPob: () => Promise<void>,
-    resetPob: () => Promise<void>,
-    translateItem: (content: string) => Promise<string>,
+    getConfig: () => Promise<Config>;
+    resetConfig: () => Promise<void>;
+    setPoeSessId: (id: string) => Promise<void>;
+    setPobPath: (path: string) => Promise<void>;
+    setPobProxySupported: (isSupported: boolean) => Promise<void>;
+    getExporterStatus: () => Promise<ExporterStatus>;
+    patchPob: () => Promise<void>;
+    resetPob: () => Promise<void>;
+    translateItem: (content: string) => Promise<string>;
 }
 
 export enum Channels {

@@ -10,7 +10,8 @@ const MANIFEST_RELATIVE_PATH = "manifest.xml";
 const HOST_OF_TENCENT = "https://poe.game.qq.com/";
 const HOST_OF_LOCAL_PATTERN = String.raw`http://localhost:\d{1,5}/`;
 
-const PROXY_SUPPORTED_PATCH_LINES = `\tlocal proxy_url = self.proxyURL\n` +
+const PROXY_SUPPORTED_PATCH_LINES =
+    `\tlocal proxy_url = self.proxyURL\n` +
     `\tif string.find(url, "^http://localhost") == 1 then\n` +
     `\t\tproxy_url = ""\n` +
     `\tend\n` +
@@ -22,7 +23,7 @@ const PROXY_SUPPORTED_PATCH_POSITION = `\tlocal id = LaunchSubScript(script, "",
 const UNINITIALIZED_VERSION = "0.0.0";
 /**
  * The class to manage pob.
- * 
+ *
  * You should create a new PobManager instance each time you use it.
  */
 export class PobManager {
@@ -125,7 +126,10 @@ export class PobManager {
             }
 
             try {
-                await fs.writeFile(importTabPath, data.replace(HOST_OF_TENCENT, proxy));
+                await fs.writeFile(
+                    importTabPath,
+                    data.replace(HOST_OF_TENCENT, proxy)
+                );
             } catch (err) {
                 throw new Error(`write ${importTabPath} failed: ${err}`);
             }
@@ -167,7 +171,13 @@ export class PobManager {
             }
 
             try {
-                await fs.writeFile(launchPath, data.replace(PROXY_SUPPORTED_PATCH_POSITION, PROXY_SUPPORTED_PATCH_LINES));
+                await fs.writeFile(
+                    launchPath,
+                    data.replace(
+                        PROXY_SUPPORTED_PATCH_POSITION,
+                        PROXY_SUPPORTED_PATCH_LINES
+                    )
+                );
             } catch (err) {
                 throw new Error(`write ${launchPath} failed: ${err}`);
             }
@@ -176,7 +186,7 @@ export class PobManager {
 
     /**
      * Get pob version.
-     * 
+     *
      * @returns string The version string. If can't get version for some reasons, return "".
      */
     private async getPobVersion(): Promise<string> {
@@ -228,7 +238,7 @@ export class PobManager {
 
     /**
      * Get the full path of the root of POB.
-     * 
+     *
      * @param fullPath the full path of input
      * @returns the full path of the root of POB. If pob is not found, return "".
      */

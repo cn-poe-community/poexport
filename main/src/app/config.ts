@@ -21,7 +21,7 @@ export class ConfigManager {
     }
 
     private loadConfig() {
-        const userDataPath = app.getPath('userData');
+        const userDataPath = app.getPath("userData");
         this.configFullPath = path.join(userDataPath, CONFIG_NAME);
 
         this.config = Object.assign({}, DEFAULT_CONFIG);
@@ -35,11 +35,15 @@ export class ConfigManager {
     }
 
     private saveConfig() {
-        fs.writeFile(this.configFullPath, JSON.stringify(this.config), (err) => {
-            if (err) {
-                console.log(`write config error: ${err}`);
+        fs.writeFile(
+            this.configFullPath,
+            JSON.stringify(this.config),
+            (err) => {
+                if (err) {
+                    console.log(`write config error: ${err}`);
+                }
             }
-        });
+        );
     }
 
     public getConfig(): Config {

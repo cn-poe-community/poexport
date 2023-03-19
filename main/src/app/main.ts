@@ -33,8 +33,7 @@ export class App {
     private jsonTranslator: JsonTranslator;
     private textTranslator: TextTranslator;
 
-    constructor() {
-    }
+    constructor() {}
 
     public init() {
         this.initTranslators();
@@ -42,7 +41,11 @@ export class App {
         this.configManager = new ConfigManager();
         const config = this.configManager.getConfig();
         this.requester = new Requester(config.poeSessId);
-        this.exporter = new Exporter(this.requester, this.configManager, this.jsonTranslator);
+        this.exporter = new Exporter(
+            this.requester,
+            this.configManager,
+            this.jsonTranslator
+        );
 
         this.initIPC();
     }
@@ -89,7 +92,11 @@ export class App {
             status.pobStatus = "NotFound";
         } else {
             const config = this.getConfig();
-            const pobManager = new PobManager(config.pobPath, config.pobProxySupported, config.port);
+            const pobManager = new PobManager(
+                config.pobPath,
+                config.pobProxySupported,
+                config.port
+            );
             let isNeededPatch: boolean;
 
             try {
@@ -110,13 +117,21 @@ export class App {
 
     private async patchPob() {
         const config = this.getConfig();
-        const pobManager = new PobManager(config.pobPath, config.pobProxySupported, config.port);
+        const pobManager = new PobManager(
+            config.pobPath,
+            config.pobProxySupported,
+            config.port
+        );
         return pobManager.patch();
     }
 
     private async resetPob() {
         const config = this.getConfig();
-        const pobManager = new PobManager(config.pobPath, config.pobProxySupported, config.port);
+        const pobManager = new PobManager(
+            config.pobPath,
+            config.pobProxySupported,
+            config.port
+        );
         return pobManager.resetPob();
     }
 
@@ -142,34 +157,67 @@ export class App {
         const requirementProvider = new RequirementProvider();
         const characterProvider = new CharacterProvider();
         const characterService = new CharacterService(characterProvider);
-        const requirementService = new RequirementSerivce(requirementProvider, characterService);
+        const requirementService = new RequirementSerivce(
+            requirementProvider,
+            characterService
+        );
         const propertyProvider = new PropertyProvider();
         const propertySerivce = new PropertyService(propertyProvider);
         const gemProvider = new GemProvider();
         const gemService = new GemService(gemProvider);
         const passiveSkillProvider = new PassiveSkillProvider();
-        const passiveSkillService = new PassiveSkillService(passiveSkillProvider);
+        const passiveSkillService = new PassiveSkillService(
+            passiveSkillProvider
+        );
         const statProvider = new StatProvider();
         const statService = new StatService(passiveSkillService, statProvider);
         const attributeProvider = new AttributeProvider();
         const attributeService = new AttributeService(attributeProvider);
 
         this.jsonTranslator = new JsonTranslator(
-            baseTypeService, itemService, requirementService, propertySerivce, gemService, statService);
+            baseTypeService,
+            itemService,
+            requirementService,
+            propertySerivce,
+            gemService,
+            statService
+        );
         this.textTranslator = new TextTranslator(
-            baseTypeService, itemService, requirementService, propertySerivce, gemService, statService, attributeService);
+            baseTypeService,
+            itemService,
+            requirementService,
+            propertySerivce,
+            gemService,
+            statService,
+            attributeService
+        );
     }
 
     public initIPC() {
-        ipcMain.handle(Channels.DIALOG_OPEN_FLOOR, () => this.handleOpenFolder());
+        ipcMain.handle(Channels.DIALOG_OPEN_FLOOR, () =>
+            this.handleOpenFolder()
+        );
         ipcMain.handle(Channels.APP_GET_CONFIG, () => this.getConfig());
         ipcMain.handle(Channels.APP_RESET_CONFIG, () => this.resetConfig());
-        ipcMain.handle(Channels.APP_SET_POE_SESS_ID, (event, id) => { this.setPoeSessId(id) });
-        ipcMain.handle(Channels.APP_SET_POB_PATH, (event, path) => { this.setPobPath(path) });
-        ipcMain.handle(Channels.APP_SET_POB_PROXY_SUPPORTED, (event, isSupported) => { this.setPobProxySupported(isSupported) });
-        ipcMain.handle(Channels.APP_GET_EXPORTER_STATUS, () => this.getExporterStatus());
+        ipcMain.handle(Channels.APP_SET_POE_SESS_ID, (event, id) => {
+            this.setPoeSessId(id);
+        });
+        ipcMain.handle(Channels.APP_SET_POB_PATH, (event, path) => {
+            this.setPobPath(path);
+        });
+        ipcMain.handle(
+            Channels.APP_SET_POB_PROXY_SUPPORTED,
+            (event, isSupported) => {
+                this.setPobProxySupported(isSupported);
+            }
+        );
+        ipcMain.handle(Channels.APP_GET_EXPORTER_STATUS, () =>
+            this.getExporterStatus()
+        );
         ipcMain.handle(Channels.APP_PATCH_POB, () => this.patchPob());
         ipcMain.handle(Channels.APP_RESET_POB, () => this.resetPob());
-        ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (event, content) => this.translateItem(content));
+        ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (event, content) =>
+            this.translateItem(content)
+        );
     }
 }

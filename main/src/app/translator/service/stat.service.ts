@@ -3,7 +3,8 @@ import { COMPOUNDED_STAT_LINE_SEPARATOR, Stat } from "../type/stat.type";
 import { StatUtil, Template } from "../util/stat.util";
 import { PassiveSkillService } from "./passiveskill.service";
 
-const ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP = /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
+const ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP =
+    /^(.+)范围内的天赋可以在\n未连结至天赋树的情况下配置$/;
 const ZH_ANOINTED_MOD_REGEXP = /^配置 (.+)$/;
 const ZH_FORBIDDEN_FLESH_MOD_REGEXP = /^禁断之火上有匹配的词缀则配置 (.+)$/;
 const ZH_FORBIDDEN_FLAME_MOD_REGEXP = /^禁断之肉上有匹配的词缀则配置 (.+)$/;
@@ -12,7 +13,10 @@ export class StatService {
     private readonly passiveSkillService: PassiveSkillService;
     private readonly statProvider: StatProvider;
 
-    constructor(passiveSkillService: PassiveSkillService, statProvider: StatProvider) {
+    constructor(
+        passiveSkillService: PassiveSkillService,
+        statProvider: StatProvider
+    ) {
         this.passiveSkillService = passiveSkillService;
         this.statProvider = statProvider;
     }
@@ -57,9 +61,10 @@ export class StatService {
         const matches = ZH_IMPOSSIBLE_ESCAPE_MOD_REGEXP.exec(zhMod);
         if (matches !== null) {
             const zhKeystone = matches[1];
-            const keystone = this.passiveSkillService.translateKeystone(zhKeystone);
+            const keystone =
+                this.passiveSkillService.translateKeystone(zhKeystone);
             if (keystone !== undefined) {
-                return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`
+                return `Passives in Radius of ${keystone} can be Allocated\nwithout being connected to your tree`;
             }
         }
 
@@ -74,7 +79,8 @@ export class StatService {
         const matches = ZH_ANOINTED_MOD_REGEXP.exec(zhMod);
         if (matches !== null) {
             const zhNoteable = matches[1];
-            const notable = this.passiveSkillService.translateNotable(zhNoteable);
+            const notable =
+                this.passiveSkillService.translateNotable(zhNoteable);
             if (notable !== undefined) {
                 return `Allocates ${notable}`;
             }
@@ -90,7 +96,8 @@ export class StatService {
         const matches = ZH_FORBIDDEN_FLAME_MOD_REGEXP.exec(zhMod);
         if (matches !== null) {
             const zhAscendant = matches[1];
-            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            const ascendant =
+                this.passiveSkillService.translateAscendant(zhAscendant);
             if (ascendant !== undefined) {
                 return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flesh`;
             }
@@ -107,7 +114,8 @@ export class StatService {
         const matches = ZH_FORBIDDEN_FLESH_MOD_REGEXP.exec(zhMod);
         if (matches !== null) {
             const zhAscendant = matches[1];
-            const ascendant = this.passiveSkillService.translateAscendant(zhAscendant);
+            const ascendant =
+                this.passiveSkillService.translateAscendant(zhAscendant);
             if (ascendant !== undefined) {
                 return `Allocates ${ascendant} if you have the matching modifier on Forbidden Flame`;
             }
@@ -134,7 +142,8 @@ export class StatService {
 
     public getMaxLineSizeOfCompoundedMod(firstLine: string): number {
         const body = StatUtil.getBodyOfZhModifier(firstLine);
-        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        const entry =
+            this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
         if (entry !== undefined) {
             return entry.maxLineSize;
         }
@@ -144,14 +153,17 @@ export class StatService {
 
     /**
      * Translate compounded mod for text item.
-     * 
+     *
      * Caller should use `getMaxLineSizeOfCompoundedMod` before to get the max lines of candidates which has the first line.
-     * 
+     *
      * The method uses the `lines` to infer a compounded mod, returns the translation.
      */
-    public translateCompoundedMod(lines: string[]): { result: string, lineSize: number } | undefined {
+    public translateCompoundedMod(
+        lines: string[]
+    ): { result: string; lineSize: number } | undefined {
         const body = StatUtil.getBodyOfZhModifier(lines[0]);
-        const entry = this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
+        const entry =
+            this.statProvider.providecompoundedStatsByFirstLinesZhBody(body);
         if (entry === undefined) {
             return;
         }
@@ -162,16 +174,20 @@ export class StatService {
                 continue;
             }
             const stat = compoundedStat.stat;
-            const mod = lines.slice(0, lineSize).join(COMPOUNDED_STAT_LINE_SEPARATOR);
+            const mod = lines
+                .slice(0, lineSize)
+                .join(COMPOUNDED_STAT_LINE_SEPARATOR);
 
-            if (StatUtil.getBodyOfZhTemplate(stat.zh) ===
-                StatUtil.getBodyOfZhModifier(mod)) {
+            if (
+                StatUtil.getBodyOfZhTemplate(stat.zh) ===
+                StatUtil.getBodyOfZhModifier(mod)
+            ) {
                 const result = this.dotranslateMod(stat, mod);
                 if (result !== undefined) {
                     return {
                         result: result,
                         lineSize: lineSize,
-                    }
+                    };
                 }
             }
         }

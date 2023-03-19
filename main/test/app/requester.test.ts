@@ -1,4 +1,4 @@
-import { expect, test } from '@jest/globals';
+import { expect, test } from "@jest/globals";
 import { Requester } from "../../src/app/requester";
 
 const effectiveSession = "";
@@ -23,7 +23,10 @@ function testGetCharacters() {
     const realm = "pc";
 
     test(`get characters success`, async () => {
-        const result = await effectiveRequester.getCharacters(accountName, realm) as unknown as Array<any>;
+        const result = (await effectiveRequester.getCharacters(
+            accountName,
+            realm
+        )) as unknown as Array<any>;
         expect(result.length > 0).toBe(true);
     });
 }
@@ -34,7 +37,11 @@ function testGetPassiveSkills() {
     const realm = "pc";
 
     test(`get passive skills success`, async () => {
-        const result = await effectiveRequester.getPassiveSkills(accountName, character, realm);
+        const result = await effectiveRequester.getPassiveSkills(
+            accountName,
+            character,
+            realm
+        );
         expect(result !== null && result !== undefined).toBe(true);
     });
 }
@@ -45,7 +52,11 @@ function testGetItems() {
     const realm = "pc";
 
     test(`get items success`, async () => {
-        const result = await effectiveRequester.getItems(accountName, character, realm);
+        const result = await effectiveRequester.getItems(
+            accountName,
+            character,
+            realm
+        );
         expect(result !== null && result !== undefined).toBe(true);
     });
 }

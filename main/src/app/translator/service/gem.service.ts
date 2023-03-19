@@ -3,12 +3,12 @@ import { GemProvider } from "../provider/gem.provider";
 const QUALITY_TYPES = new Map([
     ["分歧", "Divergent"],
     ["异常", "Anomalous"],
-    ["魅影", "Phantasmal"]
+    ["魅影", "Phantasmal"],
 ]);
 
 const PROPERTY_NAMES = new Map([
     ["等级", "Level"],
-    ["品质", "Quality"]
+    ["品质", "Quality"],
 ]);
 
 export class GemService {

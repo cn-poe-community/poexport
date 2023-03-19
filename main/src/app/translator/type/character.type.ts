@@ -1,5 +1,5 @@
-export interface CharacterClass{
+export interface CharacterClass {
     text: {
-        [id: string]: string
-    }
+        [id: string]: string;
+    };
 }

@@ -6,7 +6,10 @@ export class RequirementSerivce {
     private readonly requirementProvider: RequirementProvider;
     private readonly characterService: CharacterService;
 
-    constructor(requirementProvider: RequirementProvider, characterService: CharacterService) {
+    constructor(
+        requirementProvider: RequirementProvider,
+        characterService: CharacterService
+    ) {
         this.requirementProvider = requirementProvider;
         this.characterService = characterService;
     }

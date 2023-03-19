@@ -23,7 +23,11 @@ export class StatUtil {
         return Buffer.from(arr.buffer, 0, size * 2).toString("utf16le");
     }
 
-    public static render(enTemplate: string, zhTemplate: string, zhMod: string): string {
+    public static render(
+        enTemplate: string,
+        zhTemplate: string,
+        zhMod: string
+    ): string {
         if (zhMod === zhTemplate) {
             return enTemplate;
         }
@@ -36,19 +40,19 @@ export class StatUtil {
 }
 
 /**
- * 
+ *
  * The template that can be pasered to segments and parameter index numbers.
- * 
+ *
  * Simple:
  * "Chain Hook has a {0}% chance to grant +1 Rage if it Hits Enemies"
- * 
+ *
  *   segments: ["Chain Hook has a ", "% chance to grant +1 Rage if it Hits Enemies"]
  *   parameter index numbers: [0]
  */
 export class Template {
     origin: string;
     segments: string[];
-    paramIndexNumbers: number[];//positional parameter numbers
+    paramIndexNumbers: number[]; //positional parameter numbers
 
     constructor(origin: string) {
         this.origin = origin;
@@ -60,19 +64,24 @@ export class Template {
         let onParam = false;
         for (let i = 0; i < origin.length; i++) {
             const code = origin.charCodeAt(i);
-            if (code === 123) {//"{"
+            if (code === 123) {
+                //"{"
                 k = i;
                 onParam = true;
-            } else if (code === 125) {//"}"
+            } else if (code === 125) {
+                //"}"
                 if (onParam) {
                     this.segments.push(origin.slice(j, k));
-                    this.paramIndexNumbers.push(Number.parseInt(origin.slice(k + 1, i + 1)));
+                    this.paramIndexNumbers.push(
+                        Number.parseInt(origin.slice(k + 1, i + 1))
+                    );
                     j = i + 1;
                     onParam = false;
                 }
             } else {
                 if (onParam) {
-                    if (code < 48 || code > 57) {//out of "0"~"9"
+                    if (code < 48 || code > 57) {
+                        //out of "0"~"9"
                         onParam = false;
                     }
                 }
@@ -84,17 +93,22 @@ export class Template {
     /**
      * Parse the modifer, return positional parameters.
      * @param modifier rendered template result with params
-     * @returns map contains positions and parameters ; undefined if the modifer doesnot matches the template. 
+     * @returns map contains positions and parameters ; undefined if the modifer doesnot matches the template.
      */
     public parseParams(modifier: string): Map<number, string> | undefined {
-        const regStr = `^${this.segments.map(s => escapeRegExp(s)).join("(\\S+)")}$`;
+        const regStr = `^${this.segments
+            .map((s) => escapeRegExp(s))
+            .join("(\\S+)")}$`;
         const execResult = new RegExp(regStr).exec(modifier);
 
         if (!execResult) {
             return;
         }
 
-        const paramList = execResult.slice(1, this.paramIndexNumbers.length + 1);
+        const paramList = execResult.slice(
+            1,
+            this.paramIndexNumbers.length + 1
+        );
 
         const paramMap = new Map<number, string>();
         for (const [i, num] of this.paramIndexNumbers.entries()) {
@@ -110,7 +124,9 @@ export class Template {
      * @returns result string
      */
     public render(params: Map<number, string>): string {
-        const buf = new Array<string>(this.segments.length + this.paramIndexNumbers.length);
+        const buf = new Array<string>(
+            this.segments.length + this.paramIndexNumbers.length
+        );
         let j = 0;
         for (let i = 0; i < this.paramIndexNumbers.length; i++) {
             buf[j++] = this.segments[i];

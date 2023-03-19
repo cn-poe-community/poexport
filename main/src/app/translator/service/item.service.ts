@@ -10,7 +10,8 @@ export class ItemService {
     }
 
     public translateName(zhName: string, zhBaseType: string): string {
-        const baseTypes = this.baseTypeProvider.provideBaseTypesByZh(zhBaseType);
+        const baseTypes =
+            this.baseTypeProvider.provideBaseTypesByZh(zhBaseType);
 
         for (const baseType of baseTypes) {
             const uniques = baseType.uniques;
@@ -24,5 +25,4 @@ export class ItemService {
 
         return DEFAULT_NAME;
     }
-
 }

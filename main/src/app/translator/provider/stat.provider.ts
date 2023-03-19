@@ -1,10 +1,17 @@
 import stats from "../asset/stats.json";
-import { Stat, CompoundedStatIndexEntry, COMPOUNDED_STAT_LINE_SEPARATOR } from "../type/stat.type";
+import {
+    Stat,
+    CompoundedStatIndexEntry,
+    COMPOUNDED_STAT_LINE_SEPARATOR,
+} from "../type/stat.type";
 import { StatUtil } from "../util/stat.util";
 
 export class StatProvider {
     private readonly statsIndexedByZhBody = new Map<string, Stat[]>();
-    private readonly compoundedStatsIndexedByFirstLinesZhBody = new Map<string, CompoundedStatIndexEntry>();
+    private readonly compoundedStatsIndexedByFirstLinesZhBody = new Map<
+        string,
+        CompoundedStatIndexEntry
+    >();
 
     constructor() {
         const statList = stats as unknown as Stat[];
@@ -23,10 +30,16 @@ export class StatProvider {
                 const firstLine = lines[0];
                 const firstLineBody = StatUtil.getBodyOfZhTemplate(firstLine);
 
-                const value = this.compoundedStatsIndexedByFirstLinesZhBody.get(firstLineBody);
+                const value =
+                    this.compoundedStatsIndexedByFirstLinesZhBody.get(
+                        firstLineBody
+                    );
                 const compoundedStat = { lineSize: lines.length, stat: stat };
                 if (value === undefined) {
-                    this.compoundedStatsIndexedByFirstLinesZhBody.set(firstLineBody, { maxLineSize: lines.length, stats: [compoundedStat] });
+                    this.compoundedStatsIndexedByFirstLinesZhBody.set(
+                        firstLineBody,
+                        { maxLineSize: lines.length, stats: [compoundedStat] }
+                    );
                 } else {
                     if (value.maxLineSize < lines.length) {
                         value.maxLineSize = lines.length;
@@ -36,9 +49,10 @@ export class StatProvider {
             }
         }
 
-        for (const [_, value] of this.compoundedStatsIndexedByFirstLinesZhBody) {
+        for (const [_, value] of this
+            .compoundedStatsIndexedByFirstLinesZhBody) {
             if (value.stats.length > 1) {
-                value.stats.sort((a, b) => b.lineSize - a.lineSize);//max to min
+                value.stats.sort((a, b) => b.lineSize - a.lineSize); //max to min
             }
         }
     }
@@ -47,7 +61,9 @@ export class StatProvider {
         return this.statsIndexedByZhBody.get(zhBody);
     }
 
-    public providecompoundedStatsByFirstLinesZhBody(body: string): CompoundedStatIndexEntry | undefined {
+    public providecompoundedStatsByFirstLinesZhBody(
+        body: string
+    ): CompoundedStatIndexEntry | undefined {
         return this.compoundedStatsIndexedByFirstLinesZhBody.get(body);
     }
 }

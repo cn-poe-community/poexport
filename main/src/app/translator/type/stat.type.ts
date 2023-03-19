@@ -1,7 +1,7 @@
 export interface Stat {
-    id: string,
-    zh: string,
-    en: string,
+    id: string;
+    zh: string;
+    en: string;
 }
 
 export interface CompoundedStatIndexEntry {

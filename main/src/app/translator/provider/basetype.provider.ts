@@ -12,7 +12,9 @@ export class BaseTypeProvider {
     private readonly baseTypesIndexedByUniqueZh = new Map<string, BaseType[]>();
 
     constructor() {
-        const categories = Object.values(EquipmentCategory).filter((x) => isNaN(Number(x)));
+        const categories = Object.values(EquipmentCategory).filter((x) =>
+            isNaN(Number(x))
+        );
 
         for (const category of categories) {
             const baseTypeList = this.provideBaseTypesByCategory(category);
@@ -48,8 +50,9 @@ export class BaseTypeProvider {
         }
     }
 
-
-    private provideBaseTypesByCategory(category: EquipmentCategory): BaseType[] {
+    private provideBaseTypesByCategory(
+        category: EquipmentCategory
+    ): BaseType[] {
         switch (category) {
             case EquipmentCategory.WEAPON:
                 return weapons;
