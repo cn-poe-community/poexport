@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import type { AppWindow } from "../../../ipc/types";
+import type { AppWindow } from "../../../main/src/ipc/types";
 import { useInputsStore } from "@/stores/main";
 
 export default {

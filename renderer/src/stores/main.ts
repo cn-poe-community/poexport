@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import type { ExporterStatus } from "../../../ipc/types";
+import type { ExporterStatus } from "../../../main/src/ipc/types";
 
 export const useStatusStore = defineStore("status", {
     state: (): ExporterStatus => ({

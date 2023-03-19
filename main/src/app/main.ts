@@ -23,7 +23,7 @@ import { Requester } from "./requester";
 import { JsonTranslator } from "./translator/json_translator";
 import { TextTranslator } from "./translator/text_translator";
 
-import { Channels, Config, ExporterStatus } from "../../../ipc/types";
+import { Channels, Config, ExporterStatus } from "../ipc/types";
 import { dialog, ipcMain } from "electron";
 
 export class App {

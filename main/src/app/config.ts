@@ -1,7 +1,7 @@
 import { app } from "electron";
 import path from "path";
 import fs from "fs";
-import { Config } from "../../../ipc/types";
+import { Config } from "../ipc/types";
 
 const CONFIG_NAME = "config.json";
 const DEFAULT_LISTENING_PORT = 8655;

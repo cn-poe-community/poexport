@@ -82,7 +82,7 @@
 </template>
 
 <script lang="ts">
-import type { AppWindow } from "../../../ipc/types";
+import type { AppWindow } from "../../../main/src/ipc/types";
 
 export default {
   data() {
