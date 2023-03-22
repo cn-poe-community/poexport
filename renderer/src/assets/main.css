@@ -1,4 +1,4 @@
-@import "./base.css";
+@import "./reset.css";
 
 #app {
   height: 100vh;

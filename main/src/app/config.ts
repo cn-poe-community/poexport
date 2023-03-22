@@ -1,15 +1,16 @@
 import { app } from "electron";
 import path from "path";
 import fs from "fs";
-import { Config } from "../ipc/types";
+import { Config, Language } from "../ipc/types";
 
 const CONFIG_NAME = "config.json";
 const DEFAULT_LISTENING_PORT = 8655;
-const DEFAULT_CONFIG = {
+const DEFAULT_CONFIG: Config = {
     poeSessId: "",
     pobPath: "",
     port: DEFAULT_LISTENING_PORT,
     pobProxySupported: false,
+    language: "zh_CN",
 };
 
 export class ConfigManager {
@@ -56,6 +57,11 @@ export class ConfigManager {
         this.saveConfig();
     }
 
+    public resetConfig() {
+        this.config = Object.assign({}, DEFAULT_CONFIG);
+        this.saveConfig();
+    }
+
     public setPoeSessId(id: string) {
         if (id === this.config.poeSessId) {
             return;
@@ -89,8 +95,11 @@ export class ConfigManager {
         this.saveConfig();
     }
 
-    public resetConfig() {
-        this.config = Object.assign({}, DEFAULT_CONFIG);
+    public setLanguage(language: Language) {
+        if (language === this.config.language) {
+            return;
+        }
+        this.config.language = language;
         this.saveConfig();
     }
 }

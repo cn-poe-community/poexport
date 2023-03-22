@@ -6,6 +6,8 @@ import { Channels } from "./ipc/types";
 
 contextBridge.exposeInMainWorld("electronApi", {
     openFolder: () => ipcRenderer.invoke(Channels.DIALOG_OPEN_FLOOR),
+    showFolder: (path: string) =>
+        ipcRenderer.invoke(Channels.DIALOG_SHOW_FLOOR, path),
 });
 
 contextBridge.exposeInMainWorld("mainApi", {
@@ -17,6 +19,8 @@ contextBridge.exposeInMainWorld("mainApi", {
         ipcRenderer.invoke(Channels.APP_SET_POB_PATH, path),
     setPobProxySupported: (isSupported: boolean) =>
         ipcRenderer.invoke(Channels.APP_SET_POB_PROXY_SUPPORTED, isSupported),
+    setLanguage: (lang: boolean) =>
+        ipcRenderer.invoke(Channels.APP_SET_LANGUAGE, lang),
     getExporterStatus: () =>
         ipcRenderer.invoke(Channels.APP_GET_EXPORTER_STATUS),
     patchPob: () => ipcRenderer.invoke(Channels.APP_PATCH_POB),

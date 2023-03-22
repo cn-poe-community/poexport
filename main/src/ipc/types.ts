@@ -3,10 +3,18 @@ export interface Config {
     pobPath: string;
     port: number;
     pobProxySupported: boolean;
+    language: Language;
 }
 
-export type SessionStatus = "Ok" | "Invalid";
-export type PobStatus = "Ok" | "NeedPatch" | "NotFound";
+export enum SessionStatus {
+    OK,
+    INVALID,
+}
+export enum PobStatus {
+    OK,
+    NEED_PATCH,
+    NOT_FOUND,
+}
 
 export interface ExporterStatus {
     sessionStatus: SessionStatus;
@@ -16,6 +24,7 @@ export interface ExporterStatus {
 
 export interface ElectronApi {
     openFolder: () => Promise<string | undefined>;
+    showFolder: (folder: string) => Promise<void>;
 }
 
 export interface MainApi {
@@ -24,6 +33,7 @@ export interface MainApi {
     setPoeSessId: (id: string) => Promise<void>;
     setPobPath: (path: string) => Promise<void>;
     setPobProxySupported: (isSupported: boolean) => Promise<void>;
+    setLanguage: (language: Language) => Promise<void>;
     getExporterStatus: () => Promise<ExporterStatus>;
     patchPob: () => Promise<void>;
     resetPob: () => Promise<void>;
@@ -32,6 +42,7 @@ export interface MainApi {
 
 export enum Channels {
     DIALOG_OPEN_FLOOR = "dialog:openFolder",
+    DIALOG_SHOW_FLOOR = "dialog:showFolder",
     APP_GET_CONFIG = "app:getConfig",
     APP_RESET_CONFIG = "app:resetConfig",
     APP_SET_POE_SESS_ID = "app:setPoeSessId",
@@ -41,9 +52,12 @@ export enum Channels {
     APP_PATCH_POB = "app:patchPob",
     APP_RESET_POB = "app:resetPob",
     APP_TRANSLATE_ITEM = "app:translateItem",
+    APP_SET_LANGUAGE = "app:setLanguage",
 }
 
 export interface AppWindow {
     mainApi: MainApi;
     electronApi: ElectronApi;
 }
+
+export type Language = "zh_CN" | "en_US";

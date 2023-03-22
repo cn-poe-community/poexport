@@ -1,10 +1,15 @@
+import {
+    PobStatus,
+    SessionStatus,
+    type Config,
+    type ExporterStatus,
+} from "@/ipc/types";
 import { defineStore } from "pinia";
-import type { ExporterStatus } from "../../../main/src/ipc/types";
 
 export const useStatusStore = defineStore("status", {
     state: (): ExporterStatus => ({
-        pobStatus: "Ok",
-        sessionStatus: "Ok",
+        pobStatus: PobStatus.OK,
+        sessionStatus: SessionStatus.OK,
         port: 0,
     }),
     getters: {},
@@ -14,8 +19,17 @@ export const useStatusStore = defineStore("status", {
 export const useInputsStore = defineStore("inputs", {
     state: () => ({
         poeAccountName: "",
-        poeAccountNameEncoded: "",
         textItem: "",
         textItemTranlation: "",
+    }),
+});
+
+export const useConfigStore = defineStore("config", {
+    state: (): Config => ({
+        poeSessId: "",
+        pobPath: "",
+        port: 8655,
+        pobProxySupported: false,
+        language: "zh_CN",
     }),
 });

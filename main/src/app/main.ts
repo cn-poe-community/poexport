@@ -23,8 +23,15 @@ import { Requester } from "./requester";
 import { JsonTranslator } from "./translator/json_translator";
 import { TextTranslator } from "./translator/text_translator";
 
-import { Channels, Config, ExporterStatus } from "../ipc/types";
-import { dialog, ipcMain } from "electron";
+import {
+    Channels,
+    Config,
+    ExporterStatus,
+    Language,
+    PobStatus,
+    SessionStatus,
+} from "../ipc/types";
+import { dialog, ipcMain, shell } from "electron";
 
 export class App {
     private exporter: Exporter;
@@ -71,23 +78,27 @@ export class App {
         this.configManager.setPobProxySupported(isSupported);
     }
 
+    private setLanguage(lang: Language) {
+        this.configManager.setLanguage(lang);
+    }
+
     private async getExporterStatus(): Promise<ExporterStatus> {
         const config = this.configManager.getConfig();
 
         const status: ExporterStatus = {
-            sessionStatus: "Ok",
-            pobStatus: "Ok",
+            sessionStatus: SessionStatus.OK,
+            pobStatus: PobStatus.OK,
             port: 0,
         };
 
         const isEffective = await this.requester.isEffectiveSession();
         if (!isEffective) {
-            status.sessionStatus = "Invalid";
+            status.sessionStatus = SessionStatus.INVALID;
         }
 
         const root = await PobManager.getRoot(config.pobPath);
         if (root === "") {
-            status.pobStatus = "NotFound";
+            status.pobStatus = PobStatus.NOT_FOUND;
         } else {
             const config = this.getConfig();
             const pobManager = new PobManager(
@@ -104,7 +115,7 @@ export class App {
             }
 
             if (isNeededPatch) {
-                status.pobStatus = "NeedPatch";
+                status.pobStatus = PobStatus.NEED_PATCH;
             }
         }
 
@@ -142,6 +153,10 @@ export class App {
         } else {
             return filePaths[0];
         }
+    }
+
+    private async handleShowFolder(path: string) {
+        shell.showItemInFolder(path);
     }
 
     private async translateItem(content: string): Promise<string> {
@@ -195,6 +210,9 @@ export class App {
         ipcMain.handle(Channels.DIALOG_OPEN_FLOOR, () =>
             this.handleOpenFolder()
         );
+        ipcMain.handle(Channels.DIALOG_SHOW_FLOOR, (event, path) =>
+            this.handleShowFolder(path)
+        );
         ipcMain.handle(Channels.APP_GET_CONFIG, () => this.getConfig());
         ipcMain.handle(Channels.APP_RESET_CONFIG, () => this.resetConfig());
         ipcMain.handle(Channels.APP_SET_POE_SESS_ID, (event, id) => {
@@ -209,6 +227,9 @@ export class App {
                 this.setPobProxySupported(isSupported);
             }
         );
+        ipcMain.handle(Channels.APP_SET_LANGUAGE, (event, lang) => {
+            this.setLanguage(lang);
+        });
         ipcMain.handle(Channels.APP_GET_EXPORTER_STATUS, () =>
             this.getExporterStatus()
         );

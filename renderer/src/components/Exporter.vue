@@ -1,211 +1,177 @@
-<template>
-  <div class="container">
-    <div class="status">
-      <header>
-        <h2>状态</h2>
-        <span
-          class="material-symbols-outlined pointer refresh"
-          @click="refresh"
-          title="刷新"
-          >refresh</span
-        >
-      </header>
-      <div class="line">
-        <span class="line-content">
-          <span class="line-left">POESESSID</span>
-          <span class="line-right">
-            <span
-              class="material-symbols-outlined ok"
-              v-if="status.sessionStatus === 'Ok'"
-              >check_circle</span
-            >
-            <span class="material-symbols-outlined warning" v-else>error</span>
-          </span>
-        </span>
-      </div>
-      <div class="line">
-        <span class="line-content">
-          <span class="line-left">POB</span>
-          <span class="line-right">
-            <span
-              class="material-symbols-outlined ok"
-              v-if="status.pobStatus === 'Ok'"
-              >check_circle</span
-            >
-            <span
-              class="update pointer"
-              v-else-if="status.pobStatus === 'NeedPatch'"
-              @click="patch"
-              >更新</span
-            >
-            <span class="material-symbols-outlined warning" v-else>error</span>
-          </span>
-        </span>
-      </div>
-      <div class="line">
-        <span class="line-content">
-          <span class="line-left">监听端口</span>
-          <span class="line-right">{{ status.port }}</span>
-        </span>
-      </div>
-    </div>
-    <div class="encoder">
-      <h2>URL 编码</h2>
-      <div class="line">
-        <span class="line-content">
-          <input placeholder="论坛账户名" v-model="inputs.poeAccountName" />
-          <button @click="encode" :disabled="inputs.poeAccountName === ''">
-            编码
-          </button>
-        </span>
-      </div>
-      <div class="line">
-        <span class="line-content">
-          <input
-            placeholder="编码结果"
-            v-model="inputs.poeAccountNameEncoded"
-            disabled
-          />
-          <button
-            :disabled="inputs.poeAccountNameEncoded === ''"
-            @click="copyEncodedValue"
-          >
-            复制
-          </button>
-        </span>
-      </div>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
-import type { AppWindow } from "../../../main/src/ipc/types";
+<script lang="ts" setup>
+import { PobStatus, SessionStatus, type AppWindow } from "@/ipc/types";
 import { useStatusStore, useInputsStore } from "@/stores/main";
+import { onMounted } from "vue";
+import { notifyError, notifyInfo } from "./base/notice";
+import { useI18n } from "vue-i18n";
 
-export default {
-  setup() {
-    const status = useStatusStore();
-    const inputs = useInputsStore();
+const { t } = useI18n();
 
-    return {
-      status,
-      inputs,
-    };
-  },
-  data() {
-    return {
-      ipcLocked: false, //A simple lock to prevent more than one ipc request triggered at the same time
-    };
-  },
-  mounted() {
-    this.loadStatus();
-  },
-  methods: {
-    encode() {
-      const input = this.inputs.poeAccountName;
-      if (input) {
-        this.inputs.poeAccountNameEncoded = encodeURIComponent(input);
-      } else {
-        this.inputs.poeAccountNameEncoded = "";
+const status = useStatusStore();
+const inputs = useInputsStore();
+
+let ipcLock = false;
+
+function loadStatus() {
+  const mainApi = (window as any as AppWindow).mainApi;
+  if (mainApi) {
+    mainApi
+      .getExporterStatus()
+      .then((s) => {
+        status.$patch(s);
+      })
+      .catch((err) => {
+        notifyError(err);
+      });
+  }
+}
+
+function encode() {
+  const input = inputs.poeAccountName;
+  if (input) {
+    const encodedValue = encodeURIComponent(input);
+    navigator.clipboard.writeText(encodedValue);
+    notifyInfo(t("Copied"));
+  }
+}
+
+function refresh() {
+  if (ipcLock) {
+    return;
+  }
+  ipcLock = true;
+  const target = document.getElementById("refresh");
+  if (target !== null) {
+    target.classList.add("refresh-start");
+  }
+  const mainApi = (window as any as AppWindow).mainApi;
+  mainApi
+    .getExporterStatus()
+    .then((s) => {
+      status.$patch(s);
+    })
+    .catch((err) => {
+      notifyError(err);
+    })
+    .finally(() => {
+      ipcLock = false;
+      if (target !== null) {
+        target.classList.remove("refresh-start");
       }
-    },
+    });
+}
 
-    copyEncodedValue() {
-      navigator.clipboard.writeText(this.inputs.poeAccountNameEncoded);
-    },
+function patch() {
+  if (ipcLock) {
+    return;
+  }
+  ipcLock = true;
+  const mainApi = (window as any as AppWindow).mainApi;
+  mainApi
+    .patchPob()
+    .then(() => {
+      loadStatus();
+    })
+    .catch((err) => {
+      notifyError(err);
+    })
+    .finally(() => {
+      ipcLock = false;
+    });
+}
 
-    patch() {
-      if (this.ipcLocked) {
-        return;
-      }
-      this.ipcLocked = true;
-      const mainApi = (window as any as AppWindow).mainApi;
-      mainApi
-        .patchPob()
-        .then(() => {
-          this.loadStatus();
-        })
-        .catch((err) => {
-          console.log(err);
-        })
-        .finally(() => {
-          this.ipcLocked = false;
-        });
-    },
-    loadStatus() {
-      const mainApi = (window as any as AppWindow).mainApi;
-      mainApi
-        .getExporterStatus()
-        .then((status) => {
-          this.status.$patch(status);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    },
-    refresh(event: MouseEvent) {
-      if (this.ipcLocked) {
-        return;
-      }
-      this.ipcLocked = true;
-      const target = event.target as HTMLElement;
-      target.classList.add("refresh-start");
-      const mainApi = (window as any as AppWindow).mainApi;
-      mainApi
-        .getExporterStatus()
-        .then((status) => {
-          this.status.$patch(status);
-        })
-        .catch((err) => {
-          console.log(err);
-        })
-        .finally(() => {
-          this.ipcLocked = false;
-          target.classList.remove("refresh-start");
-        });
-    },
-  },
-};
+onMounted(() => {
+  loadStatus();
+});
 </script>
 
+<template>
+  <header>
+    <p class="text-h5">{{ t("Export") }}</p>
+  </header>
+  <v-card :title="t('Status')">
+    <v-btn
+      id="refresh"
+      icon="$refresh"
+      color="primary"
+      variant="plain"
+      @click="refresh"
+    >
+    </v-btn>
+    <v-tooltip activator="#refresh" location="top">{{
+      t("Refresh")
+    }}</v-tooltip>
+    <v-list density="compact">
+      <v-list-item>
+        <template v-slot:prepend>
+          <p>POESESSID</p>
+        </template>
+        <template v-slot:append>
+          <v-icon
+            color="green"
+            icon="$checkCircleOutline"
+            v-if="status.sessionStatus === SessionStatus.OK"
+          />
+          <v-icon color="red" icon="$alertCircleOutline" v-else />
+        </template>
+      </v-list-item>
+      <v-list-item>
+        <template v-slot:prepend>
+          <p>POB</p>
+        </template>
+        <template v-slot:append>
+          <v-icon
+            color="green"
+            icon="$checkCircleOutline"
+            v-if="status.pobStatus === PobStatus.OK"
+          />
+          <v-icon
+            color="red"
+            icon="$alertCircleOutline"
+            v-else-if="status.pobStatus === PobStatus.NOT_FOUND"
+          />
+          <a class="update" v-else @click="patch">Patch</a>
+        </template>
+      </v-list-item>
+      <v-list-item>
+        <template v-slot:prepend>
+          <p>{{ t("Listening_Port") }}</p>
+        </template>
+        <template v-slot:append>
+          <p>{{ status.port }}</p>
+        </template>
+      </v-list-item>
+    </v-list>
+  </v-card>
+  <v-card :title="t('Url_Encoding')">
+    <v-list density="compact">
+      <v-list-item>
+        <v-text-field
+          :label="t('Account')"
+          density="compact"
+          v-model="inputs.poeAccountName"
+          single-line
+          spellcheck="false"
+          ><template v-slot:append
+            ><v-btn @click="encode" :disabled="!inputs.poeAccountName">{{
+              t("Encoding")
+            }}</v-btn>
+          </template></v-text-field
+        >
+      </v-list-item>
+    </v-list>
+  </v-card>
+</template>
+
 <style scoped>
-.container {
-  width: 420px;
-  margin: 0 auto;
+.v-card {
+  margin-top: 20px;
 }
 
-h2 {
-  margin-left: 10px;
-}
-
-.container > div:nth-child(n + 2) {
-  margin-top: 30px;
-  border-top: 1px solid #dddddd;
-}
-
-.line {
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.line-content {
-  padding: 0 10px;
-  display: flex;
-}
-
-.status > header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.status > header > h1 {
-  display: inline-block;
-}
-
-.status > header > .refresh {
-  margin-right: 10px;
-  color: #111111;
+#refresh {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 @keyframes rotate {
@@ -226,33 +192,11 @@ h2 {
   animation-play-state: running;
 }
 
-.status .line:hover {
-  background-color: #f5f5f5;
-}
-
-.status .line-content {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
-  position: relative;
-  top: 5px;
-  line-height: 16px;
-}
-
 .update {
   vertical-align: top;
   border-bottom: 1px dashed;
   color: red;
-}
-
-.encoder .line {
-  margin: 5px 0;
-}
-
-.encoder button {
-  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 </style>

@@ -2,124 +2,85 @@
 import Exporter from "./components/Exporter.vue";
 import Translator from "./components/Translator.vue";
 import Database from "./components/Database.vue";
-import Setting from "./components/Setting.vue";
+import Settings from "./components/Settings.vue";
 import About from "./components/About.vue";
+import { computed, onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
+import type { AppWindow } from "./ipc/types";
+const { t, locale } = useI18n();
+
+type Navigation = {
+  title: string;
+  href: string;
+};
+
+const navigationList: Navigation[] = [
+  { title: "Export", href: "#/" },
+  { title: "Translate", href: "#/translation" },
+  //{ title: "Query", href: "#/query" },
+  { title: "Settings", href: "#/settings" },
+  //{ title: "About", href: "#/about" },
+];
+
+const routes: { [id: string]: any } = {
+  "/": Exporter,
+  "/translation": Translator,
+  "/query": Database,
+  "/settings": Settings,
+  "/about": About,
+};
+
+const currentPath = ref("#/");
+
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || "/"];
+});
+
+onMounted(async () => {
+  window.addEventListener("hashchange", () => {
+    currentPath.value = window.location.hash;
+  });
+  const mainApi = (window as unknown as AppWindow).mainApi;
+  if (mainApi) {
+    const config = await mainApi.getConfig();
+    const localeInConfig = config.language;
+    if (locale.value !== localeInConfig) {
+      locale.value = localeInConfig;
+    }
+  }
+});
 </script>
 
 <template>
-  <main>
-    <div class="activitybar">
-      <ul class="actions-container">
-        <li
-          class="action-item pointer"
-          :class="{ checked: action === Action.EXPORT }"
-          @click="switchAction(Action.EXPORT)"
+  <v-app>
+    <v-navigation-drawer permanent disable-resize-watcher floating width="120">
+      <v-list density="compact" color="primary" nav>
+        <v-list-item
+          v-for="item in navigationList"
+          :active="currentPath === item.href"
+          :value="item.href"
+          :href="item.href"
+          :key="item.href"
         >
-          <a>BD导出</a>
-        </li>
-        <li
-          class="action-item pointer"
-          :class="{ checked: action === Action.TRANSLATION }"
-          @click="switchAction(Action.TRANSLATION)"
-        >
-          <a>物品翻译</a>
-        </li>
-        <li
-          class="action-item pointer"
-          :class="{ checked: action === Action.QUERY }"
-          @click="switchAction(Action.QUERY)"
-        >
-          <a>数据库查询</a>
-        </li>
-      </ul>
-      <ul class="actions-container bottom">
-        <li
-          class="action-item pointer"
-          :class="{ checked: action === Action.SETTINGS }"
-          @click="switchAction(Action.SETTINGS)"
-        >
-          设置
-        </li>
-        <li
-          class="action-item pointer"
-          :class="{ checked: action === Action.ABOUT }"
-          @click="switchAction(Action.ABOUT)"
-        >
-          关于
-        </li>
-      </ul>
-    </div>
-    <div class="content">
-      <Exporter v-if="action === Action.EXPORT" />
-      <Translator v-else-if="action === Action.TRANSLATION" />
-      <Database v-else-if="action === Action.QUERY" />
-      <Setting v-else-if="action === Action.SETTINGS" />
-      <About v-else-if="action === Action.ABOUT" />
-    </div>
-  </main>
+          <p
+            class="text-center"
+            :class="{ 'text-text-secondary': currentPath !== item.href }"
+          >
+            {{ t(item.title) }}
+          </p>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+    <v-main style="">
+      <div class="container">
+        <component :is="currentView" />
+      </div>
+    </v-main>
+  </v-app>
 </template>
 
-<script lang="ts">
-enum Action {
-  EXPORT,
-  TRANSLATION,
-  QUERY,
-  SETTINGS,
-  ABOUT,
-}
-
-export default {
-  data() {
-    return {
-      action: Action.EXPORT,
-    };
-  },
-
-  mounted() {},
-
-  methods: {
-    switchAction(action: Action) {
-      this.action = action;
-    },
-  },
-};
-</script>
-
 <style scoped>
-main {
-  display: flex;
-  height: 100%;
-}
-
-.activitybar {
-  width: 100px;
-  background: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 auto;
-}
-
-.actions-container {
-  margin: 20px 0;
-}
-
-.action-item {
-  padding: 8px 0px;
-  text-align: center;
-  color: #475665;
-}
-
-.action-item a {
-  font-size: 14px;
-}
-
-.checked {
-  background: #fff;
-  color: #000000;
-}
-
-.content {
-  flex: 1 1 auto;
+.container {
+  margin: 15px;
 }
 </style>
