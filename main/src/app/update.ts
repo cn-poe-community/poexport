@@ -17,10 +17,17 @@ export async function checkForUpdates(): Promise<UpdateInfo> {
     const lines = release.body.trim().split("\r\n");
     return {
         currVersion,
-        latestVersion: release.tag_name,
+        latestVersion: getVersionFromTag(release.tag_name),
         title: release.name,
         body: lines,
     };
+}
+
+function getVersionFromTag(tag: string) {
+    if (tag.startsWith("v")) {
+        return tag.substring(1);
+    }
+    return tag;
 }
 
 async function getLastRelease(): Promise<Release> {

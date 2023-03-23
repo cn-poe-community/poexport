@@ -71,17 +71,9 @@ onMounted(async () => {
   <v-app>
     <v-navigation-drawer permanent disable-resize-watcher floating width="120">
       <v-list density="compact" color="primary" nav>
-        <v-list-item
-          v-for="item in navigationList"
-          :active="currentPath === item.href"
-          :value="item.href"
-          :href="item.href"
-          :key="item.href"
-        >
-          <p
-            class="text-center"
-            :class="{ 'text-text-secondary': currentPath !== item.href }"
-          >
+        <v-list-item v-for="item in navigationList" :active="currentPath === item.href" :value="item.href"
+          :href="item.href" :key="item.href">
+          <p class="text-center" :class="{ 'text-text-secondary': currentPath !== item.href }">
             {{ t(item.title) }}
           </p>
         </v-list-item>
@@ -93,11 +85,7 @@ onMounted(async () => {
       </div>
       <v-dialog v-model="newVersion" width="auto">
         <v-card>
-          <v-toolbar
-            color="primary"
-            :title="t('New_version')"
-            density="compact"
-          ></v-toolbar>
+          <v-toolbar color="primary" :title="t('New_version')" density="compact"></v-toolbar>
           <v-card-text>
             <p>{{ updateInfo.title }}</p>
           </v-card-text>
@@ -105,15 +93,8 @@ onMounted(async () => {
             <p v-for="line in updateInfo.body">{{ line }}</p>
           </v-card-text>
           <v-card-text>
-            <a href="https://www.caimogu.cc/post/348869.html" target="_blank"
-              >采蘑菇</a
-            >
-            <a
-              href="https://github.com/me1ting/poe-cn-export"
-              style="margin-left: 10px"
-              target="_blank"
-              >github</a
-            >
+            <a href="https://www.caimogu.cc/post/348869.html" target="_blank">采蘑菇</a>
+            <a href="https://github.com/me1ting/poe-cn-export" style="margin-left: 10px" target="_blank">github</a>
           </v-card-text>
           <v-card-actions class="justify-end">
             <v-btn color="primary" @click="newVersion = false" variant="text">{{
