@@ -38,6 +38,7 @@ export interface MainApi {
     patchPob: () => Promise<void>;
     resetPob: () => Promise<void>;
     translateItem: (content: string) => Promise<string>;
+    checkForUpdates: () => Promise<UpdateInfo>;
 }
 
 export enum Channels {
@@ -53,6 +54,7 @@ export enum Channels {
     APP_RESET_POB = "app:resetPob",
     APP_TRANSLATE_ITEM = "app:translateItem",
     APP_SET_LANGUAGE = "app:setLanguage",
+    APP_CHECK_FOR_UPDATES = "app:checkForUpdates",
 }
 
 export interface AppWindow {
@@ -61,3 +63,10 @@ export interface AppWindow {
 }
 
 export type Language = "zh_CN" | "en_US";
+
+export interface UpdateInfo {
+    currVersion: string;
+    latestVersion: string;
+    title?: string;
+    body?: string[];
+}

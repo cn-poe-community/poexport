@@ -16,6 +16,8 @@ export default {
     Proxy_Supported: "代理支持",
     Patch: "补丁",
     Remove: "移除",
+    New_version: "新版本",
+    Close: "关闭",
     success: "成功",
     copied: "已复制",
 };

@@ -32,6 +32,7 @@ import {
     SessionStatus,
 } from "../ipc/types";
 import { dialog, ipcMain, shell } from "electron";
+import { checkForUpdates } from "./update";
 
 export class App {
     private exporter: Exporter;
@@ -238,5 +239,6 @@ export class App {
         ipcMain.handle(Channels.APP_TRANSLATE_ITEM, (event, content) =>
             this.translateItem(content)
         );
+        ipcMain.handle(Channels.APP_CHECK_FOR_UPDATES, () => checkForUpdates());
     }
 }

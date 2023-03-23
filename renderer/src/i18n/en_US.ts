@@ -16,6 +16,8 @@ export default {
     Proxy_Supported: "Proxy Supported",
     Patch: "Patch",
     Remove: "Remove",
+    New_version: "New version",
+    Close: "Close",
     success: "success",
     copied: "copied",
 };

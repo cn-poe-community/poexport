@@ -27,4 +27,5 @@ contextBridge.exposeInMainWorld("mainApi", {
     resetPob: () => ipcRenderer.invoke(Channels.APP_RESET_POB),
     translateItem: (content: string) =>
         ipcRenderer.invoke(Channels.APP_TRANSLATE_ITEM, content),
+    checkForUpdates: () => ipcRenderer.invoke(Channels.APP_CHECK_FOR_UPDATES),
 });
