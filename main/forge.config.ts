@@ -6,9 +6,21 @@ import { mainConfig } from "./webpack.main.config";
 import { rendererConfig } from "./webpack.renderer.config";
 
 const config: ForgeConfig = {
-  packagerConfig: {},
+  packagerConfig: {
+    icon: "icons/icon.png",
+  },
   rebuildConfig: {},
-  makers: [new MakerZIP({}, ["darwin", "win32"])],
+  makers: [
+    new MakerZIP({}, ["win32"]),
+    {
+      name: "@electron-forge/maker-wix",
+      config: {
+        language: 1033,
+        manufacturer: "me1ting",
+        icon: "icons/icon.ico",
+      },
+    },
+  ],
   plugins: [
     new WebpackPlugin({
       mainConfig,
