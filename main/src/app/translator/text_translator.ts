@@ -1,3 +1,10 @@
+import {
+    ZH_CLASS_SCION,
+    ZH_FORBIDDEN_FLAME,
+    ZH_FORBIDDEN_FLESH,
+    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
+    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED,
+} from "./json_translator";
 import { AttributeService } from "./service/attribute.service";
 import { BaseTypeService } from "./service/basetype.service";
 import { GemService } from "./service/gem.service";
@@ -8,37 +15,36 @@ import { StatService } from "./service/stat.service";
 import { COMPOUNDED_STAT_LINE_SEPARATOR } from "./type/stat.type";
 
 export class TextTranslator {
-    readonly baseTypeService: BaseTypeService;
-    readonly itemService: ItemService;
-    readonly requirementService: RequirementSerivce;
-    readonly propertySerivce: PropertyService;
-    readonly gemService: GemService;
-    readonly statService: StatService;
-    readonly attributeService: AttributeService;
-
     constructor(
-        baseTypeService: BaseTypeService,
-        itemService: ItemService,
-        requirementService: RequirementSerivce,
-        propertySerivce: PropertyService,
-        gemService: GemService,
-        statService: StatService,
-        attributeService: AttributeService
-    ) {
-        this.baseTypeService = baseTypeService;
-        this.itemService = itemService;
-        this.requirementService = requirementService;
-        this.propertySerivce = propertySerivce;
-        this.gemService = gemService;
-        this.statService = statService;
-        this.attributeService = attributeService;
-    }
+        readonly baseTypeService: BaseTypeService,
+        readonly itemService: ItemService,
+        readonly requirementService: RequirementSerivce,
+        readonly propertySerivce: PropertyService,
+        readonly gemService: GemService,
+        readonly statService: StatService,
+        readonly attributeService: AttributeService
+    ) {}
 
     public translate(content: string): string {
-        const item = new TextItem(content);
+        const item = new TextItem(this.fixContent(content));
         const ctx = new Context();
         ctx.translator = this;
         return item.getTranslation(ctx);
+    }
+
+    fixContent(content: string): string {
+        if (
+            content.includes(ZH_FORBIDDEN_FLESH) ||
+            content.includes(ZH_FORBIDDEN_FLAME)
+        ) {
+            if (content.includes(ZH_CLASS_SCION)) {
+                content = content.replace(
+                    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN,
+                    ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED
+                );
+            }
+        }
+        return content;
     }
 }
 
@@ -48,22 +54,24 @@ class Context {
     part: Part;
 }
 
-const PART_SEPARATOR = "\n--------\n"; // 区域分隔符
-const LINE_SEPARATOR = "\n"; // 行分隔符
-const KEY_VALUE_SEPARATOR = ": "; // 键值分隔符
+const PART_SEPARATOR = "\n--------\n";
+const LINE_SEPARATOR = "\n";
+const KEY_VALUE_SEPARATOR = ": ";
 
 const ZH_ITEM_CLASS = "物品类别";
 
-/**
- * 文本形式的物品
- */
 class TextItem {
     parts: Part[];
 
     constructor(content: string) {
         const partsContents = content.split(PART_SEPARATOR);
 
-        this.parts = partsContents.map((partContent) => new Part(partContent));
+        this.parts = partsContents.map((partContent) => {
+            if (partContent.startsWith(ZH_ITEM_CLASS)) {
+                return new MetaPart(partContent);
+            }
+            return new Part(partContent);
+        });
     }
 
     getTranslation(ctx: Context): string {
@@ -87,60 +95,8 @@ class Part {
         const translator = ctx.translator;
         const buf = [];
 
-        let isMetaPart = false;
-        const firstLine = this.lines[0];
-        if (
-            firstLine.type === LineType.KEY_VALUE &&
-            firstLine.key === ZH_ITEM_CLASS
-        ) {
-            isMetaPart = true;
-        }
-
         for (let i = 0; i < this.lines.length; ) {
             const line = this.lines[i];
-            if (isMetaPart && line.type === LineType.MODIFIER) {
-                //一般而言，倒数两行是name和typeLine
-                //但是魔法物品有所不同，只有typeLine一行
-                if (i === this.lines.length - 2) {
-                    //name
-                    const zhName = line.content;
-                    const zhTypeLine =
-                        this.lines[this.lines.length - 1].content;
-                    const result =
-                        translator.baseTypeService.getBaseTypeByZhTypeLine(
-                            zhTypeLine,
-                            zhName
-                        );
-                    if (result !== undefined) {
-                        const zhBaseType = result.zhBaseType;
-                        buf.push(
-                            translator.itemService.translateName(
-                                zhName,
-                                zhBaseType
-                            )
-                        );
-                    } else {
-                        buf.push(
-                            translator.itemService.translateName(
-                                zhName,
-                                zhTypeLine
-                            )
-                        );
-                    }
-                    i++;
-                    continue;
-                } else if (i === this.lines.length - 1) {
-                    //typeline
-                    buf.push(
-                        translator.baseTypeService.translateTypeLine(
-                            line.content
-                        )
-                    );
-                    i++;
-                    continue;
-                }
-            }
-
             //复合词缀
             const maxSize =
                 translator.statService.getMaxLineSizeOfCompoundedMod(
@@ -190,6 +146,57 @@ class Part {
         }
 
         return buf.join(COMPOUNDED_STAT_LINE_SEPARATOR);
+    }
+}
+
+class MetaPart extends Part {
+    getTranslation(ctx: Context): string {
+        ctx.part = this;
+        const translator = ctx.translator;
+        const buf = [];
+
+        for (let i = 0; i < this.lines.length; i++) {
+            const line = this.lines[i];
+            //一般而言，倒数两行是name和typeLine
+            //但是魔法物品有所不同，只有typeLine一行
+            if (this.isNameLine(i)) {
+                const zhName = line.content;
+                const zhTypeLine = this.lines[this.lines.length - 1].content;
+                const result =
+                    translator.baseTypeService.getBaseTypeByZhTypeLine(
+                        zhTypeLine,
+                        zhName
+                    );
+                buf.push(
+                    translator.itemService.translateName(
+                        zhName,
+                        result !== undefined ? result.zhBaseType : zhTypeLine
+                    )
+                );
+            } else if (this.isTypeLine(i)) {
+                const t = translator.baseTypeService.translateTypeLine(
+                    line.content
+                );
+                buf.push(t !== undefined ? t : line.content);
+            } else {
+                buf.push(line.getTranslation(ctx));
+            }
+        }
+        return buf.join(LINE_SEPARATOR);
+    }
+
+    isNameLine(lineNum: number): boolean {
+        return (
+            lineNum === this.lines.length - 2 &&
+            this.lines[lineNum].type === LineType.MODIFIER
+        );
+    }
+
+    isTypeLine(lineNum: number): boolean {
+        return (
+            lineNum === this.lines.length - 1 &&
+            this.lines[lineNum].type === LineType.MODIFIER
+        );
     }
 }
 
@@ -258,8 +265,14 @@ class Line {
                 this.key
             );
             if (keyTranslation) {
-                this.key = keyTranslation;
-                return `${this.key}${KEY_VALUE_SEPARATOR}${this.value}`;
+                const key = keyTranslation;
+                const value = translator.requirementService.translateValue(
+                    this.key,
+                    this.value
+                );
+                return `${key ? key : this.key}${KEY_VALUE_SEPARATOR}${
+                    value ? value : this.value
+                }`;
             }
 
             translation = translator.attributeService.translatePair(

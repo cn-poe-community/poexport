@@ -11,11 +11,11 @@ import {
 import { ZH_REQUIREMENT_NAME_CLASS } from "./type/requirement.type";
 
 const ZH_THIEFS_TRINKET = "赏金猎人饰品";
-const ZH_FORBIDDEN_FLESH = "禁断之肉";
-const ZH_FORBIDDEN_FLAME = "禁断之火";
-const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN = "暗影";
-const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED = "暗影（贵族）";
-const ZH_CLASS_SCION = "贵族";
+export const ZH_FORBIDDEN_FLESH = "禁断之肉";
+export const ZH_FORBIDDEN_FLAME = "禁断之火";
+export const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN = "暗影";
+export const ZH_PASSIVESKILL_ASCENDANT_ASSASSIN_FIXED = "暗影（贵族）";
+export const ZH_CLASS_SCION = "贵族";
 
 export class JsonTranslator {
     private readonly baseTypeService: BaseTypeService;

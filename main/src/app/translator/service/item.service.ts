@@ -9,6 +9,11 @@ export class ItemService {
         this.baseTypeProvider = baseTypeProvider;
     }
 
+    /**
+     * Tranlate item name, but only unique name is supported.
+     *
+     * @returns DEFAULT_NAME if no unique with the zhName.
+     */
     public translateName(zhName: string, zhBaseType: string): string {
         const baseTypes =
             this.baseTypeProvider.provideBaseTypesByZh(zhBaseType);
@@ -16,8 +21,7 @@ export class ItemService {
         for (const baseType of baseTypes) {
             const uniques = baseType.uniques;
             for (const unique of uniques) {
-                const uniqueZh = unique.zh;
-                if (uniqueZh === zhName) {
+                if (unique.zh === zhName) {
                     return unique.en;
                 }
             }

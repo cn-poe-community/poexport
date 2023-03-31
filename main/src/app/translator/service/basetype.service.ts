@@ -110,8 +110,8 @@ export class BaseTypeService {
     }
 
     /**
-     *
      * 一般情况下，物品的typeLine等价于baseType。魔法物品有所不同，其在baseType的基础上多了一堆修饰词前缀。
+     *
      * 修饰词的翻译很麻烦，且用处不大，这里选择去掉修饰词，仅保留baseType。
      *
      * 推荐使用baseType替换typeLine，只有在翻译文本格式的物品时，因为缺乏baseType，需要调用该方法。
