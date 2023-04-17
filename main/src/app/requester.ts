@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Character, Items, PassiveSkills } from "./translator/type/poe.type";
 
 const TEST_URL = "https://poe.game.qq.com/trade";
 const GET_CHARACTERS_URL =
@@ -151,4 +150,18 @@ export class HttpError extends Error {
         super(status.toString());
         this.status = status;
     }
+}
+
+interface Character {
+    class: string;
+    name: string;
+    league: string;
+}
+
+interface PassiveSkills {
+    items: Array<unknown>;
+}
+
+interface Items {
+    items: Array<unknown>;
 }

@@ -1,27 +1,7 @@
-import { BaseTypeProvider } from "./translator/provider/basetype.provider";
-import { CharacterProvider } from "./translator/provider/character.provider";
-import { GemProvider } from "./translator/provider/gem.provider";
-import { PassiveSkillProvider } from "./translator/provider/passiveskill.provider";
-import { PropertyProvider } from "./translator/provider/property.provider";
-import { RequirementProvider } from "./translator/provider/requirement.provider";
-import { StatProvider } from "./translator/provider/stat.provider";
-import { BaseTypeService } from "./translator/service/basetype.service";
-import { CharacterService } from "./translator/service/character.service";
-import { GemService } from "./translator/service/gem.service";
-import { ItemService } from "./translator/service/item.service";
-import { PassiveSkillService } from "./translator/service/passiveskill.service";
-import { PropertyService } from "./translator/service/property.service";
-import { RequirementSerivce } from "./translator/service/requirement.service";
-import { StatService } from "./translator/service/stat.service";
-import { AttributeProvider } from "./translator/provider/attribute.provider";
-import { AttributeService } from "./translator/service/attribute.service";
-
 import { ConfigManager } from "./config";
 import { Exporter } from "./exporter";
 import { PobManager } from "./pob";
 import { Requester } from "./requester";
-import { JsonTranslator } from "./translator/json_translator";
-import { TextTranslator } from "./translator/text_translator";
 
 import {
     Channels,
@@ -33,6 +13,7 @@ import {
 } from "../ipc/types";
 import { dialog, ipcMain, shell } from "electron";
 import { checkForUpdates } from "./update";
+import { JsonTranslator, TextTranslator, TranslatorFactory } from "cn-poe-translator";
 
 export class App {
     private exporter: Exporter;
@@ -165,46 +146,9 @@ export class App {
     }
 
     public initTranslators() {
-        const baseTypeProvider = new BaseTypeProvider();
-        const baseTypeService = new BaseTypeService(baseTypeProvider);
-        const itemService = new ItemService(baseTypeProvider);
-        const requirementProvider = new RequirementProvider();
-        const characterProvider = new CharacterProvider();
-        const characterService = new CharacterService(characterProvider);
-        const requirementService = new RequirementSerivce(
-            requirementProvider,
-            characterService
-        );
-        const propertyProvider = new PropertyProvider();
-        const propertySerivce = new PropertyService(propertyProvider);
-        const gemProvider = new GemProvider();
-        const gemService = new GemService(gemProvider);
-        const passiveSkillProvider = new PassiveSkillProvider();
-        const passiveSkillService = new PassiveSkillService(
-            passiveSkillProvider
-        );
-        const statProvider = new StatProvider();
-        const statService = new StatService(passiveSkillService, statProvider);
-        const attributeProvider = new AttributeProvider();
-        const attributeService = new AttributeService(attributeProvider);
-
-        this.jsonTranslator = new JsonTranslator(
-            baseTypeService,
-            itemService,
-            requirementService,
-            propertySerivce,
-            gemService,
-            statService
-        );
-        this.textTranslator = new TextTranslator(
-            baseTypeService,
-            itemService,
-            requirementService,
-            propertySerivce,
-            gemService,
-            statService,
-            attributeService
-        );
+        const factory = TranslatorFactory.Default();
+        this.jsonTranslator = factory.getJsonTranslator();
+        this.textTranslator = factory.getTextTranslator();
     }
 
     public initIPC() {
