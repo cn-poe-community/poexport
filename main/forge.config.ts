@@ -18,6 +18,7 @@ const config: ForgeConfig = {
         language: 1033,
         manufacturer: "me1ting",
         icon: "icons/icon.ico",
+        upgradeCode: "dd4b912e-dcdc-11ed-afa1-0242ac120002"
       },
     },
   ],
