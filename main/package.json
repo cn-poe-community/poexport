@@ -1,7 +1,7 @@
 {
   "name": "poe-cn-export",
   "productName": "poe-cn-export",
-  "version": "3.21.0",
+  "version": "3.21.1",
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "axios": "^1.2.3",
-    "cn-poe-translator": "^0.1.14"
+    "cn-poe-translator": "^0.1.21"
   },
   "packageManager": "yarn@3.4.1"
 }
