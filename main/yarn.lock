@@ -2832,10 +2832,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cn-poe-translator@npm:^0.1.21":
-  version: 0.1.21
-  resolution: "cn-poe-translator@npm:0.1.21"
-  checksum: f559d327be0b935af0fe99f0ad427e1c3ce0320a2e60e8d5e347eefed4ec4cbdb74b751fa14ab338c39d6a4d357539419054a731da453d87ff157ef86bae9625
+"cn-poe-translator@npm:^0.1.26":
+  version: 0.1.26
+  resolution: "cn-poe-translator@npm:0.1.26"
+  checksum: 6d01b1da0f9698be54aa8d99c180d3352ae5282d2bda4e6d854e96f3c67ac7f4bd406bc7790da10d71b936df622dbd1c07f783c34928332d23ab2406089d30ee
   languageName: node
   linkType: hard
 
@@ -7368,7 +7368,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     "@vercel/webpack-asset-relocator-loader": 1.7.3
     axios: ^1.2.3
-    cn-poe-translator: ^0.1.21
+    cn-poe-translator: ^0.1.26
     cross-env: ^7.0.3
     css-loader: ^6.0.0
     electron: 22.0.0
