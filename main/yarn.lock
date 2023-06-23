@@ -2832,10 +2832,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cn-poe-translator@npm:^0.1.28":
-  version: 0.1.28
-  resolution: "cn-poe-translator@npm:0.1.28"
-  checksum: fc87d9e8cbc1dd153bca4d675c61baff8168d8cb036764d95cf37833ee76ad5118f950028fd31614a43fb5153ebd7d65e11f3ade0dfc913188abf4703abe0907
+"cn-poe-export-db@npm:^0.0.9":
+  version: 0.0.9
+  resolution: "cn-poe-export-db@npm:0.0.9"
+  checksum: 88731a461d56e18e8935563f287f77f93e0b5ba31dad277cf0862283845034546174cce0f882b743b8e04a9c5301ce9b5e1d58e6d560046aba8bf8fe341bff20
+  languageName: node
+  linkType: hard
+
+"cn-poe-translator@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "cn-poe-translator@npm:0.2.2"
+  checksum: cd32996de5eab5378bc5c8a986bf8fa2ab1dde05c88d136e3a546aa147b8a0bd6d7cb4e0b9402872165a3a20bb80dd977736d9126d9e1d99ea722546b3e8d6c9
   languageName: node
   linkType: hard
 
@@ -7368,7 +7375,8 @@ __metadata:
     "@typescript-eslint/parser": ^5.0.0
     "@vercel/webpack-asset-relocator-loader": 1.7.3
     axios: ^1.2.3
-    cn-poe-translator: ^0.1.28
+    cn-poe-export-db: ^0.0.9
+    cn-poe-translator: ^0.2.2
     cross-env: ^7.0.3
     css-loader: ^6.0.0
     electron: 22.0.0

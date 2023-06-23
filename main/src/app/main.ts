@@ -13,7 +13,10 @@ import {
 } from "../ipc/types";
 import { dialog, ipcMain, shell } from "electron";
 import { checkForUpdates } from "./update";
-import { JsonTranslator, TextTranslator, TranslatorFactory } from "cn-poe-translator";
+import { TranslatorFactory, BasicTranslatorFactory } from "cn-poe-translator";
+import { JsonTranslator } from "cn-poe-translator/dist/translator/json.translator";
+import { TextTranslator } from "cn-poe-translator/dist/translator/text.translator";
+import Assets from "cn-poe-export-db";
 
 export class App {
     private exporter: Exporter;
@@ -146,7 +149,7 @@ export class App {
     }
 
     public initTranslators() {
-        const factory = TranslatorFactory.Default();
+        const factory = new BasicTranslatorFactory(Assets);
         this.jsonTranslator = factory.getJsonTranslator();
         this.textTranslator = factory.getTextTranslator();
     }

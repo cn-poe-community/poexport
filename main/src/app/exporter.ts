@@ -1,7 +1,7 @@
 import * as http from "http";
 import { ConfigManager } from "./config";
 import { Requester, HttpError } from "./requester";
-import { JsonTranslator } from "cn-poe-translator";
+import { JsonTranslator } from "cn-poe-translator/dist/translator/json.translator";
 
 const GET_CHARACTERS_URL = "/character-window/get-characters";
 const VIEW_PROFILE_URL_PREFIX = "/account/view-profile/";
