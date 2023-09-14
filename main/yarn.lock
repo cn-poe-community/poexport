@@ -2840,9 +2840,9 @@ __metadata:
   linkType: hard
 
 "cn-poe-translator@file:../../cn-poe-translator::locator=poe-cn-export%40workspace%3A.":
-  version: 0.2.4
-  resolution: "cn-poe-translator@file:../../cn-poe-translator#../../cn-poe-translator::hash=67570d&locator=poe-cn-export%40workspace%3A."
-  checksum: bf8f9e6d20138eeb8dabc76df93735de9ebde1b9e7c3a366c688a01213e9abe7914ccceecb185720db31c2a0d54cd0aa52ef07b3c218e2ac044a249f5356a5ad
+  version: 0.2.5
+  resolution: "cn-poe-translator@file:../../cn-poe-translator#../../cn-poe-translator::hash=ee1d3d&locator=poe-cn-export%40workspace%3A."
+  checksum: f44617b3bcd3b4c403cfd46da9c3965e15ac8b4658b351cd9db8cfb8bde1464979426dca4c5a8f52c41a6ab901b3c4767a9e8f36468ec84509bfb2ff7fc76f2a
   languageName: node
   linkType: hard
 
