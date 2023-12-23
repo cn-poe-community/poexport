@@ -1,0 +1,52 @@
+[
+    {
+        "en": "Level",
+        "zh": "等级"
+    },
+    {
+        "en": "Str",
+        "zh": "力量"
+    },
+    {
+        "en": "Dex",
+        "zh": "敏捷"
+    },
+    {
+        "en": "Int",
+        "zh": "智慧"
+    },
+    {
+        "en": "Class:",
+        "zh": "职业：",
+        "values": [
+            {
+                "en": "Ranger",
+                "zh": "游侠"
+            },
+            {
+                "en": "Shadow",
+                "zh": "暗影"
+            },
+            {
+                "en": "Marauder",
+                "zh": "野蛮人"
+            },
+            {
+                "en": "Templar",
+                "zh": "圣堂武僧"
+            },
+            {
+                "en": "Duelist",
+                "zh": "决斗者"
+            },
+            {
+                "en": "Scion",
+                "zh": "贵族"
+            },
+            {
+                "en": "Witch",
+                "zh": "女巫"
+            }
+        ]
+    }
+]

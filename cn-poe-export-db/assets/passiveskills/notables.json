@@ -1,0 +1,2077 @@
+[
+    {
+        "id": "5624",
+        "en": "Crusader",
+        "zh": "圣战"
+    },
+    {
+        "id": "52282",
+        "en": "Tenacity",
+        "zh": "顽强"
+    },
+    {
+        "id": "13164",
+        "en": "Divine Judgement",
+        "zh": "神圣审判"
+    },
+    {
+        "id": "44347",
+        "en": "Divine Fury",
+        "zh": "圣怒"
+    },
+    {
+        "id": "14665",
+        "en": "Divine Wrath",
+        "zh": "神圣怒火"
+    },
+    {
+        "id": "25367",
+        "en": "Blade Master",
+        "zh": "刀剑宗师"
+    },
+    {
+        "id": "33082",
+        "en": "Razor's Edge",
+        "zh": "剃刃"
+    },
+    {
+        "id": "4940",
+        "en": "Cleaving",
+        "zh": "劈砍"
+    },
+    {
+        "id": "23038",
+        "en": "Slaughter",
+        "zh": "冷血"
+    },
+    {
+        "id": "40849",
+        "en": "Persistence",
+        "zh": "锲而不舍"
+    },
+    {
+        "id": "51559",
+        "en": "Smashing Strikes",
+        "zh": "沉重之击"
+    },
+    {
+        "id": "39761",
+        "en": "Counterweight",
+        "zh": "长杖化身"
+    },
+    {
+        "id": "42917",
+        "en": "Whirling Barrier",
+        "zh": "杖影屏障"
+    },
+    {
+        "id": "40645",
+        "en": "Bone Breaker",
+        "zh": "破骨"
+    },
+    {
+        "id": "16703",
+        "en": "Skull Cracking",
+        "zh": "碎颅"
+    },
+    {
+        "id": "19103",
+        "en": "Righteous Army",
+        "zh": "公正大军"
+    },
+    {
+        "id": "15046",
+        "en": "Redemption",
+        "zh": "救赎"
+    },
+    {
+        "id": "4177",
+        "en": "Spiritual Aid",
+        "zh": "灵魂援助"
+    },
+    {
+        "id": "861",
+        "en": "Aggressive Bastion",
+        "zh": "好战壁垒"
+    },
+    {
+        "id": "28449",
+        "en": "Surge of Vigour",
+        "zh": "活力之涌"
+    },
+    {
+        "id": "46471",
+        "en": "Powerful Bond",
+        "zh": "戮力同心"
+    },
+    {
+        "id": "60619",
+        "en": "Galvanic Hammer",
+        "zh": "聚能之锤"
+    },
+    {
+        "id": "39657",
+        "en": "Pain Forger",
+        "zh": "痛苦大师"
+    },
+    {
+        "id": "26023",
+        "en": "Savage Wounds",
+        "zh": "狂野之创"
+    },
+    {
+        "id": "24858",
+        "en": "Harpooner",
+        "zh": "鱼叉猎手"
+    },
+    {
+        "id": "30439",
+        "en": "Lava Lash",
+        "zh": "熔岩之力"
+    },
+    {
+        "id": "55194",
+        "en": "Settling Ash",
+        "zh": "沉降灰烬"
+    },
+    {
+        "id": "19794",
+        "en": "Concussive Force",
+        "zh": "震荡之力"
+    },
+    {
+        "id": "53757",
+        "en": "Shamanistic Fury",
+        "zh": "萨满之怒"
+    },
+    {
+        "id": "58831",
+        "en": "Disemboweling",
+        "zh": "开肠剖肚"
+    },
+    {
+        "id": "63635",
+        "en": "Primal Manifestation",
+        "zh": "图腾专精"
+    },
+    {
+        "id": "51108",
+        "en": "Arcane Capacitor",
+        "zh": "奥术充能"
+    },
+    {
+        "id": "30302",
+        "en": "Hearty",
+        "zh": "热忱"
+    },
+    {
+        "id": "53118",
+        "en": "Barbarism",
+        "zh": "野蛮"
+    },
+    {
+        "id": "37326",
+        "en": "Stamina",
+        "zh": "充沛精力"
+    },
+    {
+        "id": "33287",
+        "en": "Juggernaut",
+        "zh": "战神"
+    },
+    {
+        "id": "56359",
+        "en": "Cannibalistic Rite",
+        "zh": "惨绝典礼"
+    },
+    {
+        "id": "11730",
+        "en": "Endurance",
+        "zh": "耐力"
+    },
+    {
+        "id": "34173",
+        "en": "Overcharge",
+        "zh": "强化聚能"
+    },
+    {
+        "id": "27137",
+        "en": "Sanctum of Thought",
+        "zh": "思维圣殿"
+    },
+    {
+        "id": "35958",
+        "en": "Faith and Steel",
+        "zh": "钢之信仰"
+    },
+    {
+        "id": "36949",
+        "en": "Devotion",
+        "zh": "奉献"
+    },
+    {
+        "id": "26564",
+        "en": "Vanquisher",
+        "zh": "百战百胜"
+    },
+    {
+        "id": "29049",
+        "en": "Holy Fire",
+        "zh": "神圣之火"
+    },
+    {
+        "id": "32932",
+        "en": "Sovereignty",
+        "zh": "主权"
+    },
+    {
+        "id": "54629",
+        "en": "Inexorable",
+        "zh": "势不可挡"
+    },
+    {
+        "id": "21389",
+        "en": "Runesmith",
+        "zh": "符文工匠"
+    },
+    {
+        "id": "31257",
+        "en": "Natural Authority",
+        "zh": "自然威仪"
+    },
+    {
+        "id": "59423",
+        "en": "Escalation",
+        "zh": "升级"
+    },
+    {
+        "id": "58218",
+        "en": "Purity of Flesh",
+        "zh": "肉体之纯净"
+    },
+    {
+        "id": "64395",
+        "en": "Blunt Trauma",
+        "zh": "麻痹创伤"
+    },
+    {
+        "id": "56094",
+        "en": "One with the River",
+        "zh": "与水同行"
+    },
+    {
+        "id": "65108",
+        "en": "Tireless",
+        "zh": "冷酷"
+    },
+    {
+        "id": "2550",
+        "en": "Arsonist",
+        "zh": "焚烧"
+    },
+    {
+        "id": "5430",
+        "en": "Magmatic Strikes",
+        "zh": "熔岩打击"
+    },
+    {
+        "id": "49772",
+        "en": "Utmost Might",
+        "zh": "终极之力"
+    },
+    {
+        "id": "46842",
+        "en": "Arcane Potency",
+        "zh": "秘能爆发"
+    },
+    {
+        "id": "6967",
+        "en": "Safeguard",
+        "zh": "护卫"
+    },
+    {
+        "id": "49645",
+        "en": "Cauterisation",
+        "zh": "焰灼血肉"
+    },
+    {
+        "id": "24324",
+        "en": "Explosive Impact",
+        "zh": "暴烈冲击"
+    },
+    {
+        "id": "5126",
+        "en": "Spinecruncher",
+        "zh": "钻击者"
+    },
+    {
+        "id": "35685",
+        "en": "Fearsome Force",
+        "zh": "恐怖之力"
+    },
+    {
+        "id": "32245",
+        "en": "Expertise",
+        "zh": "超群身法"
+    },
+    {
+        "id": "50197",
+        "en": "Ancestral Knowledge",
+        "zh": "先祖智慧"
+    },
+    {
+        "id": "14606",
+        "en": "Butchery",
+        "zh": "屠夫"
+    },
+    {
+        "id": "35663",
+        "en": "Strong Arm",
+        "zh": "强壮手臂"
+    },
+    {
+        "id": "64077",
+        "en": "Warrior Training",
+        "zh": "武士训练"
+    },
+    {
+        "id": "10542",
+        "en": "Spiked Bulwark",
+        "zh": "荆刺守护"
+    },
+    {
+        "id": "31033",
+        "en": "Robust",
+        "zh": "健壮"
+    },
+    {
+        "id": "65308",
+        "en": "Diamond Skin",
+        "zh": "晶钻之肤"
+    },
+    {
+        "id": "20832",
+        "en": "Sanctuary",
+        "zh": "庇护圣所"
+    },
+    {
+        "id": "36859",
+        "en": "Steelwood Stance",
+        "zh": "身坚如铁"
+    },
+    {
+        "id": "55772",
+        "en": "Blacksmith's Clout",
+        "zh": "铁匠之捶"
+    },
+    {
+        "id": "30693",
+        "en": "Divine Fervour",
+        "zh": "元素催化"
+    },
+    {
+        "id": "33435",
+        "en": "Holy Dominion",
+        "zh": "神圣统御"
+    },
+    {
+        "id": "54694",
+        "en": "Light of Divinity",
+        "zh": "神圣启蒙"
+    },
+    {
+        "id": "7440",
+        "en": "Harvester of Foes",
+        "zh": "斩敌者"
+    },
+    {
+        "id": "39743",
+        "en": "Dark Arts",
+        "zh": "黑暗艺术"
+    },
+    {
+        "id": "28034",
+        "en": "Empowered Bond",
+        "zh": "强化纽带"
+    },
+    {
+        "id": "45657",
+        "en": "Trial of the Faith",
+        "zh": "信仰试炼"
+    },
+    {
+        "id": "43689",
+        "en": "Spiritual Command",
+        "zh": "灵魂之令"
+    },
+    {
+        "id": "61308",
+        "en": "Amplify",
+        "zh": "增幅"
+    },
+    {
+        "id": "38516",
+        "en": "Righteous Decree",
+        "zh": "正义审判"
+    },
+    {
+        "id": "6289",
+        "en": "Bloodless",
+        "zh": "无血之体"
+    },
+    {
+        "id": "13922",
+        "en": "Steadfast",
+        "zh": "坚韧不拔"
+    },
+    {
+        "id": "38922",
+        "en": "Goliath",
+        "zh": "巨人之力"
+    },
+    {
+        "id": "49445",
+        "en": "Deep Breaths",
+        "zh": "深呼吸"
+    },
+    {
+        "id": "55002",
+        "en": "Righteous Fury",
+        "zh": "正义之怒"
+    },
+    {
+        "id": "21413",
+        "en": "Combat Stamina",
+        "zh": "战斗精力"
+    },
+    {
+        "id": "30160",
+        "en": "Fending",
+        "zh": "自卫术"
+    },
+    {
+        "id": "49254",
+        "en": "Retribution",
+        "zh": "制裁"
+    },
+    {
+        "id": "41472",
+        "en": "Discipline and Training",
+        "zh": "严峻训练"
+    },
+    {
+        "id": "6237",
+        "en": "Precision",
+        "zh": "精准"
+    },
+    {
+        "id": "26866",
+        "en": "Sanctity",
+        "zh": "圣洁之力"
+    },
+    {
+        "id": "58449",
+        "en": "Born to Fight",
+        "zh": "为战而生"
+    },
+    {
+        "id": "61198",
+        "en": "Heart of the Warrior",
+        "zh": "战士之心"
+    },
+    {
+        "id": "12795",
+        "en": "Versatility",
+        "zh": "俊敏"
+    },
+    {
+        "id": "24383",
+        "en": "Warrior's Blood",
+        "zh": "战士之血"
+    },
+    {
+        "id": "6770",
+        "en": "Arcane Guarding",
+        "zh": "奥术护卫"
+    },
+    {
+        "id": "32455",
+        "en": "Storm Weaver",
+        "zh": "风暴织者"
+    },
+    {
+        "id": "36915",
+        "en": "Sacrifice",
+        "zh": "亡灵招集"
+    },
+    {
+        "id": "27119",
+        "en": "Tribal Fury",
+        "zh": "部落之怒"
+    },
+    {
+        "id": "35436",
+        "en": "Kinetic Impacts",
+        "zh": "动能冲击"
+    },
+    {
+        "id": "14001",
+        "en": "Unfaltering",
+        "zh": "稳步坚决"
+    },
+    {
+        "id": "22702",
+        "en": "Serpent Stance",
+        "zh": "蛇影战阵"
+    },
+    {
+        "id": "27308",
+        "en": "Gravepact",
+        "zh": "亡灵之约"
+    },
+    {
+        "id": "39986",
+        "en": "Defiled Forces",
+        "zh": "污秽大军"
+    },
+    {
+        "id": "42009",
+        "en": "Soul of Steel",
+        "zh": "坚钢之灵"
+    },
+    {
+        "id": "38706",
+        "en": "Way of the Warrior",
+        "zh": "战士之道"
+    },
+    {
+        "id": "22133",
+        "en": "Invigorating Blaze",
+        "zh": "欢欣炽炎"
+    },
+    {
+        "id": "57839",
+        "en": "Blade of Cunning",
+        "zh": "巧刃"
+    },
+    {
+        "id": "56029",
+        "en": "Agility",
+        "zh": "灵敏"
+    },
+    {
+        "id": "63033",
+        "en": "Bannerman",
+        "zh": "旗手"
+    },
+    {
+        "id": "33718",
+        "en": "Champion of the Cause",
+        "zh": "起源"
+    },
+    {
+        "id": "65273",
+        "en": "Enigmatic Reach",
+        "zh": "秘巫之触"
+    },
+    {
+        "id": "11820",
+        "en": "Anointed Flesh",
+        "zh": "祝圣之体"
+    },
+    {
+        "id": "48298",
+        "en": "Insightfulness",
+        "zh": "洞察万物"
+    },
+    {
+        "id": "5456",
+        "en": "Might",
+        "zh": "坚强力量"
+    },
+    {
+        "id": "19897",
+        "en": "Death Attunement",
+        "zh": "亡灵谐曲"
+    },
+    {
+        "id": "4854",
+        "en": "Asylum",
+        "zh": "逃难所"
+    },
+    {
+        "id": "34601",
+        "en": "Proficiency",
+        "zh": "熟能生巧"
+    },
+    {
+        "id": "60031",
+        "en": "Prismatic Skin",
+        "zh": "虹光之肤"
+    },
+    {
+        "id": "20835",
+        "en": "Brinkmanship",
+        "zh": "羁縻"
+    },
+    {
+        "id": "2225",
+        "en": "Eagle Eye",
+        "zh": "鹰眼"
+    },
+    {
+        "id": "63944",
+        "en": "Prism Weave",
+        "zh": "绫彩交织"
+    },
+    {
+        "id": "25970",
+        "en": "Acrimony",
+        "zh": "尖刻"
+    },
+    {
+        "id": "65107",
+        "en": "Bastion Breaker",
+        "zh": "破壁者"
+    },
+    {
+        "id": "18025",
+        "en": "Hard Knocks",
+        "zh": "静修"
+    },
+    {
+        "id": "29861",
+        "en": "Explosive Runes",
+        "zh": "爆炸符文"
+    },
+    {
+        "id": "10016",
+        "en": "Executioner",
+        "zh": "处决者"
+    },
+    {
+        "id": "49318",
+        "en": "Wrecking Ball",
+        "zh": "崩雷"
+    },
+    {
+        "id": "50029",
+        "en": "Unnatural Calm",
+        "zh": "沉寂之心"
+    },
+    {
+        "id": "27301",
+        "en": "Martial Experience",
+        "zh": "沙场历练"
+    },
+    {
+        "id": "21330",
+        "en": "Quick Recovery",
+        "zh": "快速回复"
+    },
+    {
+        "id": "48556",
+        "en": "Heart of Darkness",
+        "zh": "黑暗之心"
+    },
+    {
+        "id": "26620",
+        "en": "Corruption",
+        "zh": "腐化"
+    },
+    {
+        "id": "51748",
+        "en": "Last Rites",
+        "zh": "最后仪式"
+    },
+    {
+        "id": "37647",
+        "en": "Dismembering",
+        "zh": "肢解"
+    },
+    {
+        "id": "26294",
+        "en": "Bloodletting",
+        "zh": "出血"
+    },
+    {
+        "id": "9194",
+        "en": "Merciless Skewering",
+        "zh": "无情穿刺"
+    },
+    {
+        "id": "23690",
+        "en": "Essence Infusion",
+        "zh": "精华灌注"
+    },
+    {
+        "id": "62802",
+        "en": "Brink of Death",
+        "zh": "生死边缘"
+    },
+    {
+        "id": "53802",
+        "en": "Essence Extraction",
+        "zh": "精华萃取"
+    },
+    {
+        "id": "60781",
+        "en": "Inspiring Bond",
+        "zh": "同进同退"
+    },
+    {
+        "id": "24256",
+        "en": "Dynamo",
+        "zh": "蓄电"
+    },
+    {
+        "id": "64355",
+        "en": "Brand Equity",
+        "zh": "公正烙印"
+    },
+    {
+        "id": "7555",
+        "en": "Crackling Speed",
+        "zh": "神速暴裂"
+    },
+    {
+        "id": "44562",
+        "en": "Shaman's Dominion",
+        "zh": "萨满圣域"
+    },
+    {
+        "id": "26096",
+        "en": "Hatchet Master",
+        "zh": "斧刃宗师"
+    },
+    {
+        "id": "45803",
+        "en": "Veteran Soldier",
+        "zh": "饱经征战"
+    },
+    {
+        "id": "28878",
+        "en": "Relentless",
+        "zh": "冷酷无情"
+    },
+    {
+        "id": "7688",
+        "en": "Enduring Bond",
+        "zh": "持久契约"
+    },
+    {
+        "id": "57900",
+        "en": "Command of Steel",
+        "zh": "钢铁命令"
+    },
+    {
+        "id": "50858",
+        "en": "Admonisher",
+        "zh": "训诫"
+    },
+    {
+        "id": "22356",
+        "en": "Hematophagy",
+        "zh": "吸血"
+    },
+    {
+        "id": "1340",
+        "en": "Rampart",
+        "zh": "壁垒"
+    },
+    {
+        "id": "34284",
+        "en": "Seasoned Swordplay",
+        "zh": "熟练剑技"
+    },
+    {
+        "id": "9432",
+        "en": "Mental Rapidity",
+        "zh": "精神迅捷"
+    },
+    {
+        "id": "26960",
+        "en": "Forethought",
+        "zh": "未卜先知"
+    },
+    {
+        "id": "10835",
+        "en": "Dreamer",
+        "zh": "幻梦者"
+    },
+    {
+        "id": "45317",
+        "en": "Ash, Frost and Storm",
+        "zh": "三相之力"
+    },
+    {
+        "id": "55485",
+        "en": "Constitution",
+        "zh": "构成"
+    },
+    {
+        "id": "12702",
+        "en": "Path of the Warrior",
+        "zh": "战士之路"
+    },
+    {
+        "id": "12809",
+        "en": "Berserking",
+        "zh": "狂战之魂"
+    },
+    {
+        "id": "9261",
+        "en": "Disciple of the Forbidden",
+        "zh": "禁礼门徒"
+    },
+    {
+        "id": "63976",
+        "en": "Shaper",
+        "zh": "圣杯"
+    },
+    {
+        "id": "21958",
+        "en": "Cruel Preparation",
+        "zh": "残忍准备"
+    },
+    {
+        "id": "34973",
+        "en": "Measured Fury",
+        "zh": "克制之怒"
+    },
+    {
+        "id": "15400",
+        "en": "Skittering Runes",
+        "zh": "飞掠符文"
+    },
+    {
+        "id": "34661",
+        "en": "Fire Walker",
+        "zh": "火灵之道"
+    },
+    {
+        "id": "44955",
+        "en": "Frost Walker",
+        "zh": "冰灵之道"
+    },
+    {
+        "id": "30225",
+        "en": "Lightning Walker",
+        "zh": "雷灵之道"
+    },
+    {
+        "id": "1325",
+        "en": "Golem's Blood",
+        "zh": "魔像血统"
+    },
+    {
+        "id": "21973",
+        "en": "Decay Ward",
+        "zh": "腐蚀之卫"
+    },
+    {
+        "id": "24362",
+        "en": "Deep Thoughts",
+        "zh": "沉静思维"
+    },
+    {
+        "id": "1006",
+        "en": "Potency of Will",
+        "zh": "意志之力"
+    },
+    {
+        "id": "11924",
+        "en": "Breath of Flames",
+        "zh": "火焰之息"
+    },
+    {
+        "id": "60501",
+        "en": "Heart of Flame",
+        "zh": "火焰之心"
+    },
+    {
+        "id": "34666",
+        "en": "Destroyer",
+        "zh": "破坏者"
+    },
+    {
+        "id": "5289",
+        "en": "Battle Rouse",
+        "zh": "战斗鼓舞"
+    },
+    {
+        "id": "34009",
+        "en": "Master of the Arena",
+        "zh": "决战宗师"
+    },
+    {
+        "id": "544",
+        "en": "Surveillance",
+        "zh": "洞若观火"
+    },
+    {
+        "id": "61039",
+        "en": "Panopticon",
+        "zh": "统揽全局"
+    },
+    {
+        "id": "63150",
+        "en": "Ironwood",
+        "zh": "铁木"
+    },
+    {
+        "id": "63933",
+        "en": "Totemic Zeal",
+        "zh": "热情图腾"
+    },
+    {
+        "id": "21435",
+        "en": "Cloth and Chain",
+        "zh": "迅影秘术"
+    },
+    {
+        "id": "49416",
+        "en": "Adamant",
+        "zh": "金钟罩"
+    },
+    {
+        "id": "37403",
+        "en": "Infused Flesh",
+        "zh": "血肉灌注"
+    },
+    {
+        "id": "7918",
+        "en": "Enigmatic Defence",
+        "zh": "秘巫防御"
+    },
+    {
+        "id": "49538",
+        "en": "Defiance",
+        "zh": "抗争"
+    },
+    {
+        "id": "11645",
+        "en": "Breath of Lightning",
+        "zh": "闪电之息"
+    },
+    {
+        "id": "56716",
+        "en": "Heart of Thunder",
+        "zh": "雷霆之心"
+    },
+    {
+        "id": "20528",
+        "en": "Instability",
+        "zh": "聚能之界"
+    },
+    {
+        "id": "16246",
+        "en": "Tranquility",
+        "zh": "宁静"
+    },
+    {
+        "id": "15711",
+        "en": "Blast Radius",
+        "zh": "法术范围增幅"
+    },
+    {
+        "id": "53493",
+        "en": "Annihilation",
+        "zh": "横扫千军"
+    },
+    {
+        "id": "27929",
+        "en": "Deep Wisdom",
+        "zh": "沉静智慧"
+    },
+    {
+        "id": "27203",
+        "en": "Heart and Soul",
+        "zh": "心与灵"
+    },
+    {
+        "id": "27611",
+        "en": "Lord of the Dead",
+        "zh": "亡灵之主"
+    },
+    {
+        "id": "11420",
+        "en": "Arcanist's Dominion",
+        "zh": "奥术师的统御"
+    },
+    {
+        "id": "8135",
+        "en": "Practical Application",
+        "zh": "化虚为实"
+    },
+    {
+        "id": "62596",
+        "en": "Mystic Talents",
+        "zh": "秘言天赋"
+    },
+    {
+        "id": "54776",
+        "en": "Mana Flows",
+        "zh": "魔力之流"
+    },
+    {
+        "id": "3452",
+        "en": "Foresight",
+        "zh": "先见之明"
+    },
+    {
+        "id": "37078",
+        "en": "Path of the Savant",
+        "zh": "贤者之路"
+    },
+    {
+        "id": "19144",
+        "en": "Sentinel",
+        "zh": "哨兵"
+    },
+    {
+        "id": "64882",
+        "en": "Disciple of the Unyielding",
+        "zh": "不屈门徒"
+    },
+    {
+        "id": "58921",
+        "en": "Disciple of the Slaughter",
+        "zh": "冷血门徒"
+    },
+    {
+        "id": "4833",
+        "en": "Vigour",
+        "zh": "活力之源"
+    },
+    {
+        "id": "23066",
+        "en": "Savagery",
+        "zh": "野性之心"
+    },
+    {
+        "id": "25456",
+        "en": "Dervish",
+        "zh": "修行之刃"
+    },
+    {
+        "id": "59766",
+        "en": "Dirty Techniques",
+        "zh": "卑劣手法"
+    },
+    {
+        "id": "38246",
+        "en": "Presage",
+        "zh": "预知之力"
+    },
+    {
+        "id": "35233",
+        "en": "Discord Artisan",
+        "zh": "不谐之艺"
+    },
+    {
+        "id": "18174",
+        "en": "Mystic Bulwark",
+        "zh": "秘言守护"
+    },
+    {
+        "id": "10115",
+        "en": "Prodigal Perfection",
+        "zh": "完美无缺"
+    },
+    {
+        "id": "14813",
+        "en": "Revelry",
+        "zh": "狂欢"
+    },
+    {
+        "id": "4207",
+        "en": "Window of Opportunity",
+        "zh": "大好时机"
+    },
+    {
+        "id": "53042",
+        "en": "Exceptional Performance",
+        "zh": "卓越的表现"
+    },
+    {
+        "id": "12878",
+        "en": "Retaliation",
+        "zh": "复仇"
+    },
+    {
+        "id": "44207",
+        "en": "Testudo",
+        "zh": "龟甲盾"
+    },
+    {
+        "id": "48807",
+        "en": "Art of the Gladiator",
+        "zh": "斗士艺术"
+    },
+    {
+        "id": "21634",
+        "en": "Arcane Chemistry",
+        "zh": "秘法学"
+    },
+    {
+        "id": "21460",
+        "en": "Breath of Rime",
+        "zh": "霜雪之息"
+    },
+    {
+        "id": "8833",
+        "en": "Heart of Ice",
+        "zh": "冰雪之心"
+    },
+    {
+        "id": "44788",
+        "en": "Potent Connections",
+        "zh": "强效连接"
+    },
+    {
+        "id": "60002",
+        "en": "Fury Bolts",
+        "zh": "破空弹"
+    },
+    {
+        "id": "45067",
+        "en": "Thrill Killer",
+        "zh": "颤栗打击者"
+    },
+    {
+        "id": "32059",
+        "en": "Titanic Impacts",
+        "zh": "泰坦冲击"
+    },
+    {
+        "id": "34591",
+        "en": "Malicious Intent",
+        "zh": "不善意图"
+    },
+    {
+        "id": "42795",
+        "en": "Arcane Focus",
+        "zh": "秘能之心"
+    },
+    {
+        "id": "27163",
+        "en": "Arcane Will",
+        "zh": "奥术意志"
+    },
+    {
+        "id": "19730",
+        "en": "Assured Strike",
+        "zh": "十拿九稳"
+    },
+    {
+        "id": "22972",
+        "en": "Wandslinger",
+        "zh": "斗杖者之力"
+    },
+    {
+        "id": "49379",
+        "en": "Hired Killer",
+        "zh": "生命撷取"
+    },
+    {
+        "id": "33545",
+        "en": "Harrier",
+        "zh": "海猎鹰"
+    },
+    {
+        "id": "42041",
+        "en": "Profane Chemistry",
+        "zh": "生物学"
+    },
+    {
+        "id": "19506",
+        "en": "Path of the Hunter",
+        "zh": "猎人之路"
+    },
+    {
+        "id": "44103",
+        "en": "Reflexes",
+        "zh": "反射"
+    },
+    {
+        "id": "65097",
+        "en": "Leadership",
+        "zh": "领导精神"
+    },
+    {
+        "id": "34506",
+        "en": "Golem Commander",
+        "zh": "魔像指挥官"
+    },
+    {
+        "id": "24721",
+        "en": "Ribcage Crusher",
+        "zh": "开膛手"
+    },
+    {
+        "id": "48823",
+        "en": "Deadly Draw",
+        "zh": "致命箭矢"
+    },
+    {
+        "id": "42720",
+        "en": "Heavy Draw",
+        "zh": "强弩"
+    },
+    {
+        "id": "56207",
+        "en": "Hardened Scars",
+        "zh": "百战伤疤"
+    },
+    {
+        "id": "61982",
+        "en": "Grave Intentions",
+        "zh": "亡灵之誓"
+    },
+    {
+        "id": "11784",
+        "en": "Vampirism",
+        "zh": "吸血鬼症"
+    },
+    {
+        "id": "15437",
+        "en": "Deflection",
+        "zh": "偏转"
+    },
+    {
+        "id": "33725",
+        "en": "Swagger",
+        "zh": "双刃之舞"
+    },
+    {
+        "id": "30471",
+        "en": "True Strike",
+        "zh": "真实之击"
+    },
+    {
+        "id": "62577",
+        "en": "Essence Surge",
+        "zh": "精纯之潮"
+    },
+    {
+        "id": "63727",
+        "en": "Gladiator's Perseverance",
+        "zh": "坚毅斗士"
+    },
+    {
+        "id": "25409",
+        "en": "Indomitable Army",
+        "zh": "不败之军"
+    },
+    {
+        "id": "29381",
+        "en": "Ravenous Horde",
+        "zh": "贪婪部落"
+    },
+    {
+        "id": "39530",
+        "en": "Vitality Void",
+        "zh": "活力虚空"
+    },
+    {
+        "id": "1382",
+        "en": "Spirit Void",
+        "zh": "精华抽取"
+    },
+    {
+        "id": "29522",
+        "en": "Dance of Blades",
+        "zh": "刃舞"
+    },
+    {
+        "id": "9788",
+        "en": "Nimbleness",
+        "zh": "巧语"
+    },
+    {
+        "id": "36736",
+        "en": "Burning Brutality",
+        "zh": "凶残烈焰"
+    },
+    {
+        "id": "7136",
+        "en": "Master Sapper",
+        "zh": "工兵大师"
+    },
+    {
+        "id": "47471",
+        "en": "Overcharged",
+        "zh": "超载"
+    },
+    {
+        "id": "33582",
+        "en": "Forceful Skewering",
+        "zh": "强力穿刺"
+    },
+    {
+        "id": "53652",
+        "en": "Steeped in the Profane",
+        "zh": "沉溺于亵渎"
+    },
+    {
+        "id": "36687",
+        "en": "Avatar of the Hunt",
+        "zh": "狩猎之征"
+    },
+    {
+        "id": "58198",
+        "en": "Fingers of Frost",
+        "zh": "凛冽之指"
+    },
+    {
+        "id": "55114",
+        "en": "Utmost Intellect",
+        "zh": "终极智慧"
+    },
+    {
+        "id": "49969",
+        "en": "Courage",
+        "zh": "勇毅"
+    },
+    {
+        "id": "18703",
+        "en": "Graceful Assault",
+        "zh": "矫若惊龙"
+    },
+    {
+        "id": "18865",
+        "en": "Melding",
+        "zh": "融合"
+    },
+    {
+        "id": "15085",
+        "en": "Ambidexterity",
+        "zh": "卓越"
+    },
+    {
+        "id": "54268",
+        "en": "Blade Barrier",
+        "zh": "剑刃屏障"
+    },
+    {
+        "id": "38849",
+        "en": "Searing Heat",
+        "zh": "灼热"
+    },
+    {
+        "id": "9567",
+        "en": "Light Eater",
+        "zh": "光芒吞噬者"
+    },
+    {
+        "id": "63207",
+        "en": "Tempest Blast",
+        "zh": "风暴冲击"
+    },
+    {
+        "id": "52090",
+        "en": "Feller of Foes",
+        "zh": "破敌者"
+    },
+    {
+        "id": "36874",
+        "en": "Wisdom of the Glade",
+        "zh": "原野智慧"
+    },
+    {
+        "id": "52230",
+        "en": "Weathered Hunter",
+        "zh": "夜之狩猎"
+    },
+    {
+        "id": "25439",
+        "en": "Undertaker",
+        "zh": "送葬者"
+    },
+    {
+        "id": "570",
+        "en": "Dazzling Strikes",
+        "zh": "耀目打击"
+    },
+    {
+        "id": "15027",
+        "en": "Beef",
+        "zh": "壮汉"
+    },
+    {
+        "id": "47306",
+        "en": "Throatseeker",
+        "zh": "割战者"
+    },
+    {
+        "id": "32345",
+        "en": "Alacrity",
+        "zh": "迅捷"
+    },
+    {
+        "id": "41476",
+        "en": "Elder Power",
+        "zh": "智慧之力"
+    },
+    {
+        "id": "16243",
+        "en": "Fusillade",
+        "zh": "聚灵之杖"
+    },
+    {
+        "id": "52031",
+        "en": "Disintegration",
+        "zh": "解离"
+    },
+    {
+        "id": "62849",
+        "en": "Glacial Cage",
+        "zh": "冰川牢笼"
+    },
+    {
+        "id": "41870",
+        "en": "Winter's Embrace",
+        "zh": "凛冬之拥"
+    },
+    {
+        "id": "40743",
+        "en": "Crystal Skin",
+        "zh": "魔晶之肤"
+    },
+    {
+        "id": "53573",
+        "en": "Arcane Expanse",
+        "zh": "秘术扩张"
+    },
+    {
+        "id": "10511",
+        "en": "Tolerance",
+        "zh": "宽容"
+    },
+    {
+        "id": "15344",
+        "en": "Freedom of Movement",
+        "zh": "行动自如"
+    },
+    {
+        "id": "10153",
+        "en": "Physique",
+        "zh": "壮硕之体"
+    },
+    {
+        "id": "65093",
+        "en": "Bladedancer",
+        "zh": "剑舞者"
+    },
+    {
+        "id": "44102",
+        "en": "Efficient Explosives",
+        "zh": "高效爆炸"
+    },
+    {
+        "id": "54142",
+        "en": "Finesse",
+        "zh": "娴熟"
+    },
+    {
+        "id": "6799",
+        "en": "Charisma",
+        "zh": "魅力"
+    },
+    {
+        "id": "41307",
+        "en": "Deadly Inclinations",
+        "zh": "致命倾向"
+    },
+    {
+        "id": "41595",
+        "en": "Marked for Death",
+        "zh": "死亡印记"
+    },
+    {
+        "id": "44988",
+        "en": "Wasting",
+        "zh": "浪费"
+    },
+    {
+        "id": "9015",
+        "en": "Dire Torment",
+        "zh": "恐怖折磨"
+    },
+    {
+        "id": "47743",
+        "en": "Farsight",
+        "zh": "远视"
+    },
+    {
+        "id": "45945",
+        "en": "Conjured Barrier",
+        "zh": "咒法屏障"
+    },
+    {
+        "id": "19069",
+        "en": "Thick Skin",
+        "zh": "强化之肤"
+    },
+    {
+        "id": "53759",
+        "en": "Cleansed Thoughts",
+        "zh": "净化的思想"
+    },
+    {
+        "id": "44824",
+        "en": "Mysticism",
+        "zh": "灵秘"
+    },
+    {
+        "id": "52157",
+        "en": "Soul Siphon",
+        "zh": "灵魂吸收"
+    },
+    {
+        "id": "6233",
+        "en": "Blast Waves",
+        "zh": "冲击波纹"
+    },
+    {
+        "id": "57199",
+        "en": "Fangs of Frost",
+        "zh": "刺骨寒冰"
+    },
+    {
+        "id": "50338",
+        "en": "Ballistics",
+        "zh": "弹道学"
+    },
+    {
+        "id": "51440",
+        "en": "Druidic Rite",
+        "zh": "德鲁伊的仪式"
+    },
+    {
+        "id": "65210",
+        "en": "Heart of Oak",
+        "zh": "橡木之心"
+    },
+    {
+        "id": "25178",
+        "en": "Primal Spirit",
+        "zh": "原始精神"
+    },
+    {
+        "id": "35894",
+        "en": "Trickery",
+        "zh": "诡计"
+    },
+    {
+        "id": "5823",
+        "en": "Coordination",
+        "zh": "和谐之体"
+    },
+    {
+        "id": "63453",
+        "en": "Excess Sustenance",
+        "zh": "营养过剩"
+    },
+    {
+        "id": "50690",
+        "en": "Replenishing Remedies",
+        "zh": "重装拯救"
+    },
+    {
+        "id": "62094",
+        "en": "Taste for Blood",
+        "zh": "赤色之味"
+    },
+    {
+        "id": "41137",
+        "en": "Field Medicine",
+        "zh": "医学领域"
+    },
+    {
+        "id": "56276",
+        "en": "Nightstalker",
+        "zh": "夜袭"
+    },
+    {
+        "id": "58168",
+        "en": "High Voltage",
+        "zh": "高压"
+    },
+    {
+        "id": "63921",
+        "en": "Utmost Swiftness",
+        "zh": "终极之速"
+    },
+    {
+        "id": "42649",
+        "en": "Snowforged",
+        "zh": "雪锻"
+    },
+    {
+        "id": "25058",
+        "en": "Blood Siphon",
+        "zh": "血液抽取"
+    },
+    {
+        "id": "16236",
+        "en": "Toxic Strikes",
+        "zh": "涂毒攻击"
+    },
+    {
+        "id": "65224",
+        "en": "Aspect of the Eagle",
+        "zh": "鹰灵祝福"
+    },
+    {
+        "id": "46904",
+        "en": "Arcane Sanctuary",
+        "zh": "奥术圣所"
+    },
+    {
+        "id": "59866",
+        "en": "Entrench",
+        "zh": "牢固"
+    },
+    {
+        "id": "64217",
+        "en": "Aspect of Stone",
+        "zh": "岩石之势"
+    },
+    {
+        "id": "2715",
+        "en": "Quickstep",
+        "zh": "疾步"
+    },
+    {
+        "id": "15842",
+        "en": "One With Nature",
+        "zh": "天人合一"
+    },
+    {
+        "id": "6",
+        "en": "Twin Terrors",
+        "zh": "双重惧刃"
+    },
+    {
+        "id": "12143",
+        "en": "Influence",
+        "zh": "影响"
+    },
+    {
+        "id": "48698",
+        "en": "Void Barrier",
+        "zh": "虚影屏障"
+    },
+    {
+        "id": "53114",
+        "en": "Revenge of the Hunted",
+        "zh": "死亡通缉"
+    },
+    {
+        "id": "46965",
+        "en": "Saboteur",
+        "zh": "怠工者"
+    },
+    {
+        "id": "28754",
+        "en": "Assassination",
+        "zh": "暗影"
+    },
+    {
+        "id": "42686",
+        "en": "Elemental Focus",
+        "zh": "元素集中"
+    },
+    {
+        "id": "51212",
+        "en": "Entropy",
+        "zh": "乱世"
+    },
+    {
+        "id": "33903",
+        "en": "Will of Blades",
+        "zh": "利刃意志"
+    },
+    {
+        "id": "60737",
+        "en": "Sleight of Hand",
+        "zh": "戏法"
+    },
+    {
+        "id": "30974",
+        "en": "Expert Hunter",
+        "zh": "老练猎手"
+    },
+    {
+        "id": "45608",
+        "en": "Successive Detonations",
+        "zh": "连续引爆"
+    },
+    {
+        "id": "24067",
+        "en": "Instinct",
+        "zh": "本能"
+    },
+    {
+        "id": "56648",
+        "en": "Claws of the Falcon",
+        "zh": "猎鹰之爪"
+    },
+    {
+        "id": "22535",
+        "en": "Whispers of Doom",
+        "zh": "灭世之语"
+    },
+    {
+        "id": "28503",
+        "en": "Life Raker",
+        "zh": "生命收割"
+    },
+    {
+        "id": "41119",
+        "en": "Lethality",
+        "zh": "致命锋芒"
+    },
+    {
+        "id": "8458",
+        "en": "Longshot",
+        "zh": "远射"
+    },
+    {
+        "id": "31513",
+        "en": "Adjacent Animosity",
+        "zh": "咫尺之恨"
+    },
+    {
+        "id": "60180",
+        "en": "Thief's Craft",
+        "zh": "盗贼工艺"
+    },
+    {
+        "id": "7085",
+        "en": "Weapon Artistry",
+        "zh": "舞刃宗师"
+    },
+    {
+        "id": "529",
+        "en": "Poisonous Fangs",
+        "zh": "回转死神"
+    },
+    {
+        "id": "58032",
+        "en": "Serpentine Spellslinger",
+        "zh": "蜿蜒节魔"
+    },
+    {
+        "id": "31508",
+        "en": "Aspect of the Lynx",
+        "zh": "山猫之灵"
+    },
+    {
+        "id": "37504",
+        "en": "Intuition",
+        "zh": "直觉感知"
+    },
+    {
+        "id": "3309",
+        "en": "Fleetfoot",
+        "zh": "迷踪步"
+    },
+    {
+        "id": "41989",
+        "en": "Resourcefulness",
+        "zh": "智谋"
+    },
+    {
+        "id": "65053",
+        "en": "Essence Sap",
+        "zh": "灵魂虚空"
+    },
+    {
+        "id": "24050",
+        "en": "Coldhearted Calculation",
+        "zh": "冷酷计算"
+    },
+    {
+        "id": "9864",
+        "en": "Growth and Decay",
+        "zh": "成长与衰变"
+    },
+    {
+        "id": "18769",
+        "en": "Written in Blood",
+        "zh": "血书"
+    },
+    {
+        "id": "59556",
+        "en": "Expeditious Munitions",
+        "zh": "快速弹药"
+    },
+    {
+        "id": "27190",
+        "en": "Overprepared",
+        "zh": "过度准备"
+    },
+    {
+        "id": "47065",
+        "en": "Master of Blades",
+        "zh": "刀剑之主"
+    },
+    {
+        "id": "9535",
+        "en": "Hunter's Gambit",
+        "zh": "猎人之势"
+    },
+    {
+        "id": "18707",
+        "en": "Perfectionist",
+        "zh": "完美之人"
+    },
+    {
+        "id": "4481",
+        "en": "Forces of Nature",
+        "zh": "自然之力"
+    },
+    {
+        "id": "41420",
+        "en": "Natural Remedies",
+        "zh": "自然疗法"
+    },
+    {
+        "id": "17171",
+        "en": "Flash Freeze",
+        "zh": "急速冻结"
+    },
+    {
+        "id": "43385",
+        "en": "Winter Spirit",
+        "zh": "物冰转换"
+    },
+    {
+        "id": "17608",
+        "en": "Silent Steps",
+        "zh": "神出鬼没"
+    },
+    {
+        "id": "53013",
+        "en": "Atrophy",
+        "zh": "萎缩"
+    },
+    {
+        "id": "36281",
+        "en": "Primeval Force",
+        "zh": "元素注入"
+    },
+    {
+        "id": "61981",
+        "en": "Doom Cast",
+        "zh": "灭世之灵"
+    },
+    {
+        "id": "15852",
+        "en": "Ethereal Feast",
+        "zh": "空灵盛宴"
+    },
+    {
+        "id": "48614",
+        "en": "Fervour",
+        "zh": "激情"
+    },
+    {
+        "id": "24133",
+        "en": "Survivalist",
+        "zh": "死里逃生"
+    },
+    {
+        "id": "19858",
+        "en": "Herbalism",
+        "zh": "药草学"
+    },
+    {
+        "id": "32176",
+        "en": "Soul Thief",
+        "zh": "窃魂者"
+    },
+    {
+        "id": "8001",
+        "en": "Clever Thief",
+        "zh": "机敏猎人"
+    },
+    {
+        "id": "42804",
+        "en": "Mind Drinker",
+        "zh": "汲灵术"
+    },
+    {
+        "id": "42443",
+        "en": "Frenetic",
+        "zh": "狂热"
+    },
+    {
+        "id": "25411",
+        "en": "Infused",
+        "zh": "灌注"
+    },
+    {
+        "id": "54713",
+        "en": "Force Shaper",
+        "zh": "力量成形"
+    },
+    {
+        "id": "7263",
+        "en": "Swift Venoms",
+        "zh": "迅速致毒"
+    },
+    {
+        "id": "63251",
+        "en": "Inveterate",
+        "zh": "根深蒂固"
+    },
+    {
+        "id": "2959",
+        "en": "Season of Ice",
+        "zh": "寒冰之季"
+    },
+    {
+        "id": "25738",
+        "en": "Relentless Pursuit",
+        "zh": "无尽追踪"
+    },
+    {
+        "id": "31585",
+        "en": "Careful Conservationist",
+        "zh": "谨慎保护"
+    },
+    {
+        "id": "65502",
+        "en": "Heartseeker",
+        "zh": "刺心者"
+    },
+    {
+        "id": "49621",
+        "en": "Acuity",
+        "zh": "心眼"
+    },
+    {
+        "id": "13375",
+        "en": "Multishot",
+        "zh": "多重射击"
+    },
+    {
+        "id": "1405",
+        "en": "From the Shadows",
+        "zh": "影刃"
+    },
+    {
+        "id": "52789",
+        "en": "Circle of Life",
+        "zh": "生命之环"
+    },
+    {
+        "id": "47484",
+        "en": "Depth Perception",
+        "zh": "潜意识"
+    },
+    {
+        "id": "15290",
+        "en": "Watchtowers",
+        "zh": "守望之塔"
+    },
+    {
+        "id": "9055",
+        "en": "Volatile Mines",
+        "zh": "零秒出手"
+    },
+    {
+        "id": "61689",
+        "en": "Explosive Elements",
+        "zh": "爆破元素"
+    },
+    {
+        "id": "32681",
+        "en": "Mark the Prey",
+        "zh": "标记猎物"
+    },
+    {
+        "id": "8920",
+        "en": "Backstabbing",
+        "zh": "偷袭"
+    },
+    {
+        "id": "36490",
+        "en": "Flaying",
+        "zh": "剥皮刃"
+    },
+    {
+        "id": "15614",
+        "en": "Claws of the Hawk",
+        "zh": "鹰隼之爪"
+    },
+    {
+        "id": "54791",
+        "en": "Claws of the Magpie",
+        "zh": "鹊爪"
+    },
+    {
+        "id": "31359",
+        "en": "Fatal Toxins",
+        "zh": "致命之毒"
+    },
+    {
+        "id": "55380",
+        "en": "Clever Construction",
+        "zh": "聪明的建设"
+    },
+    {
+        "id": "59605",
+        "en": "Unstable Munitions",
+        "zh": "不稳定弹药"
+    },
+    {
+        "id": "21297",
+        "en": "High Explosives",
+        "zh": "炼狱炸弹"
+    },
+    {
+        "id": "51881",
+        "en": "Master Fletcher",
+        "zh": "飞矢宗师"
+    },
+    {
+        "id": "49459",
+        "en": "King of the Hill",
+        "zh": "强弩之弦"
+    },
+    {
+        "id": "59151",
+        "en": "Brutal Blade",
+        "zh": "残暴之刃"
+    },
+    {
+        "id": "1568",
+        "en": "Fatal Blade",
+        "zh": "致命之刃"
+    },
+    {
+        "id": "45329",
+        "en": "Trick Shot",
+        "zh": "诡射"
+    },
+    {
+        "id": "7069",
+        "en": "Split Shot",
+        "zh": "分裂射击"
+    },
+    {
+        "id": "21228",
+        "en": "Piercing Shots",
+        "zh": "穿射箭矢"
+    },
+    {
+        "id": "57006",
+        "en": "Vengeant Cascade",
+        "zh": "复仇奔流"
+    }
+]
