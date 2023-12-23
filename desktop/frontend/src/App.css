@@ -1,0 +1,27 @@
+#App {
+    height: 100vh;
+    display: flex;
+}
+
+.detail{
+    flex-grow: 1;
+}
+
+.section {
+    margin: 10px 0 10px 10px;
+    padding: 15px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    margin: 10px 0;
+    align-items: baseline;
+    min-width: 350px;
+    justify-content: space-between;
+}
+
+.line select {
+    min-width: 100px;
+}
