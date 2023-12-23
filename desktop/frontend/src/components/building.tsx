@@ -57,6 +57,17 @@ export default function Building() {
         notifySuccess(toastController, "已读取");
     }
 
+    const leagueChangedHandler = (e: any) => {
+        const league = e.target.value;
+        setLeague(league);
+        const first = characters.find(c => c.league == league);
+        if (first === undefined) {
+            setCharacter("");
+        } else {
+            setCharacter(first.name);
+        }
+    }
+
     const exportBuilding = async () => {
         setCode("");
         let resp = await GetItems(accountName, character, "pc");
@@ -89,11 +100,11 @@ export default function Building() {
                 <Button onClick={loadAccount} disabled={accountName.length == 0}>读取</Button>
             </div>
             <div className="line" style={{ justifyContent: "normal" }}>
-                <Select id={selectLeagueId} disabled={leagues.length == 0} onChange={(e) => setLeague(e.target.value)}>{leagues}</Select>
-                <Select id={selectCharacterId} disabled={shownCharacters.length == 0} style={{ marginLeft: "10px" }} >{shownCharacters}</Select>
+                <Select id={selectLeagueId} disabled={leagues.length == 0} onChange={leagueChangedHandler}>{leagues}</Select>
+                <Select id={selectCharacterId} disabled={shownCharacters.length == 0} style={{ marginLeft: "10px" }} onChange={(e) => setCharacter(e.target.value)}>{shownCharacters}</Select>
             </div>
             <div className="line">
-                <Button appearance="primary" onClick={exportBuilding} disabled={characters.length==0}>导出</Button>
+                <Button appearance="primary" onClick={exportBuilding} disabled={characters.length == 0}>导出</Button>
             </div>
             <div className="line">
                 <Text wrap={false} truncate style={{ width: "250px" }}>{code}</Text>
