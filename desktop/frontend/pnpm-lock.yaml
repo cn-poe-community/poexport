@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.0.3
     version: 2.0.3
   cn-poe-export-db:
-    specifier: ^0.1.3
-    version: 0.1.3
+    specifier: ^0.1.4
+    version: 0.1.4
   cn-poe-translator:
     specifier: ^0.2.7
     version: 0.2.7
@@ -1820,8 +1820,8 @@ packages:
       supports-color: 5.5.0
     dev: true
 
-  /cn-poe-export-db@0.1.3:
-    resolution: {integrity: sha512-+NnAsh7BIaDNjWWZBv9NN7IuO+HkSEADEeA36loimnweoc0NQ7XXoSB5jU5nXUVthudmjGUKUqmR+yNeUnqFBw==}
+  /cn-poe-export-db@0.1.4:
+    resolution: {integrity: sha512-P7d8FfnRKNYNTs+8QZq3ejpkxD79+imcBy+rqVR+bY3h+9vBT/0ap4x+XKCRoUJv+2zi5h1krBlF6Gcl3tJrUQ==}
     dev: false
 
   /cn-poe-translator@0.2.7:
