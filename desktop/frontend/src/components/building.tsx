@@ -96,7 +96,7 @@ export default function Building() {
     return <div>
         <div className="section">
             <div className="line">
-                <Input id="accountName" value={accountName} onChange={(e) => { setAccountName(e.target.value.trim()); setCharacters([]) }} placeholder="论坛账户名" />
+                <Input id="accountName" value={accountName} onChange={(e) => { setAccountName(e.target.value); setCharacters([]) }} placeholder="论坛账户名" />
                 <Button onClick={loadAccount} disabled={accountName.length == 0}>读取</Button>
             </div>
             <div className="line" style={{ justifyContent: "normal" }}>
