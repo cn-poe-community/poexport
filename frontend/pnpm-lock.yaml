@@ -24,8 +24,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0
   pob-building-creater:
-    specifier: ^0.0.13
-    version: 0.0.13
+    specifier: ^0.0.14
+    version: 0.0.14
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2207,8 +2207,8 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
 
-  /pob-building-creater@0.0.13:
-    resolution: {integrity: sha512-7+BF/nNii/EWbgoHGuDVYCAlat9uMzjmoKKBf3VmP+aAdeNkuodTLdDdqkHWdvgiAovS9501DVx4SopsCn8PtA==}
+  /pob-building-creater@0.0.14:
+    resolution: {integrity: sha512-H6VCppWbZxXgepKXqDKv/4JLwQzeJbKra6q3fUQzmPZ98GKeeWA9WhctxI6PVguVlahx21HRCsne/UXqoOD+uQ==}
     dependencies:
       js-base64: 3.7.5
       mustache: 4.2.0
