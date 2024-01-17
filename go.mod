@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/adrg/xdg v0.4.0
+	github.com/cn-poe-community/poeclient v0.0.3
 	github.com/wailsapp/wails/v2 v2.7.1
 )
 

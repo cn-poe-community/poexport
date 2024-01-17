@@ -7,11 +7,11 @@ import (
 	"os"
 	"poexport/pkg/config"
 	"poexport/pkg/logger"
-	"poexport/pkg/poe"
 	"poexport/pkg/update"
 	"strings"
 	"sync"
 
+	"github.com/cn-poe-community/poeclient"
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
@@ -19,7 +19,7 @@ import (
 type App struct {
 	ctx           context.Context
 	poeClientLock sync.RWMutex
-	poeClient     *poe.PoeClient
+	poeClient     *poeclient.PoeClient
 }
 
 // NewApp creates a new App application struct
@@ -73,7 +73,7 @@ func (a *App) doStartup() error {
 	if err != nil {
 		return err
 	}
-	a.poeClient, err = poe.NewPoeClient(config.Conf().PoeSessId)
+	a.poeClient, err = poeclient.NewPoeClient(poeclient.TxPoeHost, config.Conf().PoeSessId)
 	if err != nil {
 		return err
 	}
@@ -183,7 +183,7 @@ func (a *App) SetPoeSessId(poeSessId string) BoolResult {
 
 	a.poeClientLock.Lock()
 	defer a.poeClientLock.Unlock()
-	newClient, err := poe.NewPoeClient(poeSessId)
+	newClient, err := poeclient.NewPoeClient(poeclient.TxPoeHost, poeSessId)
 	if err != nil {
 		return BoolResult{
 			false,
