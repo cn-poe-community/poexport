@@ -96,12 +96,14 @@ export default function Building() {
     return <div>
         <div className="section">
             <div className="line">
-                <Input id="accountName" value={accountName} onChange={(e) => { setAccountName(e.target.value); setCharacters([]) }} placeholder="论坛账户名" />
+                <Input id="accountName" value={accountName} className="main-input" onChange={(e) => { setAccountName(e.target.value); setCharacters([]) }} placeholder="论坛账户名" />
                 <Button onClick={loadAccount} disabled={accountName.length == 0}>读取</Button>
             </div>
             <div className="line" style={{ justifyContent: "normal" }}>
-                <Select id={selectLeagueId} disabled={leagues.length == 0} onChange={leagueChangedHandler}>{leagues}</Select>
-                <Select id={selectCharacterId} disabled={shownCharacters.length == 0} style={{ marginLeft: "10px" }} onChange={(e) => setCharacter(e.target.value)}>{shownCharacters}</Select>
+                <Select id={selectLeagueId} disabled={leagues.length == 0} className="main-input" onChange={leagueChangedHandler}>{leagues}</Select>
+            </div>
+            <div className="line" style={{ justifyContent: "normal" }}>
+                <Select id={selectCharacterId} disabled={shownCharacters.length == 0} className="main-input" onChange={(e) => setCharacter(e.target.value)}>{shownCharacters}</Select>
             </div>
             <div className="line">
                 <Button appearance="primary" onClick={exportBuilding} disabled={characters.length == 0}>导出</Button>
