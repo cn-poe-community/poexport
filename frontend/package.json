@@ -9,22 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fluentui/react-components": "^9.43.2",
-    "@fluentui/react-icons": "^2.0.224",
+    "@fluentui/react-components": "^9.46.3",
+    "@fluentui/react-icons": "^2.0.226",
     "@types/pako": "^2.0.3",
     "cn-poe-export-db": "^0.1.4",
-    "cn-poe-translator": "^0.2.7",
+    "cn-poe-translator": "^0.2.8",
     "pako": "^2.1.0",
-    "pob-building-creater": "^0.1.0",
+    "pob-building-creater": "^0.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.22.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.1",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7"
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^4.9.5",
+    "vite": "^3.2.8"
   }
 }
