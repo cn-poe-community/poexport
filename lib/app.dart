@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:logger/logger.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:path/path.dart' as path;
+import 'package:path/path.dart';
 import 'package:poexport/update.dart';
 import 'poe/creator.dart';
 import './log.dart' as log;
@@ -24,11 +25,11 @@ Latest? latest;
 Future<void> init() async {
   logger = await log.logger();
 
+  packageInfo = await PackageInfo.fromPlatform();
+
   await _initConfig();
 
   requester = Requester(configManager.config.poeSessId);
-
-  packageInfo = await PackageInfo.fromPlatform();
 
   final screen = await window_size.getCurrentScreen();
   if (screen != null) {
@@ -43,7 +44,11 @@ Future<void> _initConfig() async {
 
   if (Platform.isWindows) {
     var localAppData = Platform.environment["LOCALAPPDATA"];
-    var configPath = path.join(localAppData!, "poexport", "config.json");
+    await Directory(join(localAppData!, packageInfo.appName))
+        .create(recursive: true);
+
+    var configPath =
+        path.join(localAppData!, packageInfo.appName, "config.json");
     await configManager.load(configPath);
   }
 }
