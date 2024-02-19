@@ -1,0 +1,3 @@
+dist/
+node_modules/
+src/__test_/*_translated.json

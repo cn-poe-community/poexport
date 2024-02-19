@@ -1,0 +1,42 @@
+{
+  "name": "ts-module-template",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "rimraf dist && rollup -c rollup.config.js",
+    "lint": "eslint --ext .ts .",
+    "format": "prettier --write .",
+    "test": "vitest run --globals",
+    "prepare": "pnpm build",
+    "prepublishOnly": "pnpm test"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/me1ting/ts-module-template.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "prettier": "2.8.8",
+    "rimraf": "^5.0.5",
+    "rollup": "^3.29.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vitest": "^0.31.4"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "cn-poe-export-db": "^0.1.4",
+    "cn-poe-translator": "^0.2.8",
+    "pob-building-creater": "^0.1.2"
+  }
+}
